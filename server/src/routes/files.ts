@@ -1,24 +1,49 @@
-þŠmþ&yºÞÃòân¶«Ëñè™æë{Ü™ßì…éez{ì†X§{_?n)ÿ¦Ã©z¶­Š‰ç¢Ú^®h­µçZ[\Ü]œ›ÛH››ÙNœ]ŽÂš[\ÜÈ›Ý]\ˆHœ›ÛH™^™\ÜÈŽÂš[\ÜÈš[\ÈHœ›ÛH‹‹‹ÜÝ]KšœÈŽÂš[\ÜÈ™[[Ý™TÝÜ™Yš[HHœ›ÛH‹‹‹ÜÝÜ˜YÙKÙš[\ËšœÈŽÂ‚™[˜Ý[Ûˆ\ØÚZQ˜[˜XÚÊš[[˜[YNˆÝš[™ÊNˆÝš[™ÈÂˆÛÛœÝ˜[˜XÚÈHš[[˜[YKœ™\XÙJÖ×—ŒWÑWKÙË—ÈŠKœ™\XÙJÖÈ—KÙË—ÈŠNÂˆ™]\›ˆ˜[˜XÚÈ™ÝÛ›ØYŽÂŸB‚™^Ü[˜Ý[ÛˆÜ™X]Qš[\Ô›Ý]\Š
-Nˆ›Ý]\ˆÂˆÛÛœÝ›Ý]\ˆH›Ý]\Š
-NÂ‚ˆ›Ý]\‹™Ù]
-‹Î™š[RY‹
-™\K™\ÊHOˆÂˆÛÛœÝÝÜ™Yš[HHš[\Ë™Ù]
-™\Kœ\˜[\Ë™š[RY
-NÂˆYˆ
-\ÝÜ™Yš[JHÂˆ™\ËœÝ]\Ê
-KšœÛÛŠÈ\œ›ÜŽˆ‘š[H›Ý›Ý[™ˆJNÂˆ™]\›ŽÂˆB‚ˆÛÛœÝ[˜ÛÙY˜[YHH[˜ÛÙUT’PÛÛ\Û™[
-ÝÜ™Yš[K›ÜšYÚ[˜[˜[YJNÂˆ™\ËœÙ]XY\ŠˆÛÛ[Q\ÜÜÚ][Ûˆ‹ˆ]XÚY[Èš[[˜[YOH‰Ø\ØÚZQ˜[˜XÚÊÝÜ™Yš[K›ÜšYÚ[˜[˜[YJ_HŽÈš[[˜[YJUU‹N	ÉÉÙ[˜ÛÙY˜[Y_Xˆ
-NÂˆ™\Ë\JÝÜ™Yš[K›Z[YU\JNÂˆÛÛœÛÛK›ÙÊ‘š[HÝÛ›ØYY‹Èš[RYˆÝÜ™Yš[KšY]šXÙRYˆÝÜ™Yš[K™]šXÙRYJNÂˆ™\ËœÙ[™š[J]œ™\ÛÛ™JÝÜ™Yš[Kœ]
-K
-\œ›ÜŠHOˆÂˆYˆ
-\œ›Üˆ	‰ˆ\™\ËšXY\œÔÙ[
-HÂˆ™\ËœÝ]\ÊL
-KšœÛÛŠÈ\œ›ÜŽˆ‘ÝÛ›ØY˜Z[YˆJNÂˆBˆJNÂˆJNÂ‚ˆ›Ý]\‹™[]J‹Î™š[RY‹\Þ[˜È
-™\K™\Ë™^
-HOˆÂˆžHÂˆÛÛœÝ™[[Ý™YH]ØZ]™[[Ý™TÝÜ™Yš[J™\Kœ\˜[\Ë™š[RY
-NÂˆYˆ
-\™[[Ý™Y
-HÂˆ™\ËœÝ]\Ê
-KšœÛÛŠÈ\œ›ÜŽˆ‘š[H›Ý›Ý[™ˆJNÂˆ™]\›ŽÂˆBˆ™\ËšœÛÛŠÈÝXØÙ\ÜÎˆYHJNÂˆHØ]Ú
-\œ›ÜŠHÂˆ™^
-\œ›ÜŠNÂˆBˆJNÂ‚ˆ™]\›ˆ›Ý]\ŽÂŸB
+import path from "node:path";
+import { Router } from "express";
+import { files } from "../state.js";
+import { removeStoredFile } from "../storage/files.js";
+
+function asciiFallback(filename: string): string {
+  const fallback = filename.replace(/[^\x20-\x7E]/g, "_").replace(/["\\]/g, "_");
+  return fallback || "download";
+}
+
+export function createFilesRouter(): Router {
+  const router = Router();
+
+  router.get("/:fileId", (req, res) => {
+    const storedFile = files.get(req.params.fileId);
+    if (!storedFile) {
+      res.status(404).json({ error: "File not found" });
+      return;
+    }
+
+    const encodedName = encodeURIComponent(storedFile.originalName);
+    res.setHeader(
+      "Content-Disposition",
+      `attachment; filename="${asciiFallback(storedFile.originalName)}"; filename*=UTF-8''${encodedName}`,
+    );
+    res.type(storedFile.mimeType);
+    console.log("File downloaded", { fileId: storedFile.id, deviceId: storedFile.deviceId });
+    res.sendFile(path.resolve(storedFile.path), (error) => {
+      if (error && !res.headersSent) {
+        res.status(500).json({ error: "Download failed" });
+      }
+    });
+  });
+
+  router.delete("/:fileId", async (req, res, next) => {
+    try {
+      const removed = await removeStoredFile(req.params.fileId);
+      if (!removed) {
+        res.status(404).json({ error: "File not found" });
+        return;
+      }
+      res.json({ success: true });
+    } catch (error) {
+      next(error);
+    }
+  });
+
+  return router;
+}

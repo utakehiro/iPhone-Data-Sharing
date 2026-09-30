@@ -1,1 +1,15 @@
-şŠmş&yºŞÃòân¶«Ëñè™æë{Ü™ßì…éez{ì†X§{_?n)ÿ¦Ã©z¶­Š‰ç¢Ú^®h­µç^Âˆ›X[šY™\İİ™\œÚ[ÛˆˆËˆ›˜[YHˆšTÛ™HÚ\™H‹ˆ™\œÚ[ÛˆˆŒŒKŒˆ‹ˆ™\ØÜš\[ÛˆˆšTÛ™xàbøà¢UÚ[™İÜøàn9a¦yç'øà¡8àåxà¨xà©8àêøà¤º` y/èxàfxà¢ÓS¹a¡xàåøàëxàâ8à¯øà©8àåÈ‹ˆœ\›Z\ÜÚ[ÛœÈˆÈœİÜ˜YÙH‹™İÛ›ØYÈ‹››İYšXØ][ÛœÈ‹˜[\›\È—KˆšÜİÜ\›Z\ÜÚ[ÛœÈˆÈš‹ËÊ‹Êˆ‹šÎ‹ËÊ‹Êˆ—Kˆ˜˜XÚÙÜ›İ[™ˆÂˆœÙ\šXÙWİÛÜšÙ\ˆˆ˜˜XÚÙÜ›İ[™šœÈ‚ˆKˆ˜Xİ[ÛˆˆÂˆ™Y˜][İ]HˆšTÛ™HÚ\™H‹ˆ™Y˜][ÜÜ\ˆœÜ\š[‚ˆBŸB
+{
+  "manifest_version": 3,
+  "name": "iPhone Share",
+  "version": "0.1.2",
+  "description": "iPhoneã‹ã‚‰Windowsã¸å†™çœŸã‚„ãƒ•ã‚¡ã‚¤ãƒ«ã‚’é€ä¿¡ã™ã‚‹LANå†…ãƒ—ãƒ­ãƒˆã‚¿ã‚¤ãƒ—",
+  "permissions": ["storage", "downloads", "notifications", "alarms"],
+  "host_permissions": ["http://*/*", "https://*/*"],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_title": "iPhone Share",
+    "default_popup": "popup.html"
+  }
+}

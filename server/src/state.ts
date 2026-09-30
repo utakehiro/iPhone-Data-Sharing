@@ -1,4 +1,6 @@
-юЉmю&yєЮГтвn¶«Лси™жл{Ь™Ям…йez{м†X§{_?n)я¦Г©z¶­Љ‰зўЪ^®h­µзZ[\Ьќ\HЩX”ЫШЪЩ]њ›ЫHќЬИЋВљ[\Ьќ\HИ]љXЩKЭЬ™Yљ[HHњ›ЫH‹‹Э\\ЛљњИЋВ‚™^ЬќЫЫњЭ]љXЩ\ИH™]ИX\Эљ[™Л]љXЩOЉ
-NВ™^ЬќЫЫњЭљ[\ИH™]ИX\Эљ[™ЛЭЬ™Yљ[OЉ
-NВ™^ЬќЫЫњЭЫЫ›™XЭ[ЫњИH™]ИX\Эљ[™ЛЩX”ЫШЪЩ]Љ
-NВ
+import type WebSocket from "ws";
+import type { Device, StoredFile } from "./types.js";
+
+export const devices = new Map<string, Device>();
+export const files = new Map<string, StoredFile>();
+export const connections = new Map<string, WebSocket>();

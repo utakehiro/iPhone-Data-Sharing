@@ -1,2 +1,26 @@
-şŠmş&yºŞÃòân¶«Ëñè™æë{Ü™ßì…éez{ì†X§{_?n)ÿ¦Ã©z¶­Š‰ç¢Ú^®h­µç\\˜[JˆÜİš[™×IX›\Ú\ˆHÓZTÛ™H]HÚ\š[™È‹ˆÔ\˜[Y]\ŠX[™]ÜHH	YJWBˆÜİš[™×I\ÜİÛÜ™ŠB‚‰\œ›ÜXİ[Û”™Y™\™[˜ÙHH”İÜ‚‰İ]]H›Ú[‹T]	ÔØÜš\›Ûİ›İ]]‚“™]ËR][HR][U\H\™XİÜHQ›Ü˜ÙH	İ]]İ]S[‰ÙXİ\™T\ÜİÛÜ™HÛÛ™\ËTÙXİ\™Tİš[™È	\ÜİÛÜ™P\ÔZ[•^Q›Ü˜ÙB‰Ù\YšXØ]HH™]ËTÙ[”ÚYÛ™YÙ\YšXØ]HˆU\Hİ\İÛHˆTİXš™Xİ	X›\Ú\ˆˆQœšY[™S˜[YHšTÛ™H]HÚ\š[™ÈTÒV\İÙ\YšXØ]HˆˆRÙ^U\ØYÙHYÚ][ÚYÛ˜]\™HˆPÙ\İÜ™SØØ][ÛˆÙ\—İ\œ™[\Ù\—^HˆˆU^^[œÚ[Ûˆ
-Œ‹KŒKŒÍÏ^İ^LKŒË‹ŒKKKËŒËŒÈ‹Œ‹KŒKŒNO^İ^HŠB‚‰H›Ú[‹T]	İ]]šTÛ™KQ]KTÚ\š[™ËU\İœ‚‰Ù\ˆH›Ú[‹T]	İ]]šTÛ™KQ]KTÚ\š[™ËU\İ˜Ù\ˆ‚‘^ÜTÙ\YšXØ]HPÙ\	Ù\YšXØ]HQš[T]	T\ÜİÛÜ™	ÙXİ\™T\ÜİÛÜ™İ]S[‘^ÜPÙ\YšXØ]HPÙ\	Ù\YšXØ]HQš[T]	Ù\ˆİ]S[•Üš]KRÜİ•\İÙ\YšXØ]HÜ™X]Yˆ‚•Üš]KRÜİˆ–ˆ	‚•Üš]KRÜİˆÑTˆ	Ù\ˆ‚•Üš]KUØ\›š[™È‘›Üˆ\İ[™ÈÛ›Kˆ[œİ[HÑTˆ[È\İY[ÜHÛˆHÚ[™İÜÈ\İXXÚ[™Kˆ™]™\ˆ\ÙH\ÈÙ\YšXØ]H›Üˆ›ÙXİ[Ûˆ\İšX][Û‹ˆ‚
+param(
+  [string]$Publisher = "CN=iPhone Data Sharing",
+  [Parameter(Mandatory = $true)]
+  [string]$Password
+)
+
+$ErrorActionPreference = "Stop"
+$Output = Join-Path $PSScriptRoot "output"
+New-Item -ItemType Directory -Force $Output | Out-Null
+$securePassword = ConvertTo-SecureString $Password -AsPlainText -Force
+$certificate = New-SelfSignedCertificate `
+  -Type Custom `
+  -Subject $Publisher `
+  -FriendlyName "iPhone Data Sharing MSIX Test Certificate" `
+  -KeyUsage DigitalSignature `
+  -CertStoreLocation "Cert:\CurrentUser\My" `
+  -TextExtension @("2.5.29.37={text}1.3.6.1.5.5.7.3.3", "2.5.29.19={text}")
+
+$pfx = Join-Path $Output "iPhone-Data-Sharing-Test.pfx"
+$cer = Join-Path $Output "iPhone-Data-Sharing-Test.cer"
+Export-PfxCertificate -Cert $certificate -FilePath $pfx -Password $securePassword | Out-Null
+Export-Certificate -Cert $certificate -FilePath $cer | Out-Null
+Write-Host "Test certificate created:"
+Write-Host "  PFX: $pfx"
+Write-Host "  CER: $cer"
+Write-Warning "For testing only. Install the CER into Trusted People on the Windows test machine. Never use this certificate for production distribution."

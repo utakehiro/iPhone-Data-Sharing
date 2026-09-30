@@ -1,32 +1,67 @@
-þŠmþ&yºÞÃòân¶«Ëñè™æë{Ü™ßì…éez{ì†X§{_?n)ÿ¦Ã©z¶­Š‰ç¢Ú^®h­µçZ[\ÜÈ›Ý]\ˆHœ›ÛH™^™\ÜÈŽÂš[\ÜTÛÙHœ›ÛHœ\˜ÛÙHŽÂš[\ÜÈÛÛ›™XÝ[ÛœË]šXÙ\ÈHœ›ÛH‹‹‹ÜÝ]KšœÈŽÂ‚™^Ü[˜Ý[ÛˆÜ™X]Q]šXÙ\Ô›Ý]\ŠX›XÐ˜\ÙU\›ˆÝš[™ÊNˆ›Ý]\ˆÂˆÛÛœÝ›Ý]\ˆH›Ý]\Š
-NÂ‚ˆ›Ý]\‹œÜÝ
-‹Ü™YÚ\Ý\ˆ‹
-™\K™\ÊHOˆÂˆÛÛœÝÈ]šXÙRY]šXÙS˜[YHHH™\K˜›ÙH\ÈÂˆ]šXÙRYÎˆ[šÛ›ÝÛŽÂˆ]šXÙS˜[YOÎˆ[šÛ›ÝÛŽÂˆNÂ‚ˆYˆ
-\[Ùˆ]šXÙRYOOHœÝš[™ÈˆY]šXÙRYš[J
-JHÂˆ™\ËœÝ]\Ê
-KšœÛÛŠÈ\œ›ÜŽˆ™]šXÙRY\È™\]Z\™YˆJNÂˆ™]\›ŽÂˆBˆYˆ
-\[Ùˆ]šXÙS˜[YHOOHœÝš[™ÈˆY]šXÙS˜[YKš[J
-JHÂˆ™\ËœÝ]\Ê
-KšœÛÛŠÈ\œ›ÜŽˆ™]šXÙS˜[YH\È™\]Z\™YˆJNÂˆ™]\›ŽÂˆB‚ˆ]šXÙ\ËœÙ]
-]šXÙRYÂˆ]šXÙRYˆ]šXÙS˜[YNˆ]šXÙS˜[YKš[J
-KœÛXÙJ
-Kˆ™YÚ\Ý\™Y]ˆ™]È]J
-KˆJNÂˆÛÛœÛÛK›ÙÊ‘]šXÙH™YÚ\Ý\™Y‹È]šXÙRY]šXÙS˜[YHJNÂˆ™\ËšœÛÛŠÈÝXØÙ\ÜÎˆYHJNÂˆJNÂ‚ˆ›Ý]\‹™Ù]
-‹Î™]šXÙRYÜ\ˆ‹\Þ[˜È
-™\K™\Ë™^
-HOˆÂˆžHÂˆYˆ
-Y]šXÙ\Ëš\Ê™\Kœ\˜[\Ë™]šXÙRY
-JHÂˆ™\ËœÝ]\Ê
-KšœÛÛŠÈ\œ›ÜŽˆ•[šÛ›ÝÛˆ]šXÙHˆJNÂˆ™]\›ŽÂˆBˆÛÛœÝÙ]\\›H	ÜX›XÐ˜\ÙU\›KÜÙ]\Ù]šXÙRYIÙ[˜ÛÙUT’PÛÛ\Û™[
-™\Kœ\˜[\Ë™]šXÙRY
-_XÂˆÛÛœÝ[XYÙHH]ØZ]TÛÙKÐY™™\ŠÙ]\\›Âˆ\Nˆœ™È‹ˆÚYˆÌŒˆX\™Ú[Žˆ‹ˆ\œ›ÜÛÜœ™XÝ[Û“]™[ˆ“H‹ˆJNÂˆ™\ËœÙ]XY\ŠÛÛ[U\H‹š[XYÙKÜ™ÈŠNÂˆ™\ËœÙ]XY\ŠØXÚKPÛÛ›Û‹››Ë\ÝÜ™HŠNÂˆ™\ËœÙ[™
-[XYÙJNÂˆHØ]Ú
-\œ›ÜŠHÂˆ™^
-\œ›ÜŠNÂˆBˆJNÂ‚ˆ›Ý]\‹™Ù]
-‹Î™]šXÙRY‹
-™\K™\ÊHOˆÂˆÛÛœÝ]šXÙHH]šXÙ\Ë™Ù]
-™\Kœ\˜[\Ë™]šXÙRY
-NÂˆYˆ
-Y]šXÙJHÂˆ™\ËœÝ]\Ê
-KšœÛÛŠÈ\œ›ÜŽˆ•[šÛ›ÝÛˆ]šXÙHˆJNÂˆ™]\›ŽÂˆBˆ™\ËšœÛÛŠÂˆ]šXÙRYˆ]šXÙK™]šXÙRYˆ]šXÙS˜[YNˆ]šXÙK™]šXÙS˜[YKˆÛ›[™NˆÛÛ›™XÝ[ÛœËš\Ê]šXÙK™]šXÙRY
-KˆJNÂˆJNÂ‚ˆ™]\›ˆ›Ý]\ŽÂŸB
+import { Router } from "express";
+import QRCode from "qrcode";
+import { connections, devices } from "../state.js";
+
+export function createDevicesRouter(publicBaseUrl: string): Router {
+  const router = Router();
+
+  router.post("/register", (req, res) => {
+    const { deviceId, deviceName } = req.body as {
+      deviceId?: unknown;
+      deviceName?: unknown;
+    };
+
+    if (typeof deviceId !== "string" || !deviceId.trim()) {
+      res.status(400).json({ error: "deviceId is required" });
+      return;
+    }
+    if (typeof deviceName !== "string" || !deviceName.trim()) {
+      res.status(400).json({ error: "deviceName is required" });
+      return;
+    }
+
+    devices.set(deviceId, {
+      deviceId,
+      deviceName: deviceName.trim().slice(0, 80),
+      registeredAt: new Date(),
+    });
+    console.log("Device registered", { deviceId, deviceName });
+    res.json({ success: true });
+  });
+
+  router.get("/:deviceId/qr", async (req, res, next) => {
+    try {
+      if (!devices.has(req.params.deviceId)) {
+        res.status(404).json({ error: "Unknown device" });
+        return;
+      }
+      const setupUrl = `${publicBaseUrl}/setup?deviceId=${encodeURIComponent(req.params.deviceId)}`;
+      const image = await QRCode.toBuffer(setupUrl, {
+        type: "png",
+        width: 320,
+        margin: 2,
+        errorCorrectionLevel: "M",
+      });
+      res.setHeader("Content-Type", "image/png");
+      res.setHeader("Cache-Control", "no-store");
+      res.send(image);
+    } catch (error) {
+      next(error);
+    }
+  });
+
+  router.get("/:deviceId", (req, res) => {
+    const device = devices.get(req.params.deviceId);
+    if (!device) {
+      res.status(404).json({ error: "Unknown device" });
+      return;
+    }
+    res.json({
+      deviceId: device.deviceId,
+      deviceName: device.deviceName,
+      online: connections.has(device.deviceId),
+    });
+  });
+
+  return router;
+}

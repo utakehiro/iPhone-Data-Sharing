@@ -1,5 +1,26 @@
-şŠmş&yºŞÃòân¶«Ëñè™æë{Ü™ßì…éez{ì†X§{_?n)ÿ¦Ã©z¶­Š‰ç¢Ú^®h­µçHÈKØš[‹Ø˜\ÚœÙ]Y][È\Y˜Z[‚œ›Ú™XİÙ\H‰
-Ù‰
-\›˜[YH‰ŠKË‹ˆˆ	‰ˆÙ
-H‚˜\Ù\H‰›Ú™XİÙ\‹ÛXXËXYÙ[ØZ[ÚTÛ™H]HÚ\š[™Ë˜\‚››ÙWØš[˜\OH‰
-›ÙH\	Ü›ØÙ\ÜË™^XÔ]	ÊH‚‚˜Ù‰›Ú™XİÙ\‹ÜÙ\™\ˆ‚›œH[ˆZ[‚œ›H\™ˆ‰\Ù\ˆ‚›ZÙ\ˆ\‰\Ù\‹ĞÛÛ[ËÓXXÓÔÈˆ‰\Ù\‹ĞÛÛ[ËÔ™\Ûİ\˜Ù\ËÜÙ\™\ˆˆ‰\Ù\‹ĞÛÛ[ËÔ™\Ûİ\˜Ù\ËÜÚÜİ]Èˆ‰\Ù\‹ĞÛÛ[ËÔ™\Ûİ\˜Ù\ËİÛÛÈ‚˜Ü‰›Ú™XİÙ\‹ÛXXËXYÙ[Ò[™›Ëœ\İˆ‰\Ù\‹ĞÛÛ[ËÒ[™›Ëœ\İ‚˜Ü‰›Ú™XİÙ\‹ÛXXËXYÙ[Ø\ÜÙ]ËĞ\XÛÛ‹œ™Èˆ‰\Ù\‹ĞÛÛ[ËÔ™\Ûİ\˜Ù\ËĞ\XÛÛ‹œ™È‚˜Ü‰›Ú™XİÙ\‹ÛXXËXYÙ[Ø\ÜÙ]ËÓY[RXÛÛ‹œ™Èˆ‰\Ù\‹ĞÛÛ[ËÔ™\Ûİ\˜Ù\ËÓY[RXÛÛ‹œ™È‚˜Ü‰›ÙWØš[˜\Hˆ‰\Ù\‹ĞÛÛ[ËÓXXÓÔËÛ›ÙH‚˜ÜTˆ‰›Ú™XİÙ\‹ÜÙ\™\‹Ù\İˆ‰\Ù\‹ĞÛÛ[ËÔ™\Ûİ\˜Ù\ËÜÙ\™\‹Ù\İ‚˜ÜTˆ‰›Ú™XİÙ\‹ÜÙ\™\‹Û›ÙWÛ[Ù[\Èˆ‰\Ù\‹ĞÛÛ[ËÔ™\Ûİ\˜Ù\ËÜÙ\™\‹Û›ÙWÛ[Ù[\È‚˜Ü‰›Ú™XİÙ\‹ÜÙ\™\‹ÜXÚØYÙKšœÛÛˆˆ‰\Ù\‹ĞÛÛ[ËÔ™\Ûİ\˜Ù\ËÜÙ\™\‹ÜXÚØYÙKšœÛÛˆ‚˜Ü‰›Ú™XİÙ\‹ÜÚÜİ]ËÈŠ‹œÚÜİ]‰\Ù\‹ĞÛÛ[ËÔ™\Ûİ\˜Ù\ËÜÚÜİ]ËÈ‚˜Ü‰›Ú™XİÙ\‹İÛÛËØZ[ÜÚÜİ]ËœHˆ‰\Ù\‹ĞÛÛ[ËÔ™\Ûİ\˜Ù\ËİÛÛËÈ‚›[Ù[WØØXÚOH‰›Ú™XİÙ\‹ÛXXËXYÙ[ØZ[Û[Ù[KXØXÚH‚›ZÙ\ˆ\‰[Ù[WØØXÚH‚ÓS‘×ÓSÑSWĞĞPÒWÔUH‰[Ù[WØØXÚHˆÕÒQ•ÓSÑSPĞPÒWÔUH‰[Ù[WØØXÚHˆÜ[ˆİÚYÈ[[Ù[KXØXÚK\]‰[Ù[WØØXÚHˆYœ˜[Y]ÛÜšÈ\Ú]Yœ˜[Y]ÛÜšÈÛÜ™R[XYÙHYœ˜[Y]ÛÜšÈŞ\İ[PÛÛ™šYİ\˜][Ûˆ‰›Ú™XİÙ\‹ÛXXËXYÙ[ÛXZ[‹œİÚYˆ[È‰\Ù\‹ĞÛÛ[ËÓXXÓÔËÚTÛ™H]HÚ\š[™È‚˜ÛÙ\ÚYÛˆKY›Ü˜ÙHKYY\K\ÚYÛˆH‰\Ù\ˆ‚™XÚÈ‰\Ù\ˆ‚
+#!/bin/bash
+set -euo pipefail
+
+project_dir="$(cd "$(dirname "$0")/.." && pwd)"
+app_dir="$project_dir/mac-agent/build/iPhone Data Sharing.app"
+node_binary="$(node -p 'process.execPath')"
+
+cd "$project_dir/server"
+npm run build
+
+rm -rf "$app_dir"
+mkdir -p "$app_dir/Contents/MacOS" "$app_dir/Contents/Resources/server" "$app_dir/Contents/Resources/shortcuts" "$app_dir/Contents/Resources/tools"
+cp "$project_dir/mac-agent/Info.plist" "$app_dir/Contents/Info.plist"
+cp "$project_dir/mac-agent/assets/AppIcon.png" "$app_dir/Contents/Resources/AppIcon.png"
+cp "$project_dir/mac-agent/assets/MenuIcon.png" "$app_dir/Contents/Resources/MenuIcon.png"
+cp "$node_binary" "$app_dir/Contents/MacOS/node"
+cp -R "$project_dir/server/dist" "$app_dir/Contents/Resources/server/dist"
+cp -R "$project_dir/server/node_modules" "$app_dir/Contents/Resources/server/node_modules"
+cp "$project_dir/server/package.json" "$app_dir/Contents/Resources/server/package.json"
+cp "$project_dir/shortcuts/"*.shortcut "$app_dir/Contents/Resources/shortcuts/"
+cp "$project_dir/tools/build_shortcuts.py" "$app_dir/Contents/Resources/tools/"
+module_cache="$project_dir/mac-agent/build/module-cache"
+mkdir -p "$module_cache"
+CLANG_MODULE_CACHE_PATH="$module_cache" SWIFT_MODULECACHE_PATH="$module_cache" xcrun swiftc -module-cache-path "$module_cache" -framework AppKit -framework CoreImage -framework SystemConfiguration "$project_dir/mac-agent/main.swift" -o "$app_dir/Contents/MacOS/iPhone Data Sharing"
+codesign --force --deep --sign - "$app_dir"
+echo "$app_dir"

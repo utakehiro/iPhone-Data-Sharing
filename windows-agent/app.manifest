@@ -1,1 +1,23 @@
-þŠmþ&yºÞÃòân¶«Ëñè™æë{Ü™ßì…éez{ì†X§{_?n)ÿ¦Ã©z¶­Š‰ç¢Ú^®h­µçOÞ[™\œÚ[ÛHŒKŒˆ[˜ÛÙ[™ÏH]‹NÏ‚\ÜÙ[X›HX[šY™\Ý™\œÚ[ÛHŒKŒˆ[œÏH\›ŽœØÚ[X\Ë[ZXÜ›ÜÛÙXÛÛN˜\ÛKŒH‚ˆ\ÜÙ[X›RY[]H™\œÚ[ÛHŒKŒŒŒˆ˜[YOH’TÛ™Q]TÚ\š[™Ë•Ú[™ÝÜÈ‹Ï‚ˆ\Ý[™›È[œÏH\›ŽœØÚ[X\Ë[ZXÜ›ÜÛÙXÛÛN˜\ÛKŒÈ‚ˆÙXÝ\š]O‚ˆ™\]Y\ÝYš]š[YÙ\Ï‚ˆ™\]Y\ÝY^XÝ][Û“]™[]™[H˜\Ò[›ÚÙ\ˆˆZPXØÙ\ÜÏH™˜[ÙHˆÏ‚ˆÜ™\]Y\ÝYš]š[YÙ\Ï‚ˆÜÙXÝ\š]O‚ˆÝ\Ý[™›Ï‚ˆ\XØ][Ûˆ[œÏH\›ŽœØÚ[X\Ë[ZXÜ›ÜÛÙXÛÛN˜\ÛKŒÈ‚ˆÚ[™ÝÜÔÙ][™ÜÏ‚ˆP]Ø\™H[œÏHš‹ËÜØÚ[X\Ë›ZXÜ›ÜÛÙ˜ÛÛKÔÓRKÌŒKÕÚ[™ÝÜÔÙ][™ÜÈYOÙP]Ø\™O‚ˆP]Ø\™[™\ÜÈ[œÏHš‹ËÜØÚ[X\Ë›ZXÜ›ÜÛÙ˜ÛÛKÔÓRKÌŒM‹ÕÚ[™ÝÜÔÙ][™ÜÈ”\“[Ûš]Ü•ŒÙP]Ø\™[™\ÜÏ‚ˆÛ™Ô]]Ø\™H[œÏHš‹ËÜØÚ[X\Ë›ZXÜ›ÜÛÙ˜ÛÛKÔÓRKÌŒM‹ÕÚ[™ÝÜÔÙ][™ÜÈYOÛÛ™Ô]]Ø\™O‚ˆÝÚ[™ÝÜÔÙ][™ÜÏ‚ˆØ\XØ][Û‚ˆÛÛ\]Xš[]H[œÏH\›ŽœØÚ[X\Ë[ZXÜ›ÜÛÙXÛÛN˜ÛÛ\]Xš[]KŒH‚ˆ\XØ][Û‚ˆÝ\ÜYÔÈYHžÎLØLL‹X™˜ŒËM™NXŽXMKM™LLMXNX_HˆÏ‚ˆØ\XØ][Û‚ˆØÛÛ\]Xš[]O‚Ø\ÜÙ[X›O‚
+<?xml version="1.0" encoding="utf-8"?>
+<assembly manifestVersion="1.0" xmlns="urn:schemas-microsoft-com:asm.v1">
+  <assemblyIdentity version="1.0.0.0" name="IPhoneDataSharing.Windows"/>
+  <trustInfo xmlns="urn:schemas-microsoft-com:asm.v3">
+    <security>
+      <requestedPrivileges>
+        <requestedExecutionLevel level="asInvoker" uiAccess="false" />
+      </requestedPrivileges>
+    </security>
+  </trustInfo>
+  <application xmlns="urn:schemas-microsoft-com:asm.v3">
+    <windowsSettings>
+      <dpiAware xmlns="http://schemas.microsoft.com/SMI/2005/WindowsSettings">true</dpiAware>
+      <dpiAwareness xmlns="http://schemas.microsoft.com/SMI/2016/WindowsSettings">PerMonitorV2</dpiAwareness>
+      <longPathAware xmlns="http://schemas.microsoft.com/SMI/2016/WindowsSettings">true</longPathAware>
+    </windowsSettings>
+  </application>
+  <compatibility xmlns="urn:schemas-microsoft-com:compatibility.v1">
+    <application>
+      <supportedOS Id="{8e0f7a12-bfb3-4fe8-b9a5-48fd50a15a9a}" />
+    </application>
+  </compatibility>
+</assembly>

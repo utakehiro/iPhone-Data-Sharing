@@ -1,51 +1,95 @@
-þŠmþ&yºÞÃòân¶«Ëñè™æë{Ü™ßì…éez{ì†X§{_?n)ÿ¦Ã©z¶­Š‰ç¢Ú^®h­µç[]Ù][™ÜÎÂ‚˜\Þ[˜È[˜Ý[ÛˆØY
+let settings;
 
-HÂˆ]ØZ]Ú›ÛYKœ[[YKœÙ[™Y\ÜØYÙJÈ\Nˆ™[œÝ\™KXÛÛ›™XÝ[ÛˆˆJNÂˆÙ][™ÜÈH]ØZ]Ú›ÛYKœ[[YKœÙ[™Y\ÜØYÙJÈ\Nˆ™Ù]\Ý]\ÈˆJNÂˆ™[™\Š
-NÂŸB‚™[˜Ý[Ûˆ™[™\Š
-HÂˆØÝ[Y[œ]Y\žTÙ[XÝÜŠˆÙ]šXÙK[˜[YHŠK˜[YHHÙ][™ÜË™]šXÙS˜[YNÂˆØÝ[Y[œ]Y\žTÙ[XÝÜŠˆÜÙ\™\‹]\›ŠK˜[YHHÙ][™ÜËœÙ\™\˜\ÙU\›ÂˆØÝ[Y[œ]Y\žTÙ[XÝÜŠˆÙ]šXÙKZYŠK^ÛÛ[HÙ][™ÜË™]šXÙRYÂˆÛÛœÝÝ]\ÈHØÝ[Y[œ]Y\žTÙ[XÝÜŠˆÜÝ]\ÈŠNÂˆÛÛœÝX™[HÙ][™ÜË˜ÛÛ›™XÝ[Û”Ý]\ÈOOH˜ÛÛ›™XÝY‚ˆÈÛÛ›™XÝY‚ˆˆÙ][™ÜË˜ÛÛ›™XÝ[Û”Ý]\ÈOOH˜ÛÛ›™XÝ[™ÈˆÈÛÛ›™XÝ[™ø )ˆˆˆ‘\ØÛÛ›™XÝYŽÂˆÝ]\Ë˜Û\ÜÓ˜[YHHÝ]\È	ÜÙ][™ÜË˜ÛÛ›™XÝ[Û”Ý]\ßXÂˆÝ]\Ëœ]Y\žTÙ[XÝÜŠ˜ˆŠK^ÛÛ[HX™[ÂˆØÝ[Y[œ]Y\žTÙ[XÝÜŠˆÜÝ]\ËXÛÜHŠK^ÛÛ[HÙ][™ÜË˜ÛÛ›™XÝ[Û”Ý]\ÈOOH˜ÛÛ›™XÝY‚ˆÈšTÛ™xàbøà¢xàåxà¨xà©8àêøà¤º` y/èxàiøàcxào¸àfxà ˆ‚ˆˆÙ][™ÜË˜ÛÛ›™XÝ[Û‘\œ›Üˆ¸à­xàï8àä8àï8à¤º-mùbåxàeøài¹£©yí¦¸àeøài¸àcøàh8àexàa8à ˆŽÂŸB‚˜\Þ[˜È[˜Ý[ÛˆØ]™JÚ[™Ù\ËY\ÜØYÙJHÂˆ]ØZ]Ú›ÛYKœÝÜ˜YÙK›ØØ[œÙ]
-Ú[™Ù\ÊNÂˆØš™XÝ˜\ÜÚYÛŠÙ][™ÜËÚ[™Ù\ÊNÂˆØÝ[Y[œ]Y\žTÙ[XÝÜŠˆÛY\ÜØYÙHŠK^ÛÛ[HY\ÜØYÙNÂˆ]ØZ]Ú›ÛYKœ[[YKœÙ[™Y\ÜØYÙJÈ\Nˆœ™XÛÛ›™XÝˆJNÂˆÙ][Y[Ý]
-ØYL
-NÂŸB‚™ØÝ[Y[œ]Y\žTÙ[XÝÜŠˆÜØ]™K[˜[YHŠK˜Y]™[\Ý[™\Š˜ÛXÚÈ‹\Þ[˜È
+async function load() {
+  await chrome.runtime.sendMessage({ type: "ensure-connection" });
+  settings = await chrome.runtime.sendMessage({ type: "get-status" });
+  render();
+}
 
-HOˆÂˆÛÛœÝ]šXÙS˜[YHHØÝ[Y[œ]Y\žTÙ[XÝÜŠˆÙ]šXÙK[˜[YHŠK˜[YKš[J
-NÂˆYˆ
-Y]šXÙS˜[YJH™]\›ŽÂˆ]ØZ]Ø]™JÈ]šXÙS˜[YHK¹êëù§*ùd#xà¤¹/çykf8àeøào¸àeøàgøà ˆŠNÂŸJNÂ‚™ØÝ[Y[œ]Y\žTÙ[XÝÜŠˆÜØ]™K\Ù\™\ˆŠK˜Y]™[\Ý[™\Š˜ÛXÚÈ‹\Þ[˜È
+function render() {
+  document.querySelector("#device-name").value = settings.deviceName;
+  document.querySelector("#server-url").value = settings.serverBaseUrl;
+  document.querySelector("#device-id").textContent = settings.deviceId;
+  const status = document.querySelector("#status");
+  const label = settings.connectionStatus === "connected"
+    ? "Connected"
+    : settings.connectionStatus === "connecting" ? "Connectingâ€¦" : "Disconnected";
+  status.className = `status ${settings.connectionStatus}`;
+  status.querySelector("b").textContent = label;
+  document.querySelector("#status-copy").textContent = settings.connectionStatus === "connected"
+    ? "iPhoneã‹ã‚‰ãƒ•ã‚¡ã‚¤ãƒ«ã‚’é€ä¿¡ã§ãã¾ã™ã€‚"
+    : settings.connectionError || "ã‚µãƒ¼ãƒãƒ¼ã‚’èµ·å‹•ã—ã¦æŽ¥ç¶šã—ã¦ãã ã•ã„ã€‚";
+}
 
-HOˆÂˆÛÛœÝÙ\™\˜\ÙU\›HØÝ[Y[œ]Y\žTÙ[XÝÜŠˆÜÙ\™\‹]\›ŠK˜[YKš[J
-Kœ™\XÙJ×ÊÉËˆŠNÂˆžHÂˆÛÛœÝ\œÙYH™]ÈT“
-Ù\™\˜\ÙU\›
-NÂˆYˆ
-K×šÏÎ‰Ë\Ý
-\œÙYœ›ÝØÛÛ
-JH›ÝÈ™]È\œ›ÜŠ
-NÂˆHØ]ÚÂˆØÝ[Y[œ]Y\žTÙ[XÝÜŠˆÛY\ÜØYÙHŠK^ÛÛ[Hš‹ËÈ8ào¸àgøàkÈÎ‹ËÈ8àk•T“8à¤¹aiyb¦øàeøài¸àcøàh8àexàa8à ˆŽÂˆ™]\›ŽÂˆBˆØÝ[Y[œ]Y\žTÙ[XÝÜŠˆÜ\‹\[™[ŠK˜Û\ÜÓ\Ý˜Y
-šY[ˆŠNÂˆ]ØZ]Ø]™JÈÙ\™\˜\ÙU\›K¹£©yí¦¹ab8à¤¹/çykf8àeøào¸àeøàgøà ˆŠNÂŸJNÂ‚™ØÝ[Y[œ]Y\žTÙ[XÝÜŠˆÜÚÝË\\ˆŠK˜Y]™[\Ý[™\Š˜ÛXÚÈ‹\Þ[˜È
-]™[
-HOˆÂˆÛÛœÝ]ÛˆH]™[˜Ý\œ™[\™Ù]ÂˆÛÛœÝ[™[HØÝ[Y[œ]Y\žTÙ[XÝÜŠˆÜ\‹\[™[ŠNÂˆÛÛœÝ[XYÙHHØÝ[Y[œ]Y\žTÙ[XÝÜŠˆÜ\‹Z[XYÙHŠNÂˆYˆ
-\[™[˜Û\ÜÓ\Ý˜ÛÛZ[œÊšY[ˆŠJHÂˆ[™[˜Û\ÜÓ\Ý˜Y
-šY[ˆŠNÂˆ™]\›ŽÂˆB‚ˆ]Û‹™\ØX›YHYNÂˆ]Û‹^ÛÛ[H”T¸à¬øàï8àâxà¤¹®¥¹`¦y.+x )ˆŽÂˆØÝ[Y[œ]Y\žTÙ[XÝÜŠˆÛY\ÜØYÙHŠK^ÛÛ[HˆŽÂˆžHÂˆÛÛœÝ[œÝ\™YH]ØZ]Ú›ÛYKœ[[YKœÙ[™Y\ÜØYÙJÈ\Nˆ™[œÝ\™KXÛÛ›™XÝ[ÛˆˆJNÂˆYˆ
-Y[œÝ\™YœÝXØÙ\ÜÊH›ÝÈ™]È\œ›ÜŠ[œÝ\™Y™\œ›Üˆ¸à­xàï8àä8àï8àjù£©yí¦¸àiøàcxào¸àføà¤ÈŠNÂˆÙ][™ÜÈH]ØZ]Ú›ÛYKœ[[YKœÙ[™Y\ÜØYÙJÈ\Nˆ™Ù]\Ý]\ÈˆJNÂˆÛÛœÝ\•\›H	ÜÙ][™ÜËœÙ\™\˜\ÙU\›œ™\XÙJ×ÉËˆŠ_KØ\KÙ]šXÙ\ËÉÙ[˜ÛÙUT’PÛÛ\Û™[
-Ù][™ÜË™]šXÙRY
-_KÜ\ÝIÑ]K››ÝÊ
-_XÂˆÛÛœÝ™\ÜÛœÙHH]ØZ]™]Ú
-\•\›ÈØXÚNˆ››Ë\ÝÜ™HˆJNÂˆYˆ
-\™\ÜÛœÙK›ÚÊHÂˆÛÛœÝ›ÙHH]ØZ]™\ÜÛœÙKšœÛÛŠ
-K˜Ø]Ú
+async function save(changes, message) {
+  await chrome.storage.local.set(changes);
+  Object.assign(settings, changes);
+  document.querySelector("#message").textContent = message;
+  await chrome.runtime.sendMessage({ type: "reconnect" });
+  setTimeout(load, 500);
+}
 
+document.querySelector("#save-name").addEventListener("click", async () => {
+  const deviceName = document.querySelector("#device-name").value.trim();
+  if (!deviceName) return;
+  await save({ deviceName }, "ç«¯æœ«åã‚’ä¿å­˜ã—ã¾ã—ãŸã€‚");
+});
 
-HOˆ
-ßJJNÂˆ›ÝÈ™]È\œ›ÜŠ›ÙK™\œ›ÜˆT¸à¬øàï8àâxà¤¹cå¹o¥øàiøàcxào¸àføà¤È
-	Ü™\ÜÛœÙKœÝ]\ßJX
-NÂˆBˆ[XYÙKœÜ˜ÈH\•\›Âˆ[™[˜Û\ÜÓ\Ýœ™[[Ý™JšY[ˆŠNÂˆHØ]Ú
-\œ›ÜŠHÂˆ[™[˜Û\ÜÓ\Ý˜Y
-šY[ˆŠNÂˆØÝ[Y[œ]Y\žTÙ[XÝÜŠˆÛY\ÜØYÙHŠK^ÛÛ[H\œ›Ü‹›Y\ÜØYÙNÂˆHš[˜[HÂˆ]Û‹™\ØX›YH˜[ÙNÂˆ]Û‹^ÛÛ[H”T¸à¬øàï8àâxà¤º(j9é.ˆŽÂˆBŸJNÂ‚™ØÝ[Y[œ]Y\žTÙ[XÝÜŠˆØÛÜKZYŠK˜Y]™[\Ý[™\Š˜ÛXÚÈ‹\Þ[˜È
+document.querySelector("#save-server").addEventListener("click", async () => {
+  const serverBaseUrl = document.querySelector("#server-url").value.trim().replace(/\/+$/, "");
+  try {
+    const parsed = new URL(serverBaseUrl);
+    if (!/^https?:$/.test(parsed.protocol)) throw new Error();
+  } catch {
+    document.querySelector("#message").textContent = "http:// ã¾ãŸã¯ https:// ã®URLã‚’å…¥åŠ›ã—ã¦ãã ã•ã„ã€‚";
+    return;
+  }
+  document.querySelector("#qr-panel").classList.add("hidden");
+  await save({ serverBaseUrl }, "æŽ¥ç¶šå…ˆã‚’ä¿å­˜ã—ã¾ã—ãŸã€‚");
+});
 
-HOˆÂˆ]ØZ]˜]šYØ]Ü‹˜Û\›Ø\™Üš]U^
-Ù][™ÜË™]šXÙRY
-NÂˆØÝ[Y[œ]Y\žTÙ[XÝÜŠˆÛY\ÜØYÙHŠK^ÛÛ[H‘]šXÙHQ8à¤¸à¬øàå8àï8àeøào¸àeøàgøà ˆŽÂŸJNÂ‚˜Ú›ÛYKœÝÜ˜YÙK›ÛÚ[™ÙY˜Y\Ý[™\Š
-Ú[™Ù\Ë\™XJHOˆÂˆYˆ
-\™XHOOH›ØØ[ˆ\Ù][™ÜÊH™]\›ŽÂˆ›Üˆ
-ÛÛœÝÚÙ^KÚ[™ÙWHÙˆØš™XÝ™[šY\ÊÚ[™Ù\ÊJHÙ][™ÜÖÚÙ^WHHÚ[™ÙK›™]Õ˜[YNÂˆ™[™\Š
-NÂŸJNÂ‚›ØY
+document.querySelector("#show-qr").addEventListener("click", async (event) => {
+  const button = event.currentTarget;
+  const panel = document.querySelector("#qr-panel");
+  const image = document.querySelector("#qr-image");
+  if (!panel.classList.contains("hidden")) {
+    panel.classList.add("hidden");
+    return;
+  }
 
-NÂ
+  button.disabled = true;
+  button.textContent = "QRã‚³ãƒ¼ãƒ‰ã‚’æº–å‚™ä¸­â€¦";
+  document.querySelector("#message").textContent = "";
+  try {
+    const ensured = await chrome.runtime.sendMessage({ type: "ensure-connection" });
+    if (!ensured.success) throw new Error(ensured.error || "ã‚µãƒ¼ãƒãƒ¼ã«æŽ¥ç¶šã§ãã¾ã›ã‚“");
+    settings = await chrome.runtime.sendMessage({ type: "get-status" });
+    const qrUrl = `${settings.serverBaseUrl.replace(/\/$/, "")}/api/devices/${encodeURIComponent(settings.deviceId)}/qr?t=${Date.now()}`;
+    const response = await fetch(qrUrl, { cache: "no-store" });
+    if (!response.ok) {
+      const body = await response.json().catch(() => ({}));
+      throw new Error(body.error || `QRã‚³ãƒ¼ãƒ‰ã‚’å–å¾—ã§ãã¾ã›ã‚“ (${response.status})`);
+    }
+    image.src = qrUrl;
+    panel.classList.remove("hidden");
+  } catch (error) {
+    panel.classList.add("hidden");
+    document.querySelector("#message").textContent = error.message;
+  } finally {
+    button.disabled = false;
+    button.textContent = "QRã‚³ãƒ¼ãƒ‰ã‚’è¡¨ç¤º";
+  }
+});
+
+document.querySelector("#copy-id").addEventListener("click", async () => {
+  await navigator.clipboard.writeText(settings.deviceId);
+  document.querySelector("#message").textContent = "Device IDã‚’ã‚³ãƒ”ãƒ¼ã—ã¾ã—ãŸã€‚";
+});
+
+chrome.storage.onChanged.addListener((changes, area) => {
+  if (area !== "local" || !settings) return;
+  for (const [key, change] of Object.entries(changes)) settings[key] = change.newValue;
+  render();
+});
+
+load();

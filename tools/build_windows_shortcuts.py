@@ -1,69 +1,133 @@
-þŠmþ&yºÞÃòân¶«Ëñè™æë{Ü™ßì…éez{ì†X§{_?n)ÿ¦Ã©z¶­Š‰ç¢Ú^®h­µçHÈKÝ\Ü‹Øš[‹Ù[ˆ]ÛŒÂ™œ›ÛH×Ù]\™W×È[\Ü[››Ý][ÛœÂ‚š[\Ü\ÚX‚š[\Ü[\ÜX‹][š[\ÜœÛÛ‚š[\ÜÞ\Â™œ›ÛH]Xˆ[\Ü]‚”“ÓÕH]
-×Ùš[W×ÊKœ™\ÛÛ™J
-Kœ\™[ÖÌWB”ÓÕTÑHH“ÓÕÈÛÛÈˆÈ˜Z[ÜÚÜÝ]ËœH‚“ÕUH“ÓÕÈÚ[™ÝÜËXYÙ[ˆÈœ™\ÛÝ\˜Ù\ÈˆÈœÚÜÝ]È‚‚œÜXÈH[\ÜX‹][œÜX×Ùœ›ÛWÙš[WÛØØ][ÛŠ™š[Y›ÜØZ[ÜÚÜÝ]È‹ÓÕTÑJBšYˆÜXÈ\È›Û™HÜˆÜXË›ØY\ˆ\È›Û™N‚ˆ˜Z\ÙHÞ\Ý[Q^]
-ˆØ[››ÝØYÔÓÕTÑ_HŠB›[ÙH[\ÜX‹][›[Ù[WÙœ›ÛWÜÜXÊÜXÊBœÜXË›ØY\‹™^X×Û[Ù[J[Ù
-B‚“S‘ÔÈH
-š˜H‹™[ˆ‹žš‹šÛÈ‹™\È‹™œˆ‹™HŠB‚•ÒS‘ÕÔÈHÂˆš˜HŽˆÂˆ›˜[YHŽˆ”øàjú` xà¢È‹ˆ››ÝXÙHŽˆ”øàjú` xà¢¸ào¸àeøàgÈ‹ˆœÙ[™ÜHŽˆ•Ú[™ÝÜÈøàk¸à¨¸àâxàë8à®xà¤¹aiyb¦ûï"9§*ùl/¸àkÈÜÛ™KÜÚÜÝ];ï"H‹ˆœ™XÝ—ÜHŽˆ•Ú[™ÝÜÈøàk¹cåù/èPTxà¨¸àâxàë8à®xà¤¹aiyb¦ûï"9§*ùl/¸àkÈÜÛ™KÜÚÜÝ]Ú[˜›Þ;ï"H‹ˆKˆ™[ˆŽˆÂˆ›˜[YHŽˆ”Ù[™ÈÈ‹ˆ››ÝXÙHŽˆ”Ù[ÈÈ‹ˆœÙ[™ÜHŽˆ‘[\ˆHÚ[™ÝÜÈÈY™\ÜÈ
-[™[™È[ˆÜÛ™KÜÚÜÝ]
-H‹ˆœ™XÝ—ÜHŽˆ‘[\ˆHÚ[™ÝÜÈÈ™XÙZ]™HTHY™\ÜÈ
-[™[™È[ˆÜÛ™KÜÚÜÝ]Ú[˜›Þ
-H‹ˆKˆžšŽˆÂˆ›˜[YHŽˆ¹cäz` yb,È‹ˆ››ÝXÙHŽˆ¹mì¹cäz` yb,È‹ˆœÙ[™ÜHŽˆº/¤ùaiHÚ[™ÝÜÈÈ9g,9g`;ï"9.éHÜÛ™KÜÚÜÝ]9îäùl/»ï"H‹ˆœ™XÝ—ÜHŽˆº/¤ùaiHÚ[™ÝÜÈÈ9£©y¥-ˆTH9g,9g`;ï"9.éHÜÛ™KÜÚÜÝ]Ú[˜›Þ9îäùl/»ï"H‹ˆKˆšÛÈŽˆÂˆ›˜[YHŽˆ”úèg:ìí:à­:®,‹ˆ››ÝXÙHŽˆ”úèg:ìí:àâ;"­zââ:âé‹ˆœÙ[™ÜHŽˆ•Ú[™ÝÜÈÈ;(ï;!£:éo;'¡zè){ef;!.;&¥
-ÜÛ™KÜÚÜÝ];'/:èg:àgzàª
-H‹ˆœ™XÝ—ÜHŽˆ•Ú[™ÝÜÈÈ;"&;"èTH;(ï;!£:éo;'¡zè){ef;!.;&¥
-ÜÛ™KÜÚÜÝ]Ú[˜›Þ:èg:àgzàª
-H‹ˆKˆ™\ÈŽˆÂˆ›˜[YHŽˆ‘[šX\ˆ[È‹ˆ››ÝXÙHŽˆ‘[šXYÈ[È‹ˆœÙ[™ÜHŽˆ’[›ÙXÙHH\™XØÚpìÛˆ[ÈÚ[™ÝÜÈ
-\›Z[˜YH[ˆÜÛ™KÜÚÜÝ]
-H‹ˆœ™XÝ—ÜHŽˆ’[›ÙXÙHHTHH™XÙ\ÚpìÛˆ[ÈÚ[™ÝÜÈ
-\›Z[˜YH[ˆÜÛ™KÜÚÜÝ]Ú[˜›Þ
-H‹ˆKˆ™œˆŽˆÂˆ›˜[YHŽˆ‘[›ÞY\ˆ]HÈ‹ˆ››ÝXÙHŽˆ‘[›ÞpêH]HÈ‹ˆœÙ[™ÜHŽˆ”ØZ\Ú\ÜÙ^ˆ8 &XY™\ÜÙHHÈÚ[™ÝÜÈ
-ÙH\›Z[˜[\ˆÜÛ™KÜÚÜÝ]
-H‹ˆœ™XÝ—ÜHŽˆ”ØZ\Ú\ÜÙ^ˆ8 &PTHH°êXÙ\[ÛˆHÈÚ[™ÝÜÈ
-ÙH\›Z[˜[\ˆÜÛ™KÜÚÜÝ]Ú[˜›Þ
-H‹ˆKˆ™HŽˆÂˆ›˜[YHŽˆ[ˆÈÙ[™[ˆ‹ˆ››ÝXÙHŽˆ[ˆÈÙ\Ù[™]‹ˆœÙ[™ÜHŽˆ•Ú[™ÝÜËTËPY™\ÜÙHZ[™ÙX™[ˆ
-[™]Z]ÜÛ™KÜÚÜÝ]
-H‹ˆœ™XÝ—ÜHŽˆ•Ú[™ÝÜËTËQ[\˜[™ÜËPTHZ[™ÙX™[ˆ
-[™]Z]ÜÛ™KÜÚÜÝ]Ú[˜›Þ
-H‹ˆKŸB‚™Yˆ™\XÙWØ[
-˜[YKX\[™ÊN‚ˆYˆ\Ú[œÝ[˜ÙJ˜[YKXÝ
-N‚ˆ™]\›ˆÚÎˆ™\XÙWØ[
-‹X\[™ÊH›ÜˆËˆ[ˆ˜[YKš][\Ê
-_BˆYˆ\Ú[œÝ[˜ÙJ˜[YK\Ý
-N‚ˆ™]\›ˆÜ™\XÙWØ[
-‹X\[™ÊH›Üˆˆ[ˆ˜[YWBˆYˆ\Ú[œÝ[˜ÙJ˜[YKÝŠN‚ˆ™]\›ˆX\[™Ë™Ù]
-˜[YK˜[YJBˆ™]\›ˆ˜[YB‚™YˆÚLMŠ]ˆ]
-HOˆÝŽ‚ˆH\ÚX‹œÚLMŠ
-BˆÚ]]›Ü[Šœ˜ˆŠH\ÈŽ‚ˆ›ÜˆÚ[šÈ[ˆ]\Š[X™Nˆ‹œ™XY
-L
-ˆL
-KˆˆŠN‚ˆ\]JÚ[šÊBˆ™]\›ˆš^YÙ\Ý
+#!/usr/bin/env python3
+from __future__ import annotations
 
-B‚™YˆZ[ÛÛ™JÚ[™ˆÝ‹[™ÎˆÝŠHOˆ]‚ˆYˆÚ[™OHœÙ[™Ž‚ˆ]HH[ÙœÙ[™[™×ÜÚÜÝ]
-\ÚÏUYKØØ[O[[™ÊBˆX\[™ÈHÂˆ[Ù›ØØ[^™Y
-[™Ë“XXøàjú` xà¢È‹”Ù[™ÈXXÈŠNˆÒS‘ÕÔÖÛ[™×VÈ›˜[YH—Kˆ[Ù›ØØ[^™Y
-[™Ë“XXøàjú` xà¢¸ào¸àeøàgÈ‹”Ù[ÈXXÈŠNˆÒS‘ÕÔÖÛ[™×VÈ››ÝXÙH—Kˆ[Ù›ØØ[^™Y
-ˆ[™Ëˆ”È9å.úgh¸àk¸à¨¸àâxàë8à®xà¤¹aiyb¦ûï"9§*ùl/¸àkÈÜÛ™KÜÚÜÝ];ï"H‹ˆ‘[\ˆHXXÈY™\ÜÈ
-[™[™È[ˆÜÛ™KÜÚÜÝ]
-H‹ˆ
-NˆÒS‘ÕÔÖÛ[™×VÈœÙ[™ÜH—KˆBˆ[ÙN‚ˆ]HH[Ùœ™XÙZ]š[™×ÜÚÜÝ]
-\ÚÏUYKØØ[O[[™ÊBˆX\[™ÈHÂˆ[Ù›ØØ[^™Y
-ˆ[™Ëˆ”È8àk¹cåù/èPTxà¨¸àâxàë8à®xà¤¹aiyb¦ûï"9§*ùl/¸àkÈÜÛ™KÜÚÜÝ]Ú[˜›Þ;ï"H‹ˆ‘[\ˆHXXÈ™XÙZ]™HTHY™\ÜÈ
-[™[™È[ˆÜÛ™KÜÚÜÝ]Ú[˜›Þ
-H‹ˆ
-NˆÒS‘ÕÔÖÛ[™×VÈœ™XÝ—ÜH—KˆB‚ˆ]HH™\XÙWØ[
-]KX\[™ÊBˆ[Ù˜[Y]WÜÚÜÝ]
-]KÚ[™
-Bˆ\™Ù]HÕUÈˆžÚÚ[™K^Û[™ßKœÚÜÝ]‚ˆ[ÙœÚYÛ—ÜÚÜÝ]
-]K\™Ù]
-Bˆ™]\›ˆ\™Ù]‚™YˆXZ[Š
-HOˆ›Û™N‚ˆYˆÞ\Ëœ]›Ü›HOH™\Ú[ˆŽ‚ˆ˜Z\ÙHÞ\Ý[Q^]
-”[ˆ\ÈØÜš\ÛˆXXÓÔËˆ\HÚÜÝ]ÚYÛš[™È\ÈÛ›H]˜Z[X›H\™KˆŠBˆÕU›ZÙ\Š\™[ÏUYK^\ÝÛÚÏUYJBˆX[šY™\ÝHÈ™\œÚ[ÛˆŽˆK™š[\ÈŽˆ×_Bˆ›Üˆ[™È[ˆS‘ÔÎ‚ˆ›ÜˆÚ[™[ˆ
-œÙ[™‹œ™XÙZ]™HŠN‚ˆ\™Ù]HZ[ÛÛ™JÚ[™[™ÊBˆX[šY™\ÝÈ™š[\È—K˜\[™
-ÂˆšÚ[™ŽˆÚ[™ˆ›[™ÈŽˆ[™Ëˆ›˜[YHŽˆ\™Ù]›˜[YKˆœÚ^™HŽˆ\™Ù]œÝ]
+import hashlib
+import importlib.util
+import json
+import sys
+from pathlib import Path
 
-KœÝÜÚ^™KˆœÚLMˆŽˆÚLMŠ\™Ù]
-KˆJBˆš[
-ˆZ[Ý\™Ù]HŠBˆ
-ÕUÈ›X[šY™\ÝšœÛÛˆŠKÜš]WÝ^
-ˆœÛÛ‹™[\ÊX[šY™\Ý[œÝ\™WØ\ØÚZOQ˜[ÙK[™[LŠKˆ[˜ÛÙ[™ÏH]‹N‹ˆ
-B‚šYˆ×Û˜[YW×ÈOH—×ÛXZ[—×ÈŽ‚ˆXZ[Š
-B
+ROOT = Path(__file__).resolve().parents[1]
+SOURCE = ROOT / "tools" / "build_shortcuts.py"
+OUT = ROOT / "windows-agent" / "resources" / "shortcuts"
+
+spec = importlib.util.spec_from_file_location("filedrop_build_shortcuts", SOURCE)
+if spec is None or spec.loader is None:
+    raise SystemExit(f"Cannot load {SOURCE}")
+mod = importlib.util.module_from_spec(spec)
+spec.loader.exec_module(mod)
+
+LANGS = ("ja", "en", "zh", "ko", "es", "fr", "de")
+
+WINDOWS = {
+    "ja": {
+        "name": "PCã«é€ã‚‹",
+        "notice": "PCã«é€ã‚Šã¾ã—ãŸ",
+        "send_q": "Windows PCã®ã‚¢ãƒ‰ãƒ¬ã‚¹ã‚’å…¥åŠ›ï¼ˆæœ«å°¾ã¯ /phone/shortcutï¼‰",
+        "recv_q": "Windows PCã®å—ä¿¡APIã‚¢ãƒ‰ãƒ¬ã‚¹ã‚’å…¥åŠ›ï¼ˆæœ«å°¾ã¯ /phone/shortcut/inboxï¼‰",
+    },
+    "en": {
+        "name": "Send to PC",
+        "notice": "Sent to PC",
+        "send_q": "Enter the Windows PC address (ending in /phone/shortcut)",
+        "recv_q": "Enter the Windows PC receive API address (ending in /phone/shortcut/inbox)",
+    },
+    "zh": {
+        "name": "å‘é€åˆ° PC",
+        "notice": "å·²å‘é€åˆ° PC",
+        "send_q": "è¾“å…¥ Windows PC åœ°å€ï¼ˆä»¥ /phone/shortcut ç»“å°¾ï¼‰",
+        "recv_q": "è¾“å…¥ Windows PC æŽ¥æ”¶ API åœ°å€ï¼ˆä»¥ /phone/shortcut/inbox ç»“å°¾ï¼‰",
+    },
+    "ko": {
+        "name": "PCë¡œ ë³´ë‚´ê¸°",
+        "notice": "PCë¡œ ë³´ëƒˆìŠµë‹ˆë‹¤",
+        "send_q": "Windows PC ì£¼ì†Œë¥¼ ìž…ë ¥í•˜ì„¸ìš”(/phone/shortcutìœ¼ë¡œ ëë‚¨)",
+        "recv_q": "Windows PC ìˆ˜ì‹  API ì£¼ì†Œë¥¼ ìž…ë ¥í•˜ì„¸ìš”(/phone/shortcut/inboxë¡œ ëë‚¨)",
+    },
+    "es": {
+        "name": "Enviar al PC",
+        "notice": "Enviado al PC",
+        "send_q": "Introduce la direcciÃ³n del PC Windows (terminada en /phone/shortcut)",
+        "recv_q": "Introduce la API de recepciÃ³n del PC Windows (terminada en /phone/shortcut/inbox)",
+    },
+    "fr": {
+        "name": "Envoyer au PC",
+        "notice": "EnvoyÃ© au PC",
+        "send_q": "Saisissez lâ€™adresse du PC Windows (se terminant par /phone/shortcut)",
+        "recv_q": "Saisissez lâ€™API de rÃ©ception du PC Windows (se terminant par /phone/shortcut/inbox)",
+    },
+    "de": {
+        "name": "An PC senden",
+        "notice": "An PC gesendet",
+        "send_q": "Windows-PC-Adresse eingeben (endet mit /phone/shortcut)",
+        "recv_q": "Windows-PC-Empfangs-API eingeben (endet mit /phone/shortcut/inbox)",
+    },
+}
+
+def replace_all(value, mapping):
+    if isinstance(value, dict):
+        return {k: replace_all(v, mapping) for k, v in value.items()}
+    if isinstance(value, list):
+        return [replace_all(v, mapping) for v in value]
+    if isinstance(value, str):
+        return mapping.get(value, value)
+    return value
+
+def sha256(path: Path) -> str:
+    h = hashlib.sha256()
+    with path.open("rb") as f:
+        for chunk in iter(lambda: f.read(1024 * 1024), b""):
+            h.update(chunk)
+    return h.hexdigest()
+
+def build_one(kind: str, lang: str) -> Path:
+    if kind == "send":
+        data = mod.sending_shortcut(ask=True, locale=lang)
+        mapping = {
+            mod.localized(lang, "Macã«é€ã‚‹", "Send to Mac"): WINDOWS[lang]["name"],
+            mod.localized(lang, "Macã«é€ã‚Šã¾ã—ãŸ", "Sent to Mac"): WINDOWS[lang]["notice"],
+            mod.localized(
+                lang,
+                "PC ç”»é¢ã®ã‚¢ãƒ‰ãƒ¬ã‚¹ã‚’å…¥åŠ›ï¼ˆæœ«å°¾ã¯ /phone/shortcutï¼‰",
+                "Enter the Mac address (ending in /phone/shortcut)",
+            ): WINDOWS[lang]["send_q"],
+        }
+    else:
+        data = mod.receiving_shortcut(ask=True, locale=lang)
+        mapping = {
+            mod.localized(
+                lang,
+                "PC ã®å—ä¿¡APIã‚¢ãƒ‰ãƒ¬ã‚¹ã‚’å…¥åŠ›ï¼ˆæœ«å°¾ã¯ /phone/shortcut/inboxï¼‰",
+                "Enter the Mac receive API address (ending in /phone/shortcut/inbox)",
+            ): WINDOWS[lang]["recv_q"],
+        }
+
+    data = replace_all(data, mapping)
+    mod.validate_shortcut(data, kind)
+    target = OUT / f"{kind}-{lang}.shortcut"
+    mod.sign_shortcut(data, target)
+    return target
+
+def main() -> None:
+    if sys.platform != "darwin":
+        raise SystemExit("Run this script on macOS. Apple Shortcut signing is only available there.")
+    OUT.mkdir(parents=True, exist_ok=True)
+    manifest = {"version": 1, "files": []}
+    for lang in LANGS:
+        for kind in ("send", "receive"):
+            target = build_one(kind, lang)
+            manifest["files"].append({
+                "kind": kind,
+                "lang": lang,
+                "name": target.name,
+                "size": target.stat().st_size,
+                "sha256": sha256(target),
+            })
+            print(f"Built {target}")
+    (OUT / "manifest.json").write_text(
+        json.dumps(manifest, ensure_ascii=False, indent=2),
+        encoding="utf-8",
+    )
+
+if __name__ == "__main__":
+    main()

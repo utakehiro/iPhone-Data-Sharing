@@ -1,1 +1,38 @@
-þŠmþ&yºÞÃòân¶«Ëñè™æë{Ü™ßì…éez{ì†X§{_?n)ÿ¦Ã©z¶­Š‰ç¢Ú^®h­µçOÞ[™\œÚ[ÛHŒKŒˆ[˜ÛÙ[™ÏH]‹NÏ‚XÚØYÙBˆ[œÏHš‹ËÜØÚ[X\Ë›ZXÜ›ÜÛÙ˜ÛÛKØ\ÛX[šY™\ÝÙ›Ý[™][Û‹ÝÚ[™ÝÜÌL‚ˆ[œÎX\Hš‹ËÜØÚ[X\Ë›ZXÜ›ÜÛÙ˜ÛÛKØ\ÛX[šY™\ÝÝX\ÝÚ[™ÝÜÌL‚ˆ[œÎœ™\ØØ\Hš‹ËÜØÚ[X\Ë›ZXÜ›ÜÛÙ˜ÛÛKØ\ÛX[šY™\ÝÙ›Ý[™][Û‹ÝÚ[™ÝÜÌLÜ™\ÝšXÝYØ\Xš[]Y\È‚ˆYÛ›Ü˜X›S˜[Y\ÜXÙ\ÏHX\™\ØØ\‚ˆY[]H˜[YOH—×ÔPÒÐQÑWÓSQW×ÈˆX›\Ú\H—×ÔP“TÒT—×Èˆ™\œÚ[ÛH—×Õ‘T”ÒSÓ—×Èˆ›ØÙ\ÜÛÜ\˜Ú]XÝ\™OH—×ÐTÒUPÕT‘W×ÈˆÏ‚ˆ›Ü\Y\Ï‚ˆ\Ü^S˜[YOšTÛ™H]HÚ\š[™ÏÑ\Ü^S˜[YO‚ˆX›\Ú\‘\Ü^S˜[YO—×ÔP“TÒT—ÑTÔVWÓSQW×ÏÔX›\Ú\‘\Ü^S˜[YO‚ˆ\ØÜš\[Û”Ú\™Hš[\È\™XÝH™]ÙY[ˆ[ˆTÛ™H[™HÚ[™ÝÜÈÈÛˆHØ[YHS‹Ñ\ØÜš\[Û‚ˆÙÛÏ\ÜÙ]×ÝÜ™SÙÛËœ™ÏÓÙÛÏ‚ˆÔ›Ü\Y\Ï‚ˆ™\ÛÝ\˜Ù\Ï‚ˆ™\ÛÝ\˜ÙH[™ÝXYÙOH™[‹UTÈˆÏ‚ˆ™\ÛÝ\˜ÙH[™ÝXYÙOHš˜KR”ˆÏ‚ˆÔ™\ÛÝ\˜Ù\Ï‚ˆ\[™[˜ÚY\Ï‚ˆ\™Ù]]šXÙQ˜[Z[H˜[YOH•Ú[™ÝÜË‘\ÚÝÜˆZ[•™\œÚ[ÛHŒLŒŒMÍÍŒËŒˆX^™\œÚ[Û•\ÝYHŒLŒŒŒLŒˆÏ‚ˆÑ\[™[˜ÚY\Ï‚ˆ\XØ][ÛœÏ‚ˆ\XØ][ÛˆYH\ˆ^XÝ]X›OHšTÛ™H]HÚ\š[™Ë™^Hˆ[žTÚ[H•Ú[™ÝÜË‘[\Ý\XØ][Ûˆ‚ˆX\•š\ÝX[[[Y[Âˆ\Ü^S˜[YOHšTÛ™H]HÚ\š[™È‚ˆ\ØÜš\[ÛH“ØØ[TÛ™H[™Ú[™ÝÜÈš[HÚ\š[™È‚ˆ˜XÚÙÜ›Ý[™ÛÛÜH˜[œÜ\™[‚ˆÜ]X\™LMLMLÙÛÏH\ÜÙ]×Ü]X\™LMLMLÙÛËœ™È‚ˆÜ]X\™MÙÛÏH\ÜÙ]×Ü]X\™MÙÛËœ™È‚ˆX\‘Y˜][[HÚYLÌLMLÙÛÏH\ÜÙ]×ÚYLÌLMLÙÛËœ™ÈˆÏ‚ˆÝX\•š\ÝX[[[Y[Ï‚ˆÐ\XØ][Û‚ˆÐ\XØ][ÛœÏ‚ˆØ\Xš[]Y\Ï‚ˆØ\Xš[]H˜[YOHš[\›™]ÛY[ˆÏ‚ˆØ\Xš[]H˜[YOHœš]˜]S™]ÛÜšÐÛY[Ù\™\ˆˆÏ‚ˆ™\ØØ\Ø\Xš[]H˜[YOHœ[‘[\ÝˆÏ‚ˆÐØ\Xš[]Y\Ï‚ÔXÚØYÙO‚
+<?xml version="1.0" encoding="utf-8"?>
+<Package
+  xmlns="http://schemas.microsoft.com/appx/manifest/foundation/windows10"
+  xmlns:uap="http://schemas.microsoft.com/appx/manifest/uap/windows10"
+  xmlns:rescap="http://schemas.microsoft.com/appx/manifest/foundation/windows10/restrictedcapabilities"
+  IgnorableNamespaces="uap rescap">
+  <Identity Name="__PACKAGE_NAME__" Publisher="__PUBLISHER__" Version="__VERSION__" ProcessorArchitecture="__ARCHITECTURE__" />
+  <Properties>
+    <DisplayName>iPhone Data Sharing</DisplayName>
+    <PublisherDisplayName>__PUBLISHER_DISPLAY_NAME__</PublisherDisplayName>
+    <Description>Share files directly between an iPhone and a Windows PC on the same LAN.</Description>
+    <Logo>Assets\StoreLogo.png</Logo>
+  </Properties>
+  <Resources>
+    <Resource Language="en-US" />
+    <Resource Language="ja-JP" />
+  </Resources>
+  <Dependencies>
+    <TargetDeviceFamily Name="Windows.Desktop" MinVersion="10.0.17763.0" MaxVersionTested="10.0.26100.0" />
+  </Dependencies>
+  <Applications>
+    <Application Id="App" Executable="iPhone Data Sharing.exe" EntryPoint="Windows.FullTrustApplication">
+      <uap:VisualElements
+        DisplayName="iPhone Data Sharing"
+        Description="Local iPhone and Windows file sharing"
+        BackgroundColor="transparent"
+        Square150x150Logo="Assets\Square150x150Logo.png"
+        Square44x44Logo="Assets\Square44x44Logo.png">
+        <uap:DefaultTile Wide310x150Logo="Assets\Wide310x150Logo.png" />
+      </uap:VisualElements>
+    </Application>
+  </Applications>
+  <Capabilities>
+    <Capability Name="internetClient" />
+    <Capability Name="privateNetworkClientServer" />
+    <rescap:Capability Name="runFullTrust" />
+  </Capabilities>
+</Package>

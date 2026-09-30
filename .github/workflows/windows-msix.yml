@@ -1,2 +1,46 @@
-şŠmş&yºŞÃòân¶«Ëñè™æë{Ü™ßì…éez{ì†X§{_?n)ÿ¦Ã©z¶­Š‰ç¢Ú^®h­µç[˜[YNˆÚ[™İÜÈTÒV‚›Û‚ˆÛÜšÙ›İ×Ù\Ü]Ú‚ˆ\Ú‚ˆœ˜[˜Ú\ÎˆÛXZ[—Bˆ[Ü™\]Y\İ‚‚š›ØœÎ‚ˆZ[[\Ú^‚ˆ[œË[ÛˆÚ[™İÜË[]\İˆ\›Z\ÜÚ[ÛœÎ‚ˆÛÛ[Îˆ™XYˆİ\Î‚ˆH\Ù\ÎˆXİ[ÛœËØÚXÚÛİ]ˆH\Ù\ÎˆXİ[ÛœËÜÙ]\[›ÙPˆÚ]‚ˆ›ÙK]™\œÚ[ÛˆŒˆØXÚNˆœBˆØXÚKY\[™[˜ŞK\]ˆÙ\™\‹ÜXÚØYÙK[ØÚËšœÛÛ‚ˆH\Ù\ÎˆXİ[ÛœËÜÙ]\Yİ™]ˆÚ]‚ˆİ™]]™\œÚ[ÛˆŒˆH˜[YNˆ\İÚ\™Y\XØ][ÛˆÙÚXÂˆÚ[ˆÜÚˆ[ˆˆœHK\™Yš^Ù\™\ˆÚBˆœHK\™Yš^Ù\™\ˆ[ˆ\XÚXÚÂˆœHK\™Yš^Ù\™\ˆ[ˆ\İ˜YÙ[ˆH˜[YNˆÜ™X]HÒH\İÙ\YšXØ]BˆÚ[ˆÜÚˆ[ˆ‹ÜXÚØYÚ[™ËİÚ[™İÜËÛ™]Ë]\İXÙ\YšXØ]KœÌHT\ÜİÛÜ™	ÉŞÈÙXÜ™]Ë“TÒVÕTÕĞÑT•ÔTÔÕÓÔ‘	ĞÒKU\İSÛ›KT\ÜİÛÜ™	È_IÂˆH˜[YNˆZ[ÚYÛ™Y\İTÒVˆÚ[ˆÜÚˆ[ˆ‹ÜXÚØYÚ[™ËİÚ[™İÜËØZ[[\Ú^œÌHU™\œÚ[ÛˆKŒ‰ŞÈÚ]X‹œ[—Û[X™\ˆ_KŒPÙ\YšXØ]T]‹ÜXÚØYÚ[™ËİÚ[™İÜËÛİ]]ÚTÛ™KQ]KTÚ\š[™ËU\İœPÙ\YšXØ]T\ÜİÛÜ™	ÉŞÈÙXÜ™]Ë“TÒVÕTÕĞÑT•ÔTÔÕÓÔ‘	ĞÒKU\İSÛ›KT\ÜİÛÜ™	È_IÂˆH˜[YNˆ™[[İ™Hš]˜]H\İÙ^BˆYˆ[Ø^\Ê
-BˆÚ[ˆÜÚˆ[ˆ™[[İ™KR][H‹ÜXÚØYÚ[™ËİÚ[™İÜËÛİ]]Ê‹œQ›Ü˜ÙHQ\œ›ÜXİ[ÛˆÚ[[PÛÛ[YBˆH\Ù\ÎˆXİ[ÛœËİ\ØYX\Y˜XİˆÚ]‚ˆ˜[YNˆTÛ™KQ]KTÚ\š[™ËSTÒVˆ]ˆˆXÚØYÚ[™ËİÚ[™İÜËÛİ]]Ê‹›\Ú^ˆXÚØYÚ[™ËİÚ[™İÜËÛİ]]Ê‹˜Ù\‚ˆY‹[›ËYš[\ËY›İ[™ˆ\œ›Ü‚
+name: Windows MSIX
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  build-msix:
+    runs-on: windows-latest
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+          cache-dependency-path: server/package-lock.json
+      - uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: 8.0.x
+      - name: Test shared application logic
+        shell: pwsh
+        run: |
+          npm --prefix server ci
+          npm --prefix server run typecheck
+          npm --prefix server run test:agent
+      - name: Create test certificate and build signed test MSIX
+        shell: pwsh
+        run: |
+          $password = [Guid]::NewGuid().ToString("N")
+          ./packaging/windows/new-test-certificate.ps1 -Password $password
+          ./packaging/windows/build-msix.ps1 -Version 1.0.${{ github.run_number }}.0 -CertificatePath ./packaging/windows/output/iPhone-Data-Sharing-Test.pfx -CertificatePassword $password
+      - name: Remove private test key
+        if: always()
+        shell: pwsh
+        run: Remove-Item ./packaging/windows/output/*.pfx -Force -ErrorAction SilentlyContinue
+      - uses: actions/upload-artifact@v4
+        with:
+          name: iPhone-Data-Sharing-MSIX
+          path: |
+            packaging/windows/output/*.msix
+            packaging/windows/output/*.cer
+          if-no-files-found: error

@@ -1,80 +1,104 @@
-şŠmş&yºŞÃòân¶«Ëñè™æë{Ü™ßì…éez{ì†X§{_?n)ÿ¦Ã©z¶­Š‰ç¢Ú^®h­µçXÛÛœİ\˜[\ÈH™]ÈT“ÙX\˜Ú\˜[\ÊØØ][Û‹œÙX\˜Ú
-NÂ˜ÛÛœİ]šXÙRYH\˜[\Ë™Ù]
-™]šXÙRYŠHˆÂ›]]šXÙNÂ‚™[˜İ[ÛˆÚİÔİ\
-İ\[X™\ŠHÂˆØİ[Y[œ]Y\TÙ[XİÜ[
-‹œİ\ŠK™›Ü‘XXÚ
+const params = new URLSearchParams(location.search);
+const deviceId = params.get("deviceId") || "";
+let device;
 
-[[Y[
-HOˆ[[Y[˜Û\ÜÓ\İœ™[[İ™J˜Xİ]™HŠJNÂˆØİ[Y[œ]Y\TÙ[XİÜ[
-‹œ›ÙÜ™\ÜËYİŠK™›Ü‘XXÚ
+function showStep(stepNumber) {
+  document.querySelectorAll(".step").forEach((element) => element.classList.remove("active"));
+  document.querySelectorAll(".progress-dot").forEach((dot, index) => {
+    dot.classList.toggle("active", index < stepNumber);
+  });
+  document.querySelector(`#step-${stepNumber}`).classList.add("active");
+}
 
-İ[™^
-HOˆÂˆİ˜Û\ÜÓ\İÙÙÛJ˜Xİ]™H‹[™^İ\[X™\ŠNÂˆJNÂˆØİ[Y[œ]Y\TÙ[XİÜŠÜİ\IÜİ\[X™\ŸX
-K˜Û\ÜÓ\İ˜Y
-˜Xİ]™HŠNÂŸB‚™[˜İ[ÛˆÚİÑ\œ›ÜŠY\ÜØYÙJHÂˆØİ[Y[œ]Y\TÙ[XİÜ[
-‹œİ\ŠK™›Ü‘XXÚ
+function showError(message) {
+  document.querySelectorAll(".step").forEach((element) => element.classList.remove("active"));
+  document.querySelector(".progress").classList.add("hidden");
+  document.querySelector("#error-message").textContent = message;
+  document.querySelector("#error").classList.add("active");
+}
 
-[[Y[
-HOˆ[[Y[˜Û\ÜÓ\İœ™[[İ™J˜Xİ]™HŠJNÂˆØİ[Y[œ]Y\TÙ[XİÜŠ‹œ›ÙÜ™\ÜÈŠK˜Û\ÜÓ\İ˜Y
-šY[ˆŠNÂˆØİ[Y[œ]Y\TÙ[XİÜŠˆÙ\œ›Ü‹[Y\ÜØYÙHŠK^ÛÛ[HY\ÜØYÙNÂˆØİ[Y[œ]Y\TÙ[XİÜŠˆÙ\œ›ÜˆŠK˜Û\ÜÓ\İ˜Y
-˜Xİ]™HŠNÂŸB‚˜\Ş[˜È[˜İ[ÛˆØYÙ]\
+async function loadSetup() {
+  if (!deviceId) {
+    showError("Device IDãŒã‚ã‚Šã¾ã›ã‚“ã€‚PCå´ã®QRã‚³ãƒ¼ãƒ‰ã‚’ã‚‚ã†ä¸€åº¦èª­ã¿å–ã£ã¦ãã ã•ã„ã€‚");
+    return;
+  }
 
-HÂˆYˆ
-Y]šXÙRY
-HÂˆÚİÑ\œ›ÜŠ‘]šXÙHQ8àc8à`¸à¢¸ào¸àføà¤øà ”ù`m8àk”T¸à¬øàï8àâxà¤¸à ¸àa¹. 9n©º*«xàoùcå¸àhøài¸àcøàh8àexàa8à ˆŠNÂˆ™]\›ÂˆB‚ˆHÂˆÛÛœİÙ]šXÙT™\ÜÛœÙKÛÛ™šYÔ™\ÜÛœÙWHH]ØZ]›ÛZ\ÙK˜[
-Âˆ™]Ú
-Ø\KÙ]šXÙ\ËÉÙ[˜ÛÙUT’PÛÛ\Û™[
-]šXÙRY
-_X
-Kˆ™]Ú
-‹Ø\KØÛÛ™šYÈŠKˆJNÂˆYˆ
-Y]šXÙT™\ÜÛœÙK›ÚÊH›İÈ™]È\œ›ÜŠ•[šÛ›İÛˆ]šXÙHŠNÂˆ]šXÙHH]ØZ]]šXÙT™\ÜÛœÙKšœÛÛŠ
-NÂˆÛÛœİÛÛ™šYÈH]ØZ]ÛÛ™šYÔ™\ÜÛœÙKšœÛÛŠ
-NÂˆØİ[Y[œ]Y\TÙ[XİÜ[
-‹™]šXÙK[˜[YHŠK™›Ü‘XXÚ
+  try {
+    const [deviceResponse, configResponse] = await Promise.all([
+      fetch(`/api/devices/${encodeURIComponent(deviceId)}`),
+      fetch("/api/config"),
+    ]);
+    if (!deviceResponse.ok) throw new Error("Unknown device");
+    device = await deviceResponse.json();
+    const config = await configResponse.json();
+    document.querySelectorAll(".device-name").forEach((element) => {
+      element.textContent = device.deviceName;
+    });
 
-[[Y[
-HOˆÂˆ[[Y[^ÛÛ[H]šXÙK™]šXÙS˜[YNÂˆJNÂ‚ˆÛÛœİÚÜİ][šÈHØİ[Y[œ]Y\TÙ[XİÜŠˆÜÚÜİ][[šÈŠNÂˆYˆ
-ÛÛ™šYËœÚÜİ]\›
-HÂˆÚÜİ][šËš™YˆHÛÛ™šYËœÚÜİ]\›ÂˆH[ÙHÂˆÚÜİ][šË˜Û\ÜÓ\İ˜Y
-™\ØX›YŠNÂˆÚÜİ][šË˜Y]™[\İ[™\Š˜ÛXÚÈ‹
-]™[
-HOˆ]™[œ™]™[Y˜][
+    const shortcutLink = document.querySelector("#shortcut-link");
+    if (config.shortcutUrl) {
+      shortcutLink.href = config.shortcutUrl;
+    } else {
+      shortcutLink.classList.add("disabled");
+      shortcutLink.addEventListener("click", (event) => event.preventDefault());
+      document.querySelector("#shortcut-missing").classList.remove("hidden");
+    }
+    showStep(1);
+  } catch (error) {
+    showError(error.message === "Unknown device" ? "Unknown device" : "ç«¯æœ«æƒ…å ±ã‚’å–å¾—ã§ãã¾ã›ã‚“ã§ã—ãŸã€‚ãƒãƒƒãƒˆãƒ¯ãƒ¼ã‚¯æ¥ç¶šã‚’ç¢ºèªã—ã¦ãã ã•ã„ã€‚");
+  }
+}
 
-JNÂˆØİ[Y[œ]Y\TÙ[XİÜŠˆÜÚÜİ][Z\ÜÚ[™ÈŠK˜Û\ÜÓ\İœ™[[İ™JšY[ˆŠNÂˆBˆÚİÔİ\
-JNÂˆHØ]Ú
-\œ›ÜŠHÂˆÚİÑ\œ›ÜŠ\œ›Ü‹›Y\ÜØYÙHOOH•[šÛ›İÛˆ]šXÙHˆÈ•[šÛ›İÛˆ]šXÙHˆˆ¹êëù§*ù áyh,xà¤¹cå¹o¥øàiøàcxào¸àføà¤øàiøàeøàgøà ¸àãxààøàâ8àëøàï8à«ù£©yí¦¸à¤¹è®º*£xàeøài¸àcøàh8àexàa8à ˆŠNÂˆBŸB‚™Øİ[Y[œ]Y\TÙ[XİÜ[
-–Ù]K[™^HŠK™›Ü‘XXÚ
+document.querySelectorAll("[data-next]").forEach((button) => {
+  button.addEventListener("click", () => showStep(Number(button.dataset.next)));
+});
 
-]ÛŠHOˆÂˆ]Û‹˜Y]™[\İ[™\Š˜ÛXÚÈ‹
+document.querySelector("#copy-device-id").addEventListener("click", async () => {
+  const result = document.querySelector("#copy-result");
+  try {
+    if (navigator.clipboard && window.isSecureContext) {
+      await navigator.clipboard.writeText(deviceId);
+    } else {
+      const textarea = document.createElement("textarea");
+      textarea.value = deviceId;
+      textarea.style.position = "fixed";
+      textarea.style.opacity = "0";
+      document.body.appendChild(textarea);
+      textarea.select();
+      if (!document.execCommand("copy")) throw new Error("Copy failed");
+      textarea.remove();
+    }
+    result.textContent = "Device IDã‚’ã‚³ãƒ”ãƒ¼ã—ã¾ã—ãŸã€‚";
+    result.classList.add("success-text");
+  } catch {
+    result.textContent = `ã‚³ãƒ”ãƒ¼ã§ãã¾ã›ã‚“ã§ã—ãŸã€‚é•·æŠ¼ã—ã—ã¦ã‚³ãƒ”ãƒ¼ã—ã¦ãã ã•ã„: ${deviceId}`;
+  }
+});
 
-HOˆÚİÔİ\
-[X™\Š]Û‹™]\Ù]›™^
-JJNÂŸJNÂ‚™Øİ[Y[œ]Y\TÙ[XİÜŠˆØÛÜKY]šXÙKZYŠK˜Y]™[\İ[™\Š˜ÛXÚÈ‹\Ş[˜È
+document.querySelector("#test-send").addEventListener("click", async (event) => {
+  const button = event.currentTarget;
+  const result = document.querySelector("#test-result");
+  button.disabled = true;
+  button.textContent = "é€ä¿¡ä¸­â€¦";
+  result.textContent = "";
 
-HOˆÂˆÛÛœİ™\İ[HØİ[Y[œ]Y\TÙ[XİÜŠˆØÛÜK\™\İ[ŠNÂˆHÂˆYˆ
-˜]šYØ]Ü‹˜Û\›Ø\™	‰ˆÚ[™İËš\ÔÙXİ\™PÛÛ^
-HÂˆ]ØZ]˜]šYØ]Ü‹˜Û\›Ø\™Üš]U^
-]šXÙRY
-NÂˆH[ÙHÂˆÛÛœİ^\™XHHØİ[Y[˜Ü™X]Q[[Y[
-^\™XHŠNÂˆ^\™XK˜[YHH]šXÙRYÂˆ^\™XKœİ[KœÜÚ][ÛˆH™š^YÂˆ^\™XKœİ[K›ÜXÚ]HHŒÂˆØİ[Y[˜›ÙK˜\[™Ú[
-^\™XJNÂˆ^\™XKœÙ[Xİ
+  const form = new FormData();
+  form.append("deviceId", deviceId);
+  form.append("file", new Blob(["Hello from iPhone!\n"], { type: "text/plain" }), "hello-from-iphone.txt");
+  try {
+    const response = await fetch("/api/upload", { method: "POST", body: form });
+    const body = await response.json();
+    if (!response.ok) throw new Error(body.error || "Upload failed");
+    result.textContent = body.queued
+      ? "ãƒ•ã‚¡ã‚¤ãƒ«ã‚’ä¸€æ™‚ä¿ç®¡ã—ã¾ã—ãŸã€‚Macã§Chromeæ‹¡å¼µã‚’é–‹ãã¨è‡ªå‹•çš„ã«ãƒ€ã‚¦ãƒ³ãƒ­ãƒ¼ãƒ‰ã•ã‚Œã¾ã™ã€‚"
+      : "é€ä¿¡ã—ã¾ã—ãŸã€‚Macã®Downloadsãƒ•ã‚©ãƒ«ãƒ€ã‚’ç¢ºèªã—ã¦ãã ã•ã„ã€‚";
+    result.classList.add("success-text");
+  } catch (error) {
+    result.textContent = error.message || "Upload failed";
+  } finally {
+    button.disabled = false;
+    button.textContent = "ã‚‚ã†ä¸€åº¦ãƒ†ã‚¹ãƒˆé€ä¿¡";
+  }
+});
 
-NÂˆYˆ
-YØİ[Y[™^XĞÛÛ[X[™
-˜ÛÜHŠJH›İÈ™]È\œ›ÜŠÛÜH˜Z[YŠNÂˆ^\™XKœ™[[İ™J
-NÂˆBˆ™\İ[^ÛÛ[H‘]šXÙHQ8à¤¸à¬øàå8àï8àeøào¸àeøàgøà ˆÂˆ™\İ[˜Û\ÜÓ\İ˜Y
-œİXØÙ\ÜË]^ŠNÂˆHØ]ÚÂˆ™\İ[^ÛÛ[H8à¬øàå8àï8àiøàcxào¸àføà¤øàiøàeøàgøà ºemù¢¯8àeøàeøài¸à¬øàå8àï8àeøài¸àcøàh8àexàaˆ	Ù]šXÙRYXÂˆBŸJNÂ‚™Øİ[Y[œ]Y\TÙ[XİÜŠˆİ\İ\Ù[™ŠK˜Y]™[\İ[™\Š˜ÛXÚÈ‹\Ş[˜È
-]™[
-HOˆÂˆÛÛœİ]ÛˆH]™[˜İ\œ™[\™Ù]ÂˆÛÛœİ™\İ[HØİ[Y[œ]Y\TÙ[XİÜŠˆİ\İ\™\İ[ŠNÂˆ]Û‹™\ØX›YHYNÂˆ]Û‹^ÛÛ[Hº` y/èy.+x )ˆÂˆ™\İ[^ÛÛ[HˆÂ‚ˆÛÛœİ›Ü›HH™]È›Ü›Q]J
-NÂˆ›Ü›K˜\[™
-™]šXÙRY‹]šXÙRY
-NÂˆ›Ü›K˜\[™
-™š[H‹™]È›ØŠÈ’[Èœ›ÛHTÛ™HWˆ—KÈ\Nˆ^ÜZ[ˆˆJKš[ËYœ›ÛKZ\Û™KŠNÂˆHÂˆÛÛœİ™\ÜÛœÙHH]ØZ]™]Ú
-‹Ø\Kİ\ØY‹ÈY]Ùˆ”ÔÕ‹›ÙNˆ›Ü›HJNÂˆÛÛœİ›ÙHH]ØZ]™\ÜÛœÙKšœÛÛŠ
-NÂˆYˆ
-\™\ÜÛœÙK›ÚÊH›İÈ™]È\œ›ÜŠ›ÙK™\œ›Üˆ•\ØY˜Z[YŠNÂˆ™\İ[^ÛÛ[H›ÙKœ]Y]YYˆÈ¸àåxà¨xà©8àêøà¤¹. 9¦`¹/çyë¨xàeøào¸àeøàgøà “XXøàiĞÚ›ÛYy¢èyo-xà¤ºe¢øàcøàj:!ê¹båyæ¡8àjøàà8à©¸àìøàëxàï8àâxàexà£8ào¸àfxà ˆ‚ˆˆº` y/èxàeøào¸àeøàgøà “XXøàk‘İÛ›ØYøàåxàªxàêøàà8à¤¹è®º*£xàeøài¸àcøàh8àexàa8à ˆÂˆ™\İ[˜Û\ÜÓ\İ˜Y
-œİXØÙ\ÜË]^ŠNÂˆHØ]Ú
-\œ›ÜŠHÂˆ™\İ[^ÛÛ[H\œ›Ü‹›Y\ÜØYÙH•\ØY˜Z[YÂˆHš[˜[HÂˆ]Û‹™\ØX›YH˜[ÙNÂˆ]Û‹^ÛÛ[H¸à ¸àa¹. 9n©¸àá¸à®xàâ:` y/èHÂˆBŸJNÂ‚›ØYÙ]\
-
-NÂ
+loadSetup();

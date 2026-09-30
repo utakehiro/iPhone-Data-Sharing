@@ -1,1 +1,15 @@
-şŠmş&yºŞÃòân¶«Ëñè™æë{Ü™ßì…éez{ì†X§{_?n)ÿ¦Ã©z¶­Š‰ç¢Ú^®h­µçY^Ü[\™˜XÙH]šXÙHÂˆ]šXÙRYˆİš[™ÎÂˆ]šXÙS˜[YNˆİš[™ÎÂˆ™YÚ\İ\™Y]ˆ]NÂŸB‚™^Ü[\™˜XÙHİÜ™Yš[HÂˆYˆİš[™ÎÂˆ]šXÙRYˆİš[™ÎÂˆÜšYÚ[˜[˜[YNˆİš[™ÎÂˆZ[YU\Nˆİš[™ÎÂˆÚ^™Nˆ[X™\Âˆ]ˆİš[™ÎÂˆÜ™X]Y]ˆ]NÂŸB
+export interface Device {
+  deviceId: string;
+  deviceName: string;
+  registeredAt: Date;
+}
+
+export interface StoredFile {
+  id: string;
+  deviceId: string;
+  originalName: string;
+  mimeType: string;
+  size: number;
+  path: string;
+  createdAt: Date;
+}

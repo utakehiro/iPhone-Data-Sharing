@@ -1,131 +1,144 @@
-şŠmş&yºŞÃòân¶«Ëñè™æë{Ü™ßì…éez{ì†X§{_?n)ÿ¦Ã©z¶­Š‰ç¢Ú^®h­µçZ[\Ü\ÜÙ\œ›ÛH››ÙN˜\ÜÙ\ÜİšXİÂš[\ÜÈÙX”ÛØÚÙ]Hœ›ÛHÜÈÂ‚˜ÛÛœİ˜\ÙU\›H›ØÙ\ÜË™[‹•TÕĞTÑWÕT“ÏÈš‹ËÌLËŒŒŒNŒÌÂ˜ÛÛœİ]šXÙRYHÜ\Ëœ˜[™ÛUURQ
+import assert from "node:assert/strict";
+import { WebSocket } from "ws";
 
-NÂ‚˜\Ş[˜È[˜İ[ÛˆœÛÛŠ]Ü[ÛœÊHÂˆÛÛœİ™\ÜÛœÙHH]ØZ]™]Ú
-	Ø˜\ÙU\›IÜ]XÜ[ÛœÊNÂˆÛÛœİ›ÙHH]ØZ]™\ÜÛœÙKšœÛÛŠ
-NÂˆ™]\›ˆÈ™\ÜÛœÙK›ÙHNÂŸB‚˜ÛÛœİX[H]ØZ]œÛÛŠ‹Ø\KÚX[ŠNÂ˜\ÜÙ\™\]X[
-X[œ™\ÜÛœÙKœİ]\ËŒ
-NÂ˜\ÜÙ\™\]X[
-X[˜›ÙK›ÚËYJNÂ‚˜ÛÛœİ[šÛ›İÛˆH]ØZ]œÛÛŠØ\KÙ]šXÙ\ËÉØÜ\Ëœ˜[™ÛUURQ
+const baseUrl = process.env.TEST_BASE_URL ?? "http://127.0.0.1:3000";
+const deviceId = crypto.randomUUID();
 
-_X
-NÂ˜\ÜÙ\™\]X[
-[šÛ›İÛ‹œ™\ÜÛœÙKœİ]\Ë
-NÂ˜\ÜÙ\™\]X[
-[šÛ›İÛ‹˜›ÙK™\œ›Ü‹•[šÛ›İÛˆ]šXÙHŠNÂ‚˜ÛÛœİ™YÚ\İ˜][ÛˆH]ØZ]œÛÛŠ‹Ø\KÙ]šXÙ\ËÜ™YÚ\İ\ˆ‹ÂˆY]Ùˆ”ÔÕ‹ˆXY\œÎˆÈÛÛ[U\Hˆ˜\XØ][Û‹ÚœÛÛˆˆKˆ›ÙNˆ”ÓÓ‹œİš[™ÚYJÈ]šXÙRY]šXÙS˜[YNˆ’[YÜ˜][Ûˆ\İÈˆJKŸJNÂ˜\ÜÙ\™\]X[
-™YÚ\İ˜][Û‹œ™\ÜÛœÙKœİ]\ËŒ
-NÂ˜\ÜÙ\™\]X[
-™YÚ\İ˜][Û‹˜›ÙKœİXØÙ\ÜËYJNÂ‚˜ÛÛœİÙ™›[™Q›Ü›HH™]È›Ü›Q]J
-NÂ›Ù™›[™Q›Ü›K˜\[™
-™]šXÙRY‹]šXÙRY
-NÂ›Ù™›[™Q›Ü›K˜\[™
-™š[H‹™]È›ØŠÈ›Ù™›[™H—JK›Ù™›[™KŠNÂ˜ÛÛœİÙ™›[™HH]ØZ]œÛÛŠ‹Ø\Kİ\ØY‹ÈY]Ùˆ”ÔÕ‹›ÙNˆÙ™›[™Q›Ü›HJNÂ˜\ÜÙ\™\]X[
-Ù™›[™Kœ™\ÜÛœÙKœİ]\ËŒJNÂ˜\ÜÙ\™\]X[
-Ù™›[™K˜›ÙKœ]Y]YYYJNÂ‚˜ÛÛœİÜÕ\›H˜\ÙU\›œ™\XÙJ×šËÜÈŠH
-ÈİÜÏÙ]šXÙRYIÙ[˜ÛÙUT’PÛÛ\Û™[
-]šXÙRY
-_XÂ˜ÛÛœİÛØÚÙ]H™]ÈÙX”ÛØÚÙ]
-ÜÕ\›
-NÂ˜ÛÛœİ]Y]YYY\ÜØYÙHH™]È›ÛZ\ÙJ
-™\ÛÛ™K™Z™Xİ
-HOˆÂˆÛÛœİ[Y\ˆHÙ][Y[İ]
+async function json(path, options) {
+  const response = await fetch(`${baseUrl}${path}`, options);
+  const body = await response.json();
+  return { response, body };
+}
 
+const health = await json("/api/health");
+assert.equal(health.response.status, 200);
+assert.equal(health.body.ok, true);
 
-HOˆ™Z™Xİ
-™]È\œ›ÜŠ”]Y]YYY\ÜØYÙH[Y[İ]ŠJKÌ
-NÂˆÛØÚÙ]›Û˜ÙJ›Y\ÜØYÙH‹
-]JHOˆÂˆÛX\•[Y[İ]
-[Y\ŠNÂˆ™\ÛÛ™J”ÓÓ‹œ\œÙJ]KÔİš[™Ê
-JJNÂˆJNÂŸJNÂ˜]ØZ]™]È›ÛZ\ÙJ
-™\ÛÛ™K™Z™Xİ
-HOˆÂˆÛØÚÙ]›Û˜ÙJ›Ü[ˆ‹™\ÛÛ™JNÂˆÛØÚÙ]›Û˜ÙJ™\œ›Üˆ‹™Z™Xİ
-NÂŸJNÂ˜ÛÛœİ]Y]YY›İXÙHH]ØZ]]Y]YYY\ÜØYÙNÂ˜\ÜÙ\™\]X[
-]Y]YY›İXÙK™š[[˜[YK›Ù™›[™KŠNÂ˜ÛÛœİ]Y]YYİÛ›ØYH]ØZ]™]Ú
-	Ø˜\ÙU\›KØ\KÙš[\ËÉÜ]Y]YY›İXÙK™š[RYX
-NÂ˜\ÜÙ\™\]X[
-]ØZ]]Y]YYİÛ›ØY^
+const unknown = await json(`/api/devices/${crypto.randomUUID()}`);
+assert.equal(unknown.response.status, 404);
+assert.equal(unknown.body.error, "Unknown device");
 
-K›Ù™›[™HŠNÂ˜]ØZ]™]Ú
-	Ø˜\ÙU\›KØ\KÙš[\ËÉÜ]Y]YY›İXÙK™š[RYXÈY]Ùˆ‘SUHˆJNÂ‚˜ÛÛœİÛ›[™HH]ØZ]œÛÛŠØ\KÙ]šXÙ\ËÉÙ]šXÙRYX
-NÂ˜\ÜÙ\™\]X[
-Û›[™K˜›ÙK›Û›[™KYJNÂ˜\ÜÙ\™\]X[
-Û›[™K˜›ÙK™]šXÙS˜[YK’[YÜ˜][Ûˆ\İÈŠNÂ‚™[˜İ[Ûˆ™^Y\ÜØYÙJ
-HÂˆ™]\›ˆ™]È›ÛZ\ÙJ
-™\ÛÛ™K™Z™Xİ
-HOˆÂˆÛÛœİ[Y\ˆHÙ][Y[İ]
+const registration = await json("/api/devices/register", {
+  method: "POST",
+  headers: { "Content-Type": "application/json" },
+  body: JSON.stringify({ deviceId, deviceName: "Integration Test PC" }),
+});
+assert.equal(registration.response.status, 200);
+assert.equal(registration.body.success, true);
 
+const offlineForm = new FormData();
+offlineForm.append("deviceId", deviceId);
+offlineForm.append("file", new Blob(["offline"]), "offline.txt");
+const offline = await json("/api/upload", { method: "POST", body: offlineForm });
+assert.equal(offline.response.status, 201);
+assert.equal(offline.body.queued, true);
 
-HOˆ™Z™Xİ
-™]È\œ›ÜŠ•ÙX”ÛØÚÙ]Y\ÜØYÙH[Y[İ]ŠJKÌ
-NÂˆÛØÚÙ]›Û˜ÙJ›Y\ÜØYÙH‹
-]JHOˆÂˆÛX\•[Y[İ]
-[Y\ŠNÂˆ™\ÛÛ™J”ÓÓ‹œ\œÙJ]KÔİš[™Ê
-JJNÂˆJNÂˆJNÂŸB‚™[˜İ[Ûˆ™^Y\ÜØYÙ\ÊÛİ[
-HÂˆ™]\›ˆ™]È›ÛZ\ÙJ
-™\ÛÛ™K™Z™Xİ
-HOˆÂˆÛÛœİY\ÜØYÙ\ÈH×NÂˆÛÛœİ[Y\ˆHÙ][Y[İ]
+const wsUrl = baseUrl.replace(/^http/, "ws") + `/ws?deviceId=${encodeURIComponent(deviceId)}`;
+const socket = new WebSocket(wsUrl);
+const queuedMessage = new Promise((resolve, reject) => {
+  const timer = setTimeout(() => reject(new Error("Queued message timeout")), 3000);
+  socket.once("message", (data) => {
+    clearTimeout(timer);
+    resolve(JSON.parse(data.toString()));
+  });
+});
+await new Promise((resolve, reject) => {
+  socket.once("open", resolve);
+  socket.once("error", reject);
+});
+const queuedNotice = await queuedMessage;
+assert.equal(queuedNotice.filename, "offline.txt");
+const queuedDownload = await fetch(`${baseUrl}/api/files/${queuedNotice.fileId}`);
+assert.equal(await queuedDownload.text(), "offline");
+await fetch(`${baseUrl}/api/files/${queuedNotice.fileId}`, { method: "DELETE" });
 
+const online = await json(`/api/devices/${deviceId}`);
+assert.equal(online.body.online, true);
+assert.equal(online.body.deviceName, "Integration Test PC");
 
-HOˆ™Z™Xİ
-™]È\œ›ÜŠ•ÙX”ÛØÚÙ]Y\ÜØYÙ\È[Y[İ]ŠJKÌ
-NÂˆÛÛœİ\İ[™\ˆH
-]JHOˆÂˆY\ÜØYÙ\Ëœ\Ú
-”ÓÓ‹œ\œÙJ]KÔİš[™Ê
-JJNÂˆYˆ
-Y\ÜØYÙ\Ë›[™İOOHÛİ[
-HÂˆÛX\•[Y[İ]
-[Y\ŠNÂˆÛØÚÙ]›Ù™Š›Y\ÜØYÙH‹\İ[™\ŠNÂˆ™\ÛÛ™JY\ÜØYÙ\ÊNÂˆBˆNÂˆÛØÚÙ]›ÛŠ›Y\ÜØYÙH‹\İ[™\ŠNÂˆJNÂŸB‚˜ÛÛœİ][\\Y\ÜØYÙ\ÈH™^Y\ÜØYÙ\ÊŠNÂ˜ÛÛœİ›Ü›HH™]È›Ü›Q]J
-NÂ™›Ü›K˜\[™
-™]šXÙRY‹]šXÙRY
-NÂ™›Ü›K˜\[™
-™š[H‹™]È›ØŠÈ’[Èœ›ÛH[YÜ˜][Ûˆ\İH—KÈ\Nˆ^ÜZ[ˆˆJKš[ËŠNÂ™›Ü›K˜\[™
-™š[H‹™]È›ØŠÈ”ÙXÛÛ™š[H—KÈ\Nˆ^ÜZ[ˆˆJKœÙXÛÛ™ŠNÂ˜ÛÛœİ\ØYYH]ØZ]œÛÛŠ‹Ø\Kİ\ØY‹ÈY]Ùˆ”ÔÕ‹›ÙNˆ›Ü›HJNÂ˜\ÜÙ\™\]X[
-\ØYYœ™\ÜÛœÙKœİ]\ËŒJNÂ˜\ÜÙ\™\]X[
-\ØYY˜›ÙK™š[\Ë›[™İŠNÂ˜ÛÛœİ›İXÙ\ÈH]ØZ]][\\Y\ÜØYÙ\ÎÂ˜ÛÛœİš\œİ›İXÙHH›İXÙ\Ë™š[™
+function nextMessage() {
+  return new Promise((resolve, reject) => {
+    const timer = setTimeout(() => reject(new Error("WebSocket message timeout")), 3000);
+    socket.once("message", (data) => {
+      clearTimeout(timer);
+      resolve(JSON.parse(data.toString()));
+    });
+  });
+}
 
-›İXÙJHOˆ›İXÙK™š[[˜[YHOOHš[ËŠNÂ˜\ÜÙ\›ÚÊš\œİ›İXÙJNÂ˜\ÜÙ\™\]X[
-š\œİ›İXÙK\K™š[WØ]˜Z[X›HŠNÂ‚˜ÛÛœİİÛ›ØYYH]ØZ]™]Ú
-	Ø˜\ÙU\›KØ\KÙš[\ËÉÙš\œİ›İXÙK™š[RYX
-NÂ˜\ÜÙ\™\]X[
-İÛ›ØYYœİ]\ËŒ
-NÂ˜\ÜÙ\™\]X[
-]ØZ]İÛ›ØYY^
+function nextMessages(count) {
+  return new Promise((resolve, reject) => {
+    const messages = [];
+    const timer = setTimeout(() => reject(new Error("WebSocket messages timeout")), 3000);
+    const listener = (data) => {
+      messages.push(JSON.parse(data.toString()));
+      if (messages.length === count) {
+        clearTimeout(timer);
+        socket.off("message", listener);
+        resolve(messages);
+      }
+    };
+    socket.on("message", listener);
+  });
+}
 
-K’[Èœ›ÛH[YÜ˜][Ûˆ\İHŠNÂ˜\ÜÙ\›X]Ú
-İÛ›ØYYšXY\œË™Ù]
-˜ÛÛ[Y\ÜÜÚ][ÛˆŠHÏÈˆ‹Ú[×ÊNÂ‚˜ÛÛœİ[]YH]ØZ]œÛÛŠØ\KÙš[\ËÉÙš\œİ›İXÙK™š[RYXÈY]Ùˆ‘SUHˆJNÂ˜\ÜÙ\™\]X[
-[]Yœ™\ÜÛœÙKœİ]\ËŒ
-NÂ˜ÛÛœİZ\ÜÚ[™ÈH]ØZ]œÛÛŠØ\KÙš[\ËÉÙš\œİ›İXÙK™š[RYX
-NÂ˜\ÜÙ\™\]X[
-Z\ÜÚ[™Ëœ™\ÜÛœÙKœİ]\Ë
-NÂ˜ÛÛœİÙXÛÛ™›İXÙHH›İXÙ\Ë™š[™
+const multipartMessages = nextMessages(2);
+const form = new FormData();
+form.append("deviceId", deviceId);
+form.append("file", new Blob(["Hello from integration test!"], { type: "text/plain" }), "hello.txt");
+form.append("file", new Blob(["Second file"], { type: "text/plain" }), "second.txt");
+const uploaded = await json("/api/upload", { method: "POST", body: form });
+assert.equal(uploaded.response.status, 201);
+assert.equal(uploaded.body.files.length, 2);
+const notices = await multipartMessages;
+const firstNotice = notices.find((notice) => notice.filename === "hello.txt");
+assert.ok(firstNotice);
+assert.equal(firstNotice.type, "file_available");
 
-›İXÙJHOˆ›İXÙK™š[[˜[YHOOHœÙXÛÛ™ŠNÂ˜\ÜÙ\›ÚÊÙXÛÛ™›İXÙJNÂ˜ÛÛœİÙXÛÛ™İÛ›ØYH]ØZ]™]Ú
-	Ø˜\ÙU\›KØ\KÙš[\ËÉÜÙXÛÛ™›İXÙK™š[RYX
-NÂ˜\ÜÙ\™\]X[
-]ØZ]ÙXÛÛ™İÛ›ØY^
+const downloaded = await fetch(`${baseUrl}/api/files/${firstNotice.fileId}`);
+assert.equal(downloaded.status, 200);
+assert.equal(await downloaded.text(), "Hello from integration test!");
+assert.match(downloaded.headers.get("content-disposition") ?? "", /hello\.txt/);
 
-K”ÙXÛÛ™š[HŠNÂ˜]ØZ]™]Ú
-	Ø˜\ÙU\›KØ\KÙš[\ËÉÜÙXÛÛ™›İXÙK™š[RYXÈY]Ùˆ‘SUHˆJNÂ‚˜ÛÛœİ˜]ÓY\ÜØYÙHH™^Y\ÜØYÙJ
-NÂ˜ÛÛœİ˜]ÈH]ØZ]œÛÛŠØ\Kİ\ØYÉÙ]šXÙRYXÂˆY]Ùˆ”ÔÕ‹ˆXY\œÎˆÈÛÛ[U\Hˆ˜\XØ][Û‹ÛØİ]\İ™X[H‹–Qš[[˜[YHˆœÚÜİ]ˆKˆ›ÙNˆ’[Èœ›ÛHÚÜİ]H‹ŸJNÂ˜\ÜÙ\™\]X[
-˜]Ëœ™\ÜÛœÙKœİ]\ËŒJNÂ˜ÛÛœİ˜]Ó›İXÙHH]ØZ]˜]ÓY\ÜØYÙNÂ˜\ÜÙ\™\]X[
-˜]Ó›İXÙK™š[[˜[YKœÚÜİ]ŠNÂ˜ÛÛœİ˜]ÑİÛ›ØYH]ØZ]™]Ú
-	Ø˜\ÙU\›KØ\KÙš[\ËÉÜ˜]Ó›İXÙK™š[RYX
-NÂ˜\ÜÙ\™\]X[
-]ØZ]˜]ÑİÛ›ØY^
+const deleted = await json(`/api/files/${firstNotice.fileId}`, { method: "DELETE" });
+assert.equal(deleted.response.status, 200);
+const missing = await json(`/api/files/${firstNotice.fileId}`);
+assert.equal(missing.response.status, 404);
+const secondNotice = notices.find((notice) => notice.filename === "second.txt");
+assert.ok(secondNotice);
+const secondDownload = await fetch(`${baseUrl}/api/files/${secondNotice.fileId}`);
+assert.equal(await secondDownload.text(), "Second file");
+await fetch(`${baseUrl}/api/files/${secondNotice.fileId}`, { method: "DELETE" });
 
-K’[Èœ›ÛHÚÜİ]HŠNÂ˜]ØZ]™]Ú
-	Ø˜\ÙU\›KØ\KÙš[\ËÉÜ˜]Ó›İXÙK™š[RYXÈY]Ùˆ‘SUHˆJNÂ‚˜ÛÛœİX[›Ü›YY˜[YSY\ÜØYÙHH™^Y\ÜØYÙJ
-NÂ˜ÛÛœİX[›Ü›YY˜[YHH]ØZ]œÛÛŠØ\Kİ\ØYÉÙ]šXÙRYXÂˆY]Ùˆ”ÔÕ‹ˆXY\œÎˆÈÛÛ[U\Hˆ˜\XØ][Û‹ÛØİ]\İ™X[H‹–Qš[[˜[YHˆ˜˜Y	V–›˜[YOËˆKˆ›ÙNˆœØY™Hš[[˜[YH‹ŸJNÂ˜\ÜÙ\™\]X[
-X[›Ü›YY˜[YKœ™\ÜÛœÙKœİ]\ËŒJNÂ˜ÛÛœİX[›Ü›YY˜[YS›İXÙHH]ØZ]X[›Ü›YY˜[YSY\ÜØYÙNÂ˜\ÜÙ\™\]X[
-X[›Ü›YY˜[YS›İXÙK™š[[˜[YK˜˜Y	V–›˜[YWËŠNÂ˜]ØZ]™]Ú
-	Ø˜\ÙU\›KØ\KÙš[\ËÉÛX[›Ü›YY˜[YS›İXÙK™š[RYXÈY]Ùˆ‘SUHˆJNÂ‚˜ÛÛœİ\ˆH]ØZ]™]Ú
-	Ø˜\ÙU\›KØ\KÙ]šXÙ\ËÉÙ]šXÙRYKÜ\˜
-NÂ˜\ÜÙ\™\]X[
-\‹œİ]\ËŒ
-NÂ˜\ÜÙ\™\]X[
-\‹šXY\œË™Ù]
-˜ÛÛ[]\HŠKš[XYÙKÜ™ÈŠNÂ˜ÛÛœİÚYÛ˜]\™HH™]ÈZ[\œ˜^J]ØZ]\‹˜\œ˜^PY™™\Š
-JKœÛXÙJ
-NÂ˜\ÜÙ\™Y\\]X[
-Ë‹‹œÚYÛ˜]\™WKÌLÍËÎÌKLËL‹LJNÂ‚œÛØÚÙ]˜ÛÜÙJ
-NÂ˜ÛÛœÛÛK›ÙÊ’[YÜ˜][Ûˆ\İ\ÜÙYŠNÂ
+const rawMessage = nextMessage();
+const raw = await json(`/api/upload/${deviceId}`, {
+  method: "POST",
+  headers: { "Content-Type": "application/octet-stream", "X-Filename": "shortcut.txt" },
+  body: "Hello from Shortcut!",
+});
+assert.equal(raw.response.status, 201);
+const rawNotice = await rawMessage;
+assert.equal(rawNotice.filename, "shortcut.txt");
+const rawDownload = await fetch(`${baseUrl}/api/files/${rawNotice.fileId}`);
+assert.equal(await rawDownload.text(), "Hello from Shortcut!");
+await fetch(`${baseUrl}/api/files/${rawNotice.fileId}`, { method: "DELETE" });
+
+const malformedNameMessage = nextMessage();
+const malformedName = await json(`/api/upload/${deviceId}`, {
+  method: "POST",
+  headers: { "Content-Type": "application/octet-stream", "X-Filename": "bad%ZZname?.txt" },
+  body: "safe filename",
+});
+assert.equal(malformedName.response.status, 201);
+const malformedNameNotice = await malformedNameMessage;
+assert.equal(malformedNameNotice.filename, "bad%ZZname_.txt");
+await fetch(`${baseUrl}/api/files/${malformedNameNotice.fileId}`, { method: "DELETE" });
+
+const qr = await fetch(`${baseUrl}/api/devices/${deviceId}/qr`);
+assert.equal(qr.status, 200);
+assert.equal(qr.headers.get("content-type"), "image/png");
+const signature = new Uint8Array(await qr.arrayBuffer()).slice(0, 8);
+assert.deepEqual([...signature], [137, 80, 78, 71, 13, 10, 26, 10]);
+
+socket.close();
+console.log("Integration test passed");

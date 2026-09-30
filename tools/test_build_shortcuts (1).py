@@ -1,79 +1,314 @@
-þŠmþ&yºÞÃòân¶«Ëñè™æë{Ü™ßì…éez{ì†X§{_?n)ÿ¦Ã©z¶­Š‰ç¢Ú^®h­µçYœ›ÛH×Ù]\™W×È[\Ü[››Ý][ÛœÂ‚š[\Ü[\ÜX‹][š[\Ü[Âš[\ÜœÛÛ‚š[\ÜÞ\Â™œ›ÛH]Xˆ[\Ü]‚š[\Ü]\Ý‚‚“SÑSWÔUH]
-×Ùš[W×ÊKÚ]Û˜[YJ˜Z[ÜÚÜÝ]ËœHŠB‚‚]\Ý™š^\™JØÛÜOH›[Ù[HŠB™YˆZ[ÜÚÜÝ]Ê
-N‚ˆÜXÈH[\ÜX‹][œÜX×Ùœ›ÛWÙš[WÛØØ][ÛŠ˜Z[ÜÚÜÝ]È‹SÑSWÔU
-Bˆ\ÜÙ\ÜXÈ[™ÜXË›ØY\‚ˆ[Ù[HH[\ÜX‹][›[Ù[WÙœ›ÛWÜÜXÊÜXÊBˆÜXË›ØY\‹™^X×Û[Ù[J[Ù[JBˆ™]\›ˆ[Ù[B‚‚™YˆÚY[YšY\œÊ]NˆXÝ
-HOˆ\ÝÜÝ—N‚ˆ™]\›ˆÂˆ][K™Ù]
-•Ñ•ÛÜšÙ›ÝÐXÝ[Û’Y[YšY\ˆ‹ˆŠKœ™[[Ý™\™Yš^
-š\ËÛÜšÙ›ÝË˜XÝ[ÛœËˆŠBˆ›Üˆ][H[ˆ]K™Ù]
-•Ñ•ÛÜšÙ›ÝÐXÝ[ÛœÈ‹×JBˆB‚‚™YˆØXÝ[ÛœÊ]NˆXÝY[YšY\ŽˆÝŠHOˆ\ÝÙXÝN‚ˆ[Hˆš\ËÛÜšÙ›ÝË˜XÝ[ÛœËžÚY[YšY\ŸH‚ˆ™]\›ˆÂˆ][H›Üˆ][H[ˆ]K™Ù]
-•Ñ•ÛÜšÙ›ÝÐXÝ[ÛœÈ‹×JBˆYˆ][K™Ù]
-•Ñ•ÛÜšÙ›ÝÐXÝ[Û’Y[YšY\ˆŠHOH[ˆB‚‚™Yˆ\ÝÜÙ[™[™×ÜÚÜÝ]Ý\Ù\×Ü˜]×Ùš[WØ›ÙWÛ›ÝÛ][\\
-Z[ÜÚÜÝ]ÊN‚ˆ]HHZ[ÜÚÜÝ]ËœÙ[™[™×ÜÚÜÝ]
-ˆš‹ËÌNL‹ŒMŽŒKŒLŒÌÜÛ™KÜÚÜÝ]‹ˆ™X\™\ˆ\Ý]ÚÙ[ˆ‹ˆ\ÚÏQ˜[ÙKˆ
-B‚ˆ\ØYÈHÂˆ][H›Üˆ][H[ˆØXÝ[ÛœÊ]K™ÝÛ›ØY\›ŠBˆYˆ][K™Ù]
-•Ñ•ÛÜšÙ›ÝÐXÝ[Û”\˜[Y]\œÈ‹ßJK™Ù]
-•Ñ’Y]ÙŠHOH”ÔÕ‚ˆ[™][K™Ù]
-•Ñ•ÛÜšÙ›ÝÐXÝ[Û”\˜[Y]\œÈ‹ßJK™Ù]
-•Ñ’›ÙU\HŠHOH‘š[H‚ˆBˆ\ÜÙ\[Š\ØYÊHOHB‚ˆ\˜[\ÈH\ØYÖÌVÈ•Ñ•ÛÜšÙ›ÝÐXÝ[Û”\˜[Y]\œÈ—Bˆ\ÜÙ\\˜[\ÖÈ•Ñ’›ÙU\H—HOH‘š[H‚ˆ\ÜÙ\•Ñ”™\]Y\Ý˜\šXX›Hˆ[ˆ\˜[\Âˆ\ÜÙ\•Ñ‘›Ü›U˜[Y\Èˆ›Ý[ˆ\˜[\Â‚ˆXY\œÈH\˜[\ÖÈ•Ñ’XY\œÈ—VÈ•˜[YH—VÈ•Ñ‘XÝ[Û˜\žQšY[˜[YR][\È—Bˆš[[˜[YWÚXY\ˆH™^
-ˆ][H›Üˆ][H[ˆXY\œÂˆYˆ][VÈ•Ñ’Ù^H—VÈ•˜[YH—VÈœÝš[™È—HOH–Qš[[˜[YH‚ˆ
-Bˆš[[˜[YWÝ˜[YHHš[[˜[YWÚXY\–È•Ñ•˜[YH—VÈ•˜[YH—Bˆš[[˜[YWÜ™YˆHš[[˜[YWÝ˜[YVÈ˜]XÚY[ÐžT˜[™ÙH—VÈžÌ_H—Bˆ\ÜÙ\š[[˜[YWÜ™Y–È“Ý]]˜[YH—HOH”™\X]][H‚ˆ\ÜÙ\š[[˜[YWÜ™Y–ÈYÙÜ˜[™^™[Y[È—VÌVÈ”›Ü\S˜[YH—HOH“˜[YH‚‚ˆ\›Z]ÚXY\ˆH™^
-ˆ][H›Üˆ][H[ˆXY\œÂˆYˆ][VÈ•Ñ’Ù^H—VÈ•˜[YH—VÈœÝš[™È—HOH–U\ØYÙKT\›Z]‚ˆ
-Bˆ\›Z]Ü™YˆH\›Z]ÚXY\–È•Ñ•˜[YH—VÈ•˜[YH—VÈ˜]XÚY[ÐžT˜[™ÙH—VÈžÌ_H—Bˆ\ÜÙ\\›Z]Ü™Y–È“Ý]]˜[YH—HOH•˜[œÙ™\ˆ\›Z]‚‚ˆ™Y›YÚHÂˆ][H›Üˆ][H[ˆØXÝ[ÛœÊ]K™ÝÛ›ØY\›ŠBˆYˆ][K™Ù]
-•Ñ•ÛÜšÙ›ÝÐXÝ[Û”\˜[Y]\œÈ‹ßJK™Ù]
-•Ñ’Y]ÙŠHOH”ÔÕ‚ˆ[™\Ú[œÝ[˜ÙJ][K™Ù]
-•Ñ•ÛÜšÙ›ÝÐXÝ[Û”\˜[Y]\œÈ‹ßJK™Ù]
-•Ñ•T“ŠKÝŠBˆ[™][VÈ•Ñ•ÛÜšÙ›ÝÐXÝ[Û”\˜[Y]\œÈ—VÈ•Ñ•T“—K™[™ÝÚ]
-‹ÜÛ™KÜÚÜÝ]Ü\›Z]ŠBˆBˆ\ÜÙ\[Š™Y›YÚ
-HOHB‚ˆ™\]Y\ÝÝ˜\šXX›HH\˜[\ÖÈ•Ñ”™\]Y\Ý˜\šXX›H—Bˆ\ÜÙ\™\]Y\ÝÝ˜\šXX›VÈ•Ñ”Ù\šX[^˜][Û•\H—HOH•Ñ•^ÚÙ[]XÚY[‚ˆ\ÜÙ\™\]Y\ÝÝ˜\šXX›VÈ•˜[YH—VÈ•\H—HOHXÝ[Û“Ý]]‚ˆ\ÜÙ\™\]Y\ÝÝ˜\šXX›VÈ•˜[YH—VÈ“Ý]]˜[YH—HOH”™\X]][H‚‚‚™Yˆ\ÝÜÙ[™[™×ÜÚÜÝ]Ú\×ÜÚ\™WÜÚY]Ù[˜X›Y
-Z[ÜÚÜÝ]ÊN‚ˆ]HHZ[ÜÚÜÝ]ËœÙ[™[™×ÜÚÜÝ]
-\ÚÏQ˜[ÙJB‚ˆ\ÜÙ\XÝ[Û‘^[œÚ[Ûˆˆ[ˆ]VÈ•Ñ•ÛÜšÙ›ÝÕ\\È—Bˆ\ÜÙ\•Ñ’[XYÙPÛÛ[][Hˆ[ˆ]VÈ•Ñ•ÛÜšÙ›ÝÒ[œ]ÛÛ[][PÛ\ÜÙ\È—Bˆ\ÜÙ\•ÑU\ÜÙ]ÛÛ[][Hˆ[ˆ]VÈ•Ñ•ÛÜšÙ›ÝÒ[œ]ÛÛ[][PÛ\ÜÙ\È—Bˆ\ÜÙ\•Ñ‘Ù[™\šXÑš[PÛÛ[][Hˆ[ˆ]VÈ•Ñ•ÛÜšÙ›ÝÒ[œ]ÛÛ[][PÛ\ÜÙ\È—Bˆ\ÜÙ\•Ñ”ÛÛ[][Hˆ[ˆ]VÈ•Ñ•ÛÜšÙ›ÝÒ[œ]ÛÛ[][PÛ\ÜÙ\È—B‚‚™Yˆ\ÝÜÙ[™[™×ÜÚÜÝ]ÙÙ\×Û›ÝØÛÛZ[—Ü™XÙZ]™WÛÛ›WØXÝ[ÛœÊZ[ÜÚÜÝ]ÊN‚ˆ]HHZ[ÜÚÜÝ]ËœÙ[™[™×ÜÚÜÝ]
-\ÚÏQ˜[ÙJBˆY[YšY\œÈHÙ]
-ÚY[YšY\œÊ]JJB‚ˆ\ÜÙ\™ØÝ[Y[XÚÙ\‹œØ]™Hˆ›Ý[ˆY[YšY\œÂˆ\ÜÙ\›Ü[\›ˆ›Ý[ˆY[YšY\œÂˆ\ÜÙ\œÙ]˜[YHˆ›Ý[ˆY[YšY\œÂ‚‚™Yˆ\ÝÝ˜[Y]WÜÙ[™Ü™Z™XÝ×Û][\\Ù›Ü›WÝ\ØY
-Z[ÜÚÜÝ]ÊN‚ˆ]HHZ[ÜÚÜÝ]ËœÙ[™[™×ÜÚÜÝ]
-\ÚÏQ˜[ÙJBˆ\ØYH™^
-ˆ][H›Üˆ][H[ˆØXÝ[ÛœÊ]K™ÝÛ›ØY\›ŠBˆYˆ][K™Ù]
-•Ñ•ÛÜšÙ›ÝÐXÝ[Û”\˜[Y]\œÈ‹ßJK™Ù]
-•Ñ’Y]ÙŠHOH”ÔÕ‚ˆ[™][K™Ù]
-•Ñ•ÛÜšÙ›ÝÐXÝ[Û”\˜[Y]\œÈ‹ßJK™Ù]
-•Ñ’›ÙU\HŠHOH‘š[H‚ˆ
-Bˆ\˜[\ÈH\ØYÈ•Ñ•ÛÜšÙ›ÝÐXÝ[Û”\˜[Y]\œÈ—Bˆ\˜[\ÖÈ•Ñ’›ÙU\H—HH‘›Ü›H‚ˆ\˜[\ÖÈ•Ñ‘›Ü›U˜[Y\È—HHZ[ÜÚÜÝ]Ë™XÝ[Û˜\žJˆØZ[ÜÚÜÝ]Ë™šY[
-™š[H‹˜˜Y‹JWBˆ
-Bˆ\˜[\ËœÜ
-•Ñ”™\]Y\Ý˜\šXX›H‹›Û™JB‚ˆÚ]]\Ýœ˜Z\Ù\Ê˜[YQ\œ›Ü‹X]ÚHœ˜]Èš[KX›ÙH\ØY][\\Ñ›Ü›HŠN‚ˆZ[ÜÚÜÝ]Ë˜[Y]WÜÚÜÝ]
-]KœÙ[™ŠB‚‚™Yˆ\ÝÜ™XÙZ]š[™×ÜÚÜÝ]ÜØ]™\×Ü™XÙZ]™YÙš[WÝÚ]Ý]ÜÙ]˜[YJZ[ÜÚÜÝ]ÊN‚ˆ]HHZ[ÜÚÜÝ]Ëœ™XÙZ]š[™×ÜÚÜÝ]
-ˆš‹ËÌNL‹ŒMŽŒKŒLŒÌÜÛ™KÜÚÜÝ]Ú[˜›Þ‹ˆ™X\™\ˆ\Ý]ÚÙ[ˆ‹ˆ\ÚÏQ˜[ÙKˆ
-BˆY[YšY\œÈHÚY[YšY\œÊ]JB‚ˆ\ÜÙ\œÙ]˜[YHˆ›Ý[ˆY[YšY\œÂˆ\ÜÙ\™ØÝ[Y[XÚÙ\‹œØ]™Hˆ[ˆY[YšY\œÂ‚ˆØ]™HHØXÝ[ÛœÊ]K™ØÝ[Y[XÚÙ\‹œØ]™HŠVÌVÈ•Ñ•ÛÜšÙ›ÝÐXÝ[Û”\˜[Y]\œÈ—Bˆ\ÜÙ\Ø]™VÈ•Ñ\ÚÕÚ\™UÔØ]™H—H\È˜[ÙBˆ\Ý[˜][ÛˆHØ]™VÈ•Ñ‘š[Q\Ý[˜][Û”]—Bˆ\ÜÙ\\Ý[˜][Û–È•Ñ”Ù\šX[^˜][Û•\H—HOH•Ñ•^ÚÙ[”Ýš[™È‚ˆ\ÜÙ\\Ý[˜][Û–È•˜[YH—VÈœÝš[™È—HOHšTÛ™H]HÚ\š[™Ë×Y™™˜È‚ˆ\ÜÙ\Ø]™VÈ•Ñ”Ø]™Qš[SÝ™\Üš]H—H\È˜[ÙB‚ˆÙ—Ú[œ]HØ]™VÈ•Ñ’[œ]—Bˆ\ÜÙ\Ù—Ú[œ]È•Ñ”Ù\šX[^˜][Û•\H—HOH•Ñ•^ÚÙ[]XÚY[‚ˆ\ÜÙ\Ù—Ú[œ]È•˜[YH—VÈ•\H—HOHXÝ[Û“Ý]]‚ˆ\ÜÙ\Ù—Ú[œ]È•˜[YH—VÈ“Ý]]˜[YH—HOH”™XÙZ]™Yš[H‚‚‚™Yˆ\ÝÜ™XÙZ]š[™×ÜÚÜÝ]Ü™\Ù\™\×Û˜[YWØ[™Û›ÝYšY\×ÛØØ][ÛŠZ[ÜÚÜÝ]ÊN‚ˆ]HHZ[ÜÚÜÝ]Ëœ™XÙZ]š[™×ÜÚÜÝ]
-\ÚÏQ˜[ÙJB‚ˆØ]™HHØXÝ[ÛœÊ]K™ØÝ[Y[XÚÙ\‹œØ]™HŠVÌVÈ•Ñ•ÛÜšÙ›ÝÐXÝ[Û”\˜[Y]\œÈ—Bˆ\Ý[˜][ÛˆHØ]™VÈ•Ñ‘š[Q\Ý[˜][Û”]—Bˆ\ÜÙ\\Ý[˜][Û–È•Ñ”Ù\šX[^˜][Û•\H—HOH•Ñ•^ÚÙ[”Ýš[™È‚ˆ\ÜÙ\\Ý[˜][Û–È•˜[YH—VÈœÝš[™È—HOHšTÛ™H]HÚ\š[™Ë×Y™™˜È‚ˆ˜[YWÜ™YˆH\Ý[˜][Û–È•˜[YH—VÈ˜]XÚY[ÐžT˜[™ÙH—VÈžÌL_H—Bˆ\ÜÙ\˜[YWÜ™Y–È“Ý]]˜[YH—HOH“ÜšYÚ[˜[˜[YH‚‚ˆ\ÜÙ\[ŠØXÝ[ÛœÊ]K›Ü[\›ŠJHOHBˆš[\×Ý\›HØXÝ[ÛœÊ]K\›ŠVÌVÈ•Ñ•ÛÜšÙ›ÝÐXÝ[Û”\˜[Y]\œÈ—VÈ•Ñ•T“XÝ[Û•T“—Bˆ\ÜÙ\š[\×Ý\›™[™ÝÚ]
-‹ÔÚÜÝ]ËÚTÛ™ILŒ]ILŒÚ\š[™ËÈŠBˆ\ÜÙ\›Ý[žJˆ][K™Ù]
-•Ñ•ÛÜšÙ›ÝÐXÝ[Û’Y[YšY\ˆŠHOHš\ËÛÜšÙ›ÝË˜XÝ[ÛœË™ÝÛ›ØY\›‚ˆ[™][K™Ù]
-•Ñ•ÛÜšÙ›ÝÐXÝ[Û”\˜[Y]\œÈ‹ßJK™Ù]
-•Ñ’Y]ÙŠHOH”ÔÕ‚ˆ›Üˆ][H[ˆ]VÈ•Ñ•ÛÜšÙ›ÝÐXÝ[ÛœÈ—Bˆ
-Bˆ›ÝYšXØ][ÛœÈHØXÝ[ÛœÊ]K››ÝYšXØ][ÛˆŠBˆ\ÜÙ\[žJˆ–È•Ñ•ÛÜšÙ›ÝÐXÝ[Û”\˜[Y]\œÈ—K™Ù]
-•Ñ“›ÝYšXØ][ÛXÝ[Û›ÙHŠBˆOH¹cåù/èxàåxà¨xà©8àêøàkøà#PÛÝYˆÚÜÝ]ÈˆTÛ™H]HÚ\š[™øà#xàjøà`¸à¢¸ào¸àfH‚ˆ›Üˆˆ[ˆ›ÝYšXØ][ÛœÂˆ
-Bˆ\ÜÙ\[žJˆ–È•Ñ•ÛÜšÙ›ÝÐXÝ[Û”\˜[Y]\œÈ—K™Ù]
-•Ñ“›ÝYšXØ][ÛXÝ[Û”ÛÝ[™ŠH\ÈYBˆ›Üˆˆ[ˆ›ÝYšXØ][ÛœÂˆYˆ–È•Ñ•ÛÜšÙ›ÝÐXÝ[Û”\˜[Y]\œÈ—K™Ù]
-•Ñ“›ÝYšXØ][ÛXÝ[Û›ÙHŠBˆOH¹cåù/èxàåxà¨xà©8àêøàkøà#PÛÝYˆÚÜÝ]ÈˆTÛ™H]HÚ\š[™øà#xàjøà`¸à¢¸ào¸àfH‚ˆ
-B‚‚™Yˆ\ÝØÛÛ™šYÝ\™YÜÙ[™Ü™Z™XÝ×ÜXÙZÛ\œÊZ[ÜÚÜÝ]Ë[ÛšÙ^\]Ú\Ü]
-N‚ˆÛÛ™šYÈHÂˆ˜Y™\ÜÈŽˆš‹ËÔËRTŒÌÜÛ™KÜÚÜÝ]‹ˆ˜]]Üš^˜][ÛˆŽˆ™X\™\ˆRT’S‘×ÕÒÑSˆ‹ˆBˆ[ÛšÙ^\]ÚœÙ]]ŠÞ\ËœÝ[ˆ‹[Ë”Ýš[™ÒSÊœÛÛ‹™[\ÊÛÛ™šYÊJJB‚ˆÚ]]\Ýœ˜Z\Ù\Ê˜[YQ\œ›Ü‹X]ÚHœXÙZÛ\ŸÛÜ˜XÚÈŠN‚ˆZ[ÜÚÜÝ]Ë˜ÛÛ™šYÝ\™YÙœ›ÛWÜÝ[ŠœÙ[™‹\Ü]ÈœÙ[™œÚÜÝ]ŠB‚‚]\Ý›X\šËœ\˜[Y]š^™Jˆ˜Y™\ÜÈ‹ˆÂˆš‹ËÌLËŒŒŒNŒÌÜÛ™KÜÚÜÝ]‹ˆš‹ËÛØØ[ÜÝŒÌÜÛ™KÜÚÜÝ]‹ˆKŠB™Yˆ\ÝØÛÛ™šYÝ\™YÜÙ[™Ü™Z™XÝ×ÛÛÜ˜XÚÊZ[ÜÚÜÝ]Ë[ÛšÙ^\]Ú\Ü]Y™\ÜÊN‚ˆÛÛ™šYÈHÂˆ˜Y™\ÜÈŽˆY™\ÜËˆ˜]]Üš^˜][ÛˆŽˆ™X\™\ˆ™X[]ÚÙ[ˆ‹ˆBˆ[ÛšÙ^\]ÚœÙ]]ŠÞ\ËœÝ[ˆ‹[Ë”Ýš[™ÒSÊœÛÛ‹™[\ÊÛÛ™šYÊJJB‚ˆÚ]]\Ýœ˜Z\Ù\Ê˜[YQ\œ›Ü‹X]ÚHœXÙZÛ\ŸÛÜ˜XÚÈŠN‚ˆZ[ÜÚÜÝ]Ë˜ÛÛ™šYÝ\™YÙœ›ÛWÜÝ[ŠœÙ[™‹\Ü]ÈœÙ[™œÚÜÝ]ŠB‚‚™Yˆ\ÝØÛÛ™šYÝ\™YÜÙ[™Ü™\]Z\™\×Ù^XÝYÙ[™Ú[
-Z[ÜÚÜÝ]Ë[ÛšÙ^\]Ú\Ü]
-N‚ˆÛÛ™šYÈHÂˆ˜Y™\ÜÈŽˆš‹ËÌNL‹ŒMŽŒKŒLŒÌÝÜ›Û™È‹ˆ˜]]Üš^˜][ÛˆŽˆ™X\™\ˆ™X[]ÚÙ[ˆ‹ˆBˆ[ÛšÙ^\]ÚœÙ]]ŠÞ\ËœÝ[ˆ‹[Ë”Ýš[™ÒSÊœÛÛ‹™[\ÊÛÛ™šYÊJJB‚ˆÚ]]\Ýœ˜Z\Ù\Ê˜[YQ\œ›Ü‹X]ÚH[™^XÝY[™Ú[ŠN‚ˆZ[ÜÚÜÝ]Ë˜ÛÛ™šYÝ\™YÙœ›ÛWÜÝ[ŠœÙ[™‹\Ü]ÈœÙ[™œÚÜÝ]ŠB‚‚™Yˆ\ÝØÛÛ™šYÝ\™YÜ™XÙZ]™WÜ™\]Z\™\×Ù^XÝYÙ[™Ú[
-Z[ÜÚÜÝ]Ë[ÛšÙ^\]Ú\Ü]
-N‚ˆÛÛ™šYÈHÂˆ˜Y™\ÜÈŽˆš‹ËÌNL‹ŒMŽŒKŒLŒÌÜÛ™KÜÚÜÝ]‹ˆ˜]]Üš^˜][ÛˆŽˆ™X\™\ˆ™X[]ÚÙ[ˆ‹ˆBˆ[ÛšÙ^\]ÚœÙ]]ŠÞ\ËœÝ[ˆ‹[Ë”Ýš[™ÒSÊœÛÛ‹™[\ÊÛÛ™šYÊJJB‚ˆÚ]]\Ýœ˜Z\Ù\Ê˜[YQ\œ›Ü‹X]ÚH[™^XÝY[™Ú[ŠN‚ˆZ[ÜÚÜÝ]Ë˜ÛÛ™šYÝ\™YÙœ›ÛWÜÝ[Šœ™XÙZ]™H‹\Ü]Èœ™XÙZ]™KœÚÜÝ]ŠB‚‚™Yˆ\ÝØÛÛ™šYÝ\™YÜÙ[™ØZ[×ÝÚ]Ü™X[Ý˜[Y\ÊZ[ÜÚÜÝ]Ë[ÛšÙ^\]Ú\Ü]
-N‚ˆØ\\™YˆXÝÜÝ‹Øš™XÝHHßB‚ˆYˆ˜ZÙWÜÚYÛŠ]NˆXÝ\™Ù]ˆ]
-HOˆ›Û™N‚ˆØ\\™YÈ™]H—HH]BˆØ\\™YÈ\™Ù]—HH\™Ù]‚ˆ[ÛšÙ^\]ÚœÙ]]ŠZ[ÜÚÜÝ]ËœÚYÛ—ÜÚÜÝ]‹˜ZÙWÜÚYÛŠBˆ[ÛšÙ^\]ÚœÙ]]ŠˆÞ\ËˆœÝ[ˆ‹ˆ[Ë”Ýš[™ÒSÊˆœÛÛ‹™[\ÊˆÂˆ˜Y™\ÜÈŽˆš‹ËÌNL‹ŒMŽŒKŒLŒÌÜÛ™KÜÚÜÝ]‹ˆ˜]]Üš^˜][ÛˆŽˆ™X\™\ˆ™X[]ÚÙ[ˆ‹ˆBˆ
-Bˆ
-Kˆ
-B‚ˆ\™Ù]H\Ü]ÈœÙ[™œÚÜÝ]‚ˆZ[ÜÚÜÝ]Ë˜ÛÛ™šYÝ\™YÙœ›ÛWÜÝ[ŠœÙ[™‹\™Ù]
-B‚ˆ\ÜÙ\Ø\\™YÈ\™Ù]—HOH\™Ù]ˆ]HHØ\\™YÈ™]H—Bˆ\ÜÙ\\Ú[œÝ[˜ÙJ]KXÝ
-Bˆ\ÜÙ\]VÈ•Ñ•ÛÜšÙ›ÝÒ[\Ü]Y\Ý[ÛœÈ—HOH×B‚ˆ^ØXÝ[ÛœÈHØXÝ[ÛœÊ]K™Ù]^ŠBˆ˜[Y\ÈHÂˆ][VÈ•Ñ•ÛÜšÙ›ÝÐXÝ[Û”\˜[Y]\œÈ—VÈ•Ñ•^XÝ[Û•^—Bˆ›Üˆ][H[ˆ^ØXÝ[ÛœÂˆBˆ\ÜÙ\š‹ËÌNL‹ŒMŽŒKŒLŒÌÜÛ™KÜÚÜÝ]ˆ[ˆ˜[Y\Âˆ\ÜÙ\™X\™\ˆ™X[]ÚÙ[ˆˆ[ˆ˜[Y\Â‚‚™Yˆ\ÝØÛÛ™šYÝ\™YÜ™XÙZ]™WØZ[×ÝÚ]Ü™X[Ý˜[Y\ÊZ[ÜÚÜÝ]Ë[ÛšÙ^\]Ú\Ü]
-N‚ˆØ\\™YˆXÝÜÝ‹Øš™XÝHHßB‚ˆYˆ˜ZÙWÜÚYÛŠ]NˆXÝ\™Ù]ˆ]
-HOˆ›Û™N‚ˆØ\\™YÈ™]H—HH]BˆØ\\™YÈ\™Ù]—HH\™Ù]‚ˆ[ÛšÙ^\]ÚœÙ]]ŠZ[ÜÚÜÝ]ËœÚYÛ—ÜÚÜÝ]‹˜ZÙWÜÚYÛŠBˆ[ÛšÙ^\]ÚœÙ]]ŠˆÞ\ËˆœÝ[ˆ‹ˆ[Ë”Ýš[™ÒSÊˆœÛÛ‹™[\ÊˆÂˆ˜Y™\ÜÈŽˆš‹ËÌNL‹ŒMŽŒKŒLŒÌÜÛ™KÜÚÜÝ]Ú[˜›Þ‹ˆ˜]]Üš^˜][ÛˆŽˆ™X\™\ˆ™X[]ÚÙ[ˆ‹ˆBˆ
-Bˆ
-Kˆ
-B‚ˆ\™Ù]H\Ü]Èœ™XÙZ]™KœÚÜÝ]‚ˆZ[ÜÚÜÝ]Ë˜ÛÛ™šYÝ\™YÙœ›ÛWÜÝ[Šœ™XÙZ]™H‹\™Ù]
-B‚ˆ\ÜÙ\Ø\\™YÈ\™Ù]—HOH\™Ù]ˆ]HHØ\\™YÈ™]H—Bˆ\ÜÙ\\Ú[œÝ[˜ÙJ]KXÝ
-Bˆ\ÜÙ\]VÈ•Ñ•ÛÜšÙ›ÝÒ[\Ü]Y\Ý[ÛœÈ—HOH×B‚‚™Yˆ\ÝÝ˜[Y]WÜ™XÙZ]™WÜ™\]Z\™\×ÜØ]™WØXÝ[ÛŠZ[ÜÚÜÝ]ÊN‚ˆ]HHZ[ÜÚÜÝ]Ëœ™XÙZ]š[™×ÜÚÜÝ]
-\ÚÏQ˜[ÙJBˆ]VÈ•Ñ•ÛÜšÙ›ÝÐXÝ[ÛœÈ—HHÂˆXÝ[Ûˆ›ÜˆXÝ[Ûˆ[ˆ]VÈ•Ñ•ÛÜšÙ›ÝÐXÝ[ÛœÈ—BˆYˆXÝ[Û–È•Ñ•ÛÜšÙ›ÝÐXÝ[Û’Y[YšY\ˆ—HOHš\ËÛÜšÙ›ÝË˜XÝ[ÛœË™ØÝ[Y[XÚÙ\‹œØ]™H‚ˆB‚ˆÚ]]\Ýœ˜Z\Ù\Ê˜[YQ\œ›Ü‹X]ÚH›Z\ÜÚ[™È]ÈØ]™HXÝ[ÛˆŠN‚ˆZ[ÜÚÜÝ]Ë˜[Y]WÜÚÜÝ]
-]Kœ™XÙZ]™HŠB‚‚™Yˆ\ÝÝ˜[Y]WÜ™Z™XÝ×Ý[šÛ›ÝÛ—ÚÚ[™
-Z[ÜÚÜÝ]ÊN‚ˆÚ]]\Ýœ˜Z\Ù\Ê˜[YQ\œ›Ü‹X]ÚH•[šÛ›ÝÛˆÚÜÝ]Ú[™ŠN‚ˆZ[ÜÚÜÝ]Ë˜[Y]WÜÚÜÝ]
-È•Ñ•ÛÜšÙ›ÝÐXÝ[ÛœÈŽˆ×_K›Ý\ˆŠB
+from __future__ import annotations
+
+import importlib.util
+import io
+import json
+import sys
+from pathlib import Path
+
+import pytest
+
+
+MODULE_PATH = Path(__file__).with_name("build_shortcuts.py")
+
+
+@pytest.fixture(scope="module")
+def build_shortcuts():
+    spec = importlib.util.spec_from_file_location("build_shortcuts", MODULE_PATH)
+    assert spec and spec.loader
+    module = importlib.util.module_from_spec(spec)
+    spec.loader.exec_module(module)
+    return module
+
+
+def _identifiers(data: dict) -> list[str]:
+    return [
+        item.get("WFWorkflowActionIdentifier", "").removeprefix("is.workflow.actions.")
+        for item in data.get("WFWorkflowActions", [])
+    ]
+
+
+def _actions(data: dict, identifier: str) -> list[dict]:
+    full = f"is.workflow.actions.{identifier}"
+    return [
+        item for item in data.get("WFWorkflowActions", [])
+        if item.get("WFWorkflowActionIdentifier") == full
+    ]
+
+
+def test_sending_shortcut_uses_raw_file_body_not_multipart(build_shortcuts):
+    data = build_shortcuts.sending_shortcut(
+        "http://192.0.2.10:3000/phone/shortcut",
+        "Bearer test-token",
+        ask=False,
+    )
+
+    uploads = [
+        item for item in _actions(data, "downloadurl")
+        if item.get("WFWorkflowActionParameters", {}).get("WFHTTPMethod") == "POST"
+        and item.get("WFWorkflowActionParameters", {}).get("WFHTTPBodyType") == "File"
+    ]
+    assert len(uploads) == 1
+
+    params = uploads[0]["WFWorkflowActionParameters"]
+    assert params["WFHTTPBodyType"] == "File"
+    assert "WFRequestVariable" in params
+    assert "WFFormValues" not in params
+
+    headers = params["WFHTTPHeaders"]["Value"]["WFDictionaryFieldValueItems"]
+    filename_header = next(
+        item for item in headers
+        if item["WFKey"]["Value"]["string"] == "X-Filename"
+    )
+    filename_value = filename_header["WFValue"]["Value"]
+    filename_ref = filename_value["attachmentsByRange"]["{0, 1}"]
+    assert filename_ref["OutputName"] == "Repeat Item"
+    assert filename_ref["Aggrandizements"][0]["PropertyName"] == "Name"
+
+    permit_header = next(
+        item for item in headers
+        if item["WFKey"]["Value"]["string"] == "X-Usage-Permit"
+    )
+    permit_ref = permit_header["WFValue"]["Value"]["attachmentsByRange"]["{0, 1}"]
+    assert permit_ref["OutputName"] == "Transfer Permit"
+
+    preflight = [
+        item for item in _actions(data, "downloadurl")
+        if item.get("WFWorkflowActionParameters", {}).get("WFHTTPMethod") == "POST"
+        and isinstance(item.get("WFWorkflowActionParameters", {}).get("WFURL"), str)
+        and item["WFWorkflowActionParameters"]["WFURL"].endswith("/phone/shortcut/permit")
+    ]
+    assert len(preflight) == 1
+
+    request_variable = params["WFRequestVariable"]
+    assert request_variable["WFSerializationType"] == "WFTextTokenAttachment"
+    assert request_variable["Value"]["Type"] == "ActionOutput"
+    assert request_variable["Value"]["OutputName"] == "Repeat Item"
+
+
+def test_sending_shortcut_is_share_sheet_enabled(build_shortcuts):
+    data = build_shortcuts.sending_shortcut(ask=False)
+
+    assert "ActionExtension" in data["WFWorkflowTypes"]
+    assert "WFImageContentItem" in data["WFWorkflowInputContentItemClasses"]
+    assert "WFAVAssetContentItem" in data["WFWorkflowInputContentItemClasses"]
+    assert "WFGenericFileContentItem" in data["WFWorkflowInputContentItemClasses"]
+    assert "WFPDFContentItem" in data["WFWorkflowInputContentItemClasses"]
+
+
+def test_sending_shortcut_does_not_contain_receive_only_actions(build_shortcuts):
+    data = build_shortcuts.sending_shortcut(ask=False)
+    identifiers = set(_identifiers(data))
+
+    assert "documentpicker.save" not in identifiers
+    assert "openurl" not in identifiers
+    assert "setname" not in identifiers
+
+
+def test_validate_send_rejects_multipart_form_upload(build_shortcuts):
+    data = build_shortcuts.sending_shortcut(ask=False)
+    upload = next(
+        item for item in _actions(data, "downloadurl")
+        if item.get("WFWorkflowActionParameters", {}).get("WFHTTPMethod") == "POST"
+        and item.get("WFWorkflowActionParameters", {}).get("WFHTTPBodyType") == "File"
+    )
+    params = upload["WFWorkflowActionParameters"]
+    params["WFHTTPBodyType"] = "Form"
+    params["WFFormValues"] = build_shortcuts.dictionary(
+        [build_shortcuts.field("file", "bad", 5)]
+    )
+    params.pop("WFRequestVariable", None)
+
+    with pytest.raises(ValueError, match="raw file-body upload|multipart/Form"):
+        build_shortcuts.validate_shortcut(data, "send")
+
+
+def test_receiving_shortcut_saves_received_file_without_setname(build_shortcuts):
+    data = build_shortcuts.receiving_shortcut(
+        "http://192.0.2.10:3000/phone/shortcut/inbox",
+        "Bearer test-token",
+        ask=False,
+    )
+    identifiers = _identifiers(data)
+
+    assert "setname" not in identifiers
+    assert "documentpicker.save" in identifiers
+
+    save = _actions(data, "documentpicker.save")[0]["WFWorkflowActionParameters"]
+    assert save["WFAskWhereToSave"] is False
+    destination = save["WFFileDestinationPath"]
+    assert destination["WFSerializationType"] == "WFTextTokenString"
+    assert destination["Value"]["string"] == "iPhone Data Sharing/\ufffc"
+    assert save["WFSaveFileOverwrite"] is False
+
+    wf_input = save["WFInput"]
+    assert wf_input["WFSerializationType"] == "WFTextTokenAttachment"
+    assert wf_input["Value"]["Type"] == "ActionOutput"
+    assert wf_input["Value"]["OutputName"] == "Received File"
+
+
+def test_receiving_shortcut_preserves_name_and_notifies_location(build_shortcuts):
+    data = build_shortcuts.receiving_shortcut(ask=False)
+
+    save = _actions(data, "documentpicker.save")[0]["WFWorkflowActionParameters"]
+    destination = save["WFFileDestinationPath"]
+    assert destination["WFSerializationType"] == "WFTextTokenString"
+    assert destination["Value"]["string"] == "iPhone Data Sharing/\ufffc"
+    name_ref = destination["Value"]["attachmentsByRange"]["{10, 1}"]
+    assert name_ref["OutputName"] == "Original Name"
+
+    assert len(_actions(data, "openurl")) == 1
+    files_url = _actions(data, "url")[0]["WFWorkflowActionParameters"]["WFURLActionURL"]
+    assert files_url.endswith("/Shortcuts/iPhone%20Data%20Sharing/")
+    assert not any(
+        item.get("WFWorkflowActionIdentifier") == "is.workflow.actions.downloadurl"
+        and item.get("WFWorkflowActionParameters", {}).get("WFHTTPMethod") == "POST"
+        for item in data["WFWorkflowActions"]
+    )
+    notifications = _actions(data, "notification")
+    assert any(
+        n["WFWorkflowActionParameters"].get("WFNotificationActionBody")
+        == "å—ä¿¡ãƒ•ã‚¡ã‚¤ãƒ«ã¯ã€ŒiCloud > Shortcuts > iPhone Data Sharingã€ã«ã‚ã‚Šã¾ã™"
+        for n in notifications
+    )
+    assert any(
+        n["WFWorkflowActionParameters"].get("WFNotificationActionSound") is True
+        for n in notifications
+        if n["WFWorkflowActionParameters"].get("WFNotificationActionBody")
+        == "å—ä¿¡ãƒ•ã‚¡ã‚¤ãƒ«ã¯ã€ŒiCloud > Shortcuts > iPhone Data Sharingã€ã«ã‚ã‚Šã¾ã™"
+    )
+
+
+def test_configured_send_rejects_placeholders(build_shortcuts, monkeypatch, tmp_path):
+    config = {
+        "address": "http://PC-IP:3000/phone/shortcut",
+        "authorization": "Bearer PAIRING_TOKEN",
+    }
+    monkeypatch.setattr(sys, "stdin", io.StringIO(json.dumps(config)))
+
+    with pytest.raises(ValueError, match="placeholder|loopback"):
+        build_shortcuts.configured_from_stdin("send", tmp_path / "send.shortcut")
+
+
+@pytest.mark.parametrize(
+    "address",
+    [
+        "http://127.0.0.1:3000/phone/shortcut",
+        "http://localhost:3000/phone/shortcut",
+    ],
+)
+def test_configured_send_rejects_loopback(build_shortcuts, monkeypatch, tmp_path, address):
+    config = {
+        "address": address,
+        "authorization": "Bearer real-token",
+    }
+    monkeypatch.setattr(sys, "stdin", io.StringIO(json.dumps(config)))
+
+    with pytest.raises(ValueError, match="placeholder|loopback"):
+        build_shortcuts.configured_from_stdin("send", tmp_path / "send.shortcut")
+
+
+def test_configured_send_requires_expected_endpoint(build_shortcuts, monkeypatch, tmp_path):
+    config = {
+        "address": "http://192.0.2.10:3000/wrong",
+        "authorization": "Bearer real-token",
+    }
+    monkeypatch.setattr(sys, "stdin", io.StringIO(json.dumps(config)))
+
+    with pytest.raises(ValueError, match="unexpected endpoint"):
+        build_shortcuts.configured_from_stdin("send", tmp_path / "send.shortcut")
+
+
+def test_configured_receive_requires_expected_endpoint(build_shortcuts, monkeypatch, tmp_path):
+    config = {
+        "address": "http://192.0.2.10:3000/phone/shortcut",
+        "authorization": "Bearer real-token",
+    }
+    monkeypatch.setattr(sys, "stdin", io.StringIO(json.dumps(config)))
+
+    with pytest.raises(ValueError, match="unexpected endpoint"):
+        build_shortcuts.configured_from_stdin("receive", tmp_path / "receive.shortcut")
+
+
+def test_configured_send_builds_with_real_values(build_shortcuts, monkeypatch, tmp_path):
+    captured: dict[str, object] = {}
+
+    def fake_sign(data: dict, target: Path) -> None:
+        captured["data"] = data
+        captured["target"] = target
+
+    monkeypatch.setattr(build_shortcuts, "sign_shortcut", fake_sign)
+    monkeypatch.setattr(
+        sys,
+        "stdin",
+        io.StringIO(
+            json.dumps(
+                {
+                    "address": "http://192.0.2.10:3000/phone/shortcut",
+                    "authorization": "Bearer real-token",
+                }
+            )
+        ),
+    )
+
+    target = tmp_path / "send.shortcut"
+    build_shortcuts.configured_from_stdin("send", target)
+
+    assert captured["target"] == target
+    data = captured["data"]
+    assert isinstance(data, dict)
+    assert data["WFWorkflowImportQuestions"] == []
+
+    text_actions = _actions(data, "gettext")
+    values = [
+        item["WFWorkflowActionParameters"]["WFTextActionText"]
+        for item in text_actions
+    ]
+    assert "http://192.0.2.10:3000/phone/shortcut" in values
+    assert "Bearer real-token" in values
+
+
+def test_configured_receive_builds_with_real_values(build_shortcuts, monkeypatch, tmp_path):
+    captured: dict[str, object] = {}
+
+    def fake_sign(data: dict, target: Path) -> None:
+        captured["data"] = data
+        captured["target"] = target
+
+    monkeypatch.setattr(build_shortcuts, "sign_shortcut", fake_sign)
+    monkeypatch.setattr(
+        sys,
+        "stdin",
+        io.StringIO(
+            json.dumps(
+                {
+                    "address": "http://192.0.2.10:3000/phone/shortcut/inbox",
+                    "authorization": "Bearer real-token",
+                }
+            )
+        ),
+    )
+
+    target = tmp_path / "receive.shortcut"
+    build_shortcuts.configured_from_stdin("receive", target)
+
+    assert captured["target"] == target
+    data = captured["data"]
+    assert isinstance(data, dict)
+    assert data["WFWorkflowImportQuestions"] == []
+
+
+def test_validate_receive_requires_save_action(build_shortcuts):
+    data = build_shortcuts.receiving_shortcut(ask=False)
+    data["WFWorkflowActions"] = [
+        action for action in data["WFWorkflowActions"]
+        if action["WFWorkflowActionIdentifier"] != "is.workflow.actions.documentpicker.save"
+    ]
+
+    with pytest.raises(ValueError, match="missing its save action"):
+        build_shortcuts.validate_shortcut(data, "receive")
+
+
+def test_validate_rejects_unknown_kind(build_shortcuts):
+    with pytest.raises(ValueError, match="Unknown shortcut kind"):
+        build_shortcuts.validate_shortcut({"WFWorkflowActions": []}, "other")

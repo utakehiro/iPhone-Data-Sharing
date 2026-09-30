@@ -1,52 +1,111 @@
-şŠmş&yºŞÃòân¶«Ëñè™æë{Ü™ßì…éez{ì†X§{_?n)ÿ¦Ã©z¶­Š‰ç¢Ú^®h­µç\\˜[JˆÕ˜[Y]TÙ]
-Ú[‹^‹Ú[‹X\›MŠWBˆÜİš[™×I[[YHHÚ[‹^‹ˆÕ˜[Y]TÙ]
-‘XYÈ‹”™[X\ÙHŠWBˆÜİš[™×IÛÛ™šYİ\˜][ÛˆH”™[X\ÙH‹ˆÕ˜[Y]T]\›Š	×—
-×—
-×—
-É	ÊWBˆÜİš[™×I™\œÚ[ÛˆHŒKŒŒ‚ŠB‚‰\œ›ÜXİ[Û”™Y™\™[˜ÙHH”İÜ‚‰›ÛİH
-™\ÛÛ™KT]
-›Ú[‹T]	ÔØÜš\›Ûİ‹‹ˆŠJK”]‰\İH›Ú[‹T]	ÔØÜš\›Ûİ™\İTÛ™H]HÚ\š[™È‚‰X›\ÚH›Ú[‹T]	ÔØÜš\›Ûİ˜Z[X›\Ú‚‰™\Ûİ\˜Ù\ÈH›Ú[‹T]	\İœ™\Ûİ\˜Ù\È‚‰ÚÜİ]Ûİ\˜ÙHH›Ú[‹T]	ÔØÜš\›Ûİœ™\Ûİ\˜Ù\×ÚÜİ]È‚‚™[˜İ[Ûˆ™\]Z\™KPÛÛ[X[™
-Üİš[™×I˜[YJHÂˆYˆ
-[›İ
-Ù]PÛÛ[X[™	˜[YHQ\œ›ÜXİ[ÛˆÚ[[PÛÛ[YJJHÂˆ›İÈ‰˜[YH\È™\]Z\™YÈZ[TÛ™H]HÚ\š[™È›ÜˆÚ[™İÜËˆ‚ˆBŸB‚”™\]Z\™KPÛÛ[X[™››ÙH‚”™\]Z\™KPÛÛ[X[™›œH‚”™\]Z\™KPÛÛ[X[™™İ™]‚‚‰™\]Z\™YÚÜİ]ÈH
-ˆœÙ[™Z˜KœÚÜİ]‹œ™XÙZ]™KZ˜KœÚÜİ]‹ˆœÙ[™Y[‹œÚÜİ]‹œ™XÙZ]™KY[‹œÚÜİ]‹ˆœÙ[™^šœÚÜİ]‹œ™XÙZ]™K^šœÚÜİ]‹ˆœÙ[™ZÛËœÚÜİ]‹œ™XÙZ]™KZÛËœÚÜİ]‹ˆœÙ[™Y\ËœÚÜİ]‹œ™XÙZ]™KY\ËœÚÜİ]‹ˆœÙ[™Yœ‹œÚÜİ]‹œ™XÙZ]™KYœ‹œÚÜİ]‹ˆœÙ[™YKœÚÜİ]‹œ™XÙZ]™KYKœÚÜİ]‚ŠB™›Ü™XXÚ
-	˜[YH[ˆ	™\]Z\™YÚÜİ]ÊHÂˆYˆ
-[›İ
-\İT]
-›Ú[‹T]	ÚÜİ]Ûİ\˜ÙH	˜[YJJJHÂˆ›İÈ“Z\ÜÚ[™ÈÚYÛ™YÚÜİ][\]Nˆ	˜[YX”[ˆÚ[™İÜËXYÙ[Ü™\\™K\ÚÜİ]Ë[XXËœÚÛˆXXÓÔÈš\œİˆ‚ˆBŸB‚‰ÚÜİ]X[šY™\İ]H›Ú[‹T]	ÚÜİ]Ûİ\˜ÙH›X[šY™\İšœÛÛˆ‚šYˆ
-[›İ
-\İT]	ÚÜİ]X[šY™\İ]
-JHÂˆ›İÈ“Z\ÜÚ[™ÈÚÜİ]X[šY™\İˆ	ÚÜİ]X[šY™\İ]”[ˆÚ[™İÜËXYÙ[Ü™\\™K\ÚÜİ]Ë[XXËœÚÛˆXXÓÔÈš\œİˆ‚ŸB‰ÚÜİ]X[šY™\İHÙ]PÛÛ[	ÚÜİ]X[šY™\İ]T˜]ÈÛÛ™\œ›ÛKRœÛÛ‚™›Ü™XXÚ
-	˜[YH[ˆ	™\]Z\™YÚÜİ]ÊHÂˆ	[HH
-	ÚÜİ]X[šY™\İ™š[\ÈÚ\™KSØš™XİÈ	Ë›˜[YHY\H	˜[YHJBˆYˆ
-	[KÛİ[[™HJHÂˆ›İÈ”ÚÜİ]X[šY™\İ]\İÛÛZ[ˆ^XİHÛ™H[H›Üˆ	˜[YH‚ˆBˆ	š[HH›Ú[‹T]	ÚÜİ]Ûİ\˜ÙH	˜[YBˆ	XİX[Ú^™HH
-Ù]R][H	š[JK“[™İˆ	XİX[\ÚH
-Ù]Qš[R\Ú	š[HP[ÛÜš]HÒLMŠK’\Ú•ÓİÙ\’[˜\šX[
+param(
+  [ValidateSet("win-x64", "win-arm64")]
+  [string]$Runtime = "win-x64",
+  [ValidateSet("Debug", "Release")]
+  [string]$Configuration = "Release",
+  [ValidatePattern('^\d+\.\d+\.\d+$')]
+  [string]$Version = "1.0.0"
+)
 
-BˆYˆ
-	XİX[Ú^™H[™HÛÛ™×I[VÌKœÚ^™H[Üˆ	XİX[\Ú[™H
-Üİš[™×I[VÌKœÚLMŠK•ÓİÙ\’[˜\šX[
+$ErrorActionPreference = "Stop"
+$Root = (Resolve-Path (Join-Path $PSScriptRoot "..")).Path
+$Dist = Join-Path $PSScriptRoot "dist\iPhone Data Sharing"
+$Publish = Join-Path $PSScriptRoot "build\publish"
+$Resources = Join-Path $Dist "resources"
+$ShortcutSource = Join-Path $PSScriptRoot "resources\shortcuts"
 
-JHÂˆ›İÈ”ÚYÛ™YÚÜİ][\]H˜Z[Y[YÜš]H˜[Y][Ûˆ	˜[YX”[ˆÚ[™İÜËXYÙ[Ü™\\™K\ÚÜİ]Ë[XXËœÚÛˆXXÓÔÈYØZ[‹ˆ‚ˆBŸB‚”\ÚSØØ][Ûˆ	›ÛİHÂˆYˆ
-\İT]œÙ\™\—XÚØYÙK[ØÚËšœÛÛˆŠHÂˆœHK\™Yš^Ù\™\ˆÚBˆH[ÙHÂˆœHK\™Yš^Ù\™\ˆ[œİ[ˆBˆœHK\™Yš^Ù\™\ˆ[ˆZ[‚ˆYˆ
-\İT]	X›\Ú
-HÈ™[[İ™KR][H	X›\ÚT™Xİ\œÙHQ›Ü˜ÙHBˆİ™]X›\ÚÚ[™İÜËXYÙ[TÛ™Q]TÚ\š[™Ë•Ú[™İÜË˜ÜÜ›ÚˆˆXÈ	ÛÛ™šYİ\˜][Ûˆˆ\ˆ	[[YHˆK\Ù[‹XÛÛZ[™YYHˆ\•™\œÚ[ÛI™\œÚ[Ûˆˆ\‘š[U™\œÚ[ÛH‰™\œÚ[Û‹Œˆˆ\\ÜÙ[X›U™\œÚ[ÛH‰™\œÚ[Û‹Œˆˆ\”X›\ÚÚ[™ÛQš[O]YHˆ\”X›\Úš[[YYY˜[ÙHˆ[È	X›\Ú‚ˆYˆ
-\İT]	\İ
-HÈ™[[İ™KR][H	\İT™Xİ\œÙHQ›Ü˜ÙHBˆ™]ËR][HR][U\H\™XİÜHQ›Ü˜ÙH	\İİ]S[ˆ™]ËR][HR][U\H\™XİÜHQ›Ü˜ÙH
-›Ú[‹T]	™\Ûİ\˜Ù\ÈœÙ\™\—\İŠHİ]S[ˆ™]ËR][HR][U\H\™XİÜHQ›Ü˜ÙH
-›Ú[‹T]	™\Ûİ\˜Ù\ÈœÚÜİ]ÈŠHİ]S[‚ˆÛÜKR][H‰X›\Ú
-ˆˆ	\İT™Xİ\œÙHQ›Ü˜ÙBˆÛÜKR][HœÙ\™\—\İ
-ˆˆ
-›Ú[‹T]	™\Ûİ\˜Ù\ÈœÙ\™\—\İŠHT™Xİ\œÙHQ›Ü˜ÙBˆÛÜKR][HœÙ\™\—XÚØYÙKšœÛÛˆˆ
-›Ú[‹T]	™\Ûİ\˜Ù\ÈœÙ\™\—XÚØYÙKšœÛÛˆŠHQ›Ü˜ÙBˆÛÜKR][HœÙ\™\—XÚØYÙK[ØÚËšœÛÛˆˆ
-›Ú[‹T]	™\Ûİ\˜Ù\ÈœÙ\™\—XÚØYÙK[ØÚËšœÛÛˆŠHQ›Ü˜ÙBˆœHK\™Yš^
-›Ú[‹T]	™\Ûİ\˜Ù\ÈœÙ\™\ˆŠHÚHK[ÛZ]Y]‚ˆÛÜKR][H‰ÚÜİ]Ûİ\˜ÙW
-ˆˆ
-›Ú[‹T]	™\Ûİ\˜Ù\ÈœÚÜİ]ÈŠHT™Xİ\œÙHQ›Ü˜ÙB‚ˆ	›ÙQ^HH
-Ù]PÛÛ[X[™›ÙJK”Ûİ\˜ÙBˆÛÜKR][H	›ÙQ^H
-›Ú[‹T]	™\Ûİ\˜Ù\È››ÙK™^HŠHQ›Ü˜ÙB‚ˆYˆ
-\İT]\XÛÛ‹œ™ÈŠHÂˆÛÜKR][H\XÛÛ‹œ™Èˆ
-›Ú[‹T]	™\Ûİ\˜Ù\È\XÛÛ‹œ™ÈŠHQ›Ü˜ÙBˆB‚ˆ	š\H›Ú[‹T]	ÔØÜš\›Ûİ™\İTÛ™KQ]KTÚ\š[™ËUÚ[™İÜËš\‚ˆYˆ
-\İT]	š\
-HÈ™[[İ™KR][H	š\Q›Ü˜ÙHBˆÛÛ\™\ÜËP\˜Ú]™HT]‰\İ
-ˆˆQ\İ[˜][Û”]	š\PÛÛ\™\ÜÚ[Û“]™[Ü[X[‚ˆÜš]KRÜİˆ‚ˆÜš]KRÜİZ[ÛÛ\]Nˆ‚ˆÜš]KRÜİˆ	\İ‚ˆÜš]KRÜİˆ	š\‚ŸB™š[˜[HÂˆÜSØØ][Û‚ŸB
+function Require-Command([string]$Name) {
+  if (-not (Get-Command $Name -ErrorAction SilentlyContinue)) {
+    throw "$Name is required to build iPhone Data Sharing for Windows."
+  }
+}
+
+Require-Command "node"
+Require-Command "npm"
+Require-Command "dotnet"
+
+$requiredShortcuts = @(
+  "send-ja.shortcut","receive-ja.shortcut",
+  "send-en.shortcut","receive-en.shortcut",
+  "send-zh.shortcut","receive-zh.shortcut",
+  "send-ko.shortcut","receive-ko.shortcut",
+  "send-es.shortcut","receive-es.shortcut",
+  "send-fr.shortcut","receive-fr.shortcut",
+  "send-de.shortcut","receive-de.shortcut"
+)
+foreach ($name in $requiredShortcuts) {
+  if (-not (Test-Path (Join-Path $ShortcutSource $name))) {
+    throw "Missing signed shortcut template: $name`nRun windows-agent/prepare-shortcuts-mac.sh on macOS first."
+  }
+}
+
+$ShortcutManifestPath = Join-Path $ShortcutSource "manifest.json"
+if (-not (Test-Path $ShortcutManifestPath)) {
+  throw "Missing shortcut manifest: $ShortcutManifestPath`nRun windows-agent/prepare-shortcuts-mac.sh on macOS first."
+}
+$ShortcutManifest = Get-Content $ShortcutManifestPath -Raw | ConvertFrom-Json
+foreach ($name in $requiredShortcuts) {
+  $entry = @($ShortcutManifest.files | Where-Object { $_.name -eq $name })
+  if ($entry.Count -ne 1) {
+    throw "Shortcut manifest must contain exactly one entry for: $name"
+  }
+  $file = Join-Path $ShortcutSource $name
+  $actualSize = (Get-Item $file).Length
+  $actualHash = (Get-FileHash $file -Algorithm SHA256).Hash.ToLowerInvariant()
+  if ($actualSize -ne [long]$entry[0].size -or $actualHash -ne ([string]$entry[0].sha256).ToLowerInvariant()) {
+    throw "Signed shortcut template failed integrity validation: $name`nRun windows-agent/prepare-shortcuts-mac.sh on macOS again."
+  }
+}
+
+Push-Location $Root
+try {
+  if (Test-Path "server\package-lock.json") {
+    npm --prefix server ci
+  } else {
+    npm --prefix server install
+  }
+  npm --prefix server run build
+
+  if (Test-Path $Publish) { Remove-Item $Publish -Recurse -Force }
+  dotnet publish windows-agent\IPhoneDataSharing.Windows.csproj `
+    -c $Configuration `
+    -r $Runtime `
+    --self-contained true `
+    -p:Version=$Version `
+    -p:FileVersion="$Version.0" `
+    -p:AssemblyVersion="$Version.0" `
+    -p:PublishSingleFile=true `
+    -p:PublishTrimmed=false `
+    -o $Publish
+
+  if (Test-Path $Dist) { Remove-Item $Dist -Recurse -Force }
+  New-Item -ItemType Directory -Force $Dist | Out-Null
+  New-Item -ItemType Directory -Force (Join-Path $Resources "server\dist") | Out-Null
+  New-Item -ItemType Directory -Force (Join-Path $Resources "shortcuts") | Out-Null
+
+  Copy-Item "$Publish\*" $Dist -Recurse -Force
+  Copy-Item "server\dist\*" (Join-Path $Resources "server\dist") -Recurse -Force
+  Copy-Item "server\package.json" (Join-Path $Resources "server\package.json") -Force
+  Copy-Item "server\package-lock.json" (Join-Path $Resources "server\package-lock.json") -Force
+  npm --prefix (Join-Path $Resources "server") ci --omit=dev
+  Copy-Item "$ShortcutSource\*" (Join-Path $Resources "shortcuts") -Recurse -Force
+
+  $NodeExe = (Get-Command node).Source
+  Copy-Item $NodeExe (Join-Path $Resources "node.exe") -Force
+
+  if (Test-Path "AppIcon.png") {
+    Copy-Item "AppIcon.png" (Join-Path $Resources "AppIcon.png") -Force
+  }
+
+  $Zip = Join-Path $PSScriptRoot "dist\iPhone-Data-Sharing-Windows.zip"
+  if (Test-Path $Zip) { Remove-Item $Zip -Force }
+  Compress-Archive -Path "$Dist\*" -DestinationPath $Zip -CompressionLevel Optimal
+
+  Write-Host ""
+  Write-Host "Build complete:"
+  Write-Host "  $Dist"
+  Write-Host "  $Zip"
+}
+finally {
+  Pop-Location
+}

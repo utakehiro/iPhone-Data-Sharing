@@ -1,218 +1,588 @@
-şŠmş&yºŞÃòân¶«Ëñè™æë{Ü™ßì…éez{ì†X§{_?n)ÿ¦Ã©z¶­Š‰ç¢Ú^®h­µçZ[\Ü\Ú]š[\ÜÛÜ™R[XYÙKÒQš[\Z[[œÂš[\Ü\Ú[‚š[\Ü›İ[™][Û‚š[\ÜŞ\İ[PÛÛ™šYİ\˜][Û‚‚œš]˜]H]\[™İXYÙNˆİš[™ÈHÂˆ]ÛÙHHØØ[Kœ™Y™\œ™Y[™İXYÙ\Ë™š\œİË›İÙ\˜Ø\ÙY
+import AppKit
+import CoreImage.CIFilterBuiltins
+import Darwin
+import Foundation
+import SystemConfiguration
 
-KœÜ]
-Ù\\˜]Üˆ‹HŠK™š\œİ›X\
-İš[™Ëš[š]
-HÏÈ™[ˆ‚ˆ™]\›ˆÈš˜H‹™[ˆ‹š‹šÛÈ‹™\È‹™œˆ‹™H—K˜ÛÛZ[œÊÛÙJHÈÛÙHˆ™[ˆ‚ŸJ
-Bœš]˜]H]\˜[œÛ][ÛœÎˆÔİš[™ÎˆÔİš[™Îˆİš[™×WHHÂˆšˆÂˆÛÛ›™XİTÛ™Hˆº/ç¹£©HTÛ™H‹ˆ”Ù[™š[\ÈÈTÛ™Hˆ¹cäz` y¥¡ù.í¹b,TÛ™H‹ˆÛÛ›™Xİ[Ûˆ	ˆÙ][™ÜÈˆº/ç¹£©y.#º+¯¹ïkˆ‹ˆšTÛ™Nˆ\ØÛÛ›™XİYˆšTÛ™{ï&¹§*º/ç¹£©H‹ˆ•˜[œÙ™\ˆÙ]\ˆ¹/(:/¤ú+¯¹ïkˆ‹ˆ•[œZ\ˆˆ¹cå¹­¢:acykîH‹ˆ•\Ü˜YHÈ“Èˆ¹caùî©ùb,“È‹ˆ”™XÙZ]™Yš[HØØ][Ûˆˆ¹£©y¥-¹¥¡ù.í¹/çykf9/cyïkˆ‹ˆX›İ]TÛ™H]HÚ\š[™Èˆ¹alù.£ˆTÛ™H]HÚ\š[™È‹ˆ”]Z]TÛ™H]HÚ\š[™Èˆº` 9aîˆTÛ™H]HÚ\š[™È‹ˆšTÛ™NˆÚXÚÚ[™ø )ˆˆšTÛ™{ï&¹¨à9§éy.+x )ˆ‹ˆšTÛ™NˆÛÛ›™XİYˆšTÛ™{ï&¹mìº/ç¹£©H‹ˆ”“ÈXÙ[œÙHˆ”“È:+®9cëú+àH‹ˆÚÛÜÙHÚ\™Hš[\È™XÙZ]™Yœ›ÛHTÛ™HÚİ[™HØ]™Yˆº`"y¢êy.ãˆTÛ™H9£©y¥-¹¥¡ù.í¹æ¡9/çykf9/cyïkˆ‹ˆÚÛÜÙHˆº`"y¢êH‹ˆÛİ[›İÚ[™ÙHHØ]™HØØ][Û‹ˆÚXÚÈH›Û\ˆ\›Z\ÜÚ[ÛœËˆˆ¹¥è9¬åy¦í9¥.y/çykf9/cyïk»ï#:+íù¨à9§éy¥¡ù.í¹i.y§`úfd8à ˆ‹ˆ”İ\Z\š[™Èˆ¹o 9iâúacykîH‹ˆ”ØØ[ˆ\ÈÚ]HTÛ™HØ[Y\˜HÚ][ˆHZ[]\ÈÈZ\‹ˆˆº+íùg*H9b!ºd§ùa¡yå*TÛ™H9æî9§.¹¢jù£ãù.ézacykîxà ˆ‹ˆÛİ[›İ[œZ\ˆH]šXÙKˆˆ¹¥è9¬åycå¹­¢:acykîxà ˆ‹ˆÛİ[›İÙ[™\˜]HHTˆÛÙKˆˆ¹¥è9¬åyå'ù¢$9.£9îí9è xà ˆ‹ˆ”ØØ[ˆÚ][İ\ˆTÛ™HØ[Y\˜Hˆº+íùå*TÛ™H9æî9§.¹¢jù£ãÈ‹ˆKˆšÛÈˆÂˆÛÛ›™XİTÛ™HˆšTÛ™H;%ì:¬¬‹ˆ”Ù[™š[\ÈÈTÛ™HˆšTÛ™{'/:èg;c#;'o:ìí:à­:®,‹ˆÛÛ›™Xİ[Ûˆ	ˆÙ][™ÜÈˆ»%ì:¬¬:ì#È;!);(%H‹ˆšTÛ™Nˆ\ØÛÛ›™XİYˆšTÛ™Nˆ;%ì:¬¬;%b:ä*‹ˆ•˜[œÙ™\ˆÙ]\ˆ»(!;!¨H;!);(%H‹ˆ•[œZ\ˆˆ»c¦;%­:éàH;em;('‹ˆ•\Ü˜YHÈ“Èˆ”“úèg;%áz­î:è";'m:äç‹ˆ”™XÙZ]™Yš[HØØ][Ûˆˆ»"&;"è;c#;'o;( ;'©H;'!;.f‹ˆX›İ]TÛ™H]HÚ\š[™ÈˆšTÛ™H]HÚ\š[™È;(%zìí‹ˆ”]Z]TÛ™H]HÚ\š[™ÈˆšTÛ™H]HÚ\š[™È;(¡zèã‹ˆšTÛ™NˆÚXÚÚ[™ø )ˆˆšTÛ™Nˆ;fe{'n;)$x )ˆ‹ˆšTÛ™NˆÛÛ›™XİYˆšTÛ™Nˆ;%ì:¬¬:ä*‹ˆ”“ÈXÙ[œÙHˆ”“È:ço;'m;!(;"©‹ˆÚÛÜÙHÚ\™Hš[\È™XÙZ]™Yœ›ÛHTÛ™HÚİ[™HØ]™YˆšTÛ™{%ä;!':ì&û'`;c#;'o;'f;( ;'©H;'!;.f:éo;!(;`ç{ef;!.;&¥‹ˆÚÛÜÙHˆ»!(;`çH‹ˆÛİ[›İÚ[™ÙHHØ]™HØØ][Û‹ˆÚXÚÈH›Û\ˆ\›Z\ÜÚ[ÛœËˆˆ»( ;'©H;'!;.f:éo:ìà:¬¯{eh;"&;%á»"­zââ:âéˆ;cí:ãe:­£;eg;'a;fe{'n;ef;!.;&¥ˆ‹ˆ”İ\Z\š[™Èˆ»c¦;%­:éàH;"ç;'¤H‹ˆ”ØØ[ˆ\ÈÚ]HTÛ™HØ[Y\˜HÚ][ˆHZ[]\ÈÈZ\‹ˆˆzí¡;'m:à­;%äTÛ™H;.m:êe:ço:èg;"©;.¥;em;c¦;%­:éà{ef;!.;&¥ˆ‹ˆÛİ[›İ[œZ\ˆH]šXÙKˆˆ»c¦;%­:éà{'a;em;(';eh;"&;%á»"­zââ:âéˆ‹ˆÛİ[›İÙ[™\˜]HHTˆÛÙKˆˆ”Tˆ;/e:äç:éo; ç{!,{eh;"&;%á»"­zââ:âéˆ‹ˆ”ØØ[ˆÚ][İ\ˆTÛ™HØ[Y\˜HˆšTÛ™H;.m:êe:ço:èg;"©;.¥;ef;!.;&¥‹ˆKˆ™\ÈˆÂˆÛÛ›™XİTÛ™HˆÛÛ™Xİ\ˆTÛ™H‹ˆ”Ù[™š[\ÈÈTÛ™Hˆ‘[šX\ˆ\˜Ú]›ÜÈ[TÛ™H‹ˆÛÛ›™Xİ[Ûˆ	ˆÙ][™ÜÈˆÛÛ™^pìÛˆHZ\İ\È‹ˆšTÛ™Nˆ\ØÛÛ›™XİYˆšTÛ™Nˆ\ØÛÛ™XİYÈ‹ˆ•˜[œÙ™\ˆÙ]\ˆÛÛ™šYİ\˜XÚpìÛˆH˜[œÙ™\™[˜ÚXH‹ˆ•[œZ\ˆˆ‘\Ù[›^˜\ˆ‹ˆ•\Ü˜YHÈ“ÈˆXİX[^˜\ˆH“È‹ˆ”™XÙZ]™Yš[HØØ][Ûˆˆ•XšXØXÚpìÛˆH\˜Ú]›ÜÈ™XÚXšYÜÈ‹ˆX›İ]TÛ™H]HÚ\š[™ÈˆXÙ\˜ØHHTÛ™H]HÚ\š[™È‹ˆ”]Z]TÛ™H]HÚ\š[™Èˆ”Ø[\ˆHTÛ™H]HÚ\š[™È‹ˆšTÛ™NˆÚXÚÚ[™ø )ˆˆšTÛ™NˆÛÛ\›Ø˜[™ø )ˆ‹ˆšTÛ™NˆÛÛ›™XİYˆšTÛ™NˆÛÛ™XİYÈ‹ˆ”“ÈXÙ[œÙHˆ“XÙ[˜ÚXH“È‹ˆÚÛÜÙHÚ\™Hš[\È™XÙZ]™Yœ›ÛHTÛ™HÚİ[™HØ]™Yˆ‘[YÙH0ìÛ™HİX\™\ˆÜÈ\˜Ú]›ÜÈ™XÚXšYÜÈ[TÛ™H‹ˆÚÛÜÙHˆ‘[YÚ\ˆ‹ˆÛİ[›İÚ[™ÙHHØ]™HØØ][Û‹ˆÚXÚÈH›Û\ˆ\›Z\ÜÚ[ÛœËˆˆ“›ÈÙHYÈØ[XšX\ˆHXšXØXÚpìÛ‹ˆÛÛ\YX˜HÜÈ\›Z\ÛÜÈHHØ\œ]Kˆ‹ˆ”İ\Z\š[™Èˆ’[šXÚX\ˆ[›XÙH‹ˆ”ØØ[ˆ\ÈÚ]HTÛ™HØ[Y\˜HÚ][ˆHZ[]\ÈÈZ\‹ˆˆ‘\ØØ[°êX[ÈÛÛˆHğè[X\˜H[TÛ™H[ˆHZ[]ÜÈ\˜H[›^˜\‹ˆ‹ˆÛİ[›İ[œZ\ˆH]šXÙKˆˆ“›ÈÙHYÈ\Ù[›^˜\ˆ[\ÜÜÚ]]›Ëˆ‹ˆÛİ[›İÙ[™\˜]HHTˆÛÙKˆˆ“›ÈÙHYÈÙ[™\˜\ˆ[T‹ˆ‹ˆ”ØØ[ˆÚ][İ\ˆTÛ™HØ[Y\˜Hˆ‘\ØØ[™XHÛÛˆHğè[X\˜H[TÛ™H‹ˆKˆ™œˆˆÂˆÛÛ›™XİTÛ™HˆÛÛ›™Xİ\ˆ8 &ZTÛ™H‹ˆ”Ù[™š[\ÈÈTÛ™Hˆ‘[›ŞY\ˆ\ÈšXÚY\œÈ0è8 &ZTÛ™H‹ˆÛÛ›™Xİ[Ûˆ	ˆÙ][™ÜÈˆÛÛ›™^[Ûˆ]°êYÛYÙ\È‹ˆšTÛ™Nˆ\ØÛÛ›™XİYˆšTÛ™Hˆ0êXÛÛ›™Xİ0êH‹ˆ•˜[œÙ™\ˆÙ]\ˆÛÛ™šYİ\˜][ÛˆH˜[œÙ™\‹ˆ•[œZ\ˆˆ‘\ÜÛØÚY\ˆ‹ˆ•\Ü˜YHÈ“Èˆ”\ÜÙ\ˆ0è“È‹ˆ”™XÙZ]™Yš[HØØ][Ûˆˆ‘[\XÙ[Y[\ÈšXÚY\œÈ™péİ\È‹ˆX›İ]TÛ™H]HÚ\š[™Èˆ°à›ÜÜÈHTÛ™H]HÚ\š[™È‹ˆ”]Z]TÛ™H]HÚ\š[™Èˆ”]Z]\ˆTÛ™H]HÚ\š[™È‹ˆšTÛ™NˆÚXÚÚ[™ø )ˆˆšTÛ™Hˆ°ê\šYšXØ][Û¸ )ˆ‹ˆšTÛ™NˆÛÛ›™XİYˆšTÛ™HˆÛÛ›™Xİ0êH‹ˆ”“ÈXÙ[œÙHˆ“XÙ[˜ÙH“È‹ˆÚÛÜÙHÚ\™Hš[\È™XÙZ]™Yœ›ÛHTÛ™HÚİ[™HØ]™YˆÚÚ\Ú\ÜÙ^ˆğîH[œ™YÚ\İ™\ˆ\ÈšXÚY\œÈ™péİ\ÈH8 &ZTÛ™H‹ˆÚÛÜÙHˆÚÚ\Ú\ˆ‹ˆÛİ[›İÚ[™ÙHHØ]™HØØ][Û‹ˆÚXÚÈH›Û\ˆ\›Z\ÜÚ[ÛœËˆˆ’[\ÜÜÚX›HHÚ[™Ù\ˆ8 &Y[\XÙ[Y[ˆ°ê\šYšY^ˆ\È]]Üš\Ø][ÛœÈHÜÜÚY\‹ˆ‹ˆ”İ\Z\š[™Èˆ‘0ê[X\œ™\ˆ8 &X\ÜÛØÚX][Ûˆ‹ˆ”ØØ[ˆ\ÈÚ]HTÛ™HØ[Y\˜HÚ][ˆHZ[]\ÈÈZ\‹ˆˆ”ØØ[›™^ˆ]™XÈ8 &X\\™Z[İÈH8 &ZTÛ™H[œÈ\ÈHZ[]\Èİ\ˆ\ÜÛØÚY\‹ˆ‹ˆÛİ[›İ[œZ\ˆH]šXÙKˆˆ’[\ÜÜÚX›HH\ÜÛØÚY\ˆ8 &X\\™Z[ˆ‹ˆÛİ[›İÙ[™\˜]HHTˆÛÙKˆˆ’[\ÜÜÚX›HHğê[°ê\™\ˆHT‹ˆ‹ˆ”ØØ[ˆÚ][İ\ˆTÛ™HØ[Y\˜Hˆ”ØØ[›™^ˆ]™XÈ8 &X\\™Z[İÈH8 &ZTÛ™H‹ˆKˆ™HˆÂˆÛÛ›™XİTÛ™HˆšTÛ™H™\˜š[™[ˆ‹ˆ”Ù[™š[\ÈÈTÛ™Hˆ‘]ZY[ˆ[ˆTÛ™HÙ[™[ˆ‹ˆÛÛ›™Xİ[Ûˆ	ˆÙ][™ÜÈˆ•™\˜š[™[™È	ˆZ[œİ[[™Ù[ˆ‹ˆšTÛ™Nˆ\ØÛÛ›™XİYˆšTÛ™NˆÙ]™[›‹ˆ•˜[œÙ™\ˆÙ]\ˆ°ç™\˜Yİ[™ÈZ[œšXÚ[ˆ‹ˆ•[œZ\ˆˆ’ÛÜ[™È]YšX™[ˆ‹ˆ•\Ü˜YHÈ“Èˆ]Yˆ“È\Ü˜Y[ˆ‹ˆ”™XÙZ]™Yš[HØØ][Ûˆˆ”ÜZXÚ\›Ü[\˜[™Ù[™\ˆ]ZY[ˆ‹ˆX›İ]TÛ™H]HÚ\š[™Èˆ°ç™\ˆTÛ™H]HÚ\š[™È‹ˆ”]Z]TÛ™H]HÚ\š[™ÈˆšTÛ™H]HÚ\š[™È™Y[™[ˆ‹ˆšTÛ™NˆÚXÚÚ[™ø )ˆˆšTÛ™NˆÚ\™Ù\°ï8 )ˆ‹ˆšTÛ™NˆÛÛ›™XİYˆšTÛ™Nˆ™\˜[™[ˆ‹ˆ”“ÈXÙ[œÙHˆ”“ËS^™[ˆ‹ˆÚÛÜÙHÚ\™Hš[\È™XÙZ]™Yœ›ÛHTÛ™HÚİ[™HØ]™Yˆ•ğéH[ˆÜZXÚ\›Ü°ïˆ›ÛHTÛ™H[\˜[™Ù[™H]ZY[ˆ‹ˆÚÛÜÙHˆ]\İğé[ˆ‹ˆÛİ[›İÚ[™ÙHHØ]™HØØ][Û‹ˆÚXÚÈH›Û\ˆ\›Z\ÜÚ[ÛœËˆˆ”ÜZXÚ\›ÜÛÛ›HšXÚÙpé™\Ù\™[‹ˆ°ï™HYHÜ™™\œ™XÚKˆ‹ˆ”İ\Z\š[™Èˆ’ÛÜ[™Èİ\[ˆ‹ˆ”ØØ[ˆ\ÈÚ]HTÛ™HØ[Y\˜HÚ][ˆHZ[]\ÈÈZ\‹ˆˆ”ØØ[›™HY\È[›™\š[ˆ›ÛˆHZ[][ˆZ]\ˆTÛ™KRØ[Y\˜Kˆ‹ˆÛİ[›İ[œZ\ˆH]šXÙKˆˆ’ÛÜ[™ÈÛÛ›HšXÚ]Y™ÙZØ™[ˆÙ\™[‹ˆ‹ˆÛİ[›İÙ[™\˜]HHTˆÛÙKˆˆ”T‹PÛÙHÛÛ›HšXÚ\™]YİÙ\™[‹ˆ‹ˆ”ØØ[ˆÚ][İ\ˆTÛ™HØ[Y\˜Hˆ“Z]\ˆTÛ™KRØ[Y\˜HØØ[›™[ˆ‹ˆK—Bœš]˜]H[˜ÈŠÈ˜Nˆİš[™ËÈ[ˆİš[™ÊHOˆİš[™ÈÂˆYˆ\[™İXYÙHOHš˜HˆÈ™]\›ˆ˜HBˆYˆ\[™İXYÙHOH™[ˆˆÈ™]\›ˆ[ˆBˆ™]\›ˆ\˜[œÛ][ÛœÖØ\[™İXYÙWOÖÙ[—HÏÈ[‚ŸBœš]˜]H˜\ˆ\Ù\Ò˜\[™\ÙURNˆ›ÛÛÈ\[™İXYÙHOHš˜HˆB‚œš]˜]HİXİZ\š[™Ô™\ÜÛœÙNˆXÛÙX›HÂˆ]\›ˆİš[™ÂŸB‚œš]˜]HİXİZ\š[™Ôİ]NˆXÛÙX›HÂˆ]Z\™Yˆ›ÛÛˆ]™XÙZ]™YÛİ[ˆ[ŸB‚œš]˜]HİXİİÛ›ØY\™XİÜNˆÛÙX›HÂˆ]\™XİÜNˆİš[™ÂŸB‚œš]˜]HİXİXÙ[œÙTİ[[X\NˆXÛÙX›HÂˆ][ˆİš[™ÂŸB™š[˜[Û\ÜÈ\[YØ]Nˆ”ÓØš™Xİ”Ğ\XØ][Û‘[YØ]K”ÕÚ[™İÑ[YØ]K”ÓY[Q[YØ]HÂˆš]˜]H˜\ˆÜHÌˆš]˜]H˜\ˆİ]\Ò][Nˆ”Ôİ]\Ò][HBˆš]˜]H˜\ˆYÙ[ˆ›ØÙ\ÜÏÂˆš]˜]H˜\ˆZ\š[™ÕÚ[™İÎˆ”ÕÚ[™İÏÂˆš]˜]H˜\ˆÛÛ›™Xİ][Nˆ”ÓY[R][HBˆš]˜]H˜\ˆÙ[™][Nˆ”ÓY[R][HBˆš]˜]H˜\ˆÛÛ›™Xİ[Û”İ]\Îˆ”ÓY[R][HBˆš]˜]H˜\ˆ[œZ\’][Nˆ”ÓY[R][HBˆš]˜]H˜\ˆ›Ò][Nˆ”ÓY[R][HBˆš]˜]H˜\ˆZ\™YH˜[ÙBˆš]˜]H˜\ˆ\Ô›ÈH˜[ÙBˆš]˜]H˜\ˆÚXÚÚ[™ÓXÙ[œÙTİ]HH˜[ÙBˆš]˜]H˜\ˆ\İ™XÙZ]™YÛİ[ˆ[Âˆš]˜]H˜\ˆYØYZ\š[™Ôİ]HH˜[ÙBˆš]˜]H˜\ˆÚXÚÚ[™ÔZ\š[™Ôİ]HH˜[ÙBˆš]˜]H]ÛÛ›™Xİ[Û“[Ûš]Ü”İ\Y]H]J
-Bˆš]˜]H˜\ˆ\İİXØÙ\ÜÙ[ÚXÚÎˆ]OÂˆš]˜]H˜\ˆYÙ[İ\\[™[™ÈH˜[ÙBˆš]˜]H˜\ˆÙÒ[™Nˆš[R[™OÂ‚ˆš]˜]H˜\ˆØØ[T“ˆT“ÈT“
-İš[™Îˆš‹ËÌLËŒŒŒN—
-Ü
-HŠHHB‚ˆ[˜È\XØ][Û‘Yš[š\Ú][˜Ú[™ÊÈ›İYšXØ][Ûˆ›İYšXØ][ÛŠHÂˆ”Ğ\œÙ]Xİ]˜][Û”ÛXŞJ˜XØÙ\ÜÛÜJBˆİ]\Ò][HH”Ôİ]\Ğ˜\‹œŞ\İ[Kœİ]\Ò][JÚ][™İˆ”Ôİ]\Ò][KœÜ]X\™S[™İ
-Bˆ]Y[RXÛÛˆH”Ò[XYÙJ˜[YYˆ“Y[RXÛÛˆŠHÏÈ”Ò[XYÙJŞ\İ[TŞ[X›Û˜[YNˆœ\\œ[™H‹XØÙ\ÜÚXš[]Q\ØÜš\[ÛˆšTÛ™H]HÚ\š[™ÈŠBˆY[RXÛÛËœÚ^™HH”ÔÚ^™JÚYˆNZYÚˆN
-BˆY[RXÛÛËš\Õ[\]HHYBˆİ]\Ò][K˜]ÛËš[XYÙHHY[RXÛÛ‚ˆİ]\Ò][K˜]ÛËš[XYÙTØØ[[™ÈHœØØ[T›ÜÜ[Û˜[QİÛ‚ˆYˆİ]\Ò][K˜]ÛËš[XYÙHOHš[Èİ]\Ò][K˜]ÛË]HH¸¡áˆB‚ˆ]Y[HH”ÓY[J
-BˆÛÛ›™Xİ][HH”ÓY[R][J]NˆŠšTÛ™xà¤¹£©yí¦ˆ‹ÛÛ›™XİTÛ™HŠKXİ[ÛˆÜÙ[XİÜŠÚİÔZ\š[™ÊKÙ^Q\]Z]˜[[ˆˆŠBˆÛÛ›™Xİ][K\™Ù]HÙ[‚ˆY[K˜Y][JÛÛ›™Xİ][JBˆÙ[™][HH”ÓY[R][J]NˆŠšTÛ™xàjøàåxà¨xà©8àêøà¤º` xà¢È‹”Ù[™š[\ÈÈTÛ™HŠKXİ[ÛˆÜÙ[XİÜŠÜ[•˜[œÙ™\ŠKÙ^Q\]Z]˜[[ˆˆŠBˆÙ[™][K\™Ù]HÙ[‚ˆY[K˜Y][JÙ[™][JBˆY[K˜Y][JœÙ\\˜]ÜŠ
-JBˆ]ÛÛ›™Xİ[ÛœÈH”ÓY[R][J]NˆŠ¹£©yí¦¸àîú*+yk¦ˆ‹ÛÛ›™Xİ[Ûˆ	ˆÙ][™ÜÈŠKXİ[Ûˆš[Ù^Q\]Z]˜[[ˆˆŠBˆ]ÛÛ›™Xİ[Û“Y[HH”ÓY[J
-BˆÛÛ›™Xİ[Û”İ]\ÈH”ÓY[R][J]NˆŠšTÛ™{ï&¹§*¹£©yí¦ˆ‹šTÛ™Nˆ\ØÛÛ›™XİYŠKXİ[Ûˆš[Ù^Q\]Z]˜[[ˆˆŠBˆÛÛ›™Xİ[Û”İ]\Ëš\Ñ[˜X›YH˜[ÙBˆÛÛ›™Xİ[Û“Y[K˜Y][JÛÛ›™Xİ[Û”İ]\ÊBˆ]Ù]\H”ÓY[R][J]NˆŠº` ycåù/èz*+yk¦¹ áyh,H‹•˜[œÙ™\ˆÙ]\ŠKXİ[ÛˆÜÙ[XİÜŠÚİÔÚ\™TÙ]\
-KÙ^Q\]Z]˜[[ˆˆŠBˆÙ]\\™Ù]HÙ[‚ˆÛÛ›™Xİ[Û“Y[K˜Y][JÙ]\
-Bˆ[œZ\’][HH”ÓY[R][J]NˆŠ¸àæ¸à¨¸àê¸àìøà¬8à¤º)èúfi‹•[œZ\ˆŠKXİ[ÛˆÜÙ[XİÜŠ[œZ\ŠKÙ^Q\]Z]˜[[ˆˆŠBˆ[œZ\’][K\™Ù]HÙ[‚ˆÛÛ›™Xİ[Û“Y[K˜Y][J[œZ\’][JBˆÛÛ›™Xİ[Û“Y[K˜Y][JœÙ\\˜]ÜŠ
-JBˆ›Ò][HH”ÓY[R][J]NˆŠ”“ùâb8àjøà¨¸ààøàåøàáøàï8àâ8àfxà¢È‹•\Ü˜YHÈ“ÈŠKXİ[ÛˆÜÙ[XİÜŠÚİÑ]Z[ÊKÙ^Q\]Z]˜[[ˆˆŠBˆ›Ò][K\™Ù]HÙ[‚ˆÛÛ›™Xİ[Û“Y[K˜Y][J›Ò][JBˆÛÛ›™Xİ[ÛœËœİX›Y[HHÛÛ›™Xİ[Û“Y[BˆY[K˜Y][JÛÛ›™Xİ[ÛœÊBˆ]\İ[˜][ÛˆH”ÓY[R][J]NˆŠ¹cåù/èxàåxà¨xà©8àêøàk¹/çykf9ab‹”™XÙZ]™Yš[HØØ][ÛˆŠKXİ[ÛˆÜÙ[XİÜŠÚÛÜÙQİÛ›ØY\™XİÜJKÙ^Q\]Z]˜[[ˆˆŠBˆ\İ[˜][Û‹\™Ù]HÙ[‚ˆY[K˜Y][J\İ[˜][ÛŠBˆY[K˜Y][JœÙ\\˜]ÜŠ
-JBˆ]X›İ]H”ÓY[R][J]NˆŠšTÛ™H]HÚ\š[™øàjøài8àa8àiˆ‹X›İ]TÛ™H]HÚ\š[™ÈŠKXİ[ÛˆÜÙ[XİÜŠÚİĞX›İ]
-KÙ^Q\]Z]˜[[ˆˆŠBˆX›İ]\™Ù]HÙ[‚ˆY[K˜Y][JX›İ]
-Bˆ]]Z]H”ÓY[R][J]NˆŠšTÛ™H]HÚ\š[™øà¤¹í`¹.¡ˆ‹”]Z]TÛ™H]HÚ\š[™ÈŠKXİ[ÛˆÜÙ[XİÜŠ]Z]
-KÙ^Q\]Z]˜[[ˆœHŠBˆ]Z]\™Ù]HÙ[‚ˆY[K˜Y][J]Z]
-Bˆİ]\Ò][K›Y[HHY[BˆY[K™[YØ]HHÙ[‚ˆ\]PÛÛ›™Xİ[Û“Y[J
-Bˆ™[[İ™SYØXŞQš[™\”]ZXÚĞXİ[ÛŠ
-B‚ˆ][˜ÚYÙ[Ú[”Ü\Ñœ™YJ
-Bˆ]™Yœ™\ÚH[Y\Š[YR[\˜[ˆ‹™\X]ÎˆYJHÈİÙXZÈÙ[—HÈ[ˆÙ[Ëœ™Yœ™\ÚZ\š[™Ôİ]J
-HBˆ[“ÛÜ›XZ[‹˜Y
-™Yœ™\Ú›Ü“[ÙNˆ˜ÛÛ[[ÛŠBˆB‚ˆ[˜È\XØ][Û”Úİ[\›Z[˜]PY\“\İÚ[™İĞÛÜÙY
-ÈÙ[™\ˆ”Ğ\XØ][ÛŠHOˆ›ÛÛÈ˜[ÙHB‚ˆ[˜ÈY[UÚ[Ü[ŠÈY[Nˆ”ÓY[JHÂˆ\]PÛÛ›™Xİ[Û“Y[J
-Bˆ™Yœ™\ÚZ\š[™Ôİ]J
-Bˆ™Yœ™\ÚXÙ[œÙTİ]J
-BˆB‚ˆ[˜ÈÚ[™İÔÚİ[ÛÜÙJÈÙ[™\ˆ”ÕÚ[™İÊHOˆ›ÛÛÂˆÙ[™\‹›Ü™\“İ]
-š[
-Bˆ™]\›ˆ˜[ÙBˆB‚ˆš]˜]H[˜È][˜ÚYÙ[Ú[”Ü\Ñœ™YJ][\ˆ[H
-HÂˆYˆ\ÔÜ]˜Z[X›JÌ
-HÂˆYÙ[İ\\[™[™ÈH˜[ÙBˆYˆİ\YÙ[
+private let appLanguage: String = {
+    let code = Locale.preferredLanguages.first?.lowercased().split(separator: "-").first.map(String.init) ?? "en"
+    return ["ja", "en", "zh", "ko", "es", "fr", "de"].contains(code) ? code : "en"
+}()
+private let appTranslations: [String: [String: String]] = [
+    "zh": [
+        "Connect iPhone": "è¿æ¥ iPhone",
+        "Send Files to iPhone": "å‘é€æ–‡ä»¶åˆ° iPhone",
+        "Connection & Settings": "è¿æ¥ä¸è®¾ç½®",
+        "iPhone: Disconnected": "iPhoneï¼šæœªè¿æ¥",
+        "Transfer Setup": "ä¼ è¾“è®¾ç½®",
+        "Unpair": "å–æ¶ˆé…å¯¹",
+        "Upgrade to PRO": "å‡çº§åˆ° PRO",
+        "Received File Location": "æ¥æ”¶æ–‡ä»¶ä¿å­˜ä½ç½®",
+        "About iPhone Data Sharing": "å…³äº iPhone Data Sharing",
+        "Quit iPhone Data Sharing": "é€€å‡º iPhone Data Sharing",
+        "iPhone: Checkingâ€¦": "iPhoneï¼šæ£€æŸ¥ä¸­â€¦",
+        "iPhone: Connected": "iPhoneï¼šå·²è¿æ¥",
+        "PRO License": "PRO è®¸å¯è¯",
+        "Choose where files received from iPhone should be saved": "é€‰æ‹©ä» iPhone æ¥æ”¶æ–‡ä»¶çš„ä¿å­˜ä½ç½®",
+        "Choose": "é€‰æ‹©",
+        "Could not change the save location. Check the folder permissions.": "æ— æ³•æ›´æ”¹ä¿å­˜ä½ç½®ï¼Œè¯·æ£€æŸ¥æ–‡ä»¶å¤¹æƒé™ã€‚",
+        "Start Pairing": "å¼€å§‹é…å¯¹",
+        "Scan this with the iPhone camera within 5 minutes to pair.": "è¯·åœ¨ 5 åˆ†é’Ÿå†…ç”¨ iPhone ç›¸æœºæ‰«æä»¥é…å¯¹ã€‚",
+        "Could not unpair the device.": "æ— æ³•å–æ¶ˆé…å¯¹ã€‚",
+        "Could not generate the QR code.": "æ— æ³•ç”ŸæˆäºŒç»´ç ã€‚",
+        "Scan with your iPhone camera": "è¯·ç”¨ iPhone ç›¸æœºæ‰«æ",
+    ],
+    "ko": [
+        "Connect iPhone": "iPhone ì—°ê²°",
+        "Send Files to iPhone": "iPhoneìœ¼ë¡œ íŒŒì¼ ë³´ë‚´ê¸°",
+        "Connection & Settings": "ì—°ê²° ë° ì„¤ì •",
+        "iPhone: Disconnected": "iPhone: ì—°ê²° ì•ˆ ë¨",
+        "Transfer Setup": "ì „ì†¡ ì„¤ì •",
+        "Unpair": "í˜ì–´ë§ í•´ì œ",
+        "Upgrade to PRO": "PROë¡œ ì—…ê·¸ë ˆì´ë“œ",
+        "Received File Location": "ìˆ˜ì‹  íŒŒì¼ ì €ì¥ ìœ„ì¹˜",
+        "About iPhone Data Sharing": "iPhone Data Sharing ì •ë³´",
+        "Quit iPhone Data Sharing": "iPhone Data Sharing ì¢…ë£Œ",
+        "iPhone: Checkingâ€¦": "iPhone: í™•ì¸ ì¤‘â€¦",
+        "iPhone: Connected": "iPhone: ì—°ê²°ë¨",
+        "PRO License": "PRO ë¼ì´ì„ ìŠ¤",
+        "Choose where files received from iPhone should be saved": "iPhoneì—ì„œ ë°›ì€ íŒŒì¼ì˜ ì €ì¥ ìœ„ì¹˜ë¥¼ ì„ íƒí•˜ì„¸ìš”",
+        "Choose": "ì„ íƒ",
+        "Could not change the save location. Check the folder permissions.": "ì €ì¥ ìœ„ì¹˜ë¥¼ ë³€ê²½í•  ìˆ˜ ì—†ìŠµë‹ˆë‹¤. í´ë” ê¶Œí•œì„ í™•ì¸í•˜ì„¸ìš”.",
+        "Start Pairing": "í˜ì–´ë§ ì‹œì‘",
+        "Scan this with the iPhone camera within 5 minutes to pair.": "5ë¶„ ì´ë‚´ì— iPhone ì¹´ë©”ë¼ë¡œ ìŠ¤ìº”í•´ í˜ì–´ë§í•˜ì„¸ìš”.",
+        "Could not unpair the device.": "í˜ì–´ë§ì„ í•´ì œí•  ìˆ˜ ì—†ìŠµë‹ˆë‹¤.",
+        "Could not generate the QR code.": "QR ì½”ë“œë¥¼ ìƒì„±í•  ìˆ˜ ì—†ìŠµë‹ˆë‹¤.",
+        "Scan with your iPhone camera": "iPhone ì¹´ë©”ë¼ë¡œ ìŠ¤ìº”í•˜ì„¸ìš”",
+    ],
+    "es": [
+        "Connect iPhone": "Conectar iPhone",
+        "Send Files to iPhone": "Enviar archivos al iPhone",
+        "Connection & Settings": "ConexiÃ³n y ajustes",
+        "iPhone: Disconnected": "iPhone: desconectado",
+        "Transfer Setup": "ConfiguraciÃ³n de transferencia",
+        "Unpair": "Desenlazar",
+        "Upgrade to PRO": "Actualizar a PRO",
+        "Received File Location": "UbicaciÃ³n de archivos recibidos",
+        "About iPhone Data Sharing": "Acerca de iPhone Data Sharing",
+        "Quit iPhone Data Sharing": "Salir de iPhone Data Sharing",
+        "iPhone: Checkingâ€¦": "iPhone: comprobandoâ€¦",
+        "iPhone: Connected": "iPhone: conectado",
+        "PRO License": "Licencia PRO",
+        "Choose where files received from iPhone should be saved": "Elige dÃ³nde guardar los archivos recibidos del iPhone",
+        "Choose": "Elegir",
+        "Could not change the save location. Check the folder permissions.": "No se pudo cambiar la ubicaciÃ³n. Comprueba los permisos de la carpeta.",
+        "Start Pairing": "Iniciar enlace",
+        "Scan this with the iPhone camera within 5 minutes to pair.": "EscanÃ©alo con la cÃ¡mara del iPhone en 5 minutos para enlazar.",
+        "Could not unpair the device.": "No se pudo desenlazar el dispositivo.",
+        "Could not generate the QR code.": "No se pudo generar el QR.",
+        "Scan with your iPhone camera": "Escanea con la cÃ¡mara del iPhone",
+    ],
+    "fr": [
+        "Connect iPhone": "Connecter lâ€™iPhone",
+        "Send Files to iPhone": "Envoyer des fichiers Ã  lâ€™iPhone",
+        "Connection & Settings": "Connexion et rÃ©glages",
+        "iPhone: Disconnected": "iPhone : dÃ©connectÃ©",
+        "Transfer Setup": "Configuration du transfert",
+        "Unpair": "Dissocier",
+        "Upgrade to PRO": "Passer Ã  PRO",
+        "Received File Location": "Emplacement des fichiers reÃ§us",
+        "About iPhone Data Sharing": "Ã€ propos de iPhone Data Sharing",
+        "Quit iPhone Data Sharing": "Quitter iPhone Data Sharing",
+        "iPhone: Checkingâ€¦": "iPhone : vÃ©rificationâ€¦",
+        "iPhone: Connected": "iPhone : connectÃ©",
+        "PRO License": "Licence PRO",
+        "Choose where files received from iPhone should be saved": "Choisissez oÃ¹ enregistrer les fichiers reÃ§us de lâ€™iPhone",
+        "Choose": "Choisir",
+        "Could not change the save location. Check the folder permissions.": "Impossible de changer lâ€™emplacement. VÃ©rifiez les autorisations du dossier.",
+        "Start Pairing": "DÃ©marrer lâ€™association",
+        "Scan this with the iPhone camera within 5 minutes to pair.": "Scannez avec lâ€™appareil photo de lâ€™iPhone dans les 5 minutes pour associer.",
+        "Could not unpair the device.": "Impossible de dissocier lâ€™appareil.",
+        "Could not generate the QR code.": "Impossible de gÃ©nÃ©rer le QR.",
+        "Scan with your iPhone camera": "Scannez avec lâ€™appareil photo de lâ€™iPhone",
+    ],
+    "de": [
+        "Connect iPhone": "iPhone verbinden",
+        "Send Files to iPhone": "Dateien an iPhone senden",
+        "Connection & Settings": "Verbindung & Einstellungen",
+        "iPhone: Disconnected": "iPhone: getrennt",
+        "Transfer Setup": "Ãœbertragung einrichten",
+        "Unpair": "Kopplung aufheben",
+        "Upgrade to PRO": "Auf PRO upgraden",
+        "Received File Location": "Speicherort empfangener Dateien",
+        "About iPhone Data Sharing": "Ãœber iPhone Data Sharing",
+        "Quit iPhone Data Sharing": "iPhone Data Sharing beenden",
+        "iPhone: Checkingâ€¦": "iPhone: wird geprÃ¼ftâ€¦",
+        "iPhone: Connected": "iPhone: verbunden",
+        "PRO License": "PRO-Lizenz",
+        "Choose where files received from iPhone should be saved": "WÃ¤hle den Speicherort fÃ¼r vom iPhone empfangene Dateien",
+        "Choose": "AuswÃ¤hlen",
+        "Could not change the save location. Check the folder permissions.": "Speicherort konnte nicht geÃ¤ndert werden. PrÃ¼fe die Ordnerrechte.",
+        "Start Pairing": "Kopplung starten",
+        "Scan this with the iPhone camera within 5 minutes to pair.": "Scanne dies innerhalb von 5 Minuten mit der iPhone-Kamera.",
+        "Could not unpair the device.": "Kopplung konnte nicht aufgehoben werden.",
+        "Could not generate the QR code.": "QR-Code konnte nicht erzeugt werden.",
+        "Scan with your iPhone camera": "Mit der iPhone-Kamera scannen",
+    ],
+]
+private func tr(_ ja: String, _ en: String) -> String {
+    if appLanguage == "ja" { return ja }
+    if appLanguage == "en" { return en }
+    return appTranslations[appLanguage]?[en] ?? en
+}
+private var usesJapaneseUI: Bool { appLanguage == "ja" }
 
-HÈÚ[”™XYHÈİÙXZÈÙ[—H[ˆÙ[Ëœ™Yœ™\ÚZ\š[™Ôİ]J
-HHBˆH[ÙHYˆ][\ŒÂˆYÙ[İ\\[™[™ÈHYBˆ\Ü]Ú]Y]YK›XZ[‹˜\Ş[˜ĞY\ŠXY[™Nˆ››İÊ
-H
-ÈJHÈİÙXZÈÙ[—H[‚ˆÙ[Ë›][˜ÚYÙ[Ú[”Ü\Ñœ™YJ][\ˆ][\
-ÈJBˆBˆH[ÙHÂˆYÙ[İ\\[™[™ÈH˜[ÙBˆÚİÑ\œ›ÜŠŠ¸àçxàï8àâÌ8àc9/oùå*9.+xàiøàfxà ¸ànøàbøàkšTÛ™H]HÚ\š[™øà¤¹í`¹.¡¸àeøài¸àèxàâøàéxàï8àbøà¢ya£z*iº(c8àeøài¸àcøàh8àexàa8à ˆ‹”ÜÌ\È[ˆ\ÙKˆ]Z]İ\ˆTÛ™H]HÚ\š[™È[œİ[˜Ù\È[™HYØZ[ˆœ›ÛHHY[KˆŠJBˆBˆB‚ˆ\ØØ\™X›T™\İ[š]˜]H[˜Èİ\YÙ[
+private struct PairingResponse: Decodable {
+    let url: String
+}
 
-HOˆ›ÛÛÂˆİX\™]™\Ûİ\˜Ù\ÈH[™K›XZ[‹œ™\Ûİ\˜ÙUT“ˆ]^Xİ]X›HH[™K›XZ[‹™^Xİ]X›UT“[ÙHÈÚİÑ\œ›ÜŠŠ¸à¨¸àåøàê¸àk¹©âù¢$8à¤º*«xàoùcå¸à£8ào¸àføà¤øàiøàeøàgøà ˆ‹•H\ÛÛ™šYİ\˜][ÛˆÛİ[›İ™H™XYˆŠJHÈ™]\›ˆ˜[ÙHBˆ]ØÜš\H™\Ûİ\˜Ù\Ë˜\[™[™Ô]ÛÛ\Û™[
-œÙ\™\‹Ù\İÛØØ[XYÙ[šœÈŠBˆ]›ÙHH^Xİ]X›K™[][™Ó\İ]ÛÛ\Û™[
+private struct PairingState: Decodable {
+    let paired: Bool
+    let receivedCount: Int
+}
 
-K˜\[™[™Ô]ÛÛ\Û™[
-››ÙHŠBˆİX\™š[SX[˜YÙ\‹™Y˜][™š[Q^\İÊ]]ˆØÜš\œ]
-Kš[SX[˜YÙ\‹™Y˜][™š[Q^\İÊ]]ˆ›ÙKœ]
-H[ÙHÂˆÚİÑ\œ›ÜŠŠYÙ[8àk¹k§ú(c8àåxà¨xà©8àêøàc:)¢øài8àbøà¢¸ào¸àføà¤øà ¸à¨¸àåøàê¸à¤¹a£xàäøàêøàâxàeøài¸àcøàh8àexàa8à ˆ‹•HYÙ[^Xİ]X›HÛİ[›İ™H›İ[™ˆ™XZ[H\ˆŠJBˆ™]\›ˆ˜[ÙBˆBˆİX\™\ÔÜ]˜Z[X›JÌ
-H[ÙHÂˆÚİÑ\œ›ÜŠŠ¸àçxàï8àâÌ8à¤¸ànøàbøàk¸à¨¸àåøàê¸àc9/oùå*9.+xàiøàfxà ¹/oùå*9.+xàk¸à¨¸àåøàê¸à¤¹í`¹.¡¸àeøàiˆTÛ™H]HÚ\š[™È8à¤ºe¢øàcyæí8àeøài¸àcøàh8àexàa8à ˆ‹[›İ\ˆ\\È\Ú[™ÈÜÌˆ]Z]]\[™™[Ü[ˆTÛ™H]HÚ\š[™ËˆŠJBˆ™]\›ˆ˜[ÙBˆBˆÜHÌ‚ˆ]›ØÙ\ÜÈH›ØÙ\ÜÊ
-Bˆ›ØÙ\ÜË™^Xİ]X›UT“H›ÙBˆ›ØÙ\ÜË˜\™İ[Y[ÈHÜØÜš\œ]Bˆ›ØÙ\ÜË˜İ\œ™[\™XİÜUT“H™\Ûİ\˜Ù\Ë˜\[™[™Ô]ÛÛ\Û™[
-œÙ\™\ˆŠBˆ˜\ˆ[š\›Û›Y[H›ØÙ\ÜÒ[™›Ëœ›ØÙ\ÜÒ[™›Ë™[š\›Û›Y[ˆ[š\›Û›Y[È”Ô•—HHİš[™ÊÜ
-Bˆ[š\›Û›Y[ÈQÑS•ÔT‘S•ÔQ—HHİš[™Ê›ØÙ\ÜÒ[™›Ëœ›ØÙ\ÜÒ[™›Ëœ›ØÙ\ÜÒY[YšY\ŠBˆ[š\›Û›Y[œ™[[İ™U˜[YJ›Ü’Ù^NˆQÑS•ÔT‘S•ÔTHŠBˆYˆ]ØØ[˜[YHHĞÑ[˜[ZXÔİÜ™PÛÜSØØ[Üİ˜[YJš[
-H\Èİš[™ÏÈÂˆ[š\›Û›Y[È”P“P×ĞTÑWÕT“—HHš‹Ë×
-ØØ[˜[YJK›ØØ[ŒÌ‚ˆBˆ›ØÙ\ÜË™[š\›Û›Y[H[š\›Û›Y[ˆ›ØÙ\ÜËœİ[™\™[œ]Hš[R[™K›[]šXÙB‚ˆ]ÙÑ\™XİÜHHš[SX[˜YÙ\‹™Y˜][šÛYQ\™XİÜQ›Üİ\œ™[\Ù\‹˜\[™[™Ô]ÛÛ\Û™[
-“Xœ˜\KÓÙÜÈŠBˆOÈš[SX[˜YÙ\‹™Y˜][˜Ü™X]Q\™XİÜJ]ˆÙÑ\™XİÜKÚ][\›YYX]Q\™XİÜšY\ÎˆYJBˆ]ÙÕT“HÙÑ\™XİÜK˜\[™[™Ô]ÛÛ\Û™[
-šTÛ™H]HÚ\š[™ÈYÙ[›ÙÈŠBˆYˆQš[SX[˜YÙ\‹™Y˜][™š[Q^\İÊ]]ˆÙÕT“œ]
-HÈš[SX[˜YÙ\‹™Y˜][˜Ü™X]Qš[J]]ˆÙÕT“œ]ÛÛ[Îˆš[
-HBˆÙÒ[™HHOÈš[R[™J›Ü•Üš][™ÕÎˆÙÕT“
-BˆÈHOÈÙÒ[™OËœÙYZÕÑ[™
+private struct DownloadDirectory: Codable {
+    let directory: String
+}
 
-Bˆ›ØÙ\ÜËœİ[™\™İ]]HÙÒ[™HÏÈš[R[™K›[]šXÙBˆ›ØÙ\ÜËœİ[™\™\œ›ÜˆHÙÒ[™HÏÈš[R[™K›[]šXÙB‚ˆÈÂˆH›ØÙ\ÜËœ[Š
-BˆYÙ[H›ØÙ\ÜÂˆ›ØÙ\ÜË\›Z[˜][Û’[™\ˆHÈİÙXZÈÙ[—Hš[š\ÚY[‚ˆ\Ü]Ú]Y]YK›XZ[‹˜\Ş[˜ÈÂˆİX\™]Ù[‹Ù[‹˜YÙ[OOHš[š\ÚY[ÙHÈ™]\›ˆBˆÙ[‹˜YÙ[Hš[ˆÙ[‹›\İİXØÙ\ÜÙ[ÚXÚÈHš[ˆÙ[‹\]PÛÛ›™Xİ[Û“Y[J
-BˆÙ[‹œÚİÑ\œ›ÜŠYÙ[8àc9í`¹.¡¸àeøào¸àeøàgûï"9í`¹.¡¸à¬øàï8àâNˆ
-š[š\ÚY\›Z[˜][Û”İ]\Ê{ï"xà ¹a£z-mùbåxàkøàèxàâøàéxàï8àbøà¢y¤ãy/g8à¤º`n8à¤øàiøàcøàh8àexàa8à ¸àëxà¬ˆ
-ÙÕT“œ]
-HŠBˆBˆBˆ™]\›ˆYBˆHØ]ÚÂˆÚİÑ\œ›ÜŠYÙ[8à¤º-mùbåxàiøàcxào¸àføà¤øàiøàeøàgÎˆ
-\œ›Ü‹›ØØ[^™Y\ØÜš\[ÛŠHŠBˆ™]\›ˆ˜[ÙBˆBˆB‚ˆš]˜]H[˜È\ÔÜ]˜Z[X›JÈØ[™Y]Nˆ[
-HOˆ›ÛÛÂˆ]\ØÜš\ÜˆHÛØÚÙ]
-Q—ÒS‘UÓĞÒ×ÔÕ‘PSK
-BˆİX\™\ØÜš\ÜˆH[ÙHÈ™]\›ˆ˜[ÙHBˆY™\ˆÈÛÜÙJ\ØÜš\ÜŠHBˆ˜\ˆY™\ÜÈHÛØÚØY—Ú[Š
-BˆY™\ÜËœÚ[—Û[ˆHR[
-Y[[ÜS^[İ]ÛØÚØY—Ú[‹œÚ^™JBˆY™\ÜËœÚ[—Ù˜[Z[HHØWÙ˜[Z[Wİ
-Q—ÒS‘U
-BˆY™\ÜËœÚ[—ÜÜH[—ÜÜİ
-R[MŠØ[™Y]JK˜šYÑ[™X[ŠBˆY™\ÜËœÚ[—ØYˆH[—ØYŠ×ØYˆSQ—ĞS–JBˆ™]\›ˆÚ][œØY™TÚ[\ŠÎˆ	˜Y™\ÜÊHÈÚ[\ˆ[‚ˆÚ[\‹Ú]Y[[ÜT™X›İ[™
-ÎˆÛØÚØY‹œÙ[‹Ø\XÚ]NˆJHÂˆ\Ú[‹˜š[™
-\ØÜš\Ü‹	ÛØÚÛ[—İ
-Y[[ÜS^[İ]ÛØÚØY—Ú[‹œÚ^™JJHOHˆBˆBˆB‚ˆš]˜]H[˜ÈÚ[”™XYJÈÛÜšÎˆ\ØØ\[™È
+private struct LicenseSummary: Decodable {
+    let plan: String
+}
+final class AppDelegate: NSObject, NSApplicationDelegate, NSWindowDelegate, NSMenuDelegate {
+    private var port = 3000
+    private var statusItem: NSStatusItem!
+    private var agent: Process?
+    private var pairingWindow: NSWindow?
+    private var connectItem: NSMenuItem!
+    private var sendItem: NSMenuItem!
+    private var connectionStatus: NSMenuItem!
+    private var unpairItem: NSMenuItem!
+    private var proItem: NSMenuItem!
+    private var paired = false
+    private var isPro = false
+    private var checkingLicenseState = false
+    private var lastReceivedCount: Int?
+    private var didLoadPairingState = false
+    private var checkingPairingState = false
+    private let connectionMonitorStartedAt = Date()
+    private var lastSuccessfulCheck: Date?
+    private var agentStartupPending = false
+    private var logHandle: FileHandle?
 
-HOˆ›ÚY][\ˆ[H
-HÂˆYˆYÙ[İ\\[™[™ÈÂˆ\Ü]Ú]Y]YK›XZ[‹˜\Ş[˜ĞY\ŠXY[™Nˆ››İÊ
-H
-ÈŒJHÈİÙXZÈÙ[—H[ˆÙ[ËÚ[”™XYJÛÜšË][\ˆ][\
-HBˆ™]\›‚ˆBˆYˆYÙ[Ëš\Ô[›š[™ÈOHYH	‰ˆ\İ\YÙ[
+    private var localURL: URL { URL(string: "http://127.0.0.1:\(port)")! }
 
-HÈ™]\›ˆBˆ˜\ˆ™\]Y\İHT“™\]Y\İ
-\›ˆØØ[T“˜\[™[™Ô]ÛÛ\Û™[
-šX[ŠJBˆ™\]Y\İ[Y[İ][\˜[H‚ˆT“Ù\ÜÚ[Û‹œÚ\™Y™]U\ÚÊÚ]ˆ™\]Y\İ
-HÈİÙXZÈÙ[—HË™\ÜÛœÙKÈ[‚ˆ\Ü]Ú]Y]YK›XZ[‹˜\Ş[˜ÈÂˆYˆ
-™\ÜÛœÙH\ÏÈT“™\ÜÛœÙJOËœİ]\ĞÛÙHOHŒÈÛÜšÊ
-HBˆ[ÙHYˆ][\ŒÂˆ\Ü]Ú]Y]YK›XZ[‹˜\Ş[˜ĞY\ŠXY[™Nˆ››İÊ
-H
-ÈŒJHÈÙ[ËÚ[”™XYJÛÜšË][\ˆ][\
-ÈJHBˆH[ÙHÈÙ[ËœÚİÑ\œ›ÜŠŠYÙ[8àjù£©yí¦¸àiøàcxào¸àføà¤øà šTÛ™H]HÚ\š[™ÈYÙ[›ÙÈ8à¤¹è®º*£xàeøài¸àcøàh8àexàa8à ˆ‹Ûİ[›İÛÛ›™XİÈHYÙ[ˆÚXÚÈTÛ™H]HÚ\š[™ÈYÙ[›ÙËˆŠJHBˆBˆKœ™\İ[YJ
-BˆB‚ˆØš˜Èš]˜]H[˜ÈÜ[•˜[œÙ™\Š
-HÂˆÚ[”™XYHÈİÙXZÈÙ[—H[‚ˆİX\™]Ù[ˆ[ÙHÈ™]\›ˆBˆ”ÕÛÜšÜÜXÙKœÚ\™Y›Ü[ŠÙ[‹›ØØ[T“˜\[™[™Ô]ÛÛ\Û™[
-˜[œÙ™\ˆŠJBˆBˆB‚ˆØš˜Èš]˜]H[˜ÈÚÛÜÙQİÛ›ØY\™XİÜJ
-HÂˆÚ[”™XYHÈİÙXZÈÙ[—H[‚ˆİX\™]Ù[ˆ[ÙHÈ™]\›ˆBˆT“Ù\ÜÚ[Û‹œÚ\™Y™]U\ÚÊÚ]ˆÙ[‹›ØØ[T“˜\[™[™Ô]ÛÛ\Û™[
-˜YZ[‹ÙİÛ›ØYY\™XİÜHŠJHÈİÙXZÈÙ[—H]KËÈ[‚ˆ\Ü]Ú]Y]YK›XZ[‹˜\Ş[˜ÈÂˆİX\™]Ù[ˆ[ÙHÈ™]\›ˆBˆ]İ\œ™[H]K™›]X\ÈOÈ”ÓÓ‘XÛÙ\Š
-K™XÛÙJİÛ›ØY\™XİÜKœÙ[‹œ›ÛNˆ	
-HBˆ][™[H”ÓÜ[”[™[
+    func applicationDidFinishLaunching(_ notification: Notification) {
+        NSApp.setActivationPolicy(.accessory)
+        statusItem = NSStatusBar.system.statusItem(withLength: NSStatusItem.squareLength)
+        let menuIcon = NSImage(named: "MenuIcon") ?? NSImage(systemSymbolName: "paperplane", accessibilityDescription: "iPhone Data Sharing")
+        menuIcon?.size = NSSize(width: 18, height: 18)
+        menuIcon?.isTemplate = true
+        statusItem.button?.image = menuIcon
+        statusItem.button?.imageScaling = .scaleProportionallyDown
+        if statusItem.button?.image == nil { statusItem.button?.title = "â‡„" }
 
-Bˆ[™[›Y\ÜØYÙHHŠšTÛ™xàbøà¢ycåøàdycå¸àhøàgøàåxà¨xà©8àêøàk¹/çykf9ab8à¤º`n9¢§¸àeøài¸àcøàh8àexàa‹ÚÛÜÙHÚ\™Hš[\È™XÙZ]™Yœ›ÛHTÛ™HÚİ[™HØ]™YŠBˆ[™[œ›Û\HŠº`n9¢§ˆ‹ÚÛÜÙHŠBˆ[™[˜Ø[ÚÛÜÙQš[\ÈH˜[ÙBˆ[™[˜Ø[ÚÛÜÙQ\™XİÜšY\ÈHYBˆ[™[˜[İÜÓ][\TÙ[Xİ[ÛˆH˜[ÙBˆYˆ]İ\œ™[È[™[™\™XİÜUT“HT“
-š[UT“Ú]]ˆİ\œ™[™\™XİÜK\Ñ\™XİÜNˆYJHBˆİX\™[™[œ[“[Ù[
+        let menu = NSMenu()
+        connectItem = NSMenuItem(title: tr("iPhoneã‚’æ¥ç¶š", "Connect iPhone"), action: #selector(showPairing), keyEquivalent: "")
+        connectItem.target = self
+        menu.addItem(connectItem)
+        sendItem = NSMenuItem(title: tr("iPhoneã«ãƒ•ã‚¡ã‚¤ãƒ«ã‚’é€ã‚‹", "Send Files to iPhone"), action: #selector(openTransfer), keyEquivalent: "")
+        sendItem.target = self
+        menu.addItem(sendItem)
+        menu.addItem(.separator())
+        let connections = NSMenuItem(title: tr("æ¥ç¶šãƒ»è¨­å®š", "Connection & Settings"), action: nil, keyEquivalent: "")
+        let connectionMenu = NSMenu()
+        connectionStatus = NSMenuItem(title: tr("iPhoneï¼šæœªæ¥ç¶š", "iPhone: Disconnected"), action: nil, keyEquivalent: "")
+        connectionStatus.isEnabled = false
+        connectionMenu.addItem(connectionStatus)
+        let setup = NSMenuItem(title: tr("é€å—ä¿¡è¨­å®šæƒ…å ±", "Transfer Setup"), action: #selector(showShareSetup), keyEquivalent: "")
+        setup.target = self
+        connectionMenu.addItem(setup)
+        unpairItem = NSMenuItem(title: tr("ãƒšã‚¢ãƒªãƒ³ã‚°ã‚’è§£é™¤", "Unpair"), action: #selector(unpair), keyEquivalent: "")
+        unpairItem.target = self
+        connectionMenu.addItem(unpairItem)
+        connectionMenu.addItem(.separator())
+        proItem = NSMenuItem(title: tr("PROç‰ˆã«ã‚¢ãƒƒãƒ—ãƒ‡ãƒ¼ãƒˆã™ã‚‹", "Upgrade to PRO"), action: #selector(showDetails), keyEquivalent: "")
+        proItem.target = self
+        connectionMenu.addItem(proItem)
+        connections.submenu = connectionMenu
+        menu.addItem(connections)
+        let destination = NSMenuItem(title: tr("å—ä¿¡ãƒ•ã‚¡ã‚¤ãƒ«ã®ä¿å­˜å…ˆ", "Received File Location"), action: #selector(chooseDownloadDirectory), keyEquivalent: "")
+        destination.target = self
+        menu.addItem(destination)
+        menu.addItem(.separator())
+        let about = NSMenuItem(title: tr("iPhone Data Sharingã«ã¤ã„ã¦", "About iPhone Data Sharing"), action: #selector(showAbout), keyEquivalent: "")
+        about.target = self
+        menu.addItem(about)
+        let quit = NSMenuItem(title: tr("iPhone Data Sharingã‚’çµ‚äº†", "Quit iPhone Data Sharing"), action: #selector(quit), keyEquivalent: "q")
+        quit.target = self
+        menu.addItem(quit)
+        statusItem.menu = menu
+        menu.delegate = self
+        updateConnectionMenu()
+        removeLegacyFinderQuickAction()
 
-HOH“ÒË]Ù[XİYH[™[\›[ÙHÈ™]\›ˆBˆ˜\ˆ™\]Y\İHT“™\]Y\İ
-\›ˆÙ[‹›ØØ[T“˜\[™[™Ô]ÛÛ\Û™[
-˜YZ[‹ÙİÛ›ØYY\™XİÜHŠJBˆ™\]Y\İšY]ÙH”ÔÕ‚ˆ™\]Y\İœÙ]˜[YJ˜\XØ][Û‹ÚœÛÛˆ‹›Ü’XY\‘šY[ˆÛÛ[U\HŠBˆ™\]Y\İš›ÙHHOÈ”ÓÓ‘[˜ÛÙ\Š
-K™[˜ÛÙJİÛ›ØY\™XİÜJ\™XİÜNˆÙ[XİYœ]
-JBˆT“Ù\ÜÚ[Û‹œÚ\™Y™]U\ÚÊÚ]ˆ™\]Y\İ
-HÈİÙXZÈÙ[—HË™\ÜÛœÙKÈ[‚ˆ\Ü]Ú]Y]YK›XZ[‹˜\Ş[˜ÈÂˆYˆ
-™\ÜÛœÙH\ÏÈT“™\ÜÛœÙJOËœİ]\ĞÛÙHOHŒÈÙ[ËœÚİÑ\œ›ÜŠŠ¹/çykf9ab8à¤¹i"y¦í8àiøàcxào¸àføà¤øàiøàeøàgøà ¸àåxàªxàêøàà8àk¸à¨¸à«øà®øà®yª*xà¤¹è®º*£xàeøài¸àcøàh8àexàa8à ˆ‹Ûİ[›İÚ[™ÙHHØ]™HØØ][Û‹ˆÚXÚÈH›Û\ˆ\›Z\ÜÚ[ÛœËˆŠJHBˆBˆKœ™\İ[YJ
-BˆBˆKœ™\İ[YJ
-BˆBˆB‚ˆš]˜]H[˜È™Yœ™\ÚZ\š[™Ôİ]J
-HÂˆ\]PÛÛ›™Xİ[Û“Y[J
-BˆİX\™YÙ[Ëš\Ô[›š[™ÈOHYKXÚXÚÚ[™ÔZ\š[™Ôİ]H[ÙHÈ™]\›ˆBˆÚXÚÚ[™ÔZ\š[™Ôİ]HHYBˆ˜\ˆ™\]Y\İHT“™\]Y\İ
-\›ˆØØ[T“˜\[™[™Ô]ÛÛ\Û™[
-˜YZ[‹ÜZ\š[™Ë\İ]HŠJBˆ™\]Y\İ[Y[İ][\˜[H‚ˆT“Ù\ÜÚ[Û‹œÚ\™Y™]U\ÚÊÚ]ˆ™\]Y\İ
-HÈİÙXZÈÙ[—H]K™\ÜÛœÙKÈ[‚ˆ\Ü]Ú]Y]YK›XZ[‹˜\Ş[˜ÈÂˆİX\™]Ù[ˆ[ÙHÈ™]\›ˆBˆÙ[‹˜ÚXÚÚ[™ÔZ\š[™Ôİ]HH˜[ÙBˆİX\™
-™\ÜÛœÙH\ÏÈT“™\ÜÛœÙJOËœİ]\ĞÛÙHOHŒˆ]]K]İ]HHOÈ”ÓÓ‘XÛÙ\Š
-K™XÛÙJZ\š[™Ôİ]KœÙ[‹œ›ÛNˆ]JH[ÙHÂˆÙ[‹\]PÛÛ›™Xİ[Û“Y[J
-Bˆ™]\›‚ˆBˆÙ[‹›\İİXØÙ\ÜÙ[ÚXÚÈH]J
-Bˆ]Ø\ÔZ\™YHÙ[‹œZ\™YˆÙ[‹œZ\™YHİ]KœZ\™YˆÙ[‹\]PÛÛ›™Xİ[Û“Y[J
-BˆYˆ]™]š[İ\ÈHÙ[‹›\İ™XÙZ]™YÛİ[İ]Kœ™XÙZ]™YÛİ[ˆ™]š[İ\ÈÂˆ”ÔÛİ[™
-˜[YYˆ”ÔÛİ[™“˜[YJ‘Û\ÜÈŠJOËœ^J
-BˆBˆÙ[‹›\İ™XÙZ]™YÛİ[Hİ]Kœ™XÙZ]™YÛİ[ˆYˆ\Ù[‹™YØYZ\š[™Ôİ]HÂˆÙ[‹™YØYZ\š[™Ôİ]HHYBˆYˆ\İ]KœZ\™YÈÙ[‹œÚİÔZ\š[™Ê
-HBˆH[ÙHYˆ]Ø\ÔZ\™Y	‰ˆİ]KœZ\™Y	‰ˆÙ[‹œZ\š[™ÕÚ[™İÏË]HOHŠ¸àæ¸à¨¸àê¸àìøà¬:e¢ùiâÈ‹”İ\Z\š[™ÈŠHÂˆÙ[‹œZ\š[™ÕÚ[™İÏË›Ü™\“İ]
-š[
-BˆBˆBˆKœ™\İ[YJ
-BˆBˆš]˜]H[˜È\]PÛÛ›™Xİ[Û“Y[J
-HÂˆÛÛ›™Xİ][Kš\ÒY[ˆHZ\™YˆÙ[™][Kš\ÒY[ˆH\Z\™Yˆ]YÙHH]J
-K[YR[\˜[Ú[˜ÙJ\İİXØÙ\ÜÙ[ÚXÚÈÏÈÛÛ›™Xİ[Û“[Ûš]Ü”İ\Y]
-BˆYˆYØYZ\š[™Ôİ]H	‰ˆYÙ[Ëš\Ô[›š[™ÈOHYHÂˆÛÛ›™Xİ[Û”İ]\Ë]HHŠšTÛ™{ï&¹§*¹£©yí¦ˆ‹šTÛ™Nˆ\ØÛÛ›™XİYŠBˆH[ÙHYˆYÙHˆLÂˆÛÛ›™Xİ[Û”İ]\Ë]HHŠšTÛ™{ï&¹§*¹£©yí¦ˆ‹šTÛ™Nˆ\ØÛÛ›™XİYŠBˆH[ÙHYˆYÙHˆÈ\İİXØÙ\ÜÙ[ÚXÚÈOHš[ÂˆÛÛ›™Xİ[Û”İ]\Ë]HHŠšTÛ™{ï&¹è®º*£y.+x )ˆ‹šTÛ™NˆÚXÚÚ[™ø )ˆŠBˆH[ÙHÂˆÛÛ›™Xİ[Û”İ]\Ë]HHZ\™YÈŠšTÛ™{ï&¹£©yí¦¹®"8àoÈ‹šTÛ™NˆÛÛ›™XİYŠHˆŠšTÛ™{ï&¹§*¹£©yí¦ˆ‹šTÛ™Nˆ\ØÛÛ›™XİYŠBˆBˆ[œZ\’][Kš\Ñ[˜X›YHZ\™Yˆ›Ò][K]HH\Ô›ÈÈŠ”“øàêxà©8à®øàìøà®H‹”“ÈXÙ[œÙHŠHˆŠ”“ùâb8àjøà¨¸ààøàåøàáøàï8àâ8àfxà¢È‹•\Ü˜YHÈ“ÈŠBˆB‚ˆš]˜]H[˜È™Yœ™\ÚXÙ[œÙTİ]J
-HÂˆİX\™YÙ[Ëš\Ô[›š[™ÈOHYKXÚXÚÚ[™ÓXÙ[œÙTİ]H[ÙHÈ™]\›ˆBˆÚXÚÚ[™ÓXÙ[œÙTİ]HHYBˆ˜\ˆ™\]Y\İHT“™\]Y\İ
-\›ˆØØ[T“˜\[™[™Ô]ÛÛ\Û™[
-˜YZ[‹ÛXÙ[œÙHŠJBˆ™\]Y\İ[Y[İ][\˜[H‚ˆT“Ù\ÜÚ[Û‹œÚ\™Y™]U\ÚÊÚ]ˆ™\]Y\İ
-HÈİÙXZÈÙ[—H]K™\ÜÛœÙKÈ[‚ˆ\Ü]Ú]Y]YK›XZ[‹˜\Ş[˜ÈÂˆİX\™]Ù[ˆ[ÙHÈ™]\›ˆBˆÙ[‹˜ÚXÚÚ[™ÓXÙ[œÙTİ]HH˜[ÙBˆİX\™
-™\ÜÛœÙH\ÏÈT“™\ÜÛœÙJOËœİ]\ĞÛÙHOHŒˆ]]Kˆ]İ]HHOÈ”ÓÓ‘XÛÙ\Š
-K™XÛÙJXÙ[œÙTİ[[X\KœÙ[‹œ›ÛNˆ]JH[ÙHÂˆ™]\›‚ˆBˆÙ[‹š\Ô›ÈHİ]Kœ[ˆOHœ›È‚ˆÙ[‹\]PÛÛ›™Xİ[Û“Y[J
-BˆBˆKœ™\İ[YJ
-BˆB‚ˆØš˜Èš]˜]H[˜ÈÚİÔZ\š[™Ê
-HÂˆÚ[”™XYHÈİÙXZÈÙ[—H[ˆÙ[Ëœ™\]Y\İTŠ]ˆ˜YZ[‹ÜZ\š[™È‹]NˆŠ¸àæ¸à¨¸àê¸àìøà¬:e¢ùiâÈ‹”İ\Z\š[™ÈŠK]Z[ˆŠyb!¹.éya¡xàjÚTÛ™xàk¸àªøàèxàêxàiú*«xàoùcå¸àhøài¸àæ¸à¨¸àê¸àìøà¬8àeøài¸àcøàh8àexàa‹”ØØ[ˆ\ÈÚ]HTÛ™HØ[Y\˜HÚ][ˆHZ[]\ÈÈZ\‹ˆŠJHBˆB‚ˆØš˜Èš]˜]H[˜ÈÚİÔÚ\™TÙ]\
+        launchAgentWhenPortIsFree()
+        let refresh = Timer(timeInterval: 2, repeats: true) { [weak self] _ in self?.refreshPairingState() }
+        RunLoop.main.add(refresh, forMode: .common)
+    }
 
-HÂˆİX\™Z\™Y[ÙHÈÚİÔZ\š[™Ê
-NÈ™]\›ˆBˆÚ[”™XYHÈİÙXZÈÙ[—H[‚ˆİX\™]Ù[ˆ[ÙHÈ™]\›ˆBˆ”ÕÛÜšÜÜXÙKœÚ\™Y›Ü[ŠÙ[‹›ØØ[T“˜\[™[™Ô]ÛÛ\Û™[
-œÙ]\YİZYHŠJBˆBˆB‚ˆš]˜]H[˜È™[[İ™SYØXŞQš[™\”]ZXÚĞXİ[ÛŠ
-HÂˆ]ÛÜšÙ›İÈHš[SX[˜YÙ\‹™Y˜][šÛYQ\™XİÜQ›Üİ\œ™[\Ù\‚ˆ˜\[™[™Ô]ÛÛ\Û™[
-“Xœ˜\KÔÙ\šXÙ\ËÚTÛ™xàn:` xà¢ËÛÜšÙ›İÈ‹\Ñ\™XİÜNˆYJBˆİX\™š[SX[˜YÙ\‹™Y˜][™š[Q^\İÊ]]ˆÛÜšÙ›İËœ]
-H[ÙHÈ™]\›ˆBˆÈÂˆHš[SX[˜YÙ\‹™Y˜][œ™[[İ™R][J]ˆÛÜšÙ›İÊBˆ”Õ\]Q[˜[ZXÔÙ\šXÙ\Ê
-BˆHØ]ÚÂˆËÈÛX[\\È™\İYY™›ÜˆHTÛ™H]HÚ\š[™È\›ÈÛ™Ù\ˆ^ÜÙ\ÈÜˆ™XÜ™X]\È\È]ZXÚÈXİ[Û‹‚ˆBˆB‚ˆØš˜Èš]˜]H[˜ÈÚİÑ]Z[Ê
-HÂˆÚ[”™XYHÈİÙXZÈÙ[—H[‚ˆİX\™]Ù[ˆ[ÙHÈ™]\›ˆBˆ”ÕÛÜšÜÜXÙKœÚ\™Y›Ü[ŠÙ[‹›ØØ[T“˜\[™[™Ô]ÛÛ\Û™[
-œ›ÈŠJBˆBˆBˆØš˜Èš]˜]H[˜ÈÚİĞX›İ]
+    func applicationShouldTerminateAfterLastWindowClosed(_ sender: NSApplication) -> Bool { false }
 
-HÂˆ][\H”Ğ[\
+    func menuWillOpen(_ menu: NSMenu) {
+        updateConnectionMenu()
+        refreshPairingState()
+        refreshLicenseState()
+    }
 
-Bˆ[\›Y\ÜØYÙU^HšTÛ™H]HÚ\š[™È‚ˆ[\š[™›Ü›X]]™U^H\Ù\Ò˜\[™\ÙURBˆÈ¸àä8àï8à®8àéøàìÈ
-[™K›XZ[‹š[™›ÑXİ[Û˜\OÖÈÑ[™TÚÜ™\œÚ[Û”İš[™È—H\ÏÈİš[™ÈÏÈºe¢ùæn¹âbŠW¹d#8àfS¹a¡xàiÚTÛ™xàjXXøàkºe¤øàk¸àåxà¨xà©8àêøà¤º.èº` xàeøào¸àfxà ˆ‚ˆˆ•™\œÚ[Ûˆ
-[™K›XZ[‹š[™›ÑXİ[Û˜\OÖÈÑ[™TÚÜ™\œÚ[Û”İš[™È—H\ÏÈİš[™ÈÏÈ‘]™[ÜY[ŠW•˜[œÙ™\ˆš[\È™]ÙY[ˆTÛ™H[™XXÈİ™\ˆHØ[YHS‹ˆ‚ˆ[\œ[“[Ù[
+    func windowShouldClose(_ sender: NSWindow) -> Bool {
+        sender.orderOut(nil)
+        return false
+    }
 
-BˆB‚ˆØš˜Èš]˜]H[˜È[œZ\Š
-HÂˆÚ[”™XYHÈİÙXZÈÙ[—H[‚ˆİX\™]Ù[ˆ[ÙHÈ™]\›ˆBˆ˜\ˆ™\]Y\İHT“™\]Y\İ
-\›ˆÙ[‹›ØØ[T“˜\[™[™Ô]ÛÛ\Û™[
-˜YZ[‹İ[œZ\ˆŠJBˆ™\]Y\İšY]ÙH”ÔÕ‚ˆ™\]Y\İ[Y[İ][\˜[HBˆT“Ù\ÜÚ[Û‹œÚ\™Y™]U\ÚÊÚ]ˆ™\]Y\İ
-HÈİÙXZÈÙ[—HË™\ÜÛœÙKÈ[‚ˆ\Ü]Ú]Y]YK›XZ[‹˜\Ş[˜ÈÂˆİX\™]Ù[ˆ[ÙHÈ™]\›ˆBˆYˆ
-™\ÜÛœÙH\ÏÈT“™\ÜÛœÙJOËœİ]\ĞÛÙHOHŒÂˆÙ[‹œZ\™YH˜[ÙBˆÙ[‹\]PÛÛ›™Xİ[Û“Y[J
-BˆÙ[‹œÚİÔZ\š[™Ê
-BˆH[ÙHÈÙ[‹œÚİÑ\œ›ÜŠŠ¸àæxà¨¸àê¸àìøà¬8à¤º)èúfi8àiøàcxào¸àføà¤øàiøàeøàgøà ˆ‹Ûİ[›İ[œZ\ˆH]šXÙKˆŠJHBˆBˆKœ™\İ[YJ
-BˆBˆB‚ˆš]˜]H[˜È™\]Y\İTŠ]ˆİš[™Ë]Nˆİš[™Ë]Z[ˆİš[™ÊHÂˆ˜\ˆ™\]Y\İHT“™\]Y\İ
-\›ˆØØ[T“˜\[™[™Ô]ÛÛ\Û™[
-]
-JBˆ™\]Y\İšY]ÙH”ÔÕ‚ˆ™\]Y\İ[Y[İ][\˜[HBˆT“Ù\ÜÚ[Û‹œÚ\™Y™]U\ÚÊÚ]ˆ™\]Y\İ
-HÈİÙXZÈÙ[—H]K™\ÜÛœÙK\œ›Üˆ[‚ˆİX\™]]K
-™\ÜÛœÙH\ÏÈT“™\ÜÛœÙJOËœİ]\ĞÛÙHOHŒˆ]™\İ[HOÈ”ÓÓ‘XÛÙ\Š
-K™XÛÙJZ\š[™Ô™\ÜÛœÙKœÙ[‹œ›ÛNˆ]JH[ÙHÂˆ\Ü]Ú]Y]YK›XZ[‹˜\Ş[˜ÈÈÙ[ËœÚİÑ\œ›ÜŠ”Tˆ8à¤¹/g8à£8ào¸àføà¤øàiøàeøàgÎˆ
-\œ›ÜË›ØØ[^™Y\ØÜš\[ÛˆÏÈ¹£©yí¦¸àª8àêxàïŠHŠHBˆ™]\›‚ˆBˆ\Ü]Ú]Y]YK›XZ[‹˜\Ş[˜ÈÈÙ[Ëœ™\Ù[TŠ™\İ[\›]Nˆ]K]Z[ˆ]Z[
-HBˆKœ™\İ[YJ
-BˆB‚ˆš]˜]H[˜È™\Ù[TŠÈ˜[YNˆİš[™Ë]HÚ[™İÕ]Nˆİš[™Ë]Z[Y\ÜØYÙNˆİš[™ÊHÂˆ]š[\ˆHÒQš[\‹œ\ÛÙQÙ[™\˜]ÜŠ
-Bˆš[\‹›Y\ÜØYÙHH]J˜[YK]
-Bˆš[\‹˜ÛÜœ™Xİ[Û“]™[H“H‚ˆİX\™]İ]]Hš[\‹›İ]][XYÙKˆ]ÙÒ[XYÙHHÒPÛÛ^
+    private func launchAgentWhenPortIsFree(attempt: Int = 0) {
+        if isPortAvailable(3000) {
+            agentStartupPending = false
+            if startAgent() { whenReady { [weak self] in self?.refreshPairingState() } }
+        } else if attempt < 20 {
+            agentStartupPending = true
+            DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) { [weak self] in
+                self?.launchAgentWhenPortIsFree(attempt: attempt + 1)
+            }
+        } else {
+            agentStartupPending = false
+            showError(tr("ãƒãƒ¼ãƒˆ3000ãŒä½¿ç”¨ä¸­ã§ã™ã€‚ã»ã‹ã®iPhone Data Sharingã‚’çµ‚äº†ã—ã¦ãƒ¡ãƒ‹ãƒ¥ãƒ¼ã‹ã‚‰å†è©¦è¡Œã—ã¦ãã ã•ã„ã€‚", "Port 3000 is in use. Quit other iPhone Data Sharing instances and try again from the menu."))
+        }
+    }
 
-K˜Ü™X]PÑÒ[XYÙJİ]]˜[œÙ›Ü›YY
-NˆÑĞY™š[™U˜[œÙ›Ü›JØØ[VˆLNˆL
-JKœ›ÛNˆİ]]™^[˜\Z[™ÊÑĞY™š[™U˜[œÙ›Ü›JØØ[VˆLNˆL
-JJH[ÙHÂˆÚİÑ\œ›ÜŠŠ”Tˆ9å.ù`ãøà¤¹å'ù¢$8àiøàcxào¸àføà¤øàiøàeøàgøà ˆ‹Ûİ[›İÙ[™\˜]HHTˆÛÙKˆŠJBˆ™]\›‚ˆBˆ][XYÙHH”Ò[XYÙJÙÒ[XYÙNˆÙÒ[XYÙKÚ^™Nˆ”ÔÚ^™JÚYˆÌZYÚˆÌ
-JBˆËÈÙY\HÚ[™İÈ[]™HY\ˆÛÜÚ[™Ëˆ™[X\Ú[™È]\š[™È\Ú]	ÜÈÛÜÙH[š[X][Û‚ˆËÈØ]\ÙYHÜ˜\Ú[ˆÓ”ÕÚ[™İÕ˜[œÙ›Ü›P[š[X][ÛˆX[ØË‚ˆ]ZYÚˆÑÑ›Ø]HÌˆ]Ú[™İÈHZ\š[™ÕÚ[™İÈÏÈ”ÕÚ[™İÊÛÛ[™Xİˆ”Ô™Xİ
-ˆNˆÚYˆÌZYÚˆZYÚ
-Kˆİ[SX\ÚÎˆË]Y˜ÛÜØX›WK˜XÚÚ[™Îˆ˜Y™™\™YY™\ˆ˜[ÙJBˆÚ[™İË™[YØ]HHÙ[‚ˆÚ[™İËœÙ]ÛÛ[Ú^™J”ÔÚ^™JÚYˆÌZYÚˆZYÚ
-JBˆÚ[™İË]HHÚ[™İÕ]BˆÚ[™İË˜Ù[\Š
-B‚ˆ]ÛÛ[H”ÕšY]Êœ˜[YNˆÚ[™İË˜ÛÛ[šY]ÈK˜›İ[™ÊBˆ]]HH”Õ^šY[
-X™[Ú]İš[™ÎˆŠšTÛ™H8àk¸àªøàèxàêxàiú*«xàoùcå¸àhøài¸àcøàh8àexàa‹”ØØ[ˆÚ][İ\ˆTÛ™HØ[Y\˜HŠJBˆ]K™›ÛH˜›ÛŞ\İ[Q›Û
-Ù”Ú^™NˆMŠBˆ]K˜[YÛ›Y[H˜Ù[\‚ˆ]K™œ˜[YHH”Ô™Xİ
-ˆMKNˆZYÚHËÚYˆZYÚˆ
-BˆÛÛ[˜YİXšY]Ê]JBˆ]\ˆH”Ò[XYÙUšY]Êœ˜[YNˆ”Ô™Xİ
-ˆKNˆŒ‹ÚYˆÌZYÚˆÌ
-JBˆ\‹š[XYÙHH[XYÙBˆ\‹š[XYÙTØØ[[™ÈHœØØ[T›ÜÜ[Û˜[U\Ü‘İÛ‚ˆÛÛ[˜YİXšY]Ê\ŠBˆ]]Z[H”Õ^šY[
-X™[Ú]İš[™ÎˆY\ÜØYÙJBˆ]Z[˜[YÛ›Y[H˜Ù[\‚ˆ]Z[™œ˜[YHH”Ô™Xİ
-ˆMKNˆKÚYˆZYÚˆŒŠBˆÛÛ[˜YİXšY]Ê]Z[
-Bˆ]Y™\ÜÈH”Õ^šY[
-X™[Ú]İš[™Îˆ¹£©yí¦¹abˆ
-T“
-İš[™Îˆ˜[YJOËšÜİÏÈ¹.#y¦#ˆŠHŠBˆY™\ÜË˜[YÛ›Y[H˜Ù[\‚ˆY™\ÜË^ÛÛÜˆHœÙXÛÛ™\SX™[ÛÛÜ‚ˆY™\ÜË™œ˜[YHH”Ô™Xİ
-ˆLNˆÚYˆLZYÚˆŒ
-BˆÛÛ[˜YİXšY]ÊY™\ÜÊBˆÚ[™İË˜ÛÛ[šY]ÈHÛÛ[ˆZ\š[™ÕÚ[™İÈHÚ[™İÂˆÚ[™İË›XZÙRÙ^P[™Ü™\‘œ›Û
-š[
-Bˆ”Ğ\˜Xİ]˜]JYÛ›Üš[™Óİ\\ÎˆYJBˆB‚ˆš]˜]H[˜ÈÚİÑ\œ›ÜŠÈY\ÜØYÙNˆİš[™ÊHÂˆ][\H”Ğ[\
+    @discardableResult private func startAgent() -> Bool {
+        guard let resources = Bundle.main.resourceURL,
+              let executable = Bundle.main.executableURL else { showError(tr("ã‚¢ãƒ—ãƒªã®æ§‹æˆã‚’èª­ã¿å–ã‚Œã¾ã›ã‚“ã§ã—ãŸã€‚", "The app configuration could not be read.")) ; return false }
+        let script = resources.appendingPathComponent("server/dist/local-agent.js")
+        let node = executable.deletingLastPathComponent().appendingPathComponent("node")
+        guard FileManager.default.fileExists(atPath: script.path), FileManager.default.fileExists(atPath: node.path) else {
+            showError(tr("Agent ã®å®Ÿè¡Œãƒ•ã‚¡ã‚¤ãƒ«ãŒè¦‹ã¤ã‹ã‚Šã¾ã›ã‚“ã€‚ã‚¢ãƒ—ãƒªã‚’å†ãƒ“ãƒ«ãƒ‰ã—ã¦ãã ã•ã„ã€‚", "The Agent executable could not be found. Rebuild the app."))
+            return false
+        }
+        guard isPortAvailable(3000) else {
+            showError(tr("ãƒãƒ¼ãƒˆ3000ã‚’ã»ã‹ã®ã‚¢ãƒ—ãƒªãŒä½¿ç”¨ä¸­ã§ã™ã€‚ä½¿ç”¨ä¸­ã®ã‚¢ãƒ—ãƒªã‚’çµ‚äº†ã—ã¦ iPhone Data Sharing ã‚’é–‹ãç›´ã—ã¦ãã ã•ã„ã€‚", "Another app is using port 3000. Quit that app and reopen iPhone Data Sharing."))
+            return false
+        }
+        port = 3000
 
-Bˆ[\›Y\ÜØYÙU^HšTÛ™H]HÚ\š[™È‚ˆ[\š[™›Ü›X]]™U^HY\ÜØYÙBˆ[\˜[\İ[HHØ\›š[™Âˆ[\œ[“[Ù[
+        let process = Process()
+        process.executableURL = node
+        process.arguments = [script.path]
+        process.currentDirectoryURL = resources.appendingPathComponent("server")
+        var environment = ProcessInfo.processInfo.environment
+        environment["PORT"] = String(port)
+        environment["AGENT_PARENT_PID"] = String(ProcessInfo.processInfo.processIdentifier)
+        environment.removeValue(forKey: "AGENT_PARENT_PIPE")
+        if let localName = SCDynamicStoreCopyLocalHostName(nil) as String? {
+            environment["PUBLIC_BASE_URL"] = "http://\(localName).local:3000"
+        }
+        process.environment = environment
+        process.standardInput = FileHandle.nullDevice
 
-BˆB‚ˆØš˜Èš]˜]H[˜È]Z]
+        let logDirectory = FileManager.default.homeDirectoryForCurrentUser.appendingPathComponent("Library/Logs")
+        try? FileManager.default.createDirectory(at: logDirectory, withIntermediateDirectories: true)
+        let logURL = logDirectory.appendingPathComponent("iPhone Data Sharing Agent.log")
+        if !FileManager.default.fileExists(atPath: logURL.path) { FileManager.default.createFile(atPath: logURL.path, contents: nil) }
+        logHandle = try? FileHandle(forWritingTo: logURL)
+        _ = try? logHandle?.seekToEnd()
+        process.standardOutput = logHandle ?? FileHandle.nullDevice
+        process.standardError = logHandle ?? FileHandle.nullDevice
 
-HÂˆYÙ[Ë\›Z[˜][Û’[™\ˆHš[ˆYˆYÙ[Ëš\Ô[›š[™ÈOHYHÈYÙ[Ë\›Z[˜]J
-HBˆ”Ğ\\›Z[˜]Jš[
-BˆBŸB‚›]\XØ][ÛˆH”Ğ\XØ][Û‹œÚ\™Y›][YØ]HH\[YØ]J
-B˜\XØ][Û‹™[YØ]HH[YØ]B˜\XØ][Û‹œ[Š
-B
+        do {
+            try process.run()
+            agent = process
+            process.terminationHandler = { [weak self] finished in
+                DispatchQueue.main.async {
+                    guard let self, self.agent === finished else { return }
+                    self.agent = nil
+                    self.lastSuccessfulCheck = nil
+                    self.updateConnectionMenu()
+                    self.showError("Agent ãŒçµ‚äº†ã—ã¾ã—ãŸï¼ˆçµ‚äº†ã‚³ãƒ¼ãƒ‰: \(finished.terminationStatus)ï¼‰ã€‚å†èµ·å‹•ã¯ãƒ¡ãƒ‹ãƒ¥ãƒ¼ã‹ã‚‰æ“ä½œã‚’é¸ã‚“ã§ãã ã•ã„ã€‚ãƒ­ã‚°: \(logURL.path)")
+                }
+            }
+            return true
+        } catch {
+            showError("Agent ã‚’èµ·å‹•ã§ãã¾ã›ã‚“ã§ã—ãŸ: \(error.localizedDescription)")
+            return false
+        }
+    }
+
+    private func isPortAvailable(_ candidate: Int) -> Bool {
+        let descriptor = socket(AF_INET, SOCK_STREAM, 0)
+        guard descriptor >= 0 else { return false }
+        defer { close(descriptor) }
+        var address = sockaddr_in()
+        address.sin_len = UInt8(MemoryLayout<sockaddr_in>.size)
+        address.sin_family = sa_family_t(AF_INET)
+        address.sin_port = in_port_t(UInt16(candidate).bigEndian)
+        address.sin_addr = in_addr(s_addr: INADDR_ANY)
+        return withUnsafePointer(to: &address) { pointer in
+            pointer.withMemoryRebound(to: sockaddr.self, capacity: 1) {
+                Darwin.bind(descriptor, $0, socklen_t(MemoryLayout<sockaddr_in>.size)) == 0
+            }
+        }
+    }
+
+    private func whenReady(_ work: @escaping () -> Void, attempt: Int = 0) {
+        if agentStartupPending {
+            DispatchQueue.main.asyncAfter(deadline: .now() + 0.25) { [weak self] in self?.whenReady(work, attempt: attempt) }
+            return
+        }
+        if agent?.isRunning != true && !startAgent() { return }
+        var request = URLRequest(url: localURL.appendingPathComponent("health"))
+        request.timeoutInterval = 2
+        URLSession.shared.dataTask(with: request) { [weak self] _, response, _ in
+            DispatchQueue.main.async {
+                if (response as? HTTPURLResponse)?.statusCode == 200 { work() }
+                else if attempt < 20 {
+                    DispatchQueue.main.asyncAfter(deadline: .now() + 0.25) { self?.whenReady(work, attempt: attempt + 1) }
+                } else { self?.showError(tr("Agent ã«æ¥ç¶šã§ãã¾ã›ã‚“ã€‚iPhone Data Sharing Agent.log ã‚’ç¢ºèªã—ã¦ãã ã•ã„ã€‚", "Could not connect to the Agent. Check iPhone Data Sharing Agent.log.")) }
+            }
+        }.resume()
+    }
+
+    @objc private func openTransfer() {
+        whenReady { [weak self] in
+            guard let self else { return }
+            NSWorkspace.shared.open(self.localURL.appendingPathComponent("transfer"))
+        }
+    }
+
+    @objc private func chooseDownloadDirectory() {
+        whenReady { [weak self] in
+            guard let self else { return }
+            URLSession.shared.dataTask(with: self.localURL.appendingPathComponent("admin/download-directory")) { [weak self] data, _, _ in
+                DispatchQueue.main.async {
+                    guard let self else { return }
+                    let current = data.flatMap { try? JSONDecoder().decode(DownloadDirectory.self, from: $0) }
+                    let panel = NSOpenPanel()
+                    panel.message = tr("iPhoneã‹ã‚‰å—ã‘å–ã£ãŸãƒ•ã‚¡ã‚¤ãƒ«ã®ä¿å­˜å…ˆã‚’é¸æŠã—ã¦ãã ã•ã„", "Choose where files received from iPhone should be saved")
+                    panel.prompt = tr("é¸æŠ", "Choose")
+                    panel.canChooseFiles = false
+                    panel.canChooseDirectories = true
+                    panel.allowsMultipleSelection = false
+                    if let current { panel.directoryURL = URL(fileURLWithPath: current.directory, isDirectory: true) }
+                    guard panel.runModal() == .OK, let selected = panel.url else { return }
+                    var request = URLRequest(url: self.localURL.appendingPathComponent("admin/download-directory"))
+                    request.httpMethod = "POST"
+                    request.setValue("application/json", forHTTPHeaderField: "Content-Type")
+                    request.httpBody = try? JSONEncoder().encode(DownloadDirectory(directory: selected.path))
+                    URLSession.shared.dataTask(with: request) { [weak self] _, response, _ in
+                        DispatchQueue.main.async {
+                            if (response as? HTTPURLResponse)?.statusCode != 200 { self?.showError(tr("ä¿å­˜å…ˆã‚’å¤‰æ›´ã§ãã¾ã›ã‚“ã§ã—ãŸã€‚ãƒ•ã‚©ãƒ«ãƒ€ã®ã‚¢ã‚¯ã‚»ã‚¹æ¨©ã‚’ç¢ºèªã—ã¦ãã ã•ã„ã€‚", "Could not change the save location. Check the folder permissions.")) }
+                        }
+                    }.resume()
+                }
+            }.resume()
+        }
+    }
+
+    private func refreshPairingState() {
+        updateConnectionMenu()
+        guard agent?.isRunning == true, !checkingPairingState else { return }
+        checkingPairingState = true
+        var request = URLRequest(url: localURL.appendingPathComponent("admin/pairing-state"))
+        request.timeoutInterval = 2
+        URLSession.shared.dataTask(with: request) { [weak self] data, response, _ in
+            DispatchQueue.main.async {
+                guard let self else { return }
+                self.checkingPairingState = false
+                guard (response as? HTTPURLResponse)?.statusCode == 200,
+                      let data, let state = try? JSONDecoder().decode(PairingState.self, from: data) else {
+                    self.updateConnectionMenu()
+                    return
+                }
+                self.lastSuccessfulCheck = Date()
+                let wasPaired = self.paired
+                self.paired = state.paired
+                self.updateConnectionMenu()
+                if let previous = self.lastReceivedCount, state.receivedCount > previous {
+                    NSSound(named: NSSound.Name("Glass"))?.play()
+                }
+                self.lastReceivedCount = state.receivedCount
+                if !self.didLoadPairingState {
+                    self.didLoadPairingState = true
+                    if !state.paired { self.showPairing() }
+                } else if !wasPaired && state.paired && self.pairingWindow?.title == tr("ãƒšã‚¢ãƒªãƒ³ã‚°é–‹å§‹", "Start Pairing") {
+                    self.pairingWindow?.orderOut(nil)
+                }
+            }
+        }.resume()
+    }
+    private func updateConnectionMenu() {
+        connectItem.isHidden = paired
+        sendItem.isHidden = !paired
+        let age = Date().timeIntervalSince(lastSuccessfulCheck ?? connectionMonitorStartedAt)
+        if didLoadPairingState && agent?.isRunning != true {
+            connectionStatus.title = tr("iPhoneï¼šæœªæ¥ç¶š", "iPhone: Disconnected")
+        } else if age > 10 {
+            connectionStatus.title = tr("iPhoneï¼šæœªæ¥ç¶š", "iPhone: Disconnected")
+        } else if age > 3 || lastSuccessfulCheck == nil {
+            connectionStatus.title = tr("iPhoneï¼šç¢ºèªä¸­â€¦", "iPhone: Checkingâ€¦")
+        } else {
+            connectionStatus.title = paired ? tr("iPhoneï¼šæ¥ç¶šæ¸ˆã¿", "iPhone: Connected") : tr("iPhoneï¼šæœªæ¥ç¶š", "iPhone: Disconnected")
+        }
+        unpairItem.isEnabled = paired
+        proItem.title = isPro ? tr("PROãƒ©ã‚¤ã‚»ãƒ³ã‚¹", "PRO License") : tr("PROç‰ˆã«ã‚¢ãƒƒãƒ—ãƒ‡ãƒ¼ãƒˆã™ã‚‹", "Upgrade to PRO")
+    }
+
+    private func refreshLicenseState() {
+        guard agent?.isRunning == true, !checkingLicenseState else { return }
+        checkingLicenseState = true
+        var request = URLRequest(url: localURL.appendingPathComponent("admin/license"))
+        request.timeoutInterval = 2
+        URLSession.shared.dataTask(with: request) { [weak self] data, response, _ in
+            DispatchQueue.main.async {
+                guard let self else { return }
+                self.checkingLicenseState = false
+                guard (response as? HTTPURLResponse)?.statusCode == 200,
+                      let data,
+                      let state = try? JSONDecoder().decode(LicenseSummary.self, from: data) else {
+                    return
+                }
+                self.isPro = state.plan == "pro"
+                self.updateConnectionMenu()
+            }
+        }.resume()
+    }
+
+    @objc private func showPairing() {
+        whenReady { [weak self] in self?.requestQR(path: "admin/pairing", title: tr("ãƒšã‚¢ãƒªãƒ³ã‚°é–‹å§‹", "Start Pairing"), detail: tr("5åˆ†ä»¥å†…ã«iPhoneã®ã‚«ãƒ¡ãƒ©ã§èª­ã¿å–ã£ã¦ãƒšã‚¢ãƒªãƒ³ã‚°ã—ã¦ãã ã•ã„", "Scan this with the iPhone camera within 5 minutes to pair.")) }
+    }
+
+    @objc private func showShareSetup() {
+        guard paired else { showPairing(); return }
+        whenReady { [weak self] in
+            guard let self else { return }
+            NSWorkspace.shared.open(self.localURL.appendingPathComponent("setup-guide"))
+        }
+    }
+
+    private func removeLegacyFinderQuickAction() {
+        let workflow = FileManager.default.homeDirectoryForCurrentUser
+            .appendingPathComponent("Library/Services/iPhoneã¸é€ã‚‹.workflow", isDirectory: true)
+        guard FileManager.default.fileExists(atPath: workflow.path) else { return }
+        do {
+            try FileManager.default.removeItem(at: workflow)
+            NSUpdateDynamicServices()
+        } catch {
+            // Cleanup is best-effort. The iPhone Data Sharing app no longer exposes or recreates this Quick Action.
+        }
+    }
+
+    @objc private func showDetails() {
+        whenReady { [weak self] in
+            guard let self else { return }
+            NSWorkspace.shared.open(self.localURL.appendingPathComponent("pro"))
+        }
+    }
+    @objc private func showAbout() {
+        let alert = NSAlert()
+        alert.messageText = "iPhone Data Sharing"
+        alert.informativeText = usesJapaneseUI
+            ? "ãƒãƒ¼ã‚¸ãƒ§ãƒ³ \(Bundle.main.infoDictionary?["CFBundleShortVersionString"] as? String ?? "é–‹ç™ºç‰ˆ")\nåŒã˜LANå†…ã§iPhoneã¨Macã®é–“ã®ãƒ•ã‚¡ã‚¤ãƒ«ã‚’è»¢é€ã—ã¾ã™ã€‚"
+            : "Version \(Bundle.main.infoDictionary?["CFBundleShortVersionString"] as? String ?? "Development")\nTransfer files between iPhone and Mac over the same LAN."
+        alert.runModal()
+    }
+
+    @objc private func unpair() {
+        whenReady { [weak self] in
+            guard let self else { return }
+            var request = URLRequest(url: self.localURL.appendingPathComponent("admin/unpair"))
+            request.httpMethod = "POST"
+            request.timeoutInterval = 5
+            URLSession.shared.dataTask(with: request) { [weak self] _, response, _ in
+                DispatchQueue.main.async {
+                    guard let self else { return }
+                    if (response as? HTTPURLResponse)?.statusCode == 200 {
+                        self.paired = false
+                        self.updateConnectionMenu()
+                        self.showPairing()
+                    } else { self.showError(tr("ãƒ™ã‚¢ãƒªãƒ³ã‚°ã‚’è§£é™¤ã§ãã¾ã›ã‚“ã§ã—ãŸã€‚", "Could not unpair the device.")) }
+                }
+            }.resume()
+        }
+    }
+
+    private func requestQR(path: String, title: String, detail: String) {
+        var request = URLRequest(url: localURL.appendingPathComponent(path))
+        request.httpMethod = "POST"
+        request.timeoutInterval = 5
+        URLSession.shared.dataTask(with: request) { [weak self] data, response, error in
+            guard let data, (response as? HTTPURLResponse)?.statusCode == 200,
+                  let result = try? JSONDecoder().decode(PairingResponse.self, from: data) else {
+                DispatchQueue.main.async { self?.showError("QR ã‚’ä½œã‚Œã¾ã›ã‚“ã§ã—ãŸ: \(error?.localizedDescription ?? "æ¥ç¶šã‚¨ãƒ©ãƒ¼")") }
+                return
+            }
+            DispatchQueue.main.async { self?.presentQR(result.url, title: title, detail: detail) }
+        }.resume()
+    }
+
+    private func presentQR(_ value: String, title windowTitle: String, detail message: String) {
+        let filter = CIFilter.qrCodeGenerator()
+        filter.message = Data(value.utf8)
+        filter.correctionLevel = "M"
+        guard let output = filter.outputImage,
+              let cgImage = CIContext().createCGImage(output.transformed(by: CGAffineTransform(scaleX: 10, y: 10)), from: output.extent.applying(CGAffineTransform(scaleX: 10, y: 10))) else {
+            showError(tr("QR ç”»åƒã‚’ç”Ÿæˆã§ãã¾ã›ã‚“ã§ã—ãŸã€‚", "Could not generate the QR code."))
+            return
+        }
+        let image = NSImage(cgImage: cgImage, size: NSSize(width: 300, height: 300))
+        // Keep the window alive after closing. Releasing it during AppKit's close animation
+        // caused a crash in _NSWindowTransformAnimation dealloc.
+        let height: CGFloat = 430
+        let window = pairingWindow ?? NSWindow(contentRect: NSRect(x: 0, y: 0, width: 430, height: height),
+                                                styleMask: [.titled, .closable], backing: .buffered, defer: false)
+        window.delegate = self
+        window.setContentSize(NSSize(width: 430, height: height))
+        window.title = windowTitle
+        window.center()
+
+        let content = NSView(frame: window.contentView!.bounds)
+        let title = NSTextField(labelWithString: tr("iPhone ã®ã‚«ãƒ¡ãƒ©ã§èª­ã¿å–ã£ã¦ãã ã•ã„", "Scan with your iPhone camera"))
+        title.font = .boldSystemFont(ofSize: 16)
+        title.alignment = .center
+        title.frame = NSRect(x: 15, y: height - 47, width: 400, height: 28)
+        content.addSubview(title)
+        let qr = NSImageView(frame: NSRect(x: 65, y: 62, width: 300, height: 300))
+        qr.image = image
+        qr.imageScaling = .scaleProportionallyUpOrDown
+        content.addSubview(qr)
+        let detail = NSTextField(labelWithString: message)
+        detail.alignment = .center
+        detail.frame = NSRect(x: 15, y: 29, width: 400, height: 22)
+        content.addSubview(detail)
+        let address = NSTextField(labelWithString: "æ¥ç¶šå…ˆ: \(URL(string: value)?.host ?? "ä¸æ˜")")
+        address.alignment = .center
+        address.textColor = .secondaryLabelColor
+        address.frame = NSRect(x: 10, y: 8, width: 410, height: 20)
+        content.addSubview(address)
+        window.contentView = content
+        pairingWindow = window
+        window.makeKeyAndOrderFront(nil)
+        NSApp.activate(ignoringOtherApps: true)
+    }
+
+    private func showError(_ message: String) {
+        let alert = NSAlert()
+        alert.messageText = "iPhone Data Sharing"
+        alert.informativeText = message
+        alert.alertStyle = .warning
+        alert.runModal()
+    }
+
+    @objc private func quit() {
+        agent?.terminationHandler = nil
+        if agent?.isRunning == true { agent?.terminate() }
+        NSApp.terminate(nil)
+    }
+}
+
+let application = NSApplication.shared
+let delegate = AppDelegate()
+application.delegate = delegate
+application.run()

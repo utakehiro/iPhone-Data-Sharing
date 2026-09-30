@@ -1,170 +1,249 @@
-şŠmş&yºŞÃòân¶«Ëñè™æë{Ü™ßì…éez{ì†X§{_?n)ÿ¦Ã©z¶­Š‰ç¢Ú^®h­µçXÛÛœİQUSÈHÂˆ]šXÙS˜[YNˆ“^HÚ[™İÜÈÈ‹ˆÙ\™\˜\ÙU\›ˆš‹ËÛØØ[ÜİŒÌ‹ˆÛÛ›™Xİ[Û”İ]\Îˆ™\ØÛÛ›™XİY‹ˆ[™[™ÑİÛ›ØYÎˆßKŸNÂ‚›]ÛØÚÙ]H[Â›]ÛØÚÙ]]šXÙRYH[Â›]™XÛÛ›™Xİ[Y\ˆH[Â›]™XÛÛ›™Xİ][\ÈHÂ›]]šXÙRY›ÛZ\ÙHH[Â˜ÛÛœİ›ØÙ\ÜÚ[™Ñš[RYÈH™]ÈÙ]
+const DEFAULTS = {
+  deviceName: "My Windows PC",
+  serverBaseUrl: "http://localhost:3000",
+  connectionStatus: "disconnected",
+  pendingDownloads: {},
+};
 
-NÂ›]İÛ›ØY]Y]YHH›ÛZ\ÙKœ™\ÛÛ™J
-NÂ‚˜\Ş[˜È[˜İ[ÛˆÙ]ÜÜ™X]Q]šXÙRY
+let socket = null;
+let socketDeviceId = null;
+let reconnectTimer = null;
+let reconnectAttempts = 0;
+let deviceIdPromise = null;
+const processingFileIds = new Set();
+let downloadQueue = Promise.resolve();
 
-HÂˆYˆ
-Y]šXÙRY›ÛZ\ÙJHÂˆ]šXÙRY›ÛZ\ÙHH
-\Ş[˜È
+async function getOrCreateDeviceId() {
+  if (!deviceIdPromise) {
+    deviceIdPromise = (async () => {
+      const stored = await chrome.storage.local.get("deviceId");
+      if (stored.deviceId) return stored.deviceId;
 
-HOˆÂˆÛÛœİİÜ™YH]ØZ]Ú›ÛYKœİÜ˜YÙK›ØØ[™Ù]
-™]šXÙRYŠNÂˆYˆ
-İÜ™Y™]šXÙRY
-H™]\›ˆİÜ™Y™]šXÙRYÂ‚ˆÛÛœİ]šXÙRYHÜ\Ëœ˜[™ÛUURQ
+      const deviceId = crypto.randomUUID();
+      await chrome.storage.local.set({ deviceId });
+      return deviceId;
+    })();
+  }
+  return deviceIdPromise;
+}
 
-NÂˆ]ØZ]Ú›ÛYKœİÜ˜YÙK›ØØ[œÙ]
-È]šXÙRYJNÂˆ™]\›ˆ]šXÙRYÂˆJJ
-NÂˆBˆ™]\›ˆ]šXÙRY›ÛZ\ÙNÂŸB‚˜\Ş[˜È[˜İ[ÛˆÙ]Ù][™ÜÊ
-HÂˆÛÛœİÙ][™ÜÈH]ØZ]Ú›ÛYKœİÜ˜YÙK›ØØ[™Ù]
-QUSÊNÂˆÙ][™ÜË™]šXÙRYH]ØZ]Ù]ÜÜ™X]Q]šXÙRY
+async function getSettings() {
+  const settings = await chrome.storage.local.get(DEFAULTS);
+  settings.deviceId = await getOrCreateDeviceId();
+  return settings;
+}
 
-NÂˆ™]\›ˆÙ][™ÜÎÂŸB‚™[˜İ[Ûˆ›Ü›X[^™P˜\ÙU\›
-˜[YJHÂˆ™]\›ˆ˜[YKš[J
-Kœ™\XÙJ×ÊÉËˆŠNÂŸB‚™[˜İ[ÛˆØY™QİÛ›ØY˜[YJ˜[YJHÂˆÛÛœİ˜[YHHİš[™Ê˜[YHœÚ\™YYš[HŠBˆœ™\XÙJ×ÙË‹ÈŠBˆœÜ]
-‹ÈŠBˆœÜ
+function normalizeBaseUrl(value) {
+  return value.trim().replace(/\/+$/, "");
+}
 
-Bˆœ™\XÙJÖ×LWLY—LÙˆŸÊ—KÙË—ÈŠBˆš[J
-NÂˆ™]\›ˆ˜[YKœÛXÙJN
-HœÚ\™YYš[HÂŸB‚˜\Ş[˜È[˜İ[Ûˆ™YÚ\İ\‘]šXÙJÙ][™ÜÊHÂˆÛÛœİ™\ÜÛœÙHH]ØZ]™]Ú
-	Û›Ü›X[^™P˜\ÙU\›
-Ù][™ÜËœÙ\™\˜\ÙU\›
-_KØ\KÙ]šXÙ\ËÜ™YÚ\İ\˜ÂˆY]Ùˆ”ÔÕ‹ˆXY\œÎˆÈÛÛ[U\Hˆ˜\XØ][Û‹ÚœÛÛˆˆKˆ›ÙNˆ”ÓÓ‹œİš[™ÚYJÂˆ]šXÙRYˆÙ][™ÜË™]šXÙRYˆ]šXÙS˜[YNˆÙ][™ÜË™]šXÙS˜[YKˆJKˆJNÂˆYˆ
-\™\ÜÛœÙK›ÚÊH›İÈ™]È\œ›ÜŠ]šXÙH™YÚ\İ˜][Ûˆ˜Z[Y
-	Ü™\ÜÛœÙKœİ]\ßJX
-NÂŸB‚™[˜İ[ÛˆØÚY[T™XÛÛ›™Xİ
+function safeDownloadName(value) {
+  const name = String(value || "shared-file")
+    .replace(/\\/g, "/")
+    .split("/")
+    .pop()
+    .replace(/[\u0000-\u001f\u007f<>:"|?*]/g, "_")
+    .trim();
+  return name.slice(0, 180) || "shared-file";
+}
 
-HÂˆÛX\•[Y[İ]
-™XÛÛ›™Xİ[Y\ŠNÂˆÛÛœİ[^HHX]›Z[ŠL
-ˆˆ
-Šˆ™XÛÛ›™Xİ][\ËÌ
-NÂˆ™XÛÛ›™Xİ][\È
-ÏHNÂˆ™XÛÛ›™Xİ[Y\ˆHÙ][Y[İ]
-ÛÛ›™Xİ[^JNÂŸB‚˜\Ş[˜È[˜İ[ÛˆÙ]İ]\Êİ]\Ë\œ›ÜˆHˆŠHÂˆ]ØZ]Ú›ÛYKœİÜ˜YÙK›ØØ[œÙ]
-ÈÛÛ›™Xİ[Û”İ]\Îˆİ]\ËÛÛ›™Xİ[Û‘\œ›Üˆ\œ›ÜˆJNÂŸB‚˜\Ş[˜È[˜İ[ÛˆÛÛ›™Xİ
+async function registerDevice(settings) {
+  const response = await fetch(`${normalizeBaseUrl(settings.serverBaseUrl)}/api/devices/register`, {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify({
+      deviceId: settings.deviceId,
+      deviceName: settings.deviceName,
+    }),
+  });
+  if (!response.ok) throw new Error(`Device registration failed (${response.status})`);
+}
 
-HÂˆÛX\•[Y[İ]
-™XÛÛ›™Xİ[Y\ŠNÂˆYˆ
-ÛØÚÙ]	‰ˆ
-ÛØÚÙ]œ™XYTİ]HOOHÙX”ÛØÚÙ]“ÔSˆÛØÚÙ]œ™XYTİ]HOOHÙX”ÛØÚÙ]ÓÓ“‘PÕS‘ÊJH™]\›Â‚ˆHÂˆ]ØZ]Ù]İ]\Ê˜ÛÛ›™Xİ[™ÈŠNÂˆÛÛœİÙ][™ÜÈH]ØZ]Ù]Ù][™ÜÊ
-NÂˆ]ØZ]™YÚ\İ\‘]šXÙJÙ][™ÜÊNÂˆÛÛœİÜĞ˜\ÙHH›Ü›X[^™P˜\ÙU\›
-Ù][™ÜËœÙ\™\˜\ÙU\›
-Kœ™\XÙJ×š‹ËÜÎˆŠKœ™\XÙJ×šÎ‹ËÜÜÎˆŠNÂˆÛÛœİİ\œ™[ÛØÚÙ]H™]ÈÙX”ÛØÚÙ]
-	İÜĞ˜\Ù_KİÜÏÙ]šXÙRYIÙ[˜ÛÙUT’PÛÛ\Û™[
-Ù][™ÜË™]šXÙRY
-_X
-NÂˆÛØÚÙ]Hİ\œ™[ÛØÚÙ]ÂˆÛØÚÙ]]šXÙRYHÙ][™ÜË™]šXÙRYÂ‚ˆİ\œ™[ÛØÚÙ]›Û›Ü[ˆH\Ş[˜È
+function scheduleReconnect() {
+  clearTimeout(reconnectTimer);
+  const delay = Math.min(5000 * 2 ** reconnectAttempts, 30000);
+  reconnectAttempts += 1;
+  reconnectTimer = setTimeout(connect, delay);
+}
 
-HOˆÂˆYˆ
-ÛØÚÙ]OOHİ\œ™[ÛØÚÙ]
-H™]\›Âˆ™XÛÛ›™Xİ][\ÈHÂˆ]ØZ]Ù]İ]\Ê˜ÛÛ›™XİYŠNÂˆNÂˆİ\œ™[ÛØÚÙ]›Û›Y\ÜØYÙHH\Ş[˜È
-]™[
-HOˆÂˆHÂˆÛÛœİY\ÜØYÙHH”ÓÓ‹œ\œÙJ]™[™]JNÂˆYˆ
-Y\ÜØYÙK\HOOH™š[WØ]˜Z[X›HŠHÂˆİÛ›ØY]Y]YHHİÛ›ØY]Y]YBˆ[Š
+async function setStatus(status, error = "") {
+  await chrome.storage.local.set({ connectionStatus: status, connectionError: error });
+}
 
-HOˆİÛ›ØYš[JY\ÜØYÙJJBˆ˜Ø]Ú
+async function connect() {
+  clearTimeout(reconnectTimer);
+  if (socket && (socket.readyState === WebSocket.OPEN || socket.readyState === WebSocket.CONNECTING)) return;
 
-\œ›ÜŠHOˆÛÛœÛÛK™\œ›ÜŠ‘İÛ›ØY]Y]YH˜Z[Y‹\œ›ÜŠJNÂˆBˆYˆ
-Y\ÜØYÙK\HOOHœ[™Èˆ	‰ˆİ\œ™[ÛØÚÙ]œ™XYTİ]HOOHÙX”ÛØÚÙ]“ÔSŠHÂˆİ\œ™[ÛØÚÙ]œÙ[™
-”ÓÓ‹œİš[™ÚYJÈ\NˆœÛ™È‹[Y\İ[\ˆ]K››İÊ
-HJJNÂˆBˆHØ]Ú
-\œ›ÜŠHÂˆÛÛœÛÛK™\œ›ÜŠ’[˜[YÙX”ÛØÚÙ]Y\ÜØYÙH‹\œ›ÜŠNÂˆBˆNÂˆİ\œ™[ÛØÚÙ]›Û˜ÛÜÙHH\Ş[˜È
+  try {
+    await setStatus("connecting");
+    const settings = await getSettings();
+    await registerDevice(settings);
+    const wsBase = normalizeBaseUrl(settings.serverBaseUrl).replace(/^http:/, "ws:").replace(/^https:/, "wss:");
+    const currentSocket = new WebSocket(`${wsBase}/ws?deviceId=${encodeURIComponent(settings.deviceId)}`);
+    socket = currentSocket;
+    socketDeviceId = settings.deviceId;
 
-HOˆÂˆYˆ
-ÛØÚÙ]OOHİ\œ™[ÛØÚÙ]
-H™]\›ÂˆÛØÚÙ]H[ÂˆÛØÚÙ]]šXÙRYH[Âˆ]ØZ]Ù]İ]\Ê™\ØÛÛ›™XİYŠNÂˆØÚY[T™XÛÛ›™Xİ
+    currentSocket.onopen = async () => {
+      if (socket !== currentSocket) return;
+      reconnectAttempts = 0;
+      await setStatus("connected");
+    };
+    currentSocket.onmessage = async (event) => {
+      try {
+        const message = JSON.parse(event.data);
+        if (message.type === "file_available") {
+          downloadQueue = downloadQueue
+            .then(() => downloadFile(message))
+            .catch((error) => console.error("Download queue failed", error));
+        }
+        if (message.type === "ping" && currentSocket.readyState === WebSocket.OPEN) {
+          currentSocket.send(JSON.stringify({ type: "pong", timestamp: Date.now() }));
+        }
+      } catch (error) {
+        console.error("Invalid WebSocket message", error);
+      }
+    };
+    currentSocket.onclose = async () => {
+      if (socket !== currentSocket) return;
+      socket = null;
+      socketDeviceId = null;
+      await setStatus("disconnected");
+      scheduleReconnect();
+    };
+    currentSocket.onerror = () => {
+      currentSocket.close();
+    };
+  } catch (error) {
+    socket = null;
+    await setStatus("disconnected", error.message);
+    scheduleReconnect();
+  }
+}
 
-NÂˆNÂˆİ\œ™[ÛØÚÙ]›Û™\œ›ÜˆH
+function formatBytes(bytes) {
+  if (!Number.isFinite(bytes) || bytes < 1024) return `${bytes || 0} B`;
+  const units = ["KB", "MB", "GB"];
+  let value = bytes;
+  let unit = -1;
+  do {
+    value /= 1024;
+    unit += 1;
+  } while (value >= 1024 && unit < units.length - 1);
+  return `${value.toFixed(value >= 10 ? 0 : 1)} ${units[unit]}`;
+}
 
-HOˆÂˆİ\œ™[ÛØÚÙ]˜ÛÜÙJ
-NÂˆNÂˆHØ]Ú
-\œ›ÜŠHÂˆÛØÚÙ]H[Âˆ]ØZ]Ù]İ]\Ê™\ØÛÛ›™XİY‹\œ›Ü‹›Y\ÜØYÙJNÂˆØÚY[T™XÛÛ›™Xİ
+async function downloadFile(file) {
+  if (typeof file?.fileId !== "string" || !file.fileId) return;
+  const settings = await getSettings();
+  const history = await chrome.storage.local.get({ processedFileIds: {} });
+  const cutoff = Date.now() - 60 * 60 * 1000;
+  history.processedFileIds = Object.fromEntries(
+    Object.entries(history.processedFileIds).filter(([, timestamp]) => timestamp > cutoff),
+  );
+  if (processingFileIds.has(file.fileId) || history.processedFileIds[file.fileId]) return;
+  processingFileIds.add(file.fileId);
 
-NÂˆBŸB‚™[˜İ[Ûˆ›Ü›X]]\Ê]\ÊHÂˆYˆ
-S[X™\‹š\Ñš[š]J]\ÊH]\ÈL
-H™]\›ˆ	Ø]\ÈH˜ÂˆÛÛœİ[š]ÈHÈ’Ğˆ‹“Pˆ‹‘Ğˆ—NÂˆ]˜[YHH]\ÎÂˆ][š]HLNÂˆÈÂˆ˜[YHÏHLÂˆ[š]
-ÏHNÂˆHÚ[H
-˜[YHHL	‰ˆ[š][š]Ë›[™İHJNÂˆ™]\›ˆ	İ˜[YKÑš^Y
-˜[YHHLÈˆJ_H	İ[š]Öİ[š]_XÂŸB‚˜\Ş[˜È[˜İ[ÛˆİÛ›ØYš[Jš[JHÂˆYˆ
-\[Ùˆš[OË™š[RYOOHœİš[™ÈˆYš[K™š[RY
-H™]\›ÂˆÛÛœİÙ][™ÜÈH]ØZ]Ù]Ù][™ÜÊ
-NÂˆÛÛœİ\İÜHH]ØZ]Ú›ÛYKœİÜ˜YÙK›ØØ[™Ù]
-È›ØÙ\ÜÙYš[RYÎˆßHJNÂˆÛÛœİİ]Ù™ˆH]K››İÊ
-HHŒ
-ˆŒ
-ˆLÂˆ\İÜKœ›ØÙ\ÜÙYš[RYÈHØš™Xİ™œ›ÛQ[šY\ÊˆØš™Xİ™[šY\Ê\İÜKœ›ØÙ\ÜÙYš[RYÊK™š[\Š
-Ë[Y\İ[\JHOˆ[Y\İ[\ˆİ]Ù™ŠKˆ
-NÂˆYˆ
-›ØÙ\ÜÚ[™Ñš[RYËš\Êš[K™š[RY
-H\İÜKœ›ØÙ\ÜÙYš[RYÖÙš[K™š[RYJH™]\›Âˆ›ØÙ\ÜÚ[™Ñš[RYË˜Y
-š[K™š[RY
-NÂ‚ˆHÂˆ]ØZ]Ú›ÛYK››İYšXØ][ÛœË˜Ü™X]J\Û™K\Ú\™KIÙš[K™š[RYXÂˆ\Nˆ˜˜\ÚXÈ‹ˆXÛÛ•\›ˆšXÛÛœËÚXÛÛ‹œİ™È‹ˆ]NˆšTÛ™xàbøà¢xàåxà¨xà©8àêøà¤¹cåù/èxàeøào¸àeøàgÈ‹ˆY\ÜØYÙNˆ	Ùš[K™š[[˜[Y_W‰Ù›Ü›X]]\Êš[KœÚ^™J_XˆJNÂˆHØ]Ú
-\œ›ÜŠHÂˆÛÛœÛÛKØ\›Š“›İYšXØ][Ûˆ˜Z[Y‹\œ›ÜŠNÂˆB‚ˆÛÛœİ\›H	Û›Ü›X[^™P˜\ÙU\›
-Ù][™ÜËœÙ\™\˜\ÙU\›
-_KØ\KÙš[\ËÉÙ[˜ÛÙUT’PÛÛ\Û™[
-š[K™š[RY
-_XÂˆHÂˆÛÛœİİÛ›ØYYH]ØZ]Ú›ÛYK™İÛ›ØYË™İÛ›ØY
-Âˆ\›ˆš[[˜[YNˆØY™QİÛ›ØY˜[YJš[K™š[[˜[YJKˆÛÛ™›XİXİ[Ûˆ[š\]ZYH‹ˆØ]™P\Îˆ˜[ÙKˆJNÂˆÛÛœİİÜ™YH]ØZ]Ú›ÛYKœİÜ˜YÙK›ØØ[™Ù]
-È[™[™ÑİÛ›ØYÎˆßHJNÂˆİÜ™Yœ[™[™ÑİÛ›ØYÖÔİš[™ÊİÛ›ØYY
-WHHÂˆš[RYˆš[K™š[RYˆÙ\™\˜\ÙU\›ˆ›Ü›X[^™P˜\ÙU\›
-Ù][™ÜËœÙ\™\˜\ÙU\›
-Kˆš[[˜[YNˆØY™QİÛ›ØY˜[YJš[K™š[[˜[YJKˆÚ^™Nˆ[X™\Šš[KœÚ^™JHˆNÂˆ\İÜKœ›ØÙ\ÜÙYš[RYÖÙš[K™š[RYHH]K››İÊ
-NÂˆ]ØZ]Ú›ÛYKœİÜ˜YÙK›ØØ[œÙ]
-Âˆ[™[™ÑİÛ›ØYÎˆİÜ™Yœ[™[™ÑİÛ›ØYËˆ›ØÙ\ÜÙYš[RYÎˆ\İÜKœ›ØÙ\ÜÙYš[RYËˆJNÂˆHØ]Ú
-\œ›ÜŠHÂˆÛÛœÛÛK™\œ›ÜŠ‘İÛ›ØY˜Z[Y‹\œ›ÜŠNÂˆHš[˜[HÂˆ›ØÙ\ÜÚ[™Ñš[RYË™[]Jš[K™š[RY
-NÂˆBŸB‚˜Ú›ÛYK™İÛ›ØYË›ÛÚ[™ÙY˜Y\İ[™\Š\Ş[˜È
-[JHOˆÂˆYˆ
-Y[Kœİ]H
-[Kœİ]K˜İ\œ™[OOH˜ÛÛ\]Hˆ	‰ˆ[Kœİ]K˜İ\œ™[OOHš[\œ\YŠJH™]\›ÂˆÛÛœİİÜ™YH]ØZ]Ú›ÛYKœİÜ˜YÙK›ØØ[™Ù]
-È[™[™ÑİÛ›ØYÎˆßHJNÂˆÛÛœİ[™[™ÈHİÜ™Yœ[™[™ÑİÛ›ØYÖÔİš[™Ê[KšY
-WNÂˆYˆ
-\[™[™ÊH™]\›Â‚ˆYˆ
-[Kœİ]K˜İ\œ™[OOH˜ÛÛ\]HŠHÂˆHÂˆ]ØZ]™]Ú
-	Ü[™[™ËœÙ\™\˜\ÙU\›KØ\KÙš[\ËÉÙ[˜ÛÙUT’PÛÛ\Û™[
-[™[™Ë™š[RY
-_XÈY]Ùˆ‘SUHˆJNÂˆHØ]Ú
-\œ›ÜŠHÂˆÛÛœÛÛKØ\›Š”Ù\™\ˆÛX[\˜Z[YÈİ\›HÛX[\Ú[™]H‹\œ›ÜŠNÂˆBˆH[ÙHÂˆÛÛœİ\İÜHH]ØZ]Ú›ÛYKœİÜ˜YÙK›ØØ[™Ù]
-È›ØÙ\ÜÙYš[RYÎˆßHJNÂˆ[]H\İÜKœ›ØÙ\ÜÙYš[RYÖÜ[™[™Ë™š[RYNÂˆ]ØZ]Ú›ÛYKœİÜ˜YÙK›ØØ[œÙ]
-È›ØÙ\ÜÙYš[RYÎˆ\İÜKœ›ØÙ\ÜÙYš[RYÈJNÂˆYˆ
-[K™\œ›ÜË˜İ\œ™[OOH•TÑT—ĞĞSÑSQŠHÂˆÙ][Y[İ]
+  try {
+    await chrome.notifications.create(`iphone-share-${file.fileId}`, {
+      type: "basic",
+      iconUrl: "icons/icon.svg",
+      title: "iPhoneã‹ã‚‰ãƒ•ã‚¡ã‚¤ãƒ«ã‚’å—ä¿¡ã—ã¾ã—ãŸ",
+      message: `${file.filename}\n${formatBytes(file.size)}`,
+    });
+  } catch (error) {
+    console.warn("Notification failed", error);
+  }
 
+  const url = `${normalizeBaseUrl(settings.serverBaseUrl)}/api/files/${encodeURIComponent(file.fileId)}`;
+  try {
+    const downloadId = await chrome.downloads.download({
+      url,
+      filename: safeDownloadName(file.filename),
+      conflictAction: "uniquify",
+      saveAs: false,
+    });
+    const stored = await chrome.storage.local.get({ pendingDownloads: {} });
+    stored.pendingDownloads[String(downloadId)] = {
+      fileId: file.fileId,
+      serverBaseUrl: normalizeBaseUrl(settings.serverBaseUrl),
+      filename: safeDownloadName(file.filename),
+      size: Number(file.size) || 0,
+    };
+    history.processedFileIds[file.fileId] = Date.now();
+    await chrome.storage.local.set({
+      pendingDownloads: stored.pendingDownloads,
+      processedFileIds: history.processedFileIds,
+    });
+  } catch (error) {
+    console.error("Download failed", error);
+  } finally {
+    processingFileIds.delete(file.fileId);
+  }
+}
 
-HOˆİÛ›ØYš[J[™[™ÊKL
-NÂˆBˆBˆ[]HİÜ™Yœ[™[™ÑİÛ›ØYÖÔİš[™Ê[KšY
-WNÂˆ]ØZ]Ú›ÛYKœİÜ˜YÙK›ØØ[œÙ]
-È[™[™ÑİÛ›ØYÎˆİÜ™Yœ[™[™ÑİÛ›ØYÈJNÂŸJNÂ‚˜Ú›ÛYKœ[[YK›Û’[œİ[Y˜Y\İ[™\Š
+chrome.downloads.onChanged.addListener(async (delta) => {
+  if (!delta.state || (delta.state.current !== "complete" && delta.state.current !== "interrupted")) return;
+  const stored = await chrome.storage.local.get({ pendingDownloads: {} });
+  const pending = stored.pendingDownloads[String(delta.id)];
+  if (!pending) return;
 
-HOˆÛÛ›™Xİ
+  if (delta.state.current === "complete") {
+    try {
+      await fetch(`${pending.serverBaseUrl}/api/files/${encodeURIComponent(pending.fileId)}`, { method: "DELETE" });
+    } catch (error) {
+      console.warn("Server cleanup failed; hourly cleanup will retry", error);
+    }
+  } else {
+    const history = await chrome.storage.local.get({ processedFileIds: {} });
+    delete history.processedFileIds[pending.fileId];
+    await chrome.storage.local.set({ processedFileIds: history.processedFileIds });
+    if (delta.error?.current !== "USER_CANCELED") {
+      setTimeout(() => downloadFile(pending), 1000);
+    }
+  }
+  delete stored.pendingDownloads[String(delta.id)];
+  await chrome.storage.local.set({ pendingDownloads: stored.pendingDownloads });
+});
 
-JNÂ˜Ú›ÛYKœ[[YK›Û”İ\\˜Y\İ[™\Š
+chrome.runtime.onInstalled.addListener(() => connect());
+chrome.runtime.onStartup.addListener(() => connect());
+chrome.alarms.create("keep-connected", { periodInMinutes: 0.5 });
+chrome.alarms.onAlarm.addListener((alarm) => {
+  if (alarm.name === "keep-connected") connect();
+});
+chrome.runtime.onMessage.addListener((message, _sender, sendResponse) => {
+  if (message.type === "reconnect") {
+    if (socket) socket.close(1000, "Settings changed");
+    socket = null;
+    socketDeviceId = null;
+    reconnectAttempts = 0;
+    connect().then(() => sendResponse({ success: true }));
+    return true;
+  }
+  if (message.type === "get-status") {
+    getSettings().then(sendResponse);
+    return true;
+  }
+  if (message.type === "ensure-connection") {
+    (async () => {
+      try {
+        const settings = await getSettings();
+        await registerDevice(settings);
+        if (socket && socketDeviceId !== settings.deviceId) {
+          socket.close(1000, "Device ID changed");
+          socket = null;
+          socketDeviceId = null;
+        }
+        if (!socket || socket.readyState !== WebSocket.OPEN) await connect();
+        sendResponse({ success: true });
+      } catch (error) {
+        await setStatus("disconnected", error.message);
+        sendResponse({ success: false, error: error.message });
+      }
+    })();
+    return true;
+  }
+  return false;
+});
 
-HOˆÛÛ›™Xİ
-
-JNÂ˜Ú›ÛYK˜[\›\Ë˜Ü™X]JšÙY\XÛÛ›™XİY‹È\š[Ù[“Z[]\ÎˆHJNÂ˜Ú›ÛYK˜[\›\Ë›Û[\›K˜Y\İ[™\Š
-[\›JHOˆÂˆYˆ
-[\›K›˜[YHOOHšÙY\XÛÛ›™XİYŠHÛÛ›™Xİ
-
-NÂŸJNÂ˜Ú›ÛYKœ[[YK›Û“Y\ÜØYÙK˜Y\İ[™\Š
-Y\ÜØYÙKÜÙ[™\‹Ù[™™\ÜÛœÙJHOˆÂˆYˆ
-Y\ÜØYÙK\HOOHœ™XÛÛ›™XİŠHÂˆYˆ
-ÛØÚÙ]
-HÛØÚÙ]˜ÛÜÙJL”Ù][™ÜÈÚ[™ÙYŠNÂˆÛØÚÙ]H[ÂˆÛØÚÙ]]šXÙRYH[Âˆ™XÛÛ›™Xİ][\ÈHÂˆÛÛ›™Xİ
-
-K[Š
-
-HOˆÙ[™™\ÜÛœÙJÈİXØÙ\ÜÎˆYHJJNÂˆ™]\›ˆYNÂˆBˆYˆ
-Y\ÜØYÙK\HOOH™Ù]\İ]\ÈŠHÂˆÙ]Ù][™ÜÊ
-K[ŠÙ[™™\ÜÛœÙJNÂˆ™]\›ˆYNÂˆBˆYˆ
-Y\ÜØYÙK\HOOH™[œİ\™KXÛÛ›™Xİ[ÛˆŠHÂˆ
-\Ş[˜È
-
-HOˆÂˆHÂˆÛÛœİÙ][™ÜÈH]ØZ]Ù]Ù][™ÜÊ
-NÂˆ]ØZ]™YÚ\İ\‘]šXÙJÙ][™ÜÊNÂˆYˆ
-ÛØÚÙ]	‰ˆÛØÚÙ]]šXÙRYOOHÙ][™ÜË™]šXÙRY
-HÂˆÛØÚÙ]˜ÛÜÙJL‘]šXÙHQÚ[™ÙYŠNÂˆÛØÚÙ]H[ÂˆÛØÚÙ]]šXÙRYH[ÂˆBˆYˆ
-\ÛØÚÙ]ÛØÚÙ]œ™XYTİ]HOOHÙX”ÛØÚÙ]“ÔSŠH]ØZ]ÛÛ›™Xİ
-
-NÂˆÙ[™™\ÜÛœÙJÈİXØÙ\ÜÎˆYHJNÂˆHØ]Ú
-\œ›ÜŠHÂˆ]ØZ]Ù]İ]\Ê™\ØÛÛ›™XİY‹\œ›Ü‹›Y\ÜØYÙJNÂˆÙ[™™\ÜÛœÙJÈİXØÙ\ÜÎˆ˜[ÙK\œ›Üˆ\œ›Ü‹›Y\ÜØYÙHJNÂˆBˆJJ
-NÂˆ™]\›ˆYNÂˆBˆ™]\›ˆ˜[ÙNÂŸJNÂ‚˜ÛÛ›™Xİ
-
-NÂ
+connect();

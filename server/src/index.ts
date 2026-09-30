@@ -1,72 +1,89 @@
-þŠmþ&yºÞÃòân¶«Ëñè™æë{Ü™ßì…éez{ì†X§{_?n)ÿ¦Ã©z¶­Š‰ç¢Ú^®h­µçZ[\Ü™Ý[‹ØÛÛ™šYÈŽÂš[\Üœ›ÛH››ÙNšŽÂš[\Ü]œ›ÛH››ÙNœ]ŽÂš[\ÜÛÜœÈœ›ÛH˜ÛÜœÈŽÂš[\Ü^™\ÜËÈ\H™^[˜Ý[Û‹\H™\]Y\Ý\H™\ÜÛœÙHHœ›ÛH™^™\ÜÈŽÂš[\Ü][\ˆœ›ÛH›][\ˆŽÂš[\ÜÈÙX”ÛØÚÙ]Ù\™\ˆHœ›ÛHÜÈŽÂš[\ÜÈÜ™X]Q]šXÙ\Ô›Ý]\ˆHœ›ÛH‹‹Ü›Ý]\ËÙ]šXÙ\ËšœÈŽÂš[\ÜÈÜ™X]Qš[\Ô›Ý]\ˆHœ›ÛH‹‹Ü›Ý]\ËÙš[\ËšœÈŽÂš[\ÜÈÜ™X]U\ØY›Ý]\‹›ÝYžQš[HHœ›ÛH‹‹Ü›Ý]\ËÝ\ØYšœÈŽÂš[\ÜÈÛÛ›™XÝ[ÛœË]šXÙ\Ëš[\ÈHœ›ÛH‹‹ÜÝ]KšœÈŽÂš[\ÜÈ[œÝ\™U\ØY\™XÝÜžK™[[Ý™Q^\™Yš[\ÈHœ›ÛH‹‹ÜÝÜ˜YÙKÙš[\ËšœÈŽÂ‚˜ÛÛœÝÜH[X™\Š›ØÙ\ÜË™[‹”Ô•ÏÈÌ
-NÂ˜ÛÛœÝX›XÐ˜\ÙU\›H
-›ØÙ\ÜË™[‹”P“P×ÐTÑWÕT“ÏÈ‹ËÛØØ[ÜÝ‰ÜÜX
-Kœ™\XÙJ×ÉËˆŠNÂ˜ÛÛœÝÚÜÝ]\›H›ØÙ\ÜË™[‹’SÔ×ÔÒÔ•ÕUÕT“ÏÈˆŽÂ˜ÛÛœÝÙX‘\™XÝÜžHH]œ™\ÛÛ™J›ØÙ\ÜË˜ÝÙ
+import "dotenv/config";
+import http from "node:http";
+import path from "node:path";
+import cors from "cors";
+import express, { type NextFunction, type Request, type Response } from "express";
+import multer from "multer";
+import { WebSocketServer } from "ws";
+import { createDevicesRouter } from "./routes/devices.js";
+import { createFilesRouter } from "./routes/files.js";
+import { createUploadRouter, notifyFile } from "./routes/upload.js";
+import { connections, devices, files } from "./state.js";
+import { ensureUploadDirectory, removeExpiredFiles } from "./storage/files.js";
 
-K‹‹‹ÝÙXˆŠNÂ‚˜]ØZ][œÝ\™U\ØY\™XÝÜžJ
-NÂ‚˜ÛÛœÝ\H^™\ÜÊ
-NÂ˜\\ÙJÛÜœÊ
-JNÂ˜\\ÙJ^™\ÜËšœÛÛŠÈ[Z]ˆŒ[XˆˆJJNÂ‚˜\™Ù]
-‹Ø\KÚX[‹
-Ü™\K™\ÊHOˆÂˆ™\ËšœÛÛŠÈÚÎˆYHJNÂŸJNÂ˜\™Ù]
-‹Ø\KØÛÛ™šYÈ‹
-Ü™\K™\ÊHOˆÂˆ™\ËšœÛÛŠÈX›XÐ˜\ÙU\›ÚÜÝ]\›JNÂŸJNÂ˜\\ÙJ‹Ø\KÙ]šXÙ\È‹Ü™X]Q]šXÙ\Ô›Ý]\ŠX›XÐ˜\ÙU\›
-JNÂ˜\\ÙJ‹Ø\KÝ\ØY‹Ü™X]U\ØY›Ý]\Š
-JNÂ˜\\ÙJ‹Ø\KÙš[\È‹Ü™X]Qš[\Ô›Ý]\Š
-JNÂ˜\\ÙJ^™\ÜËœÝ]XÊÙX‘\™XÝÜžJJNÂ˜\™Ù]
-‹ÜÙ]\‹
-Ü™\K™\ÊHOˆ™\ËœÙ[™š[J]š›Ú[ŠÙX‘\™XÝÜžKœÙ]\š[ŠJJNÂ‚˜\\ÙJ
-\œ›ÜŽˆ[šÛ›ÝÛ‹Ü™\Nˆ™\]Y\Ý™\Îˆ™\ÜÛœÙKÛ™^ˆ™^[˜Ý[ÛŠHOˆÂˆÛÛœÛÛK™\œ›ÜŠ\œ›ÜŠNÂˆYˆ
-\œ›Üˆ[œÝ[˜Ù[Ùˆ][\‹“][\‘\œ›Üˆ	‰ˆ\œ›Ü‹˜ÛÙHOOH“SRUÑ’SWÔÒV‘HŠHÂˆ™\ËœÝ]\ÊLÊKšœÛÛŠÈ\œ›ÜŽˆ‘š[HÛÈ\™ÙHˆJNÂˆ™]\›ŽÂˆBˆ™\ËœÝ]\ÊL
-KšœÛÛŠÈ\œ›ÜŽˆ•\ØY˜Z[YˆJNÂŸJNÂ‚˜ÛÛœÝÙ\™\ˆH˜Ü™X]TÙ\™\Š\
-NÂ˜ÛÛœÝÙX”ÛØÚÙ]Ù\™\ˆH™]ÈÙX”ÛØÚÙ]Ù\™\ŠÈÙ\™\‹]ˆ‹ÝÜÈˆJNÂ‚ÙX”ÛØÚÙ]Ù\™\‹›ÛŠ˜ÛÛ›™XÝ[Ûˆ‹
-ÛØÚÙ]™\]Y\Ý
-HOˆÂˆÛÛœÝ™\]Y\Ý\›H™]ÈT“
-™\]Y\Ý\›ÏÈˆ‹X›XÐ˜\ÙU\›
-NÂˆÛÛœÝ]šXÙRYH™\]Y\Ý\›œÙX\˜Ú\˜[\Ë™Ù]
-™]šXÙRYŠHÏÈˆŽÂˆYˆ
-Y]šXÙ\Ëš\Ê]šXÙRY
-JHÂˆÛØÚÙ]˜ÛÜÙJL•[šÛ›ÝÛˆ]šXÙHŠNÂˆ™]\›ŽÂˆB‚ˆÛÛœÝ™]š[Ý\ÈHÛÛ›™XÝ[ÛœË™Ù]
-]šXÙRY
-NÂˆYˆ
-™]š[Ý\È	‰ˆ™]š[Ý\ÈOOHÛØÚÙ]
-H™]š[Ý\Ë˜ÛÜÙJL”™\XÙYžHH™]ÈÛÛ›™XÝ[ÛˆŠNÂˆÛÛ›™XÝ[ÛœËœÙ]
-]šXÙRYÛØÚÙ]
-NÂˆÛÛœÛÛK›ÙÊ•ÙX”ÛØÚÙ]ÛÛ›™XÝY‹È]šXÙRYJNÂ‚ˆ›Üˆ
-ÛÛœÝÝÜ™Yš[HÙˆš[\Ë˜[Y\Ê
-JHÂˆYˆ
-ÝÜ™Yš[K™]šXÙRYOOH]šXÙRY
-H›ÝYžQš[JÝÜ™Yš[JNÂˆB‚ˆÛØÚÙ]›ÛŠ˜ÛÜÙH‹
+const port = Number(process.env.PORT ?? 3000);
+const publicBaseUrl = (process.env.PUBLIC_BASE_URL ?? `http://localhost:${port}`).replace(/\/$/, "");
+const shortcutUrl = process.env.IOS_SHORTCUT_URL ?? "";
+const webDirectory = path.resolve(process.cwd(), "../web");
 
-HOˆÂˆYˆ
-ÛÛ›™XÝ[ÛœË™Ù]
-]šXÙRY
-HOOHÛØÚÙ]
-HÛÛ›™XÝ[ÛœË™[]J]šXÙRY
-NÂˆÛÛœÛÛK›ÙÊ•ÙX”ÛØÚÙ]\ØÛÛ›™XÝY‹È]šXÙRYJNÂˆJNÂˆÛØÚÙ]›ÛŠ™\œ›Üˆ‹
-\œ›ÜŠHOˆÛÛœÛÛK™\œ›ÜŠ•ÙX”ÛØÚÙ]\œ›Üˆ‹È]šXÙRY\œ›ÜˆJJNÂŸJNÂ‚˜ÛÛœÝÛX[\[Y\ˆHÙ][\˜[
+await ensureUploadDirectory();
 
+const app = express();
+app.use(cors());
+app.use(express.json({ limit: "1mb" }));
 
-HOˆÂˆ™[[Ý™Q^\™Yš[\Ê
-K˜Ø]Ú
+app.get("/api/health", (_req, res) => {
+  res.json({ ok: true });
+});
+app.get("/api/config", (_req, res) => {
+  res.json({ publicBaseUrl, shortcutUrl });
+});
+app.use("/api/devices", createDevicesRouter(publicBaseUrl));
+app.use("/api/upload", createUploadRouter());
+app.use("/api/files", createFilesRouter());
+app.use(express.static(webDirectory));
+app.get("/setup", (_req, res) => res.sendFile(path.join(webDirectory, "setup.html")));
 
-\œ›ÜŠHOˆÛÛœÛÛK™\œ›ÜŠ‘š[HÛX[\˜Z[Y‹\œ›ÜŠJNÂŸKH
-ˆŒ
-ˆL
-NÂ˜ÛX[\[Y\‹[œ™YŠ
-NÂ‚˜ÛÛœÝX\™X][Y\ˆHÙ][\˜[
+app.use((error: unknown, _req: Request, res: Response, _next: NextFunction) => {
+  console.error(error);
+  if (error instanceof multer.MulterError && error.code === "LIMIT_FILE_SIZE") {
+    res.status(413).json({ error: "File too large" });
+    return;
+  }
+  res.status(500).json({ error: "Upload failed" });
+});
 
+const server = http.createServer(app);
+const webSocketServer = new WebSocketServer({ server, path: "/ws" });
 
-HOˆÂˆÛÛœÝY\ÜØYÙHH”ÓÓ‹œÝš[™ÚYžJÈ\Nˆœ[™È‹[Y\Ý[\ˆ]K››ÝÊ
-HJNÂˆ›Üˆ
-ÛÛœÝÛØÚÙ]ÙˆÛÛ›™XÝ[ÛœË˜[Y\Ê
-JHÂˆYˆ
-ÛØÚÙ]œ™XYTÝ]HOOHÛØÚÙ]“ÔSŠHÛØÚÙ]œÙ[™
-Y\ÜØYÙJNÂˆBŸKŒ
-ˆL
-NÂšX\™X][Y\‹[œ™YŠ
-NÂ‚œÙ\™\‹›\Ý[ŠÜŒŒŒŒ‹
+webSocketServer.on("connection", (socket, request) => {
+  const requestUrl = new URL(request.url ?? "", publicBaseUrl);
+  const deviceId = requestUrl.searchParams.get("deviceId") ?? "";
+  if (!devices.has(deviceId)) {
+    socket.close(1008, "Unknown device");
+    return;
+  }
 
-HOˆÂˆÛÛœÛÛK›ÙÊTÛ™H]HÚ\š[™ÈÙ\™\ˆ\Ý[š[™ÈÛˆ‹ËÛØØ[ÜÝ‰ÜÜX
-NÂˆÛÛœÛÛK›ÙÊX›XÈÙ]\T“ˆ	ÜX›XÐ˜\ÙU\›X
-NÂŸJNÂ
+  const previous = connections.get(deviceId);
+  if (previous && previous !== socket) previous.close(1000, "Replaced by a new connection");
+  connections.set(deviceId, socket);
+  console.log("WebSocket connected", { deviceId });
+
+  for (const storedFile of files.values()) {
+    if (storedFile.deviceId === deviceId) notifyFile(storedFile);
+  }
+
+  socket.on("close", () => {
+    if (connections.get(deviceId) === socket) connections.delete(deviceId);
+    console.log("WebSocket disconnected", { deviceId });
+  });
+  socket.on("error", (error) => console.error("WebSocket error", { deviceId, error }));
+});
+
+const cleanupTimer = setInterval(() => {
+  removeExpiredFiles().catch((error) => console.error("File cleanup failed", error));
+}, 5 * 60 * 1000);
+cleanupTimer.unref();
+
+const heartbeatTimer = setInterval(() => {
+  const message = JSON.stringify({ type: "ping", timestamp: Date.now() });
+  for (const socket of connections.values()) {
+    if (socket.readyState === socket.OPEN) socket.send(message);
+  }
+}, 20 * 1000);
+heartbeatTimer.unref();
+
+server.listen(port, "0.0.0.0", () => {
+  console.log(`iPhone Data Sharing server listening on http://localhost:${port}`);
+  console.log(`Public setup URL: ${publicBaseUrl}`);
+});

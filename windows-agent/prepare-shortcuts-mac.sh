@@ -1,5 +1,15 @@
-þŠmþ&yºÞÃòân¶«Ëñè™æë{Ü™ßì…éez{ì†X§{_?n)ÿ¦Ã©z¶­Š‰ç¢Ú^®h­µçHÈKØš[‹Ø˜\ÚœÙ]Y][È\Y˜Z[”“ÓÕH‰
-Ù‰
-\›˜[YH‰ŠKË‹ˆˆ	‰ˆÙ
-H‚˜Ù‰“ÓÕ‚‚šYˆÖÈ‰
-[˜[YH\ÊHˆOH‘\Ú[ˆˆWNÈ[‚ˆXÚÈ•\ÈÝ\]\Ý[ˆÛˆXXÓÔÈ™XØ]\ÙH\HÚÜÝ]ÚYÛš[™È\Ù\ÈÝ\Ü‹Øš[‹ÜÚÜÝ]Ëˆˆ‰Œ‚ˆ^]B™šB‚œ]ÛŒÈÛÛËØZ[ÝÚ[™ÝÜ×ÜÚÜÝ]ËœB‚™XÚÂ™XÚÈ•Ú[™ÝÜÈÚÜÝ][\]\È\™H™XYNˆ‚›È[Ú[™ÝÜËXYÙ[Ü™\ÛÝ\˜Ù\ËÜÚÜÝ]ËÊ‹œÚÜÝ]
+#!/bin/bash
+set -euo pipefail
+ROOT="$(cd "$(dirname "$0")/.." && pwd)"
+cd "$ROOT"
+
+if [[ "$(uname -s)" != "Darwin" ]]; then
+  echo "This step must run on macOS because Apple Shortcut signing uses /usr/bin/shortcuts." >&2
+  exit 1
+fi
+
+python3 tools/build_windows_shortcuts.py
+
+echo
+echo "Windows shortcut templates are ready:"
+ls -lh windows-agent/resources/shortcuts/*.shortcut

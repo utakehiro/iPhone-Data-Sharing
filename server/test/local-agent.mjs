@@ -1,591 +1,321 @@
-şŠmş&yºŞÃòân¶«Ëñè™æë{Ü™ßì…éez{ì†X§{_?n)ÿ¦Ã©z¶­Š‰ç¢Ú^®h­µçZ[\Ü\ÜÙ\œ›ÛH››ÙN˜\ÜÙ\ÜİšXİÂš[\ÜÈÜ]ÛˆHœ›ÛH››ÙN˜Ú[Ü›ØÙ\ÜÈÂš[\ÜÈ›ÛZ\Ù\È\ÈœÈHœ›ÛH››ÙN™œÈÂš[\ÜÜÈœ›ÛH››ÙN›ÜÈÂš[\Ü]œ›ÛH››ÙNœ]Âš[\Ü™]œ›ÛH››ÙN›™]Âš[\ÜÈØÜš\Hœ›ÛH››ÙN›HÂ‚˜ÛÛœİ˜]]™Q™]ÚHÛØ˜[\Ë™™]ÚÂ™ÛØ˜[\Ë™™]ÚH
-[œ][š]HßJHOˆÂˆÛÛœİXY\œÈH™]ÈXY\œÊ[š]šXY\œÊNÂˆYˆ
-ZXY\œËš\Ê˜XØÙ\[[™İXYÙHŠJHXY\œËœÙ]
-˜XØÙ\[[™İXYÙH‹š˜HŠNÂˆ™]\›ˆ˜]]™Q™]Ú
-[œ]È‹‹š[š]XY\œÈJNÂŸNÂ‚™[˜İ[ÛˆÚXÚÔYÙTØÜš\Ê[
-HÂˆ›Üˆ
-ÛÛœİËÛİ\˜ÙWHÙˆ[›X]Ú[
-ÏØÜš\Š×××JÊOÜØÜš\‹ÙÊJH™]ÈØÜš\
-Ûİ\˜ÙJNÂŸB‚˜ÛÛœİ›ÛİH]ØZ]œË›ZÙ[\
-]š›Ú[ŠÜË\\Š
-Kš\Û™K\Ú\™K]\İHŠJNÂ˜ÛÛœİ\İ[™\ˆH™]˜Ü™X]TÙ\™\Š
-NÂ˜]ØZ]™]È›ÛZ\ÙJ
-™\ÛÛ™JHOˆ\İ[™\‹›\İ[ŠŒLËŒŒŒH‹™\ÛÛ™JJNÂ˜ÛÛœİÜH\İ[™\‹˜Y™\ÜÊ
-KœÜÂ˜]ØZ]™]È›ÛZ\ÙJ
-™\ÛÛ™JHOˆ\İ[™\‹˜ÛÜÙJ™\ÛÛ™JJNÂ˜ÛÛœİ˜\ÙHH‹ËÌLËŒŒŒN‰ÜÜXÂ˜ÛÛœİX›XĞ˜\ÙHH‹ËÌNL‹ŒMŒKŒL‰ÜÜXÂ˜ÛÛœİİ]XÔÚÜİ]\™XİÜHH]œ™\ÛÛ™J[\Ü›Y]K™\›˜[YK‹‹‹Ë‹‹İÚ[™İÜËXYÙ[Ü™\Ûİ\˜Ù\ËÜÚÜİ]ÈŠNÂ™[˜İ[Ûˆİ\YÙ[
-^˜Q[ˆHßJHÂˆÛÛœİ›ØÙ\ÜÈHÜ]ÛŠÛØ˜[\Ëœ›ØÙ\ÜË™[‹•TÕĞQÑS•Ó“ÑHÏÈÛØ˜[\Ëœ›ØÙ\ÜË™^XÔ]ÙÛØ˜[\Ëœ›ØÙ\ÜË™[‹•TÕĞQÑS•ÔĞÔ’TÏÈ™\İÛØØ[XYÙ[šœÈ—KÂˆİÙˆ]œ™\ÛÛ™J[\Ü›Y]K™\›˜[YK‹‹ˆŠKˆ[ˆÈ‹‹™ÛØ˜[\Ëœ›ØÙ\ÜË™[‹Ô•ˆİš[™ÊÜ
-KP“P×ĞTÑWÕT“ˆX›XĞ˜\ÙKÕÓ“ĞQÑTˆ]š›Ú[Š›Ûİ™İÛ›ØYÈŠKSTÑTˆ]š›Ú[Š›Ûİ[\ŠKUWÑTˆ]š›Ú[Š›Ûİ™]HŠKÕUP×ÔÒÔ•ÕUÑTˆİ]XÔÚÜİ]\™XİÜK‹‹™^˜Q[ˆKˆİ[Îˆœ\H‹ˆJNÂˆYˆ
-ÛØ˜[\Ëœ›ØÙ\ÜË™[‹•TÕĞQÑS•ÓÑÈOOHŒHŠH›ØÙ\ÜËœİ\œ‹œ\JÛØ˜[\Ëœ›ØÙ\ÜËœİ\œŠNÂˆ™]\›ˆ›ØÙ\ÜÎÂŸB›]Ú[Hİ\YÙ[
-
-NÂ‚HÂˆ]™XYHH˜[ÙNÂˆ›Üˆ
-]ˆHÈˆLÈŠÊÊHÂˆHÈ™XYHH
-]ØZ]™]Ú
-	Ø˜\Ù_KÚX[
-JK›ÚÎÈHØ]ÚÈÊˆİ\[™È
-‹ÈBˆYˆ
-™XYJHœ™XZÎÂˆ]ØZ]™]È›ÛZ\ÙJ
-™\ÛÛ™JHOˆÙ][Y[İ]
-™\ÛÛ™KL
-JNÂˆBˆ\ÜÙ\›ÚÊ™XYK˜YÙ[İ\ÈŠNÂˆ\ÜÙ\™Y\\]X[
-]ØZ]
-]ØZ]™]Ú
-	Ø˜\Ù_KØYZ[‹ÜZ\š[™Ë\İ]X
-JKšœÛÛŠ
-KÈZ\™Yˆ˜[ÙK™XÙZ]™YÛİ[ˆJNÂˆ\ÜÙ\™\]X[
-
-]ØZ]™]Ú
-	Ø˜\Ù_KÜÙ]\
-JKœİ]\ËJNÂˆÛÛœİYZ[”YÙHH]ØZ]
-]ØZ]™]Ú
-˜\ÙJJK^
-
-NÂˆÚXÚÔYÙTØÜš\ÊYZ[”YÙJNÂˆ\ÜÙ\›X]Ú
-YZ[”YÙKÏO”øàbøà¢ZTÛ™xàn:` y/èOÚO‹ÊNÂˆ\ÜÙ\›X]Ú
-YZ[”YÙKĞYYXH
-X^]ÚYÌŒ
-K
-İ™\››Û™W
-H[™
-Ú[\˜ÛØ\œÙW
-H[™
-X^]ÚYŒL
-W×›[™İXYÙK\İÚ]ÚÙ\Ü^N››Û™WKÊNÂˆ\ÜÙ\›X]Ú
-YZ[”YÙKÏ˜]ˆÛ\ÜÏH›[™İXYÙK\İÚ]Úˆ\šXK[X™[H“[™İXYÙH‹Ë™\ÚİÜ[™İXYÙHİÚ]Ú™[XZ[œÈ]˜Z[X›HŠNÂˆ\ÜÙ\›X]Ú
-YZ[”YÙKİÚ[™İ×˜Y]™[\İ[™\—
-	Ù˜YÛİ™\‰ËÊNÂˆ\ÜÙ\›X]Ú
-YZ[”YÙKİÚ[™İ×˜Y]™[\İ[™\—
-	Ù›Ü	ËÊNÂˆ\ÜÙ\›X]Ú
-YZ[”YÙKÜÙ[™
-×——™W™]U˜[œÙ™\—™š[\×W
-KÊNÂˆ\ÜÙ\™Ù\Ó›İX]Ú
-YZ[”YÙKùcåù/èyå*T‹ÊNÂˆÛÛœİİZYTYÙHH]ØZ]
-]ØZ]™]Ú
-	Ø˜\Ù_KÜÙ]\YİZYX
-JK^
-
-NÂˆÚXÚÔYÙTØÜš\ÊİZYTYÙJNÂˆ\ÜÙ\›X]Ú
-İZYTYÙKÏOº` ycåù/èz*+yk¦¹ áyh,OÚO‹ÊNÂˆ\ÜÙ\›X]Ú
-İZYTYÙKÓXXøàjú` xà¢ËÊNÂˆ\ÜÙ\›X]Ú
-İZYTYÙKÚTÛ™H]HÚ\š[™ùcåù/èKÊNÂˆ\ÜÙ\›X]Ú
-İZYTYÙKøàæøàï8àè9å.úgh¸àn:/ïyb¨ÊNÂˆÛÛœİ\XÛÛˆH]ØZ]™]Ú
-	Ø˜\Ù_KØ\ZXÛÛ‹œ™Ø
-NÂˆ\ÜÙ\™\]X[
-\XÛÛ‹œİ]\ËŒ
-NÂˆ\ÜÙ\›X]Ú
-\XÛÛ‹šXY\œË™Ù]
-˜ÛÛ[]\HŠKÚ[XYÙWÜ™ËÊNÂˆÛÛœİÙ[™[œİ[\ˆH]ØZ]™]Ú
-	Ø˜\Ù_KÚ[œİ[ÜÙ[™]Ë\ËœÚÜİ]
-NÂˆ\ÜÙ\™\]X[
-Ù[™[œİ[\‹œİ]\ËKœÚÜİ][œİ[\œÈ™\]Z\™HHZ\™YTÛ™HŠNÂˆ\ÜÙ\™\]X[
-
-]ØZ]™]Ú
-	Ø˜\Ù_KÚ[œİ[ÜØ]™K]Ë\İÜËœÚÜİ]
-JKœİ]\Ë
-NÂˆÛÛœİ[šYYH]ØZ]™]Ú
-	Ø˜\Ù_KÜÛ™Kİ\ØYÈY]Ùˆ”ÔÕˆJNÂˆ\ÜÙ\™\]X[
-[šYYœİ]\ËJNÂˆ\ÜÙ\™\]X[
-
-]ØZ]™]Ú
-	Ø˜\Ù_KÚ[˜›Ş
-JKœİ]\Ë
-NÂˆÛÛœİ[˜]][XØ]YÛYHH]ØZ]™]Ú
-	Ø˜\Ù_KÙš[Y›ÜÚ[˜›Ş
-NÂˆ\ÜÙ\™\]X[
-[˜]][XØ]YÛYKœİ]\ËJNÂˆ\ÜÙ\›X]Ú
-[˜]][XØ]YÛYKšXY\œË™Ù]
-˜ÛÛ[]\HŠKİ^Ú[ÊNÂˆ\ÜÙ\›X]Ú
-]ØZ][˜]][XØ]YÛYK^
-
-Kú*£z*/8à¤¹¦í9¥¬8àfxà¢ùoáz) xàc8à`¸à¢¸ào¸àfKÊNÂˆÛÛœİ\ˆH]ØZ]™]Ú
-	Ø˜\Ù_KØYZ[‹ÜZ\š[™ØÈY]Ùˆ”ÔÕˆJNÂˆ\ÜÙ\™\]X[
-\‹œİ]\ËŒ
-NÂˆÛÛœİZ\ˆH]ØZ]\‹šœÛÛŠ
-NÂˆ\ÜÙ\›X]Ú
-Z\‹œ\‹×™]Nš[XYÙWÜ™ÎØ˜\ÙMÊNÂˆÛÛœİZ\š[™Õ\›H	Ø˜\Ù_IÛ™]ÈT“
-Z\‹\›
-Kœ]˜[Y_XÂˆÛÛœİZ\š[™ÔYÙHH]ØZ]
-]ØZ]™]Ú
-Z\š[™Õ\›
-JK^
-
-NÂˆ\ÜÙ\›X]Ú
-Z\š[™ÔYÙKøàdøàk“XXøàj9£©yí¦¸àfxà¢ËÊNÂˆ\ÜÙ\›X]Ú
-Z\š[™ÔYÙKøà­øàéøàï8àâ8àªøààøàâ8à¤º*+yk¦‹ÊNÂˆ\ÜÙ\›X]Ú
-Z\š[™ÔYÙKÚ™YW—ÜÙ]\‹ÊNÂˆÛÛœİZ\™YH]ØZ]™]Ú
-Z\š[™Õ\›ÈY]Ùˆ”ÔÕˆJNÂˆ\ÜÙ\™\]X[
-Z\™Yœİ]\ËŒ
-NÂˆ\ÜÙ\™\]X[
-
-]ØZ]™]Ú
-Z\š[™Õ\›ÈY]Ùˆ”ÔÕˆJJKœİ]\ËL
-NÂˆÛÛœİÛÛÚÚYHHZ\™YšXY\œË™Ù]
-œÙ]XÛÛÚÚYHŠKœÜ]
-ÈŠVÌNÂˆ\ÜÙ\™Y\\]X[
-]ØZ]
-]ØZ]™]Ú
-	Ø˜\Ù_KØYZ[‹ÜZ\š[™Ë\İ]X
-JKšœÛÛŠ
-KÈZ\™YˆYK™XÙZ]™YÛİ[ˆJNÂˆ\ÜÙ\›X]Ú
-]ØZ]
-]ØZ]™]Ú
-	Ø˜\Ù_KÜÙ]\ÈXY\œÎˆÈÛÛÚÚYHHJJK^
-
-Køà#XXøàjú` xà¢øà#xà¤¹cå¹o¥ËÊNÂˆÛÛœİÛ™TÙ]\H]ØZ]™]Ú
-	Ø˜\Ù_KÜÛ™KÜÙ]\ÈY]Ùˆ”ÔÕ‹XY\œÎˆÈÛÛÚÚYHHJNÂˆ\ÜÙ\™\]X[
-Û™TÙ]\œİ]\ËŒ]ØZ]Û™TÙ]\^
-
-JNÂˆÛÛœİÚÜÙ[‘\™XİÜHH]š›Ú[Š›Ûİ˜ÚÜÙ[ˆŠNÂˆ]ØZ]œË›ZÙ\ŠÚÜÙ[‘\™XİÜJNÂˆ\ÜÙ\™Y\\]X[
-]ØZ]
-]ØZ]™]Ú
-	Ø˜\Ù_KØYZ[‹ÙİÛ›ØYY\™XİÜXÈY]Ùˆ”ÔÕ‹XY\œÎˆÈ˜ÛÛ[]\Hˆ˜\XØ][Û‹ÚœÛÛˆˆK›ÙNˆ”ÓÓ‹œİš[™ÚYJÈ\™XİÜNˆÚÜÙ[‘\™XİÜHJHJJKšœÛÛŠ
-KÈ\™XİÜNˆÚÜÙ[‘\™XİÜHJNÂˆ\ÜÙ\™Y\\]X[
-]ØZ]
-]ØZ]™]Ú
-	Ø˜\Ù_KØYZ[‹ÙİÛ›ØYY\™XİÜX
-JKšœÛÛŠ
-KÈ\™XİÜNˆÚÜÙ[‘\™XİÜHJNÂˆÛÛœİÙ]\YÙHH]ØZ]
-]ØZ]™]Ú
-	Ø˜\Ù_KÜÙ]\ÈXY\œÎˆÈÛÛÚÚYHHJJK^
-
-NÂˆÚXÚÔYÙTØÜš\ÊÙ]\YÙJNÂˆ\ÜÙ\›X]Ú
-Ù]\YÙKÏOº` ycåù/èz*+yk¦ÚO‹ÊNÂˆ\ÜÙ\›X]Ú
-Ù]\YÙKøàæøàï8àè9å.úgh¸àn:/ïyb¨ÊNÂˆ\ÜÙ\›X]Ú
-Ù]\YÙKøà#XXøàjú` xà¢øà#xà¤¹cå¹o¥ËÊNÂˆ\ÜÙ\›X]Ú
-Ù]\YÙKøà#TÛ™H]HÚ\š[™ùcåù/èxà#xà¤¹cå¹o¥ËÊNÂˆ\ÜÙ\›X]Ú
-Ù]\YÙKùb'yfçº*,ycëËÊNÂˆ\ÜÙ\™Ù\Ó›İX]Ú
-Ù]\YÙKøàà8à©¸àìøàëxàï8àây.+x )‹ÊNÂˆ\ÜÙ\™Ù\Ó›İX]Ú
-Ù]\YÙKùa¦yç'øàjù/çykfİË\\›Z\ÜÚ[Û‹ÊNÂˆ\ÜÙ\›X]Ú
-Ù]\YÙKØ\×˜\W˜ÛÛWØ\ÜÚÜİ]ËÊNÂˆÛÛœİÛYTYÙHH]ØZ]™]Ú
-	Ø˜\Ù_KÙš[Y›ÜÚ[˜›ŞÈXY\œÎˆÈÛÛÚÚYHHJNÂˆ\ÜÙ\™\]X[
-ÛYTYÙKœİ]\ËŒ
-NÂˆ\ÜÙ\›X]Ú
-]ØZ]ÛYTYÙK^
-
-KÚTÛ™H]HÚ\š[™ùcåù/èyë¬KÊNÂˆÛÛœİÛYPÛÛÚÚYHHÛÛÚÚYNÂˆ\ÜÙ\™\]X[
-
-]ØZ]™]Ú
-	Ø˜\Ù_KØ\KÚ[˜›ŞÈXY\œÎˆÈÛÛÚÚYNˆÛYPÛÛÚÚYHHJJKœİ]\ËŒ
-NÂˆÛÛœİ[œİ[\ˆH]ØZ]™]Ú
-	Ø˜\Ù_KÚ[œİ[ÛÛ™KXÛXÚËœÚÜİ]ÈXY\œÎˆÈÛÛÚÚYHHJNÂˆ\ÜÙ\™\]X[
-[œİ[\‹œİ]\ËŒ
-NÂˆ\ÜÙ\›X]Ú
-XÛÙUT’PÛÛ\Û™[
-[œİ[\‹šXY\œË™Ù]
-˜ÛÛ[Y\ÜÜÚ][ÛˆŠJKÓXXøàjú` xà¢ËÊNÂˆ\ÜÙ\›ÚÊ
-]ØZ][œİ[\‹˜\œ˜^PY™™\Š
-JK˜]S[™İˆL
-NÂˆ\ÜÙ\™\]X[
-
-]ØZ]™]Ú
-	Ø˜\Ù_KÚ[œİ[ÛÛ™KXÛXÚËœÚÜİ]
-JKœİ]\ËJNÂˆÛÛœİİÜ™YÙ\ÜÚ[ÛœÈH]ØZ]œËœ™XYš[J]š›Ú[Š›Ûİ™]H‹œÙ\ÜÚ[ÛœËšœÛÛˆŠK]ŠNÂˆ\ÜÙ\™Ù\Ó›İX]Ú
-İÜ™YÙ\ÜÚ[ÛœËÚ\Û™WÜÚ\™OKÊNÂˆÚ[šÚ[
-
-NÂˆ]ØZ]™]È›ÛZ\ÙJ
-™\ÛÛ™JHOˆÚ[›Û˜ÙJ™^]‹™\ÛÛ™JJNÂˆÚ[Hİ\YÙ[
-
-NÂˆ]™\İ\YH˜[ÙNÂˆ›Üˆ
-]ˆHÈˆLÈŠÊÊHÂˆHÈ™\İ\YH
-]ØZ]™]Ú
-	Ø˜\Ù_KÜÙ[™ÈXY\œÎˆÈÛÛÚÚYHHJJK›ÚÎÈHØ]ÚÈÊˆİ\[™È
-‹ÈBˆYˆ
-™\İ\Y
-Hœ™XZÎÂˆ]ØZ]™]È›ÛZ\ÙJ
-™\ÛÛ™JHOˆÙ][Y[İ]
-™\ÛÛ™KL
-JNÂˆBˆ\ÜÙ\›ÚÊ™\İ\YœZ\š[™Èİ\š]™\ÈYÙ[™\İ\ŠNÂˆ\ÜÙ\™\]X[
-
-]ØZ]™]Ú
-	Ø˜\Ù_KØ\KÚ[˜›ŞÈXY\œÎˆÈÛÛÚÚYNˆÛYPÛÛÚÚYHHJJKœİ]\ËŒšÛYK\ØÜ™Y[ˆ]][XØ][Ûˆİ\š]™\È™\İ\ŠNÂˆÛÛœİ]šXÙHH]ØZ]
-]ØZ]™]Ú
-	Ø˜\Ù_KØYZ[‹Ù]šXÙX
-JKšœÛÛŠ
-NÂˆ\ÜÙ\›X]Ú
-]šXÙK™]šXÙRY×–ÌNXKY—^ÍIÊNÂˆ\ÜÙ\™\]X[
-]šXÙKšÛYTØÜ™Y[YY˜[ÙJNÂˆ\ÜÙ\›X]Ú
-]ØZ]
-]ØZ]™]Ú
-	Ø˜\Ù_Kİ˜[œÙ™\˜
-JK^
-
-KÚTÛ™H]HÚ\š[™ùcåù/èxà#xà¤¹k§ú(cÊNÂˆ\ÜÙ\™\]X[
-
-]ØZ]™]Ú
-	Ø˜\Ù_KÜÛ™KÚÛYK\ØÜ™Y[˜ÈY]Ùˆ”ÔÕˆJJKœİ]\ËJNÂˆ\ÜÙ\™\]X[
-
-]ØZ]™]Ú
-	Ø˜\Ù_KÜÛ™KÚÛYK\ØÜ™Y[˜ÈY]Ùˆ”ÔÕ‹XY\œÎˆÈÛÛÚÚYHHJJKœİ]\ËŒ
-NÂˆ\ÜÙ\™\]X[
-
-]ØZ]
-]ØZ]™]Ú
-	Ø˜\Ù_KØYZ[‹Ù]šXÙX
-JKšœÛÛŠ
-JKšÛYTØÜ™Y[YYYJNÂˆÛÛœİ˜]ÚH™]È›Ü›Q]J
-NÂˆ˜]Ú˜\[™
-™š[H‹™]È›ØŠÈ›Û™H—JK›Û™KŠNÂˆ˜]Ú˜\[™
-™š[H‹™]È›ØŠÈÛÈ—JKÛËŠNÂˆÛÛœİ[œ]Y]YYH]ØZ]™]Ú
-	Ø˜\Ù_KØ\KÛİ]›ŞÉÙ]šXÙK™]šXÙRYXÈY]Ùˆ”ÔÕ‹›ÙNˆ˜]ÚJNÂˆ\ÜÙ\™\]X[
-[œ]Y]YYœİ]\ËŒJNÂˆÛÛœİ]Y]YYH
-]ØZ][œ]Y]YYšœÛÛŠ
-JK™š[\ÎÂˆ\ÜÙ\™\]X[
-]Y]YY›[™İŠNÂˆ\ÜÙ\™\]X[
-]Y]YYÌKœİ]\Ëœ]Y]YYŠNÂˆ\ÜÙ\™\]X[
-
-]ØZ]™]Ú
-	Ø˜\Ù_KØ\KÙš[\ËÉÜ]Y]YYÌKšYX
-JKœİ]\ËK˜Hİ˜[™Ù\ˆØ[››İİÛ›ØY]Y]YYš[\ÈŠNÂˆ\ÜÙ\™\]X[
-
-]ØZ]™]Ú
-	Ø˜\Ù_KØ\KÚ[˜›ŞÉÈŒ‹œ™\X]
-
-_XÈXY\œÎˆÈÛÛÚÚYHHJJKœİ]\ËÊNÂˆ\ÜÙ\™\]X[
-
-]ØZ]™]Ú
-	Ø˜\Ù_KØ\KÚ[˜›ŞÈXY\œÎˆÈÛÛÚÚYHHJJKœİ]\ËŒ
-NÂˆÛÛœİ]™[ĞÛÛ›Û\ˆH™]ÈX›ÜÛÛ›Û\Š
-NÂˆÛÛœİ]™[ÈH]ØZ]™]Ú
-	Ø˜\Ù_KØ\KÙ]™[ËÚ[˜›ŞÈXY\œÎˆÈÛÛÚÚYHKÚYÛ˜[ˆ]™[ĞÛÛ›Û\‹œÚYÛ˜[JNÂˆ\ÜÙ\›X]Ú
-]™[ËšXY\œË™Ù]
-˜ÛÛ[]\HŠKİ^Ù]™[\İ™X[KÊNÂˆ]™[ĞÛÛ›Û\‹˜X›Ü
-
-NÂˆÛÛœİ™XÙZ]™Yš[HH]ØZ]™]Ú
-	Ø˜\Ù_KØ\KÙš[\ËÉÜ]Y]YYÌKšYKÛÛ™KÈXY\œÎˆÈÛÛÚÚYHHJNÂˆ\ÜÙ\™\]X[
-]ØZ]™XÙZ]™Yš[K^
-
-K›Û™HŠNÂˆ\ÜÙ\›X]Ú
-™XÙZ]™Yš[KšXY\œË™Ù]
-˜ÛÛ[Y\ÜÜÚ][ÛˆŠHÏÈˆ‹ÛÛ™WÊNÂˆ\ÜÙ\™\]X[
-
-]ØZ]
-]ØZ]™]Ú
-	Ø˜\Ù_KØ\KÚ[˜›ŞÈXY\œÎˆÈÛÛÚÚYHHJJKšœÛÛŠ
-JK™š[\Ë™š[™
-
-][JHOˆ][KšYOOH]Y]YYÌKšY
-Kœİ]\Ë™İÛ›ØYYŠNÂˆ\ÜÙ\™\]X[
-
-]ØZ]™]Ú
-	Ø˜\Ù_KØYZ[‹Ú\İÜX
-JKœİ]\Ë˜[œÙ™\ˆ\İÜH\È›İ™]Z[™YŠNÂˆ\ÜÙ\™\]X[
-
-]ØZ]™]Ú
-	Ø˜\Ù_KØ\KÙš[\ËÉÜ]Y]YYÌKšYKØXÚØÈY]Ùˆ”ÔÕ‹XY\œÎˆÈÛÛÚÚYHHJJKœİ]\ËŒ
-NÂˆ\ÜÙ\™\]X[
-
-]ØZ]
-]ØZ]™]Ú
-	Ø˜\Ù_KØ\KÚ[˜›ŞÈXY\œÎˆÈÛÛÚÚYHHJJKšœÛÛŠ
-JK™š[\Ë›[™İJNÂˆÛÛœİÛ˜]ÚH™]È›Ü›Q]J
-NÂˆÛ˜]Ú˜\[™
-™š[H‹™]È›ØŠÈ™^\™Y—JK™^\™YŠNÂˆÛÛœİ^\š[™ÈH
-]ØZ]
-]ØZ]™]Ú
-	Ø˜\Ù_KØ\KÛİ]›ŞÉÙ]šXÙK™]šXÙRYXÈY]Ùˆ”ÔÕ‹›ÙNˆÛ˜]ÚJJKšœÛÛŠ
-JK™š[\ÖÌNÂˆÚ[šÚ[
-
-NÂˆ]ØZ]™]È›ÛZ\ÙJ
-™\ÛÛ™JHOˆÚ[›Û˜ÙJ™^]‹™\ÛÛ™JJNÂˆÛÛœİİÜ™Yİ]›Şš[HH]š›Ú[Š›Ûİ™]H‹›İ]›ŞšœÛÛˆŠNÂˆÛÛœİİÜ™Yİ]›ŞH”ÓÓ‹œ\œÙJ]ØZ]œËœ™XYš[JİÜ™Yİ]›Şš[K]ŠJNÂˆİÜ™Yİ]›Ş™š[™
-
-][JHOˆ][KšYOOH^\š[™ËšY
-K™^\™\ÈH]K››İÊ
-HHNÂˆ]ØZ]œËÜš]Qš[JİÜ™Yİ]›Şš[K”ÓÓ‹œİš[™ÚYJİÜ™Yİ]›Ş
-JNÂˆÚ[Hİ\YÙ[
-
-NÂˆ›Üˆ
-]ˆHÈˆLÈŠÊÊHÂˆHÈYˆ
-
-]ØZ]™]Ú
-	Ø˜\Ù_KÚX[
-JK›ÚÊHœ™XZÎÈHØ]ÚÈÊˆİ\[™È
-‹ÈBˆ]ØZ]™]È›ÛZ\ÙJ
-™\ÛÛ™JHOˆÙ][Y[İ]
-™\ÛÛ™KL
-JNÂˆBˆ\ÜÙ\™\]X[
-
-]ØZ]
-]ØZ]™]Ú
-	Ø˜\Ù_KØ\KÚ[˜›ŞÈXY\œÎˆÈÛÛÚÚYHHJJKšœÛÛŠ
-JK™š[\ÖÌK›˜[YKÛË‹›İ]›Şİ\š]™\È™\İ\ŠNÂˆ\ÜÙ\™\]X[
-
-]ØZ]
-]ØZ]™]Ú
-	Ø˜\Ù_KØ\KÚ[˜›ŞÈXY\œÎˆÈÛÛÚÚYHHJJKšœÛÛŠ
-JK™š[\ËœÛÛYJ
-][JHOˆ][KšYOOH^\š[™ËšY
-K˜[ÙJNÂˆ]ØZ]\ÜÙ\œ™Z™XİÊœËœİ]
-]š›Ú[Š›Ûİ™]H‹›İ]›Ş‹^\š[™ËšY
-JKÈÛÙNˆ‘S“ÑS•ˆJNÂˆ\ÜÙ\™\]X[
-
-]ØZ]
-]ØZ]™]Ú
-	Ø˜\Ù_KØYZ[‹Ù]šXÙX
-JKšœÛÛŠ
-JKšÛYTØÜ™Y[YYYKšÛYHØÜ™Y[ˆÚÚXÙHİ\š]™\È™\İ\ŠNÂˆÛÛœİ[˜›ŞYÙHH]ØZ]
-]ØZ]™]Ú
-	Ø˜\Ù_KÙš[Y›ÜÚ[˜›ŞÈXY\œÎˆÈÛÛÚÚYHHJJK^
-
-NÂˆÚXÚÔYÙTØÜš\Ê[˜›ŞYÙJNÂˆ\ÜÙ\›X]Ú
-[˜›ŞYÙKÏOšTÛ™H]HÚ\š[™ùcåù/èyë¬OÚO‹ÊNÂˆ\ÜÙ\›X]Ú
-[˜›ŞYÙKùãï¹g*8à ycåù/èxàiøàcxà¢øàåxà¨xà©8àêøàkøà`¸à¢¸ào¸àføà¤øà ‹ÊNÂˆ\ÜÙ\›X]Ú
-[˜›ŞYÙKùbbºfiÊNÂˆ\ÜÙ\›X]Ú
-[˜›ŞYÙKÛY]Ùˆ‘SUH‹ÊNÂˆ\ÜÙ\™Ù\Ó›İX]Ú
-[˜›ŞYÙKÜÙ][Y[İ]
-
-
-OO›X\šß[˜İ[ÛˆX\šËÊNÂˆ\ÜÙ\™Ù\Ó›İX]Ú
-[˜›ŞYÙKøàfxànxài¹/çykf8àfxà¢ËÊNÂˆ\ÜÙ\›X]Ú
-[˜›ŞYÙKÙš[KYÜšYÊNÂˆ\ÜÙ\›X]Ú
-[˜›ŞYÙKÜ™]šY]Õ\›ÊNÂˆ\ÜÙ\›X]Ú
-[˜›ŞYÙKÑ]™[Ûİ\˜ÙKÊNÂˆ\ÜÙ\›X]Ú
-[˜›ŞYÙKÑ]™[Ûİ\˜ÙW
-—Ø\WÙ]™[×Ú[˜›Ş—
-KÊNÂˆ\ÜÙ\™Ù\Ó›İX]Ú
-[˜›ŞYÙKùa¦yç'øàjù/çykfİË\\›Z\ÜÚ[ÛŸš[Y›Ü\İËÊNÂˆ\ÜÙ\™\]X[
-
-]ØZ]™]Ú
-	Ø˜\Ù_KØ\KÙš[\ËÉÜ]Y]YYÌWKšYXÈY]Ùˆ‘SUH‹XY\œÎˆÈÛÛÚÚYHHJJKœİ]\ËŒ
-NÂˆ\ÜÙ\™\]X[
-
-]ØZ]
-]ØZ]™]Ú
-	Ø˜\Ù_KØ\KÚ[˜›ŞÈXY\œÎˆÈÛÛÚÚYHHJJKšœÛÛŠ
-JK™š[\ËœÛÛYJ
-][JHOˆ][KšYOOH]Y]YYÌWKšY
-K˜[ÙJNÂˆ]ØZ]\ÜÙ\œ™Z™XİÊœËœİ]
-]š›Ú[Š›Ûİ™]H‹›İ]›Ş‹]Y]YYÌWKšY
-JKÈÛÙNˆ‘S“ÑS•ˆJNÂˆ\ÜÙ\™Y\\]X[
-]ØZ]
-]ØZ]™]Ú
-	Ø˜\Ù_KØYZ[‹ÙİÛ›ØYY\™XİÜX
-JKšœÛÛŠ
-KÈ\™XİÜNˆÚÜÙ[‘\™XİÜHJNÂˆ\ÜÙ\™\]X[
-
-]ØZ]™]Ú
-	Ø˜\Ù_KÚ[˜›ŞÈXY\œÎˆÈÛÛÚÚYHK™Y\™Xİˆ›X[X[ˆJJKœİ]\Ë
-NÂˆÛÛœİ›Ü›HH™]È›Ü›Q]J
-NÂˆ›Ü›K˜\[™
-™š[H‹™]È›ØŠÈ™œ›ÛHTÛ™H—JKœİËŠNÂˆÛÛœİÙ[H]ØZ]™]Ú
-	Ø˜\Ù_KÜÛ™Kİ\ØYÈY]Ùˆ”ÔÕ‹XY\œÎˆÈÛÛÚÚYHK›ÙNˆ›Ü›HJNÂˆ\ÜÙ\™\]X[
-Ù[œİ]\ËŒJNÂˆ\ÜÙ\™\]X[
-
-]ØZ]Ù[šœÛÛŠ
-JK™š[\ÖÌKœİËŠNÂˆ\ÜÙ\™\]X[
-]ØZ]œËœ™XYš[J]š›Ú[ŠÚÜÙ[‘\™XİÜKœİËŠK]ŠK™œ›ÛHTÛ™HŠNÂˆ\ÜÙ\™Y\\]X[
-]ØZ]
-]ØZ]™]Ú
-	Ø˜\Ù_KØYZ[‹ÜZ\š[™Ë\İ]X
-JKšœÛÛŠ
-KÈZ\™YˆYK™XÙZ]™YÛİ[ˆHJNÂˆÛÛœİÙXÛÛ™H™]È›Ü›Q]J
-NÂˆÙXÛÛ™˜\[™
-™š[H‹™]È›ØŠÈ˜YØZ[ˆ—JKœİËŠNÂˆÛÛœİ\XØ]YH]ØZ]™]Ú
-	Ø˜\Ù_KÜÛ™Kİ\ØYÈY]Ùˆ”ÔÕ‹XY\œÎˆÈÛÛÚÚYHK›ÙNˆÙXÛÛ™JNÂˆ\ÜÙ\™\]X[
-
-]ØZ]\XØ]YšœÛÛŠ
-JK™š[\ÖÌKœİÈ
-JKŠNÂˆÛÛœİ˜]Ô\›Z]H
-]ØZ]
-]ØZ]™]Ú
-	Ø˜\Ù_KÜÛ™KÜÚÜİ]Ü\›Z]ÈY]Ùˆ”ÔÕ‹XY\œÎˆÈÛÛÚÚYHHJJKšœÛÛŠ
-JKœ\›Z]ÂˆÛÛœİÚÜİ]H]ØZ]™]Ú
-	Ø˜\Ù_KÜÛ™KÜÚÜİ]ÂˆY]Ùˆ”ÔÕ‹ˆXY\œÎˆÈÛÛÚÚYK˜ÛÛ[]\Hˆ˜\XØ][Û‹ÛØİ]\İ™X[H‹Yš[[˜[YHˆœÚÜİ]‹]\ØYÙK\\›Z]ˆ˜]Ô\›Z]Kˆ›ÙNˆ™œ›ÛHÚÜİ]‹ˆJNÂˆ\ÜÙ\™\]X[
-ÚÜİ]œİ]\ËŒJNÂˆ\ÜÙ\™\]X[
-]ØZ]œËœ™XYš[J]š›Ú[ŠÚÜÙ[‘\™XİÜKœÚÜİ]ŠK]ŠK™œ›ÛHÚÜİ]ŠNÂˆÛÛœİÚÜİ]›Ü›HH™]È›Ü›Q]J
-NÂˆÚÜİ]›Ü›K˜\[™
-™š[H‹™]È›ØŠÈœÚÜİ]›Ü›H—JK¸àåxàªxàï8àèŠNÂˆÛÛœİ›Ü›T\›Z]H
-]ØZ]
-]ØZ]™]Ú
-	Ø˜\Ù_KÜÛ™KÜÚÜİ]Ü\›Z]ÈY]Ùˆ”ÔÕ‹XY\œÎˆÈÛÛÚÚYHHJJKšœÛÛŠ
-JKœ\›Z]ÂˆÛÛœİ›Ü›TÙ[H]ØZ]™]Ú
-	Ø˜\Ù_KÜÛ™KÜÚÜİ]ÈY]Ùˆ”ÔÕ‹XY\œÎˆÈÛÛÚÚYK]\ØYÙK\\›Z]ˆ›Ü›T\›Z]K›ÙNˆÚÜİ]›Ü›HJNÂˆ\ÜÙ\™\]X[
-›Ü›TÙ[œİ]\ËŒJNÂˆ\ÜÙ\™\]X[
-]ØZ]œËœ™XYš[J]š›Ú[ŠÚÜÙ[‘\™XİÜK¸àåxàªxàï8àèŠK]ŠKœÚÜİ]›Ü›HŠNÂˆÛÛœİÙ[™YÙHH]ØZ]
-]ØZ]™]Ú
-	Ø˜\Ù_KÜÙ[™]ËZ\Û™X
-JK^
-
-NÂˆ\ÜÙ\›X]Ú
-Ù[™YÙKÛ][\HY[‹ÊNÂˆ\ÜÙ\™Ù\Ó›İX]Ú
-Ù[™YÙKùcåù/èyå*T‹ÊNÂˆÛÛœİ[XYÙHH™]È›Ü›Q]J
-NÂˆ[XYÙK˜\[™
-™š[H‹™]È›ØŠÛ™]ÈZ[\œ˜^JÌLÍËÎÌKLËL‹LJWKÈ\Nˆš[XYÙKÜ™ÈˆJKœİËœ™ÈŠNÂˆÛÛœİ[XYÙT™\ÜÛœÙHH]ØZ]™]Ú
-	Ø˜\Ù_KØ\KÛİ]›ŞÉÙ]šXÙK™]šXÙRYXÈY]Ùˆ”ÔÕ‹›ÙNˆ[XYÙHJNÂˆ\ÜÙ\™\]X[
-[XYÙT™\ÜÛœÙKœİ]\ËŒJNÂˆÛÛœİ[XYÙR][HH
-]ØZ][XYÙT™\ÜÛœÙKšœÛÛŠ
-JK™š[\ÖÌNÂˆ\ÜÙ\™\]X[
-[XYÙR][K\Kš[XYÙHŠNÂˆ\ÜÙ\›X]Ú
-[XYÙR][Kœ™]šY]Õ\›×Ø\WÙš[\×ËŠ×Ü™]šY]ËÊNÂˆ\ÜÙ\™\]X[
-
-]ØZ]™]Ú
-	Ø˜\Ù_IÚ[XYÙR][K™š[U\›X
-JKœİ]\ËJNÂˆÛÛœİ™]šY]ÈH]ØZ]™]Ú
-	Ø˜\Ù_IÚ[XYÙR][Kœ™]šY]Õ\›XÈXY\œÎˆÈÛÛÚÚYHHJNÂˆ\ÜÙ\™\]X[
-™]šY]Ëœİ]\ËŒ
-NÂˆ\ÜÙ\›X]Ú
-™]šY]ËšXY\œË™Ù]
-˜ÛÛ[]\HŠKÚ[XYÙWÜ™ËÊNÂˆ\ÜÙ\™\]X[
-™]šY]ËšXY\œË™Ù]
-˜ÛÛ[Y\ÜÜÚ][ÛˆŠK[œ™]šY]È\È™[™\™Y[›[™K›İİÛ›ØYYŠNÂˆ\ÜÙ\™\]X[
-
-]ØZ]
-]ØZ]™]Ú
-	Ø˜\Ù_KØ\KÚ[˜›ŞÈXY\œÎˆÈÛÛÚÚYHHJJKšœÛÛŠ
-JK™š[\Ë™š[™
-
-][JHOˆ][KšYOOH[XYÙR][KšY
-Kœİ]\Ëœ]Y]YY‹œ™]šY]ÈÙ\È›İX\šÈHš[HİÛ›ØYYŠNÂˆ\ÜÙ\›X]Ú
-
-]ØZ]™]Ú
-	Ø˜\Ù_IÚ[XYÙR][K™š[U\›XÈXY\œÎˆÈÛÛÚÚYHHJJKšXY\œË™Ù]
-˜ÛÛ[]\HŠKÚ[XYÙWÜ™ËÊNÂˆÛÛœİ\ØYÙP™Y›Ü™R[˜[Y\ØYÈH
-]ØZ]
-]ØZ]™]Ú
-	Ø˜\Ù_KØYZ[‹İ\ØYÙX
-JKšœÛÛŠ
-JK\ÙYÙ^NÂˆÛÛœİ[\T\›Z]H
-]ØZ]
-]ØZ]™]Ú
-	Ø˜\Ù_KÜÛ™KÜÚÜİ]Ü\›Z]ÈY]Ùˆ”ÔÕ‹XY\œÎˆÈÛÛÚÚYHHJJKšœÛÛŠ
-JKœ\›Z]ÂˆÛÛœİ[\U\ØYH]ØZ]™]Ú
-	Ø˜\Ù_KÜÛ™KÜÚÜİ]ÂˆY]Ùˆ”ÔÕ‹ˆXY\œÎˆÈÛÛÚÚYK˜ÛÛ[]\Hˆ˜\XØ][Û‹ÛØİ]\İ™X[H‹Yš[[˜[YHˆ™[\K‹]\ØYÙK\\›Z]ˆ[\T\›Z]Kˆ›ÙNˆˆ‹ˆJNÂˆ\ÜÙ\™\]X[
-[\U\ØYœİ]\Ë
-NÂˆ\ÜÙ\™\]X[
-
-]ØZ]
-]ØZ]™]Ú
-	Ø˜\Ù_KØYZ[‹İ\ØYÙX
-JKšœÛÛŠ
-JK\ÙYÙ^K\ØYÙP™Y›Ü™R[˜[Y\ØYË˜[ˆ[\H\ØYÙ\È›İÛÛœİ[YH\ØYÙHŠNÂˆÛÛœİZ\ÜÚ[™Ñš[T\›Z]H
-]ØZ]
-]ØZ]™]Ú
-	Ø˜\Ù_KÜÛ™KÜÚÜİ]Ü\›Z]ÈY]Ùˆ”ÔÕ‹XY\œÎˆÈÛÛÚÚYHHJJKšœÛÛŠ
-JKœ\›Z]ÂˆÛÛœİZ\ÜÚ[™Ñš[Q›Ü›HH™]È›Ü›Q]J
-NÂˆZ\ÜÚ[™Ñš[Q›Ü›K˜\[™
-››İYš[H‹˜[YHŠNÂˆÛÛœİZ\ÜÚ[™Ñš[U\ØYH]ØZ]™]Ú
-	Ø˜\Ù_KÜÛ™KÜÚÜİ]ÂˆY]Ùˆ”ÔÕ‹ˆXY\œÎˆÈÛÛÚÚYK]\ØYÙK\\›Z]ˆZ\ÜÚ[™Ñš[T\›Z]Kˆ›ÙNˆZ\ÜÚ[™Ñš[Q›Ü›KˆJNÂˆ\ÜÙ\™\]X[
-Z\ÜÚ[™Ñš[U\ØYœİ]\Ë
-NÂˆ\ÜÙ\™\]X[
-
-]ØZ]
-]ØZ]™]Ú
-	Ø˜\Ù_KØYZ[‹İ\ØYÙX
-JKšœÛÛŠ
-JK\ÙYÙ^K\ØYÙP™Y›Ü™R[˜[Y\ØYË˜H][\\™\]Y\İÚ]İ]Hš[HÙ\È›İÛÛœİ[YH\ØYÙHŠNÂˆÛÛœİ[œZ\ˆH]ØZ]™]Ú
-	Ø˜\Ù_KØYZ[‹İ[œZ\˜ÈY]Ùˆ”ÔÕˆJNÂˆ\ÜÙ\™\]X[
-[œZ\‹œİ]\ËŒ
-NÂˆ\ÜÙ\™Y\\]X[
-]ØZ]
-]ØZ]™]Ú
-	Ø˜\Ù_KØYZ[‹ÜZ\š[™Ë\İ]X
-JKšœÛÛŠ
-KÈZ\™Yˆ˜[ÙK™XÙZ]™YÛİ[ˆJNÂˆ\ÜÙ\™\]X[
-
-]ØZ]™]Ú
-	Ø˜\Ù_KÚX[
-JKœİ]\ËŒ[œZ\ˆX]™\ÈYÙ[[›š[™ÈŠNÂˆ\ÜÙ\™\]X[
-
-]ØZ]™]Ú
-	Ø˜\Ù_KÜÙ[™ÈXY\œÎˆÈÛÛÚÚYHHJJKœİ]\ËJNÂˆ\ÜÙ\™\]X[
-
-]ØZ]™]Ú
-	Ø˜\Ù_KØ\KÚ[˜›ŞÈXY\œÎˆÈÛÛÚÚYHHJJKœİ]\ËJNÂˆ\ÜÙ\™\]X[
-
-]ØZ]™]Ú
-	Ø˜\Ù_KØ\KÚ[˜›ŞÈXY\œÎˆÈÛÛÚÚYNˆÛYPÛÛÚÚYHHJJKœİ]\ËJNÂˆ\ÜÙ\™\]X[
-
-]ØZ]
-]ØZ]™]Ú
-	Ø˜\Ù_KØYZ[‹Ù]šXÙX
-JKšœÛÛŠ
-JKšÛYTØÜ™Y[YY˜[ÙJNÂˆ\ÜÙ\™\]X[
-
-]ØZ]™]Ú
-	Ø˜\Ù_KØ\KÙš[\ËÉÜ]Y]YYÌWKšYXÈXY\œÎˆÈÛÛÚÚYHHJJKœİ]\ËJNÂˆ\ÜÙ\™\]X[
-
-]ØZ]™]Ú
-	Ø˜\Ù_KÜÛ™KÜÚÜİ]ÈY]Ùˆ”ÔÕ‹XY\œÎˆÈÛÛÚÚYHK›ÙNˆˆJJKœİ]\ËJNÂˆ\ÜÙ\™\]X[
-
-]ØZ]™]Ú
-	Ø˜\Ù_KÚ[œİ[ÛÛ™KXÛXÚËœÚÜİ]ÈXY\œÎˆÈÛÛÚÚYHHJJKœİ]\ËJNÂˆÚ[šÚ[
-
-NÂˆ]ØZ]™]È›ÛZ\ÙJ
-™\ÛÛ™JHOˆÚ[›Û˜ÙJ™^]‹™\ÛÛ™JJNÂˆÚ[Hİ\YÙ[
-
-NÂˆ›Üˆ
-]ˆHÈˆLÈŠÊÊHÂˆHÈYˆ
-
-]ØZ]™]Ú
-	Ø˜\Ù_KÚX[
-JK›ÚÊHœ™XZÎÈHØ]ÚÈÊˆİ\[™È
-‹ÈBˆ]ØZ]™]È›ÛZ\ÙJ
-™\ÛÛ™JHOˆÙ][Y[İ]
-™\ÛÛ™KL
-JNÂˆBˆ\ÜÙ\™\]X[
-
-]ØZ]™]Ú
-	Ø˜\Ù_KÜÙ[™ÈXY\œÎˆÈÛÛÚÚYHHJJKœİ]\ËJNÂˆÚ[šÚ[
-
-NÂˆ]ØZ]™]È›ÛZ\ÙJ
-™\ÛÛ™JHOˆÚ[›Û˜ÙJ™^]‹™\ÛÛ™JJNÂˆÚ[Hİ\YÙ[
-ÈQÑS•ÔT‘S•ÔTNˆŒHˆJNÂˆ›Üˆ
-]ˆHÈˆLÈŠÊÊHÂˆHÈYˆ
-
-]ØZ]™]Ú
-	Ø˜\Ù_KÚX[
-JK›ÚÊHœ™XZÎÈHØ]ÚÈÊˆİ\[™È
-‹ÈBˆ]ØZ]™]È›ÛZ\ÙJ
-™\ÛÛ™JHOˆÙ][Y[İ]
-™\ÛÛ™KL
-JNÂˆBˆÚ[œİ[‹™[™
-
-NÂˆÛÛœİ^]ÛÙHH]ØZ]™]È›ÛZ\ÙJ
-™\ÛÛ™JHOˆÚ[›Û˜ÙJ™^]‹™\ÛÛ™JJNÂˆ\ÜÙ\™\]X[
-^]ÛÙK˜YÙ[^]ÈÚ[ˆY[H\\HÛÜÙ\ÈŠNÂˆÚ[Hİ\YÙ[
-ÈQÑS•ÔT‘S•ÔQˆNNNNNNNHˆJNÂˆÛÛœİØ]ÚY^]ÛÙHH]ØZ]™]È›ÛZ\ÙJ
-™\ÛÛ™JHOˆÚ[›Û˜ÙJ™^]‹™\ÛÛ™JJNÂˆ\ÜÙ\™\]X[
-Ø]ÚY^]ÛÙK˜YÙ[^]ÈYˆ]È\™[›ØÙ\ÜÈ\ÈÛÛ™HŠNÂˆÚ[Hİ\YÙ[
-ÈÔÕÔU“Ô“NˆÚ[™İÜÈˆJNÂˆ]Ú[™İÜÔ™XYHH˜[ÙNÂˆ›Üˆ
-]ˆHÈˆLÈŠÊÊHÂˆHÈÚ[™İÜÔ™XYHH
-]ØZ]™]Ú
-	Ø˜\Ù_KÚX[
-JK›ÚÎÈHØ]ÚÈÊˆİ\[™È
-‹ÈBˆYˆ
-Ú[™İÜÔ™XYJHœ™XZÎÂˆ]ØZ]™]È›ÛZ\ÙJ
-™\ÛÛ™JHOˆÙ][Y[İ]
-™\ÛÛ™KL
-JNÂˆBˆ\ÜÙ\›ÚÊÚ[™İÜÔ™XYK•Ú[™İÜË[[ÙHYÙ[İ\ÈŠNÂˆÛÛœİÚ[™İÜÔZ\ˆH]ØZ]
-]ØZ]™]Ú
-	Ø˜\Ù_KØYZ[‹ÜZ\š[™ØÈY]Ùˆ”ÔÕˆJJKšœÛÛŠ
-NÂˆÛÛœİÚ[™İÜÔZ\•\›H	Ø˜\Ù_IÛ™]ÈT“
-Ú[™İÜÔZ\‹\›
-Kœ]˜[Y_XÂˆÛÛœİÚ[™İÜÔZ\”YÙHH]ØZ]
-]ØZ]™]Ú
-Ú[™İÜÔZ\•\›
-JK^
-
-NÂˆ\ÜÙ\›X]Ú
-Ú[™İÜÔZ\”YÙKøàdøàk”øàj9£©yí¦¸àfxà¢ËÊNÂˆ\ÜÙ\™Ù\Ó›İX]Ú
-Ú[™İÜÔZ\”YÙKøàdøàk“XXøàj9£©yí¦¸àfxà¢ËÊNÂˆÛÛœİÚ[™İÜÔZ\™YH]ØZ]™]Ú
-Ú[™İÜÔZ\•\›ÈY]Ùˆ”ÔÕˆJNÂˆÛÛœİÚ[™İÜĞÛÛÚÚYHHÚ[™İÜÔZ\™YšXY\œË™Ù]
-œÙ]XÛÛÚÚYHŠKœÜ]
-ÈŠVÌNÂˆÛÛœİÚ[™İÜÔÙ]\H]ØZ]
-]ØZ]™]Ú
-	Ø˜\Ù_KÜÙ]\ÈXY\œÎˆÈÛÛÚÚYNˆÚ[™İÜĞÛÛÚÚYHHJJK^
-
-NÂˆ\ÜÙ\›X]Ú
-Ú[™İÜÔÙ]\ÕÚ[™İÜùâb;ï&¹b'yfç¸à­øàéøàï8àâ8àªøààøàâ:*+yk¦‹ÊNÂˆ\ÜÙ\›X]Ú
-Ú[™İÜÔÙ]\øà#øàjú` xà¢øà#xà¤¹cå¹o¥ËÊNÂˆÛÛœİÚ[™İÜÔÚÜİ]H]ØZ]™]Ú
-	Ø˜\Ù_KÚ[œİ[ÛÛ™KXÛXÚËœÚÜİ]ÈXY\œÎˆÈÛÛÚÚYNˆÚ[™İÜĞÛÛÚÚYHHJNÂˆ\ÜÙ\™\]X[
-Ú[™İÜÔÚÜİ]œİ]\ËŒ
-NÂˆ\ÜÙ\›X]Ú
-XÛÙUT’PÛÛ\Û™[
-Ú[™İÜÔÚÜİ]šXY\œË™Ù]
-˜ÛÛ[Y\ÜÜÚ][ÛˆŠJKÔøàjú` xà¢ËÊNÂˆ\ÜÙ\™Y\\]X[
-ˆY™™\‹™œ›ÛJ]ØZ]Ú[™İÜÔÚÜİ]˜\œ˜^PY™™\Š
-JKˆ]ØZ]œËœ™XYš[J]š›Ú[Šİ]XÔÚÜİ]\™XİÜKœÙ[™Z˜KœÚÜİ]ŠJKˆ•Ú[™İÜÈÙ\™\ÈH™\šYšYY™K\ÚYÛ™Y˜\[™\ÙH[\]H[˜Ú[™ÙY‹ˆ
-NÂˆÚ[šÚ[
-
-NÂˆ]ØZ]™]È›ÛZ\ÙJ
-™\ÛÛ™JHOˆÚ[›Û˜ÙJ™^]‹™\ÛÛ™JJNÂˆÛÛœÛÛK›ÙÊ“ØØ[YÙ[[YÜ˜][Ûˆ\İ\ÜÙYŠNÂŸHš[˜[HÂˆÚ[šÚ[
-
-NÂˆ]ØZ]œËœ›J›ÛİÈ™Xİ\œÚ]™NˆYK›Ü˜ÙNˆYHJNÂŸB
+import assert from "node:assert/strict";
+import { spawn } from "node:child_process";
+import { promises as fs } from "node:fs";
+import os from "node:os";
+import path from "node:path";
+import net from "node:net";
+import { Script } from "node:vm";
+
+const nativeFetch = globalThis.fetch;
+globalThis.fetch = (input, init = {}) => {
+  const headers = new Headers(init.headers);
+  if (!headers.has("accept-language")) headers.set("accept-language", "ja");
+  return nativeFetch(input, { ...init, headers });
+};
+
+function checkPageScripts(html) {
+  for (const [, source] of html.matchAll(/<script>([\s\S]*?)<\/script>/g)) new Script(source);
+}
+
+const root = await fs.mkdtemp(path.join(os.tmpdir(), "iphone-share-test-"));
+const listener = net.createServer();
+await new Promise((resolve) => listener.listen(0, "127.0.0.1", resolve));
+const port = listener.address().port;
+await new Promise((resolve) => listener.close(resolve));
+const base = `http://127.0.0.1:${port}`;
+const publicBase = `http://192.0.2.10:${port}`;
+const staticShortcutDirectory = path.resolve(import.meta.dirname, "../../windows-agent/resources/shortcuts");
+function startAgent(extraEnv = {}) {
+  const process = spawn(globalThis.process.env.TEST_AGENT_NODE ?? globalThis.process.execPath, [globalThis.process.env.TEST_AGENT_SCRIPT ?? "dist/local-agent.js"], {
+    cwd: path.resolve(import.meta.dirname, ".."),
+    env: { ...globalThis.process.env, PORT: String(port), PUBLIC_BASE_URL: publicBase, DOWNLOAD_DIR: path.join(root, "downloads"), TEMP_DIR: path.join(root, "temp"), DATA_DIR: path.join(root, "data"), STATIC_SHORTCUT_DIR: staticShortcutDirectory, ...extraEnv },
+    stdio: "pipe",
+  });
+  if (globalThis.process.env.TEST_AGENT_LOG === "1") process.stderr.pipe(globalThis.process.stderr);
+  return process;
+}
+let child = startAgent();
+
+try {
+  let ready = false;
+  for (let n = 0; n < 50; n++) {
+    try { ready = (await fetch(`${base}/health`)).ok; } catch { /* starting */ }
+    if (ready) break;
+    await new Promise((resolve) => setTimeout(resolve, 100));
+  }
+  assert.ok(ready, "agent starts");
+  assert.deepEqual(await (await fetch(`${base}/admin/pairing-state`)).json(), { paired: false, receivedCount: 0 });
+  assert.equal((await fetch(`${base}/setup`)).status, 401);
+  const adminPage = await (await fetch(base)).text();
+  checkPageScripts(adminPage);
+  assert.match(adminPage, /<h1>PCã‹ã‚‰iPhoneã¸é€ä¿¡<\/h1>/);
+  assert.match(adminPage, /@media \(max-width:720px\),\(hover:none\) and \(pointer:coarse\) and \(max-width:1024px\)\{\.language-switch\{display:none\}/);
+  assert.match(adminPage, /<nav class="language-switch" aria-label="Language">/, "desktop language switch remains available");
+  assert.match(adminPage, /window\.addEventListener\('dragover'/);
+  assert.match(adminPage, /window\.addEventListener\('drop'/);
+  assert.match(adminPage, /send\(\[\.\.\.e\.dataTransfer\.files\]\)/);
+  assert.doesNotMatch(adminPage, /å—ä¿¡ç”¨ QR/);
+  const guidePage = await (await fetch(`${base}/setup-guide`)).text();
+  checkPageScripts(guidePage);
+  assert.match(guidePage, /<h1>é€å—ä¿¡è¨­å®šæƒ…å ±<\/h1>/);
+  assert.match(guidePage, /Macã«é€ã‚‹/);
+  assert.match(guidePage, /iPhone Data Sharingå—ä¿¡/);
+  assert.match(guidePage, /ãƒ›ãƒ¼ãƒ ç”»é¢ã¸è¿½åŠ /);
+  const appIcon = await fetch(`${base}/app-icon.png`);
+  assert.equal(appIcon.status, 200);
+  assert.match(appIcon.headers.get("content-type"), /image\/png/);
+  const sendInstaller = await fetch(`${base}/install/send-to-pc.shortcut`);
+  assert.equal(sendInstaller.status, 401, "shortcut installers require a paired iPhone");
+  assert.equal((await fetch(`${base}/install/save-to-photos.shortcut`)).status, 404);
+  const denied = await fetch(`${base}/phone/upload`, { method: "POST" });
+  assert.equal(denied.status, 401);
+  assert.equal((await fetch(`${base}/inbox`)).status, 404);
+  const unauthenticatedHome = await fetch(`${base}/filedrop/inbox`);
+  assert.equal(unauthenticatedHome.status, 401);
+  assert.match(unauthenticatedHome.headers.get("content-type"), /text\/html/);
+  assert.match(await unauthenticatedHome.text(), /èªè¨¼ã‚’æ›´æ–°ã™ã‚‹å¿…è¦ãŒã‚ã‚Šã¾ã™/);
+  const qr = await fetch(`${base}/admin/pairing`, { method: "POST" });
+  assert.equal(qr.status, 200);
+  const pair = await qr.json();
+  assert.match(pair.qr, /^data:image\/png;base64,/);
+  const pairingUrl = `${base}${new URL(pair.url).pathname}`;
+  const pairingPage = await (await fetch(pairingUrl)).text();
+  assert.match(pairingPage, /ã“ã®Macã¨æ¥ç¶šã™ã‚‹/);
+  assert.match(pairingPage, /ã‚·ãƒ§ãƒ¼ãƒˆã‚«ãƒƒãƒˆã‚’è¨­å®š/);
+  assert.match(pairingPage, /href=\\"\/setup\\"/);
+  const paired = await fetch(pairingUrl, { method: "POST" });
+  assert.equal(paired.status, 200);
+  assert.equal((await fetch(pairingUrl, { method: "POST" })).status, 410);
+  const cookie = paired.headers.get("set-cookie").split(";")[0];
+  assert.deepEqual(await (await fetch(`${base}/admin/pairing-state`)).json(), { paired: true, receivedCount: 0 });
+  assert.match(await (await fetch(`${base}/setup`, { headers: { cookie } })).text(), /ã€ŒMacã«é€ã‚‹ã€ã‚’å–å¾—/);
+  const phoneSetup = await fetch(`${base}/phone/setup`, { method: "POST", headers: { cookie } });
+  assert.equal(phoneSetup.status, 200, await phoneSetup.text());
+  const chosenDirectory = path.join(root, "chosen");
+  await fs.mkdir(chosenDirectory);
+  assert.deepEqual(await (await fetch(`${base}/admin/download-directory`, { method: "POST", headers: { "content-type": "application/json" }, body: JSON.stringify({ directory: chosenDirectory }) })).json(), { directory: chosenDirectory });
+  assert.deepEqual(await (await fetch(`${base}/admin/download-directory`)).json(), { directory: chosenDirectory });
+  const setupPage = await (await fetch(`${base}/setup`, { headers: { cookie } })).text();
+  checkPageScripts(setupPage);
+  assert.match(setupPage, /<h1>é€å—ä¿¡è¨­å®š<\/h1>/);
+  assert.match(setupPage, /ãƒ›ãƒ¼ãƒ ç”»é¢ã¸è¿½åŠ /);
+  assert.match(setupPage, /ã€ŒMacã«é€ã‚‹ã€ã‚’å–å¾—/);
+  assert.match(setupPage, /ã€ŒiPhone Data Sharingå—ä¿¡ã€ã‚’å–å¾—/);
+  assert.match(setupPage, /åˆå›è¨±å¯/);
+  assert.doesNotMatch(setupPage, /ãƒ€ã‚¦ãƒ³ãƒ­ãƒ¼ãƒ‰ä¸­â€¦/);
+  assert.doesNotMatch(setupPage, /å†™çœŸã«ä¿å­˜|photo-permission/);
+  assert.match(setupPage, /apps\.apple\.com\/app\/shortcuts/);
+  const homePage = await fetch(`${base}/filedrop/inbox`, { headers: { cookie } });
+  assert.equal(homePage.status, 200);
+  assert.match(await homePage.text(), /iPhone Data Sharingå—ä¿¡ç®±/);
+  const homeCookie = cookie;
+  assert.equal((await fetch(`${base}/api/inbox`, { headers: { cookie: homeCookie } })).status, 200);
+  const installer = await fetch(`${base}/install/one-click.shortcut`, { headers: { cookie } });
+  assert.equal(installer.status, 200);
+  assert.match(decodeURIComponent(installer.headers.get("content-disposition")), /Macã«é€ã‚‹/);
+  assert.ok((await installer.arrayBuffer()).byteLength > 1000);
+  assert.equal((await fetch(`${base}/install/one-click.shortcut`)).status, 401);
+  const storedSessions = await fs.readFile(path.join(root, "data", "sessions.json"), "utf8");
+  assert.doesNotMatch(storedSessions, /iphone_share=/);
+  child.kill();
+  await new Promise((resolve) => child.once("exit", resolve));
+  child = startAgent();
+  let restarted = false;
+  for (let n = 0; n < 50; n++) {
+    try { restarted = (await fetch(`${base}/send`, { headers: { cookie } })).ok; } catch { /* starting */ }
+    if (restarted) break;
+    await new Promise((resolve) => setTimeout(resolve, 100));
+  }
+  assert.ok(restarted, "pairing survives agent restart");
+  assert.equal((await fetch(`${base}/api/inbox`, { headers: { cookie: homeCookie } })).status, 200, "home-screen authentication survives restart");
+  const device = await (await fetch(`${base}/admin/device`)).json();
+  assert.match(device.deviceId, /^[0-9a-f]{64}$/);
+  assert.equal(device.homeScreenAdded, false);
+  assert.match(await (await fetch(`${base}/transfer`)).text(), /iPhone Data Sharingå—ä¿¡ã€ã‚’å®Ÿè¡Œ/);
+  assert.equal((await fetch(`${base}/phone/home-screen`, { method: "POST" })).status, 401);
+  assert.equal((await fetch(`${base}/phone/home-screen`, { method: "POST", headers: { cookie } })).status, 200);
+  assert.equal((await (await fetch(`${base}/admin/device`)).json()).homeScreenAdded, true);
+  const batch = new FormData();
+  batch.append("file", new Blob(["one"]), "one.txt");
+  batch.append("file", new Blob(["two"]), "two.txt");
+  const enqueued = await fetch(`${base}/api/outbox/${device.deviceId}`, { method: "POST", body: batch });
+  assert.equal(enqueued.status, 201);
+  const queued = (await enqueued.json()).files;
+  assert.equal(queued.length, 2);
+  assert.equal(queued[0].status, "queued");
+  assert.equal((await fetch(`${base}/api/files/${queued[0].id}`)).status, 401, "a stranger cannot download queued files");
+  assert.equal((await fetch(`${base}/api/inbox/${"0".repeat(64)}`, { headers: { cookie } })).status, 403);
+  assert.equal((await fetch(`${base}/api/inbox`, { headers: { cookie } })).status, 200);
+  const eventsController = new AbortController();
+  const events = await fetch(`${base}/api/events/inbox`, { headers: { cookie }, signal: eventsController.signal });
+  assert.match(events.headers.get("content-type"), /text\/event-stream/);
+  eventsController.abort();
+  const receivedFile = await fetch(`${base}/api/files/${queued[0].id}/one.txt`, { headers: { cookie } });
+  assert.equal(await receivedFile.text(), "one");
+  assert.match(receivedFile.headers.get("content-disposition") ?? "", /one\.txt/);
+  assert.equal((await (await fetch(`${base}/api/inbox`, { headers: { cookie } })).json()).files.find((item) => item.id === queued[0].id).status, "downloaded");
+  assert.equal((await fetch(`${base}/admin/history`)).status, 404, "transfer history is not retained");
+  assert.equal((await fetch(`${base}/api/files/${queued[0].id}/ack`, { method: "POST", headers: { cookie } })).status, 200);
+  assert.equal((await (await fetch(`${base}/api/inbox`, { headers: { cookie } })).json()).files.length, 1);
+  const oldBatch = new FormData();
+  oldBatch.append("file", new Blob(["expired"]), "expired.txt");
+  const expiring = (await (await fetch(`${base}/api/outbox/${device.deviceId}`, { method: "POST", body: oldBatch })).json()).files[0];
+  child.kill();
+  await new Promise((resolve) => child.once("exit", resolve));
+  const storedOutboxFile = path.join(root, "data", "outbox.json");
+  const storedOutbox = JSON.parse(await fs.readFile(storedOutboxFile, "utf8"));
+  storedOutbox.find((item) => item.id === expiring.id).expires = Date.now() - 1;
+  await fs.writeFile(storedOutboxFile, JSON.stringify(storedOutbox));
+  child = startAgent();
+  for (let n = 0; n < 50; n++) {
+    try { if ((await fetch(`${base}/health`)).ok) break; } catch { /* starting */ }
+    await new Promise((resolve) => setTimeout(resolve, 100));
+  }
+  assert.equal((await (await fetch(`${base}/api/inbox`, { headers: { cookie } })).json()).files[0].name, "two.txt", "outbox survives restart");
+  assert.equal((await (await fetch(`${base}/api/inbox`, { headers: { cookie } })).json()).files.some((item) => item.id === expiring.id), false);
+  await assert.rejects(fs.stat(path.join(root, "data", "outbox", expiring.id)), { code: "ENOENT" });
+  assert.equal((await (await fetch(`${base}/admin/device`)).json()).homeScreenAdded, true, "home screen choice survives restart");
+  const inboxPage = await (await fetch(`${base}/filedrop/inbox`, { headers: { cookie } })).text();
+  checkPageScripts(inboxPage);
+  assert.match(inboxPage, /<h1>iPhone Data Sharingå—ä¿¡ç®±<\/h1>/);
+  assert.match(inboxPage, /ç¾åœ¨ã€å—ä¿¡ã§ãã‚‹ãƒ•ã‚¡ã‚¤ãƒ«ã¯ã‚ã‚Šã¾ã›ã‚“ã€‚/);
+  assert.match(inboxPage, /å‰Šé™¤/);
+  assert.match(inboxPage, /method:"DELETE"/);
+  assert.doesNotMatch(inboxPage, /setTimeout\(\(\)=>mark|function mark/);
+  assert.doesNotMatch(inboxPage, /ã™ã¹ã¦ä¿å­˜ã™ã‚‹/);
+  assert.match(inboxPage, /file-grid/);
+  assert.match(inboxPage, /previewUrl/);
+  assert.match(inboxPage, /EventSource/);
+  assert.match(inboxPage, /EventSource\("\/api\/events\/inbox"\)/);
+  assert.doesNotMatch(inboxPage, /å†™çœŸã«ä¿å­˜|photo-permission|filedrop-photo/);
+  assert.equal((await fetch(`${base}/api/files/${queued[1].id}`, { method: "DELETE", headers: { cookie } })).status, 200);
+  assert.equal((await (await fetch(`${base}/api/inbox`, { headers: { cookie } })).json()).files.some((item) => item.id === queued[1].id), false);
+  await assert.rejects(fs.stat(path.join(root, "data", "outbox", queued[1].id)), { code: "ENOENT" });
+  assert.deepEqual(await (await fetch(`${base}/admin/download-directory`)).json(), { directory: chosenDirectory });
+  assert.equal((await fetch(`${base}/inbox`, { headers: { cookie }, redirect: "manual" })).status, 404);
+  const form = new FormData();
+  form.append("file", new Blob(["from iPhone"]), "photo.txt");
+  const sent = await fetch(`${base}/phone/upload`, { method: "POST", headers: { cookie }, body: form });
+  assert.equal(sent.status, 201);
+  assert.equal((await sent.json()).files[0], "photo.txt");
+  assert.equal(await fs.readFile(path.join(chosenDirectory, "photo.txt"), "utf8"), "from iPhone");
+  assert.deepEqual(await (await fetch(`${base}/admin/pairing-state`)).json(), { paired: true, receivedCount: 1 });
+  const second = new FormData();
+  second.append("file", new Blob(["again"]), "photo.txt");
+  const duplicated = await fetch(`${base}/phone/upload`, { method: "POST", headers: { cookie }, body: second });
+  assert.equal((await duplicated.json()).files[0], "photo (1).txt");
+  const rawPermit = (await (await fetch(`${base}/phone/shortcut/permit`, { method: "POST", headers: { cookie } })).json()).permit;
+  const shortcut = await fetch(`${base}/phone/shortcut`, {
+    method: "POST",
+    headers: { cookie, "content-type": "application/octet-stream", "x-filename": "shortcut.txt", "x-usage-permit": rawPermit },
+    body: "from Shortcut",
+  });
+  assert.equal(shortcut.status, 201);
+  assert.equal(await fs.readFile(path.join(chosenDirectory, "shortcut.txt"), "utf8"), "from Shortcut");
+  const shortcutForm = new FormData();
+  shortcutForm.append("file", new Blob(["shortcut form"]), "ãƒ•ã‚©ãƒ¼ãƒ .txt");
+  const formPermit = (await (await fetch(`${base}/phone/shortcut/permit`, { method: "POST", headers: { cookie } })).json()).permit;
+  const formSent = await fetch(`${base}/phone/shortcut`, { method: "POST", headers: { cookie, "x-usage-permit": formPermit }, body: shortcutForm });
+  assert.equal(formSent.status, 201);
+  assert.equal(await fs.readFile(path.join(chosenDirectory, "ãƒ•ã‚©ãƒ¼ãƒ .txt"), "utf8"), "shortcut form");
+  const sendPage = await (await fetch(`${base}/send-to-iphone`)).text();
+  assert.match(sendPage, /multiple hidden/);
+  assert.doesNotMatch(sendPage, /å—ä¿¡ç”¨ QR/);
+  const image = new FormData();
+  image.append("file", new Blob([new Uint8Array([137,80,78,71,13,10,26,10,0,0,0,0])], { type: "image/png" }), "photo.png");
+  const imageResponse = await fetch(`${base}/api/outbox/${device.deviceId}`, { method: "POST", body: image });
+  assert.equal(imageResponse.status, 201);
+  const imageItem = (await imageResponse.json()).files[0];
+  assert.equal(imageItem.type, "image");
+  assert.match(imageItem.previewUrl, /\/api\/files\/.+\/preview/);
+  assert.equal((await fetch(`${base}${imageItem.fileUrl}`)).status, 401);
+  const preview = await fetch(`${base}${imageItem.previewUrl}`, { headers: { cookie } });
+  assert.equal(preview.status, 200);
+  assert.match(preview.headers.get("content-type"), /image\/png/);
+  assert.equal(preview.headers.get("content-disposition"), null, "preview is rendered inline, not downloaded");
+  assert.equal((await (await fetch(`${base}/api/inbox`, { headers: { cookie } })).json()).files.find((item) => item.id === imageItem.id).status, "queued", "preview does not mark the file downloaded");
+  assert.match((await fetch(`${base}${imageItem.fileUrl}`, { headers: { cookie } })).headers.get("content-type"), /image\/png/);
+  const usageBeforeInvalidUploads = (await (await fetch(`${base}/admin/usage`)).json()).usedToday;
+  const emptyPermit = (await (await fetch(`${base}/phone/shortcut/permit`, { method: "POST", headers: { cookie } })).json()).permit;
+  const emptyUpload = await fetch(`${base}/phone/shortcut`, {
+    method: "POST",
+    headers: { cookie, "content-type": "application/octet-stream", "x-filename": "empty.txt", "x-usage-permit": emptyPermit },
+    body: "",
+  });
+  assert.equal(emptyUpload.status, 400);
+  assert.equal((await (await fetch(`${base}/admin/usage`)).json()).usedToday, usageBeforeInvalidUploads, "an empty upload does not consume usage");
+  const missingFilePermit = (await (await fetch(`${base}/phone/shortcut/permit`, { method: "POST", headers: { cookie } })).json()).permit;
+  const missingFileForm = new FormData();
+  missingFileForm.append("not-file", "value");
+  const missingFileUpload = await fetch(`${base}/phone/shortcut`, {
+    method: "POST",
+    headers: { cookie, "x-usage-permit": missingFilePermit },
+    body: missingFileForm,
+  });
+  assert.equal(missingFileUpload.status, 400);
+  assert.equal((await (await fetch(`${base}/admin/usage`)).json()).usedToday, usageBeforeInvalidUploads, "a multipart request without a file does not consume usage");
+  const unpair = await fetch(`${base}/admin/unpair`, { method: "POST" });
+  assert.equal(unpair.status, 200);
+  assert.deepEqual(await (await fetch(`${base}/admin/pairing-state`)).json(), { paired: false, receivedCount: 4 });
+  assert.equal((await fetch(`${base}/health`)).status, 200, "unpair leaves agent running");
+  assert.equal((await fetch(`${base}/send`, { headers: { cookie } })).status, 401);
+  assert.equal((await fetch(`${base}/api/inbox`, { headers: { cookie } })).status, 401);
+  assert.equal((await fetch(`${base}/api/inbox`, { headers: { cookie: homeCookie } })).status, 401);
+  assert.equal((await (await fetch(`${base}/admin/device`)).json()).homeScreenAdded, false);
+  assert.equal((await fetch(`${base}/api/files/${queued[1].id}`, { headers: { cookie } })).status, 401);
+  assert.equal((await fetch(`${base}/phone/shortcut`, { method: "POST", headers: { cookie }, body: "x" })).status, 401);
+  assert.equal((await fetch(`${base}/install/one-click.shortcut`, { headers: { cookie } })).status, 401);
+  child.kill();
+  await new Promise((resolve) => child.once("exit", resolve));
+  child = startAgent();
+  for (let n = 0; n < 50; n++) {
+    try { if ((await fetch(`${base}/health`)).ok) break; } catch { /* starting */ }
+    await new Promise((resolve) => setTimeout(resolve, 100));
+  }
+  assert.equal((await fetch(`${base}/send`, { headers: { cookie } })).status, 401);
+  child.kill();
+  await new Promise((resolve) => child.once("exit", resolve));
+  child = startAgent({ AGENT_PARENT_PIPE: "1" });
+  for (let n = 0; n < 50; n++) {
+    try { if ((await fetch(`${base}/health`)).ok) break; } catch { /* starting */ }
+    await new Promise((resolve) => setTimeout(resolve, 100));
+  }
+  child.stdin.end();
+  const exitCode = await new Promise((resolve) => child.once("exit", resolve));
+  assert.equal(exitCode, 0, "agent exits when menu app pipe closes");
+  child = startAgent({ AGENT_PARENT_PID: "99999999" });
+  const watchedExitCode = await new Promise((resolve) => child.once("exit", resolve));
+  assert.equal(watchedExitCode, 0, "agent exits if its parent process is gone");
+  child = startAgent({ HOST_PLATFORM: "windows" });
+  let windowsReady = false;
+  for (let n = 0; n < 50; n++) {
+    try { windowsReady = (await fetch(`${base}/health`)).ok; } catch { /* starting */ }
+    if (windowsReady) break;
+    await new Promise((resolve) => setTimeout(resolve, 100));
+  }
+  assert.ok(windowsReady, "Windows-mode agent starts");
+  const windowsPair = await (await fetch(`${base}/admin/pairing`, { method: "POST" })).json();
+  const windowsPairUrl = `${base}${new URL(windowsPair.url).pathname}`;
+  const windowsPairPage = await (await fetch(windowsPairUrl)).text();
+  assert.match(windowsPairPage, /ã“ã®PCã¨æ¥ç¶šã™ã‚‹/);
+  assert.doesNotMatch(windowsPairPage, /ã“ã®Macã¨æ¥ç¶šã™ã‚‹/);
+  const windowsPaired = await fetch(windowsPairUrl, { method: "POST" });
+  const windowsCookie = windowsPaired.headers.get("set-cookie").split(";")[0];
+  const windowsSetup = await (await fetch(`${base}/setup`, { headers: { cookie: windowsCookie } })).text();
+  assert.match(windowsSetup, /Windowsç‰ˆï¼šåˆå›ã‚·ãƒ§ãƒ¼ãƒˆã‚«ãƒƒãƒˆè¨­å®š/);
+  assert.match(windowsSetup, /ã€ŒPCã«é€ã‚‹ã€ã‚’å–å¾—/);
+  const windowsShortcut = await fetch(`${base}/install/one-click.shortcut`, { headers: { cookie: windowsCookie } });
+  assert.equal(windowsShortcut.status, 200);
+  assert.match(decodeURIComponent(windowsShortcut.headers.get("content-disposition")), /PCã«é€ã‚‹/);
+  assert.deepEqual(
+    Buffer.from(await windowsShortcut.arrayBuffer()),
+    await fs.readFile(path.join(staticShortcutDirectory, "send-ja.shortcut")),
+    "Windows serves the verified pre-signed Japanese template unchanged",
+  );
+  child.kill();
+  await new Promise((resolve) => child.once("exit", resolve));
+  console.log("Local agent integration test passed");
+} finally {
+  child.kill();
+  await fs.rm(root, { recursive: true, force: true });
+}

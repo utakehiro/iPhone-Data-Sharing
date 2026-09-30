@@ -1,1 +1,33 @@
-şŠmş&yºŞÃòân¶«Ëñè™æë{Ü™ßì…éez{ì†X§{_?n)ÿ¦Ã©z¶­Š‰ç¢Ú^®h­µçOŞ[™\œÚ[ÛHŒKŒˆ[˜ÛÙ[™ÏH•U‹NÏ‚QĞÕTH\İP“PÈ‹KËĞ\KËÑTÕKŒËÑSˆˆš‹ËİİİË˜\K˜ÛÛKÑËÔ›Ü\S\İLKŒ™‚\İ™\œÚ[ÛHŒKŒ‚Xİ‚‚OÙ^OÑ[™Q\Ü^S˜[YOÚÙ^O‚‚Oİš[™ÏšTÛ™H]HÚ\š[™ÏÜİš[™Ï‚‚OÙ^OÑ[™Q^Xİ]X›OÚÙ^O‚‚Oİš[™ÏšTÛ™H]HÚ\š[™ÏÜİš[™Ï‚‚OÙ^OÑ[™RXÛÛ‘š[OÚÙ^O‚‚Oİš[™Ï\XÛÛ‹œ™ÏÜİš[™Ï‚‚OÙ^OÑ[™RY[YšY\ÚÙ^O‚‚Oİš[™Ï›ØØ[™š[Y›Ü˜YÙ[Üİš[™Ï‚‚OÙ^OÑ[™S˜[YOÚÙ^O‚‚Oİš[™ÏšTÛ™H]HÚ\š[™ÏÜİš[™Ï‚‚OÙ^OÑ[™TXÚØYÙU\OÚÙ^O‚‚Oİš[™ÏTÜİš[™Ï‚‚OÙ^OÑ[™TÚÜ™\œÚ[Û”İš[™ÏÚÙ^O‚‚Oİš[™ÏŒŒÜİš[™Ï‚‚OÙ^OÑ[™U™\œÚ[ÛÚÙ^O‚‚Oİš[™ÏÜİš[™Ï‚‚OÙ^O“ÕRQ[[Y[ÚÙ^O‚‚OYKÏ‚‚OÙ^O“”Ğ\˜[œÜÜÙXİ\š]OÚÙ^O‚‚OXİ‚‚BOÙ^O“”Ğ[İÜÓØØ[™]ÛÜšÚ[™ÏÚÙ^O‚‚BOYKÏ‚‚OÙXİ‚‚OÙ^O“”ÒYÚ™\ÛÛ][ÛØ\X›OÚÙ^O‚‚OYKÏ‚‚OÙ^O“”ÓØØ[™]ÛÜšÕ\ØYÙQ\ØÜš\[ÛÚÙ^O‚‚Oİš[™Ï¹d#8àfSˆ9."¸àkˆTÛ™H8àj8àåxà¨xà©8àêøà¤¹æí9£©z.èº` xàfxà¢øàgøà xàjù/oùå*8àeøào¸àfxà Üİš[™Ï‚ÙXİ‚Ü\İ‚
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CFBundleDisplayName</key>
+	<string>iPhone Data Sharing</string>
+	<key>CFBundleExecutable</key>
+	<string>iPhone Data Sharing</string>
+	<key>CFBundleIconFile</key>
+	<string>AppIcon.png</string>
+	<key>CFBundleIdentifier</key>
+	<string>local.filedrop.agent</string>
+	<key>CFBundleName</key>
+	<string>iPhone Data Sharing</string>
+	<key>CFBundlePackageType</key>
+	<string>APPL</string>
+	<key>CFBundleShortVersionString</key>
+	<string>0.4.2</string>
+	<key>CFBundleVersion</key>
+	<string>6</string>
+	<key>LSUIElement</key>
+	<true/>
+	<key>NSAppTransportSecurity</key>
+	<dict>
+		<key>NSAllowsLocalNetworking</key>
+		<true/>
+	</dict>
+	<key>NSHighResolutionCapable</key>
+	<true/>
+	<key>NSLocalNetworkUsageDescription</key>
+	<string>åŒã˜ LAN ä¸Šã® iPhone ã¨ãƒ•ã‚¡ã‚¤ãƒ«ã‚’ç›´æ¥è»¢é€ã™ã‚‹ãŸã‚ã«ä½¿ç”¨ã—ã¾ã™ã€‚</string>
+</dict>
+</plist>

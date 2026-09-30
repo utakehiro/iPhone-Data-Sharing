@@ -1,76 +1,176 @@
-şŠmş&yºŞÃòân¶«Ëñè™æë{Ü™ßì…éez{ì†X§{_?n)ÿ¦Ã©z¶­Š‰ç¢Ú^®h­µçZ[\ÜÈ˜[™ÛUURQHœ›ÛH››ÙN˜Ü\ÈÂš[\Ü]œ›ÛH››ÙNœ]Âš[\ÜÈ›ÛZ\Ù\È\ÈœÈHœ›ÛH››ÙN™œÈÂš[\ÜÈ›İ]\‹\H™\]Y\İHœ›ÛH™^™\ÜÈÂš[\Ü][\ˆœ›ÛH›][\ˆÂš[\ÜÈÙX”ÛØÚÙ]Hœ›ÛHÜÈÂš[\ÜÈÛÛ›™Xİ[ÛœË]šXÙ\Ëš[\ÈHœ›ÛH‹‹‹Üİ]KšœÈÂš[\ÜÈX^š[TÚ^™K\ØY\™XİÜHHœ›ÛH‹‹‹ÜİÜ˜YÙKÙš[\ËšœÈÂš[\Ü\HÈİÜ™Yš[HHœ›ÛH‹‹‹İ\\ËšœÈÂ‚™[˜İ[ÛˆØY™S˜[YJ˜[YNˆİš[™ÊNˆİš[™ÈÂˆÛÛœİ˜\Ù[˜[YHH]˜˜\Ù[˜[YJ˜[YJKœ™\XÙJÖ××LWLY—LÙˆŸÊ—KÙË—ÈŠKš[J
-NÂˆ™]\›ˆ˜\Ù[˜[YKœÛXÙJN
-HœÚ\™YYš[HÂŸB‚™[˜İ[ÛˆXÛÙYXY\‘š[[˜[YJ˜[YNˆ[šÛ›İÛŠNˆİš[™ÈÂˆÛÛœİ˜]ÈHİš[™Ê˜[YHÏÈœÚ\™YYš[HŠNÂˆHÈ™]\›ˆXÛÙUT’PÛÛ\Û™[
-˜]ÊNÈBˆØ]ÚÈ™]\›ˆ˜]ÎÈBŸB‚˜ÛÛœİİÜ˜YÙHH][\‹™\ÚÔİÜ˜YÙJÂˆ\İ[˜][Ûˆ\ØY\™XİÜKˆš[[˜[YNˆ
-Ü™\]Y\İš[KØ[˜XÚÊHOˆÂˆØ[˜XÚÊ[	Ü˜[™ÛUURQ
+import { randomUUID } from "node:crypto";
+import path from "node:path";
+import { promises as fs } from "node:fs";
+import { Router, type Request } from "express";
+import multer from "multer";
+import { WebSocket } from "ws";
+import { connections, devices, files } from "../state.js";
+import { maxFileSize, uploadDirectory } from "../storage/files.js";
+import type { StoredFile } from "../types.js";
 
-_IÜ]™^˜[YJš[K›ÜšYÚ[˜[˜[YJKœÛXÙJMŠ_X
-NÂˆKŸJNÂ‚˜ÛÛœİ][\\\ØYH][\ŠÂˆİÜ˜YÙKˆ[Z]ÎˆÈš[TÚ^™NˆX^š[TÚ^™Kš[\ÎˆLKŸJNÂ‚™^Ü[˜İ[Ûˆ›İYQš[JİÜ™Yš[NˆİÜ™Yš[JNˆ›ÛÛX[ˆÂˆÛÛœİÛØÚÙ]HÛÛ›™Xİ[ÛœË™Ù]
-İÜ™Yš[K™]šXÙRY
-NÂˆYˆ
-\ÛØÚÙ]ÛØÚÙ]œ™XYTİ]HOOHÙX”ÛØÚÙ]“ÔSŠH™]\›ˆ˜[ÙNÂ‚ˆÛØÚÙ]œÙ[™
-”ÓÓ‹œİš[™ÚYJÂˆ\Nˆ™š[WØ]˜Z[X›H‹ˆš[RYˆİÜ™Yš[KšYˆš[[˜[YNˆİÜ™Yš[K›ÜšYÚ[˜[˜[YKˆZ[YU\NˆİÜ™Yš[K›Z[YU\KˆÚ^™NˆİÜ™Yš[KœÚ^™KˆJJNÂˆÛÛœÛÛK›ÙÊ‘š[H›İYšXØ][ÛˆÙ[‹Âˆ]šXÙRYˆİÜ™Yš[K™]šXÙRYˆš[RYˆİÜ™Yš[KšYˆJNÂˆ™]\›ˆYNÂŸB‚™[˜İ[ÛˆÚXÚÑ]šXÙJ]šXÙRYˆİš[™Ë™\]Y\İˆ™\]Y\İ
-Nˆİš[™È[ÂˆYˆ
-Y]šXÙ\Ëš\Ê]šXÙRY
-JH™]\›ˆ•[šÛ›İÛˆ]šXÙHÂˆYˆ
-\™\]Y\İš\Ê›][\\Ù›Ü›KY]HŠH	‰ˆ\™\]Y\İš\Ê˜\XØ][Û‹ÛØİ]\İ™X[HŠH	‰ˆ\™\]Y\İš\ÊŠ‹ÊˆŠJHÂˆ™]\›ˆ•[œİ\ÜYÛÛ[\HÂˆBˆ™]\›ˆ[ÂŸB‚™^Ü[˜İ[ÛˆÜ™X]U\ØY›İ]\Š
-Nˆ›İ]\ˆÂˆÛÛœİ›İ]\ˆH›İ]\Š
-NÂ‚ˆ›İ]\‹œÜİ
-‹È‹][\\\ØY˜\œ˜^J™š[HŠK\Ş[˜È
-™\K™\ÊHOˆÂˆÛÛœİ]šXÙRYH\[Ùˆ™\K˜›ÙK™]šXÙRYOOHœİš[™ÈˆÈ™\K˜›ÙK™]šXÙRYˆˆÂˆÛÛœİ\ØYYš[\ÈH
-™\K™š[\È\È^™\ÜË“][\‹‘š[V×H[™Yš[™Y
-HÏÈ×NÂˆÛÛœİ˜[Y][Û‘\œ›ÜˆHÚXÚÑ]šXÙJ]šXÙRY™\JNÂ‚ˆYˆ
-˜[Y][Û‘\œ›Üˆ\ØYYš[\Ë›[™İOOH
-HÂˆ]ØZ]›ÛZ\ÙK˜[
-\ØYYš[\Ë›X\
+function safeName(value: string): string {
+  const basename = path.basename(value).replace(/[\\/\u0000-\u001f\u007f<>:"|?*]/g, "_").trim();
+  return basename.slice(0, 180) || "shared-file";
+}
 
-š[JHOˆœË[›[šÊš[Kœ]
-K˜Ø]Ú
+function decodedHeaderFilename(value: unknown): string {
+  const raw = String(value ?? "shared-file");
+  try { return decodeURIComponent(raw); }
+  catch { return raw; }
+}
 
+const storage = multer.diskStorage({
+  destination: uploadDirectory,
+  filename: (_request, file, callback) => {
+    callback(null, `${randomUUID()}${path.extname(file.originalname).slice(0, 16)}`);
+  },
+});
 
-HOˆ[™Yš[™Y
-JJNÂˆ™\Ëœİ]\Ê
-KšœÛÛŠÂˆ\œ›Üˆ˜[Y][Û‘\œ›ÜˆÏÈ“›Èš[\È\ØYY‹ˆJNÂˆ™]\›ÂˆB‚ˆÛÛœİ™\ÜÛœÙQš[\ÈH\ØYYš[\Ë›X\
+const multipartUpload = multer({
+  storage,
+  limits: { fileSize: maxFileSize, files: 50 },
+});
 
-š[JHOˆÂˆÛÛœİYH˜[™ÛUURQ
+export function notifyFile(storedFile: StoredFile): boolean {
+  const socket = connections.get(storedFile.deviceId);
+  if (!socket || socket.readyState !== WebSocket.OPEN) return false;
 
-NÂˆÛÛœİİÜ™Yš[NˆİÜ™Yš[HHÂˆYˆ]šXÙRYˆÜšYÚ[˜[˜[YNˆØY™S˜[YJš[K›ÜšYÚ[˜[˜[YJKˆZ[YU\Nˆš[K›Z[Y]\H˜\XØ][Û‹ÛØİ]\İ™X[H‹ˆÚ^™Nˆš[KœÚ^™Kˆ]ˆš[Kœ]ˆÜ™X]Y]ˆ™]È]J
-KˆNÂˆš[\ËœÙ]
-YİÜ™Yš[JNÂˆÛÛœÛÛK›ÙÊ‘š[H\ØYY‹È]šXÙRYš[RYˆYÚ^™Nˆš[KœÚ^™HJNÂˆ›İYQš[JİÜ™Yš[JNÂˆ™]\›ˆÈš[RYˆYš[[˜[YNˆİÜ™Yš[K›ÜšYÚ[˜[˜[YHNÂˆJNÂ‚ˆ™\Ëœİ]\ÊŒJKšœÛÛŠÈİXØÙ\ÜÎˆYK]Y]YYˆXÛÛ›™Xİ[ÛœËš\Ê]šXÙRY
-Kš[\Îˆ™\ÜÛœÙQš[\ÈJNÂˆJNÂ‚ˆ›İ]\‹œÜİ
-ˆ‹Î™]šXÙRY‹ˆ][\ŠÂˆİÜ˜YÙKˆ[Z]ÎˆÈš[TÚ^™NˆX^š[TÚ^™Kš[\ÎˆHKˆJKœÚ[™ÛJ™š[HŠKˆ\Ş[˜È
-™\K™\Ë™^
-HOˆÂˆHÂˆÛÛœİ]šXÙRYHİš[™Ê™\Kœ\˜[\Ë™]šXÙRY
-NÂˆÛÛœİ˜[Y][Û‘\œ›ÜˆHY]šXÙ\Ëš\Ê]šXÙRY
-HÈ•[šÛ›İÛˆ]šXÙHˆˆ[ÂˆYˆ
-˜[Y][Û‘\œ›ÜŠHÂˆYˆ
-™\K™š[JH]ØZ]œË[›[šÊ™\K™š[Kœ]
-K˜Ø]Ú
+  socket.send(JSON.stringify({
+    type: "file_available",
+    fileId: storedFile.id,
+    filename: storedFile.originalName,
+    mimeType: storedFile.mimeType,
+    size: storedFile.size,
+  }));
+  console.log("File notification sent", {
+    deviceId: storedFile.deviceId,
+    fileId: storedFile.id,
+  });
+  return true;
+}
 
+function checkDevice(deviceId: string, request: Request): string | null {
+  if (!devices.has(deviceId)) return "Unknown device";
+  if (!request.is("multipart/form-data") && !request.is("application/octet-stream") && !request.is("*/*")) {
+    return "Unsupported content type";
+  }
+  return null;
+}
 
-HOˆ[™Yš[™Y
-NÂˆ™\Ëœİ]\Ê
-KšœÛÛŠÈ\œ›Üˆ˜[Y][Û‘\œ›ÜˆJNÂˆ™]\›ÂˆB‚ˆ]\ÚÔ]ˆİš[™ÎÂˆ]Ú^™Nˆ[X™\Âˆ]ÜšYÚ[˜[˜[YNˆİš[™ÎÂˆ]Z[YU\Nˆİš[™ÎÂ‚ˆYˆ
-™\K™š[JHÂˆ\ÚÔ]H™\K™š[Kœ]ÂˆÚ^™HH™\K™š[KœÚ^™NÂˆÜšYÚ[˜[˜[YHHØY™S˜[YJ™\K™š[K›ÜšYÚ[˜[˜[YJNÂˆZ[YU\HH™\K™š[K›Z[Y]\H˜\XØ][Û‹ÛØİ]\İ™X[HÂˆH[ÙHÂˆÛÛœİÛÛ[[™İH[X™\Š™\KšXY\œÖÈ˜ÛÛ[[[™İ—HÏÈ
-NÂˆYˆ
-ÛÛ[[™İˆX^š[TÚ^™JHÂˆ™\Ëœİ]\ÊLÊKšœÛÛŠÈ\œ›Üˆ‘š[HÛÈ\™ÙHˆJNÂˆ™]\›ÂˆBˆÛÛœİY›Ü”]H˜[™ÛUURQ
+export function createUploadRouter(): Router {
+  const router = Router();
 
-NÂˆ\ÚÔ]H]š›Ú[Š\ØY\™XİÜKY›Ü”]
-NÂˆÛÛœİÚ[šÜÎˆY™™\–×HH×NÂˆ]İ[HÂˆ›Üˆ]ØZ]
-ÛÛœİÚ[šÈÙˆ™\JHÂˆÛÛœİY™™\ˆHY™™\‹™œ›ÛJÚ[šÊNÂˆİ[
-ÏHY™™\‹›[™İÂˆYˆ
-İ[ˆX^š[TÚ^™JHÂˆ™\Ëœİ]\ÊLÊKšœÛÛŠÈ\œ›Üˆ‘š[HÛÈ\™ÙHˆJNÂˆ™]\›ÂˆBˆÚ[šÜËœ\Ú
-Y™™\ŠNÂˆBˆYˆ
-İ[OOH
-HÂˆ™\Ëœİ]\Ê
-KšœÛÛŠÈ\œ›Üˆ“›Èš[H\ØYYˆJNÂˆ™]\›ÂˆBˆ]ØZ]œËÜš]Qš[J\ÚÔ]Y™™\‹˜ÛÛ˜Ø]
-Ú[šÜÊJNÂˆÚ^™HHİ[ÂˆÜšYÚ[˜[˜[YHHØY™S˜[YJXÛÙYXY\‘š[[˜[YJ™\KšXY\œÖÈYš[[˜[YH—JJNÂˆZ[YU\HHİš[™Ê™\KšXY\œÖÈ˜ÛÛ[]\H—HÏÈ˜\XØ][Û‹ÛØİ]\İ™X[HŠKœÜ]
-ÈŠVÌNÂˆB‚ˆÛÛœİYH˜[™ÛUURQ
+  router.post("/", multipartUpload.array("file"), async (req, res) => {
+    const deviceId = typeof req.body.deviceId === "string" ? req.body.deviceId : "";
+    const uploadedFiles = (req.files as Express.Multer.File[] | undefined) ?? [];
+    const validationError = checkDevice(deviceId, req);
 
-NÂˆÛÛœİİÜ™Yš[NˆİÜ™Yš[HHÂˆYˆ]šXÙRYˆÜšYÚ[˜[˜[YKˆZ[YU\KˆÚ^™Kˆ]ˆ\ÚÔ]ˆÜ™X]Y]ˆ™]È]J
-KˆNÂˆš[\ËœÙ]
-YİÜ™Yš[JNÂˆÛÛœÛÛK›ÙÊ‘š[H\ØYY‹È]šXÙRYš[RYˆYÚ^™HJNÂˆ›İYQš[JİÜ™Yš[JNÂˆ™\Ëœİ]\ÊŒJKšœÛÛŠÂˆİXØÙ\ÜÎˆYKˆ]Y]YYˆXÛÛ›™Xİ[ÛœËš\Ê]šXÙRY
-Kˆš[\ÎˆŞÈš[RYˆYš[[˜[YNˆÜšYÚ[˜[˜[YHWKˆJNÂˆHØ]Ú
-\œ›ÜŠHÂˆ™^
-\œ›ÜŠNÂˆBˆKˆ
-NÂ‚ˆ™]\›ˆ›İ]\ÂŸB
+    if (validationError || uploadedFiles.length === 0) {
+      await Promise.all(uploadedFiles.map((file) => fs.unlink(file.path).catch(() => undefined)));
+      res.status(400).json({
+        error: validationError ?? "No files uploaded",
+      });
+      return;
+    }
+
+    const responseFiles = uploadedFiles.map((file) => {
+      const id = randomUUID();
+      const storedFile: StoredFile = {
+        id,
+        deviceId,
+        originalName: safeName(file.originalname),
+        mimeType: file.mimetype || "application/octet-stream",
+        size: file.size,
+        path: file.path,
+        createdAt: new Date(),
+      };
+      files.set(id, storedFile);
+      console.log("File uploaded", { deviceId, fileId: id, size: file.size });
+      notifyFile(storedFile);
+      return { fileId: id, filename: storedFile.originalName };
+    });
+
+    res.status(201).json({ success: true, queued: !connections.has(deviceId), files: responseFiles });
+  });
+
+  router.post(
+    "/:deviceId",
+    multer({
+      storage,
+      limits: { fileSize: maxFileSize, files: 1 },
+    }).single("file"),
+    async (req, res, next) => {
+      try {
+        const deviceId = String(req.params.deviceId);
+        const validationError = !devices.has(deviceId) ? "Unknown device" : null;
+        if (validationError) {
+          if (req.file) await fs.unlink(req.file.path).catch(() => undefined);
+          res.status(404).json({ error: validationError });
+          return;
+        }
+
+        let diskPath: string;
+        let size: number;
+        let originalName: string;
+        let mimeType: string;
+
+        if (req.file) {
+          diskPath = req.file.path;
+          size = req.file.size;
+          originalName = safeName(req.file.originalname);
+          mimeType = req.file.mimetype || "application/octet-stream";
+        } else {
+          const contentLength = Number(req.headers["content-length"] ?? 0);
+          if (contentLength > maxFileSize) {
+            res.status(413).json({ error: "File too large" });
+            return;
+          }
+          const idForPath = randomUUID();
+          diskPath = path.join(uploadDirectory, idForPath);
+          const chunks: Buffer[] = [];
+          let total = 0;
+          for await (const chunk of req) {
+            const buffer = Buffer.from(chunk);
+            total += buffer.length;
+            if (total > maxFileSize) {
+              res.status(413).json({ error: "File too large" });
+              return;
+            }
+            chunks.push(buffer);
+          }
+          if (total === 0) {
+            res.status(400).json({ error: "No file uploaded" });
+            return;
+          }
+          await fs.writeFile(diskPath, Buffer.concat(chunks));
+          size = total;
+          originalName = safeName(decodedHeaderFilename(req.headers["x-filename"]));
+          mimeType = String(req.headers["content-type"] ?? "application/octet-stream").split(";")[0];
+        }
+
+        const id = randomUUID();
+        const storedFile: StoredFile = {
+          id,
+          deviceId,
+          originalName,
+          mimeType,
+          size,
+          path: diskPath,
+          createdAt: new Date(),
+        };
+        files.set(id, storedFile);
+        console.log("File uploaded", { deviceId, fileId: id, size });
+        notifyFile(storedFile);
+        res.status(201).json({
+          success: true,
+          queued: !connections.has(deviceId),
+          files: [{ fileId: id, filename: originalName }],
+        });
+      } catch (error) {
+        next(error);
+      }
+    },
+  );
+
+  return router;
+}

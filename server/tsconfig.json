@@ -1,1 +1,14 @@
-şŠmş&yºŞÃòân¶«Ëñè™æë{Ü™ßì…éez{ì†X§{_?n)ÿ¦Ã©z¶­Š‰ç¢Ú^®h­µç^Âˆ˜ÛÛ\[\“Ü[ÛœÈˆÂˆ\™Ù]ˆ‘TÌŒŒˆ‹ˆ›[Ù[Hˆ“›ÙS™^‹ˆ›[Ù[T™\ÛÛ][Ûˆˆ“›ÙS™^‹ˆœ›Ûİ\ˆˆœÜ˜È‹ˆ›İ]\ˆˆ™\İ‹ˆœİšXİˆYKˆ™\Ó[Ù[R[\›ÜˆYKˆœÚÚ\XÚXÚÈˆYKˆ™›Ü˜ÙPÛÛœÚ\İ[Ø\Ú[™Ò[‘š[S˜[Y\ÈˆYBˆKˆš[˜ÛYHˆÈœÜ˜ËÊŠ‹Ê‹È—BŸB
+{
+  "compilerOptions": {
+    "target": "ES2022",
+    "module": "NodeNext",
+    "moduleResolution": "NodeNext",
+    "rootDir": "src",
+    "outDir": "dist",
+    "strict": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true
+  },
+  "include": ["src/**/*.ts"]
+}

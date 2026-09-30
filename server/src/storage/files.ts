@@ -1,29 +1,35 @@
-şŠmş&yºŞÃòân¶«Ëñè™æë{Ü™ßì…éez{ì†X§{_?n)ÿ¦Ã©z¶­Š‰ç¢Ú^®h­µçZ[\ÜÈ›ÛZ\Ù\È\ÈœÈHœ›ÛH››ÙN™œÈÂš[\Ü]œ›ÛH››ÙNœ]Âš[\ÜÈš[\ÈHœ›ÛH‹‹‹Üİ]KšœÈÂ‚™^ÜÛÛœİ\ØY\™XİÜHH]œ™\ÛÛ™J›ØÙ\ÜË˜İÙ
+import { promises as fs } from "node:fs";
+import path from "node:path";
+import { files } from "../state.js";
 
-K\ØYÈŠNÂ™^ÜÛÛœİX^š[TÚ^™HHL
-ˆL
-ˆLÂ™^ÜÛÛœİš[SY™][YS\ÈHŒ
-ˆŒ
-ˆLÂ‚™^Ü\Ş[˜È[˜İ[Ûˆ[œİ\™U\ØY\™XİÜJ
-Nˆ›ÛZ\ÙO›ÚYˆÂˆ]ØZ]œË›ZÙ\Š\ØY\™XİÜKÈ™Xİ\œÚ]™NˆYHJNÂŸB‚™^Ü\Ş[˜È[˜İ[Ûˆ™[[İ™TİÜ™Yš[Jš[RYˆİš[™ÊNˆ›ÛZ\ÙO›ÛÛX[ˆÂˆÛÛœİİÜ™Yš[HHš[\Ë™Ù]
-š[RY
-NÂˆYˆ
-\İÜ™Yš[JH™]\›ˆ˜[ÙNÂ‚ˆš[\Ë™[]Jš[RY
-NÂˆHÂˆ]ØZ]œË[›[šÊİÜ™Yš[Kœ]
-NÂˆHØ]Ú
-\œ›ÜŠHÂˆÛÛœİÛÙHH
-\œ›Üˆ\È›ÙR”Ë‘\œ››Ñ^Ù\[ÛŠK˜ÛÙNÂˆYˆ
-ÛÙHOOH‘S“ÑS•ŠH›İÈ\œ›ÜÂˆBˆÛÛœÛÛK›ÙÊ‘š[H[]Y‹Èš[RY]šXÙRYˆİÜ™Yš[K™]šXÙRYJNÂˆ™]\›ˆYNÂŸB‚™^Ü\Ş[˜È[˜İ[Ûˆ™[[İ™Q^\™Yš[\Ê
-Nˆ›ÛZ\ÙO›ÚYˆÂˆÛÛœİİ]Ù™ˆH]K››İÊ
-HHš[SY™][YS\ÎÂˆÛÛœİ^\™YYÈHË‹‹™š[\Ë˜[Y\Ê
-WBˆ™š[\Š
-š[JHOˆš[K˜Ü™X]Y]™Ù][YJ
-Hİ]Ù™ŠBˆ›X\
+export const uploadDirectory = path.resolve(process.cwd(), "uploads");
+export const maxFileSize = 100 * 1024 * 1024;
+export const fileLifetimeMs = 60 * 60 * 1000;
 
-š[JHOˆš[KšY
-NÂ‚ˆ]ØZ]›ÛZ\ÙK˜[
-^\™YYË›X\
+export async function ensureUploadDirectory(): Promise<void> {
+  await fs.mkdir(uploadDirectory, { recursive: true });
+}
 
-š[RY
-HOˆ™[[İ™TİÜ™Yš[Jš[RY
-JJNÂŸB
+export async function removeStoredFile(fileId: string): Promise<boolean> {
+  const storedFile = files.get(fileId);
+  if (!storedFile) return false;
+
+  files.delete(fileId);
+  try {
+    await fs.unlink(storedFile.path);
+  } catch (error) {
+    const code = (error as NodeJS.ErrnoException).code;
+    if (code !== "ENOENT") throw error;
+  }
+  console.log("File deleted", { fileId, deviceId: storedFile.deviceId });
+  return true;
+}
+
+export async function removeExpiredFiles(): Promise<void> {
+  const cutoff = Date.now() - fileLifetimeMs;
+  const expiredIds = [...files.values()]
+    .filter((file) => file.createdAt.getTime() < cutoff)
+    .map((file) => file.id);
+
+  await Promise.all(expiredIds.map((fileId) => removeStoredFile(fileId)));
+}

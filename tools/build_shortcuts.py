@@ -1,260 +1,527 @@
-˛äm˛&y∫ﬁ√Ú‚n∂´ÀÒËôÊÎ{‹ôﬂÏÖÈez{ÏÜXß{_?n)ˇ¶√©z∂≠äâÁ¢⁄^Æh≠µÁHààêùZ[[ú›[XõHT€ôH]H⁄\ö[ô»⁄‹ù›]»€àXX”‘»
-ô\]Z\ô\»›\‹ãÿö[ã‹⁄‹ù›] KàààÇÇôúõ€H◊Ÿù]\ôW◊»[\‹ù[õõ›][€ú¬Çö[\‹ùú€€Çö[\‹ù\›XÇö[\‹ù›XúõÿŸ\‹¬ö[\‹ùﬁ\¬ö[\‹ù[\ö[Bö[\‹ù]ZYôúõ€H]Xà[\‹ù]Çîì”’H]
-◊Ÿö[W◊ Kúô\€€ôJ
-Kú\ô[ù÷ÃWBì’UUHì”’»ú⁄‹ù›]»ÇÇà»\ŸHôYH€\‹Ÿ\»€‹úô\‹€ô»H⁄‹ù›]»⁄\ôK\⁄Y]ÿ]Y€‹öY\¬à»9Â.˘`„»»8‡Ëx‡·¯‡®¯‡®à»8‡Âx‡®x‡©8‡ÍÀàŸY\[H^X⁄]€»[\‹ùY⁄‹ù›]¬à»\X\à[àH⁄\ôH⁄Y]õ‹àH€€[[€àT€ôH]H⁄\ö[ô»^[ÿYÀÇî“TëW“SîU–”T‘—T»H¬àï—í[XYŸP€€ù[ù][Hãàï—êUê\‹Ÿ]€€ù[ù][Hãàï—ëŸ[ô\öX—ö[P€€ù[ù][HãóBÇÇÇôYàZY
+"""Build installable iPhone Data Sharing Shortcuts on macOS (requires /usr/bin/shortcuts)."""
 
-HOà›éÇàô]\õà›ä]ZYù]ZY
+from __future__ import annotations
 
-JKù\\ä
-BÇÇôYàX›[€äY[ùYöY\éà›ã
-äú\ò[Y]\úŒàÿöôX›
-HOàX›Çàô]\õà¬àï—ï€‹öŸõ›–X›[€íY[ùYöY\àéààö\Àù€‹öŸõ›ÀòX›[€úÀû⁄Y[ùYöY\üHãàï—ï€‹öŸõ›–X›[€î\ò[Y]\ú»éà\ò[Y]\úÀàBÇÇôYà]X⁄Y[ù
-ò[YNàX›
-HOàX›Çàô]\õà»ïò[YHéàò[YKï—îŸ\öX[^ò][€ï\Héàï—ï^⁄Ÿ[ê]X⁄Y[ùüBÇÇôYàôYô\ô[òŸJX›[€ó›]ZYà›ãò[YNà›äHOàX›Çàô]\õà»ì›]]URQéàX›[€ó›]ZYì›]]ò[YHéàò[YKï\HéàêX›[€ì›]]üBÇÇôYàõ‹\ùW‹ôYô\ô[òŸJX›[€ó›]ZYà›ãò[YNà›ãõ‹\ùW€ò[YNà›äHOàX›ÇàààîôYô\ô[òŸHHõ‹\ùHŸàHXY⁄X»ò\öXXõH⁄]›]Y[ô»[õ›\àX›[€ãàààÇàò[YHHôYô\ô[òŸJX›[€ó›]ZYò[YJBàò[YV»êYŸ‹ò[ô^ô[Y[ù»óHH¬à¬àï\Héàï—îõ‹\ùUò\öXXõPYŸ‹ò[ô^ô[Y[ùãàîõ‹\ùSò[YHéàõ‹\ùW€ò[YKàBàBàô]\õàò[YBÇÇôYà⁄Ÿ[ó‹›ö[ô ò[YNà›ãôYúŒàX›⁄[ùX›Hõ€ôHHõ€ôJHOàX›ÇàôYú»HôYú»‹àﬂBàô]\õà¬àïò[YHéà¬àú›ö[ô»éàò[YKàò]X⁄Y[ù–ûTò[ôŸHéàŸàûﬁﬁ⁄[ô^K__HéàôYàõ‹à[ô^ôYà[àôYúÀö][\ 
-_KàKàï—îŸ\öX[^ò][€ï\Héàï—ï^⁄Ÿ[î›ö[ô»ãàBÇÇôYàöY[
-Ÿ^Nà›ãò[YNàÿöôX›][W›\Nà[ùH
-HOàX›Çàô]\õà»ï—íŸ^Héà⁄Ÿ[ó‹›ö[ô Ÿ^JKï—í][U\Héà][W›\Kï—ïò[YHéàò[Y_BÇÇôYàX›[€ò\ûJöY[Œà\›ŸX›JHOàX›Çàô]\õà¬àïò[YHéà»ï—ëX›[€ò\ûQöY[ò[YR][\»éàöY[ﬂKàï—îŸ\öX[^ò][€ï\Héàï—ëX›[€ò\ûQöY[ò[YHãàBÇÇôYà⁄‹ù›]
-àò[YNà›ãàX›[€úŒà\›ŸX›Kà
-ãà⁄\ôW‹⁄Y]àõ€€à[ú]ÿ€\‹Ÿ\Œà\›‹›óKà€\à[ùà€€‹éà[ùà]Y\›[€úŒà\›ŸX›Hõ€ôHHõ€ôKäHOàX›Çàô]\õà¬àï—ï€‹öŸõ›”ò[YHéàò[YKàï—ï€‹öŸõ›–X›[€ú»éàX›[€úÀàï—ï€‹öŸõ›“X€€àéà¬àï—ï€‹öŸõ›“X€€ë€\ù[Xô\àéà€\àï—ï€‹öŸõ›“X€€î›\ù€€‹àéà€€‹ãàKàï—ï€‹öŸõ›–€Y[ùô\ú⁄[€àéàåLåãàï—ï€‹öŸõ›”Z[ö[][P€Y[ùô\ú⁄[€àéàLàï—ï€‹öŸõ›”Z[ö[][P€Y[ùô\ú⁄[€î›ö[ô»éàéLãàï—ï€‹öŸõ›“\‘⁄‹ù›][ú]ò\öXXõ\»éàùYKàï—ï€‹öŸõ›“\”›]]ò[òX⁄»éàò[ŸKàï—ï€‹öŸõ›“[\‹ù]Y\›[€ú»éà]Y\›[€ú»‹à◊Kàï—ï€‹öŸõ›’\\»éà»êX›[€ë^[ú⁄[€àóHYà⁄\ôW‹⁄Y][ŸH◊Kàï—ï€‹öŸõ›“[ú]€€ù[ù][P€\‹Ÿ\»éà[ú]ÿ€\‹Ÿ\Ààï—ï€‹öŸõ›”›]]€€ù[ù][P€\‹Ÿ\»éà◊KàBÇÇôYàò[Y]W‹⁄‹ù›]
-]NàX›⁄[ôà›äHOàõ€ôNÇàààëòZ[HùZ[YàŸ[ô‹ôXŸZ]ôHX›[€ú»\ôHXÿ⁄Y[ù[HZ^YÇÇà\»õ›X›»H[ú›[[ô⁄[ù»úõ€H]ô\à⁄\[ô»HôXŸZ]ôH€‹öŸõ›»[ô\ÇàHìXX¯‡j˙` x‡¢»àò[YH
-‹àöXŸHô\úÿJK⁄X⁄\»\‹X⁄X[H€€ôù\⁄[ô»€àS‘¬àôXÿ]\ŸH[\‹ù[ô»H\Xÿ]H‹ôX]\»ò[Y\»›X⁄\»ìXX¯‡j˙` x‡¢»
-äHãÇàààÇàY[ùYöY\ú»H¬à][KôŸ]
-ï—ï€‹öŸõ›–X›[€íY[ùYöY\àãàäKúô[[›ô\ôYö^
-ö\Àù€‹öŸõ›ÀòX›[€úÀàäBàõ‹à][H[à]KôŸ]
-ï—ï€‹öŸõ›–X›[€ú»ã◊JBàBàYà⁄[ôOHúŸ[ôéÇàõ‹òöY[àH»ôÿ›[Y[ùX⁄Ÿ\ãúÿ]ôHãõ‹[ù\õãúŸ]ò[YHüBàZ^YHõ‹òöY[ãö[ù\úŸX›[€äY[ùYöY\ú BàYàZ^YÇàòZ\ŸHò[YQ\úõ‹äàîŸ[ô⁄‹ù›]€€ùZ[ú»ôXŸZ]ôK[€õHX›[€úŒà‹€‹ùY
-Z^Y
-_HäBà\ÿYÿX›[€ú»H¬à][Bàõ‹à][H[à]KôŸ]
-ï—ï€‹öŸõ›–X›[€ú»ã◊JBàYà][KôŸ]
-ï—ï€‹öŸõ›–X›[€íY[ùYöY\àäHOHö\Àù€‹öŸõ›ÀòX›[€úÀô›€õÿY\õÇà[ô][KôŸ]
-ï—ï€‹öŸõ›–X›[€î\ò[Y]\ú»ãﬂJKôŸ]
-ï—íY]ŸäHOHî‘’ÇàBàYàõ›[ûJà][KôŸ]
-ï—ï€‹öŸõ›–X›[€î\ò[Y]\ú»ãﬂJKôŸ]
-ï—íõŸU\HäHOHëö[HÇà[ôï—îô\]Y\›ò\öXXõHà[à][KôŸ]
-ï—ï€‹öŸõ›–X›[€î\ò[Y]\ú»ãﬂJBà[ôï—ëõ‹õUò[Y\»àõ›[à][KôŸ]
-ï—ï€‹öŸõ›–X›[€î\ò[Y]\ú»ãﬂJBàõ‹à][H[à\ÿYÿX›[€ú¬à
-NÇàòZ\ŸHò[YQ\úõ‹äîŸ[ô⁄‹ù›]\»Z\‹⁄[ô»Hò]»ö[KXõŸH\ÿYX›[€àäBàYà[ûJï—ëõ‹õUò[Y\»à[à][KôŸ]
-ï—ï€‹öŸõ›–X›[€î\ò[Y]\ú»ãﬂJHõ‹à][H[à\ÿYÿX›[€ú NÇàòZ\ŸHò[YQ\úõ‹äîŸ[ô⁄‹ù›]]\›õ›\ŸH][\\ù—õ‹õHö[HöY[»€à›\úô[ùS‘»äBà[Yà⁄[ôOHúôXŸZ]ôHéÇàYàôÿ›[Y[ùX⁄Ÿ\ãúÿ]ôHàõ›[àY[ùYöY\úŒÇàòZ\ŸHò[YQ\úõ‹äîôXŸZ]ôH⁄‹ù›]\»Z\‹⁄[ô»]»ÿ]ôHX›[€àäBà[ŸNÇàòZ\ŸHò[YQ\úõ‹äàï[ö€õ›€à⁄‹ù›]⁄[ôà⁄⁄[ôHäBÇÇî’T‘ïQ”––ST»H»öòHãô[àãûöãö€»ãô\»ãôúàãôHüBî“‘ï’U’êSî”US”î»H…ﬁö	Œà…‘Ÿ[ô»XX…Œà	˘c‰z` yb,XX…À	⁄T€ôH]H⁄\ö[ô»ôXŸZ]ôIŒà	⁄T€ôH]H⁄\ö[ô»9£©y•-âÀ	‘Ÿ[ù»XX…Œà	˘mÏπc‰z` yb,XX…À	‘ôXŸZ]ôYö[\»\ôH[à8†'P€›Yà⁄‹ù›]»àT€ôH]H⁄\ö[ô¯†'IŒà	˘£©y•-πÊ°9•°˘.Ìπ/cy.£∏†'P€›Yà⁄‹ù›]»àT€ôH]H⁄\ö[ô¯†'IÀ	—[ù\àHXX»Yô\‹»
-[ô[ô»[à‹€ôK‹⁄‹ù›]
-IŒà	˙/§˘aiHXX»9g,9g`;Ô"9.ÈH‹€ôK‹⁄‹ù›]9Ó‰˘l/ªÔ"IÀ	—[ù\àHŸ[ô⁄Ÿ[àúõ€HHZ\ö[ô»ÿ‹ôY[à
-ôYö^⁄]ôX\ô\à[ôH‹XŸJIŒà	˙/§˘aizacykÓzhmzghπÊ°9c‰z` y.È9‚c;Ô"9bcyb®ôX\ô\à9d£9. 9.*πÍnπ®/;Ô"IÀ	—[ù\àHXX»ôXŸZ]ôHTHYô\‹»
-[ô[ô»[à‹€ôK‹⁄‹ù›]⁄[òõﬁ
-IŒà	˙/§˘aiHXX»9£©y•-àTH9g,9g`;Ô"9.ÈH‹€ôK‹⁄‹ù›]⁄[òõﬁ9Ó‰˘l/ªÔ"IÀ	—[ù\àHôXŸZ]ôH⁄Ÿ[àúõ€HHZ\ö[ô»ÿ‹ôY[à
-ôYö^⁄]ôX\ô\à[ôH‹XŸJIŒà	˙/§˘aizacykÓzhmzghπÊ°9£©y•-π.È9‚c;Ô"9bcyb®ôX\ô\à9d£9. 9.*πÍnπ®/;Ô"IﬂK	⁄€…Œà…‘Ÿ[ô»XX…Œà	”XX˚'/:Ëg:ÏÌ:‡≠:Æ,	À	⁄T€ôH]H⁄\ö[ô»ôXŸZ]ôIŒà	⁄T€ôH]H⁄\ö[ô»;"&;"Ë	À	‘Ÿ[ù»XX…Œà	”XX˚'/:Ëg:ÏÌ:‡‚;"≠z‚‚:‚È	À	‘ôXŸZ]ôYö[\»\ôH[à8†'P€›Yà⁄‹ù›]»àT€ôH]H⁄\ö[ô¯†'IŒà	˚"&;"Ë;c#;'o;'`8†&P€›Yà⁄‹ù›]»àT€ôH]H⁄\ö[ô¯†&{%‰;'¢;"≠z‚‚:‚È	À	—[ù\àHXX»Yô\‹»
-[ô[ô»[à‹€ôK‹⁄‹ù›]
-IŒà	”XX»;(Ô;!£:Èo;'°zË){ef;!.;&•
-‹€ôK‹⁄‹ù›];'/:Ëg:‡gz‡™
-IÀ	—[ù\àHŸ[ô⁄Ÿ[àúõ€HHZ\ö[ô»ÿ‹ôY[à
-ôYö^⁄]ôX\ô\à[ôH‹XŸJIŒà	˚c¶;%≠:È‡H;fe:Ím;'f;(!;!®H;a®;`l;'a;'°zË){ef;!.;&•
-ôX\ô\ª&`:¨ÌzÏ,{'a;%gª%‰;-•:¨ 
-IÀ	—[ù\àHXX»ôXŸZ]ôHTHYô\‹»
-[ô[ô»[à‹€ôK‹⁄‹ù›]⁄[òõﬁ
-IŒà	”XX»;"&;"ËTH;(Ô;!£:Èo;'°zË){ef;!.;&•
-‹€ôK‹⁄‹ù›]⁄[òõﬁ:Ëg:‡gz‡™
-IÀ	—[ù\àHôXŸZ]ôH⁄Ÿ[àúõ€HHZ\ö[ô»ÿ‹ôY[à
-ôYö^⁄]ôX\ô\à[ôH‹XŸJIŒà	˚c¶;%≠:È‡H;fe:Ím;'f;"&;"Ë;a®;`l;'a;'°zË){ef;!.;&•
-ôX\ô\ª&`:¨ÌzÏ,{'a;%gª%‰;-•:¨ 
-IﬂK	Ÿ\…Œà…‘Ÿ[ô»XX…Œà	—[ùöX\à[XX…À	⁄T€ôH]H⁄\ö[ô»ôXŸZ]ôIŒà	‘ôX⁄Xö\à€€àT€ôH]H⁄\ö[ô…À	‘Ÿ[ù»XX…Œà	—[ùöXY»[XX…À	‘ôXŸZ]ôYö[\»\ôH[à8†'P€›Yà⁄‹ù›]»àT€ôH]H⁄\ö[ô¯†'IŒà	”‹»\ò⁄]õ‹»ôX⁄XöY‹»\›0Ë[à[à0™⁄P€›Yà⁄‹ù›]»àT€ôH]H⁄\ö[ôÆ…À	—[ù\àHXX»Yô\‹»
-[ô[ô»[à‹€ôK‹⁄‹ù›]
-IŒà	“[ùõŸXŸHH\ôXÿ⁄pÏ€à[XX»
-\õZ[òYH[à‹€ôK‹⁄‹ù›]
-IÀ	—[ù\àHŸ[ô⁄Ÿ[àúõ€HHZ\ö[ô»ÿ‹ôY[à
-ôYö^⁄]ôX\ô\à[ôH‹XŸJIŒà	“[ùõŸXŸH[⁄Ÿ[àH[ù∞Î[»HH[ù[HH[õXŸH
-€€àôX\ô\àH[à\‹X⁄[»[[ùJIÀ	—[ù\àHXX»ôXŸZ]ôHTHYô\‹»
-[ô[ô»[à‹€ôK‹⁄‹ù›]⁄[òõﬁ
-IŒà	“[ùõŸXŸHH\ôXÿ⁄pÏ€àTHHôXŸ\⁄pÏ€à[XX»
-\õZ[òYH[à‹€ôK‹⁄‹ù›]⁄[òõﬁ
-IÀ	—[ù\àHôXŸZ]ôH⁄Ÿ[àúõ€HHZ\ö[ô»ÿ‹ôY[à
-ôYö^⁄]ôX\ô\à[ôH‹XŸJIŒà	“[ùõŸXŸH[⁄Ÿ[àHôXŸ\⁄pÏ€àHH[ù[HH[õXŸH
-€€àôX\ô\àH[à\‹X⁄[»[[ùJIﬂK	ŸúâŒà…‘Ÿ[ô»XX…Œà	—[ùõﬁY\à]HXX…À	⁄T€ôH]H⁄\ö[ô»ôXŸZ]ôIŒà	‘∞ÍXŸ\[€àT€ôH]H⁄\ö[ô…À	‘Ÿ[ù»XX…Œà	—[ùõﬁpÍH]HXX…À	‘ôXŸZ]ôYö[\»\ôH[à8†'P€›Yà⁄‹ù›]»àT€ôH]H⁄\ö[ô¯†'IŒà	”\»öX⁄Y\ú»ôpÈ›\»ŸHõ›]ô[ù[ú»0™»P€›Yà⁄‹ù›]»àT€ôH]H⁄\ö[ô»0Æ…À	—[ù\àHXX»Yô\‹»
-[ô[ô»[à‹€ôK‹⁄‹ù›]
-IŒà	‘ÿZ\⁄\‹Ÿ^à8†&XYô\‹ŸHHXX»
-ŸH\õZ[ò[ù\à‹€ôK‹⁄‹ù›]
-IÀ	—[ù\àHŸ[ô⁄Ÿ[àúõ€HHZ\ö[ô»ÿ‹ôY[à
-ôYö^⁄]ôX\ô\à[ôH‹XŸJIŒà	‘ÿZ\⁄\‹Ÿ^àHô]€à8†&Y[ùõ⁄HH8†&pÍX‹ò[à8†&X\‹€ÿ⁄X][€à
-∞ÍXÍY0ÍHHôX\ô\à]8†&][à\‹XŸJIÀ	—[ù\àHXX»ôXŸZ]ôHTHYô\‹»
-[ô[ô»[à‹€ôK‹⁄‹ù›]⁄[òõﬁ
-IŒà	‘ÿZ\⁄\‹Ÿ^à8†&XYô\‹ŸHTHH∞ÍXŸ\[€àHXX»
-ŸH\õZ[ò[ù\à‹€ôK‹⁄‹ù›]⁄[òõﬁ
-IÀ	—[ù\àHôXŸZ]ôH⁄Ÿ[àúõ€HHZ\ö[ô»ÿ‹ôY[à
-ôYö^⁄]ôX\ô\à[ôH‹XŸJIŒà	‘ÿZ\⁄\‹Ÿ^àHô]€àH∞ÍXŸ\[€àH8†&pÍX‹ò[à8†&X\‹€ÿ⁄X][€à
-∞ÍXÍY0ÍHHôX\ô\à]8†&][à\‹XŸJIﬂK	ŸIŒà…‘Ÿ[ô»XX…Œà	–[àXX»Ÿ[ô[âÀ	⁄T€ôH]H⁄\ö[ô»ôXŸZ]ôIŒà	⁄T€ôH]H⁄\ö[ô»[\ò[ôŸ[âÀ	‘Ÿ[ù»XX…Œà	–[àXX»Ÿ\Ÿ[ô]	À	‘ôXŸZ]ôYö[\»\ôH[à8†'P€›Yà⁄‹ù›]»àT€ôH]H⁄\ö[ô¯†'IŒà	—[\ò[ôŸ[ôH]ZY[àôYö[ô[à⁄X⁄[à8†'öP€›Yà⁄‹ù›]»àT€ôH]H⁄\ö[ô¯†'	À	—[ù\àHXX»Yô\‹»
-[ô[ô»[à‹€ôK‹⁄‹ù›]
-IŒà	”XXÀPYô\‹ŸHZ[ôŸXô[à
-[ô]Z]‹€ôK‹⁄‹ù›]
-IÀ	—[ù\àHŸ[ô⁄Ÿ[àúõ€HHZ\ö[ô»ÿ‹ôY[à
-ôYö^⁄]ôX\ô\à[ôH‹XŸJIŒà	‘Ÿ[ô]⁄Ÿ[àõ€H€‹[ô‹ÿö[ÿ⁄\õHZ[ôŸXô[à
-Z]ôX\ô\à[ôY\ûôZX⁄[à]õ‹äIÀ	—[ù\àHXX»ôXŸZ]ôHTHYô\‹»
-[ô[ô»[à‹€ôK‹⁄‹ù›]⁄[òõﬁ
-IŒà	”XXÀQ[\ò[ô‹ÀPTKPYô\‹ŸHZ[ôŸXô[à
-[ô]Z]‹€ôK‹⁄‹ù›]⁄[òõﬁ
-IÀ	—[ù\àHôXŸZ]ôH⁄Ÿ[àúõ€HHZ\ö[ô»ÿ‹ôY[à
-ôYö^⁄]ôX\ô\à[ôH‹XŸJIŒà	—[\ò[ô‹›⁄Ÿ[àõ€H€‹[ô‹ÿö[ÿ⁄\õHZ[ôŸXô[à
-Z]ôX\ô\à[ôY\ûôZX⁄[à]õ‹äIﬂ_BÇÇôYàõ‹õX[^ôY€ÿÿ[Jò[YNàÿöôX›
-HOà›éÇàYàõ›\⁄[ú›[òŸJò[YK›äNÇàô]\õàô[àÇà€ŸHHò[YKõ›Ÿ\ä
-Kú‹]
-ãHãJVÃBàô]\õà€ŸHYà€ŸH[à’T‘ïQ”––ST»[ŸHô[àÇÇÇôYàÿÿ[^ôY
-ÿÿ[Nà›ãòNà›ã[éà›äHOà›éÇà€ŸHHõ‹õX[^ôY€ÿÿ[Jÿÿ[JBàYà€ŸHOHöòHéÇàô]\õàòBàYà€ŸHOHô[àéÇàô]\õà[Çàô]\õà“‘ï’U’êSî”US”îÀôŸ]
-€ŸKﬂJKôŸ]
-[ã[äBÇÇôYàŸ[ô[ô◊‹⁄‹ù›]
-àYô\‹Œà›àHöãÀ‘ÀRTåÃ‹€ôK‹⁄‹ù›]ãà]]‹ö^ò][€éà›àHêôX\ô\àRTíSë◊’“—Sàãà
-ãà\⁄Œàõ€€HùYKàÿÿ[Nà›àHöòHãäHOàX›ÇàààêùZ[HT€ôHOàXX»⁄\ôK\⁄Y]⁄‹ù›]ÇÇà›\úô[ùS‘»‹ò\⁄\»⁄[H[\‹ù[ô»H⁄‹ù›]]XŸ\»^[ú⁄[€í[ú]à[ú⁄YHH][\\ù—õ‹õHö[XöY[àHŸ[ôõ›»\ôYõ‹ôH\ÿY»XX⁄à⁄\ôY][H\»Hò]»ô\]Y\›õŸH[ú›XYàH»[ô⁄[ù[ôXYBà›\‹ù»\»ò[ú‹‹ùÇàààÇà\õ›]ZY⁄Ÿ[ó›]ZYô\X]›]ZY‹õ›\›]ZYHZY
+import json
+import plistlib
+import subprocess
+import sys
+import tempfile
+import uuid
+from pathlib import Path
 
-KZY
+ROOT = Path(__file__).resolve().parents[1]
+OUTPUT = ROOT / "shortcuts"
 
-KZY
+# These three classes correspond to the Shortcuts share-sheet categories
+# ÁîªÂÉè / „É°„Éá„Ç£„Ç¢ / „Éï„Ç°„Ç§„É´. Keep them explicit so imported shortcuts
+# appear in the share sheet for the common iPhone Data Sharing payloads.
+SHARE_INPUT_CLASSES = [
+    "WFImageContentItem",
+    "WFAVAssetContentItem",
+    "WFGenericFileContentItem",
+]
 
-KZY
 
-Bà\õZ]‹ô\]Y\››]ZY\õZ]›]ZYHZY
 
-KZY
+def uid() -> str:
+    return str(uuid.uuid4()).upper()
 
-Bà\õZ]ÿYô\‹»HàûÿYô\‹Àúú›ö\
-	À… _K‹\õZ]ÇàX›[€ú»H¬àX›[€äôŸ]^ãURQ]\õ›]ZY›\›€S›]]ò[YOHî»Yô\‹»ã—ï^X›[€ï^XYô\‹ KàX›[€äôŸ]^ãURQ]⁄Ÿ[ó›]ZY›\›€S›]]ò[YOHê]]‹ö^ò][€àã—ï^X›[€ï^X]]‹ö^ò][€äKà»ÿùZ[à€ôH\õZ]\à⁄\ôK\⁄Y]^X›][€ãàHÿÿ[YŸ[ù€›[ù»Bà»ö\ú››XÿŸ\‹Ÿù[\ÿY[ô\à\»\õZ]\»€ôHò[úŸô\ã€»Hò]⁄ŸÇà»][\H⁄\ôYö[\»ô[XZ[ú»€ôHZ[H\ŸKÇàX›[€äàô›€õÿY\õãàURQ\\õZ]‹ô\]Y\››]ZYà›\›€S›]]ò[YOHïò[úŸô\à\õZ]ô\‹€úŸHãà—ïTì\\õZ]ÿYô\‹Àà—íY]ŸHî‘’ãà⁄›“XY\úœUùYKà—íXY\úœYX›[€ò\ûJà¬àöY[
-àê]]‹ö^ò][€àãà⁄Ÿ[ó‹›ö[ô óYôôò»ãÃàôYô\ô[òŸJ⁄Ÿ[ó›]ZYê]]‹ö^ò][€àä_JKà
-BàBà
-Kà
-KàX›[€äàôŸ]ò[YYõ‹öŸ^HãàURQ\\õZ]›]ZYà›\›€S›]]ò[YOHïò[úŸô\à\õZ]ãà—ëX›[€ò\ûRŸ^OHú\õZ]ãà—í[ú]X]X⁄Y[ù
-ôYô\ô[òŸJ\õZ]‹ô\]Y\››]ZYïò[úŸô\à\õZ]ô\‹€úŸHäJKà
-KàX›[€äàúô\X]ôXX⁄ãàURQ\ô\X]›]ZYà‹õ›\[ô“Y[ùYöY\èY‹õ›\›]ZYà—ê€€ùõ€õ›”[ŸOLà—í[ú]X]X⁄Y[ù
-»ï\Héàë^[ú⁄[€í[ú]üJKà
-KàX›[€äàô›€õÿY\õãàURQ]ZY
 
-Kà—ïTì]⁄Ÿ[ó‹›ö[ô óYôôò»ãÃàôYô\ô[òŸJ\õ›]ZYî»Yô\‹»ä_JKà—íY]ŸHî‘’ãà—íõŸU\OHëö[Hãà⁄›“XY\úœUùYKà—íXY\úœYX›[€ò\ûJà¬àöY[
-àê]]‹ö^ò][€àãà⁄Ÿ[ó‹›ö[ô óYôôò»ãÃàôYô\ô[òŸJ⁄Ÿ[ó›]ZYê]]‹ö^ò][€àä_JKà
-Kà»ŸY\Hò]ÀXõŸHò[ú‹‹ù
-⁄X⁄[\‹ù»ÿYô[H€à›\úô[ùS‘ Bà»⁄[H\‹⁄[ô»H‹öY⁄[ò[⁄\ôY][I‹»ò[YH[àHõ‹õX[XY\ãÇàöY[
-àñQö[[ò[YHãà⁄Ÿ[ó‹›ö[ô àóYôôò»ãàÃàõ‹\ùW‹ôYô\ô[òŸJô\X]›]ZYîô\X]][Hãìò[YHä_Kà
-Kà
-KàöY[
-àñU\ÿYŸKT\õZ]ãà⁄Ÿ[ó‹›ö[ô óYôôò»ãÃàôYô\ô[òŸJ\õZ]›]ZYïò[úŸô\à\õZ]ä_JKà
-KàBà
-Kà—îô\]Y\›ò\öXXõOX]X⁄Y[ù
-ôYô\ô[òŸJô\X]›]ZYîô\X]][HäJKà
-KàX›[€äúô\X]ôXX⁄ãURQ]ZY
+def action(identifier: str, **parameters: object) -> dict:
+    return {
+        "WFWorkflowActionIdentifier": f"is.workflow.actions.{identifier}",
+        "WFWorkflowActionParameters": parameters,
+    }
 
-K‹õ›\[ô“Y[ùYöY\èY‹õ›\›]ZY—ê€€ùõ€õ›”[ŸOLäKàX›[€äàõõ›YöXÿ][€àãàURQ]ZY
 
-Kà—ìõ›YöXÿ][€êX›[€ï]OHöT€ôH]H⁄\ö[ô»ãà—ìõ›YöXÿ][€êX›[€êõŸO[ÿÿ[^ôY
-ÿÿ[KìXX¯‡j˙` x‡¢∏‡o∏‡e¯‡g»ãîŸ[ù»XX»äKà—ìõ›YöXÿ][€êX›[€î€›[ôQò[ŸKà
-KàBà]Y\›[€ú»H¬à¬àêX›[€í[ô^éààêÿ]Y€‹ûHéàî\ò[Y]\àãàî\ò[Y]\íŸ^Héàï—ï^X›[€ï^ãàï^éàÿÿ[^ôY
-ÿÿ[Kî»9Â.˙gh∏‡k∏‡®∏‡‚x‡Î8‡Æx‡§πaiyb¶˚Ô"9ß*˘l/∏‡k»‹€ôK‹⁄‹ù›];Ô"Hãë[ù\àHXX»Yô\‹»
-[ô[ô»[à‹€ôK‹⁄‹ù›]
-HäKàëYò][ò[YHéàöãÀ‘ÀRTåÃ‹€ôK‹⁄‹ù›]ãàKà¬àêX›[€í[ô^éàKàêÿ]Y€‹ûHéàî\ò[Y]\àãàî\ò[Y]\íŸ^Héàï—ï^X›[€ï^ãàï^éàÿÿ[^ôY
-ÿÿ[K∏‡Ê∏‡®∏‡Í∏‡Ï¯‡¨9k£9.°πÂ.˙gh∏‡k∫` y/Ëx‡‚8‡Ô8‡´¯‡Ï¯‡§πaiyb¶˚Ô"9ab:h+x‡j»ôX\ô\à8‡j9cb∫)‰∏‡Æx‡Ê∏‡Ô8‡Æ{Ô"Hãë[ù\àHŸ[ô⁄Ÿ[àúõ€HHZ\ö[ô»ÿ‹ôY[à
-ôYö^⁄]ôX\ô\à[ôH‹XŸJHäKàëYò][ò[YHéàêôX\ô\àRTíSë◊’“—SàãàKàBà]HH⁄‹ù›]
-àÿÿ[^ôY
-ÿÿ[KìXX¯‡j˙` x‡¢»ãîŸ[ô»XX»äKàX›[€úÀà⁄\ôW‹⁄Y]UùYKà€\MNMÃà€€‹èMŒMNçMÕKà[ú]ÿ€\‹Ÿ\œV¬àï—í[XYŸP€€ù[ù][Hãàï—êUê\‹Ÿ]€€ù[ù][Hãàï—ëŸ[ô\öX—ö[P€€ù[ù][Hãàï—îê€€ù[ù][HãàKà]Y\›[€úœ\]Y\›[€ú»Yà\⁄»[ŸH◊Kà
-Bàò[Y]W‹⁄‹ù›]
-]KúŸ[ôäBàô]\õà]BÇôYàôXŸZ]ö[ô◊‹⁄‹ù›]
-àYô\‹Œà›àHöãÀ‘ÀRTåÃ‹€ôK‹⁄‹ù›]⁄[òõﬁãà]]‹ö^ò][€éà›àHêôX\ô\àRTíSë◊’“—Sàãà
-ãà\⁄Œàõ€€HùYKàÿÿ[Nà›àHöòHãäHOàX›ÇàààîôXŸZ]ôH]ô\ûH]Y]YYö[H[ôÿ]ôH]»P€›Yö]ôKÇÇàö[\»\ôHÿ]ôY\ôX›HûH⁄‹ù›]»»Hö[\»\àH\›[ò][€à]\¬à€€ôöY›\ôY\»T€ôH]H⁄\ö[ôÀÿ⁄X⁄€àS‘À\»\Xÿ[Hô\€€ôY[ô\ÇàP€›Yö]ôH»⁄‹ù›]»»T€ôH]H⁄\ö[ôÀà\»ô[[›ô\»HôYYõ‹àH[\Çà⁄‹ù›]∏‡Âx‡®x‡©8‡Í¯‡§πÈÓ˘bÂHãÇàààÇà\õ›]ZYHZY
+def attachment(value: dict) -> dict:
+    return {"Value": value, "WFSerializationType": "WFTextTokenAttachment"}
 
-Bà⁄Ÿ[ó›]ZYHZY
 
-Bà[òõﬁ›]ZYHZY
+def reference(action_uuid: str, name: str) -> dict:
+    return {"OutputUUID": action_uuid, "OutputName": name, "Type": "ActionOutput"}
 
-Bàö[\◊›]ZYHZY
 
-Bàô\X]›]ZYHZY
+def property_reference(action_uuid: str, name: str, property_name: str) -> dict:
+    """Reference a property of a Magic Variable without adding another action."""
+    value = reference(action_uuid, name)
+    value["Aggrandizements"] = [
+        {
+            "Type": "WFPropertyVariableAggrandizement",
+            "PropertyName": property_name,
+        }
+    ]
+    return value
 
-Bà‹õ›\›]ZYHZY
 
-Bà][W€ò[YW›]ZYHZY
+def token_string(value: str, refs: dict[int, dict] | None = None) -> dict:
+    refs = refs or {}
+    return {
+        "Value": {
+            "string": value,
+            "attachmentsByRange": {f"{{{index}, 1}}": ref for index, ref in refs.items()},
+        },
+        "WFSerializationType": "WFTextTokenString",
+    }
 
-Bà][W›\õ›]ZYHZY
 
-Bà›€õÿY›]ZYHZY
+def field(key: str, value: object, item_type: int = 0) -> dict:
+    return {"WFKey": token_string(key), "WFItemType": item_type, "WFValue": value}
 
-BÇà]]›ò[YHH⁄Ÿ[ó‹›ö[ô ªÔÔãÃàôYô\ô[òŸJ⁄Ÿ[ó›]ZYê]]‹ö^ò][€àä_JBàX›[€ú»H¬àX›[€äôŸ]^ãURQ]\õ›]ZY›\›€S›]]ò[YOHí[òõﬁYô\‹»ã—ï^X›[€ï^XYô\‹ KàX›[€äôŸ]^ãURQ]⁄Ÿ[ó›]ZY›\›€S›]]ò[YOHê]]‹ö^ò][€àã—ï^X›[€ï^X]]‹ö^ò][€äKàX›[€äàô›€õÿY\õãàURQZ[òõﬁ›]ZYà›\›€S›]]ò[YOHí[òõﬁô\‹€úŸHãà—ïTì]⁄Ÿ[ó‹›ö[ô ªÔÔãÃàôYô\ô[òŸJ\õ›]ZYí[òõﬁYô\‹»ä_JKà—íY]ŸHë—Uãà⁄›“XY\úœUùYKà—íXY\úœYX›[€ò\ûJŸöY[
-ê]]‹ö^ò][€àã]]›ò[YJWJKà
-KàX›[€äàôŸ]ò[YYõ‹öŸ^HãàURQYö[\◊›]ZYà›\›€S›]]ò[YOHëö[\»ãà—ëX›[€ò\ûRŸ^OHôö[\»ãà—í[ú]X]X⁄Y[ù
-ôYô\ô[òŸJ[òõﬁ›]ZYí[òõﬁô\‹€úŸHäJKà
-KàX›[€äàúô\X]ôXX⁄ãàURQ\ô\X]›]ZYà‹õ›\[ô“Y[ùYöY\èY‹õ›\›]ZYà—ê€€ùõ€õ›”[ŸOLà—í[ú]X]X⁄Y[ù
-ôYô\ô[òŸJö[\◊›]ZYëö[\»äJKà
-KàX›[€äàôŸ]ò[YYõ‹öŸ^HãàURQZ][W€ò[YW›]ZYà›\›€S›]]ò[YOHì‹öY⁄[ò[ò[YHãà—ëX›[€ò\ûRŸ^OHõò[YHãà—í[ú]X]X⁄Y[ù
-ôYô\ô[òŸJô\X]›]ZYîô\X]][HäJKà
-KàX›[€äàôŸ]ò[YYõ‹öŸ^HãàURQZ][W›\õ›]ZYà›\›€S›]]ò[YOHë›€õÿYTìãà—ëX›[€ò\ûRŸ^OHù\õãà—í[ú]X]X⁄Y[ù
-ôYô\ô[òŸJô\X]›]ZYîô\X]][HäJKà
-KàX›[€äàô›€õÿY\õãàURQY›€õÿY›]ZYà›\›€S›]]ò[YOHîôXŸZ]ôYö[Hãà—ïTì]⁄Ÿ[ó‹›ö[ô ªÔÔãÃàôYô\ô[òŸJ][W›\õ›]ZYë›€õÿYTìä_JKà—íY]ŸHë—Uãà⁄›“XY\úœUùYKà—íXY\úœYX›[€ò\ûJŸöY[
-ê]]‹ö^ò][€àã]]›ò[YJWJKà
-KàX›[€äàôÿ›[Y[ùX⁄Ÿ\ãúÿ]ôHãàURQ]ZY
 
-Kà»îÿ]ôHö[HàôX]»\»\»Hô[]]ôH›Xú]à›\Z[ô»H€€\]Bà»T€ôH]H⁄\ö[ôÀœ‹öY⁄[ò[ò[YOà]ô\Ÿ\ùô\»Hö[[ò[YH⁄]›]\⁄[ô»Bà»[ú›\‹ùYŸ]ò[YHX›[€ãÇà—í[ú]X]X⁄Y[ù
-ôYô\ô[òŸJ›€õÿY›]ZYîôXŸZ]ôYö[HäJKà—ê\⁄’⁄\ôU‘ÿ]ôOQò[ŸKà—ëö[Q\›[ò][€î]]⁄Ÿ[ó‹›ö[ô àöT€ôH]H⁄\ö[ôÀ◊Yôôò»ãàÃLàôYô\ô[òŸJ][W€ò[YW›]ZYì‹öY⁄[ò[ò[YHä_Kà
-Kà—îÿ]ôQö[S›ô\ù‹ö]OQò[ŸKà
-KàX›[€äúô\X]ôXX⁄ãURQ]ZY
+def dictionary(fields: list[dict]) -> dict:
+    return {
+        "Value": {"WFDictionaryFieldValueItems": fields},
+        "WFSerializationType": "WFDictionaryFieldValue",
+    }
 
-K‹õ›\[ô“Y[ùYöY\èY‹õ›\›]ZY—ê€€ùõ€õ›”[ŸOLäKàX›[€äàõõ›YöXÿ][€àãàURQ]ZY
 
-Kà—ìõ›YöXÿ][€êX›[€ï]OHöT€ôH]H⁄\ö[ô»ãà—ìõ›YöXÿ][€êX›[€êõŸO[ÿÿ[^ôY
-ÿÿ[KπcÂ˘/Ëx‡Âx‡®x‡©8‡Í¯‡k¯‡#P€›Yà⁄‹ù›]»àT€ôH]H⁄\ö[ô¯‡#x‡j¯‡`∏‡¢∏‡o∏‡fHãîôXŸZ]ôYö[\»\ôH[à8†'P€›Yà⁄‹ù›]»àT€ôH]H⁄\ö[ô¯†'HäKà—ìõ›YöXÿ][€êX›[€î€›[ôUùYKà
-KàX›[€äàù\õãàURQJö[\◊›\õ›]ZYèHZY
+def shortcut(
+    name: str,
+    actions: list[dict],
+    *,
+    share_sheet: bool,
+    input_classes: list[str],
+    glyph: int,
+    color: int,
+    questions: list[dict] | None = None,
+) -> dict:
+    return {
+        "WFWorkflowName": name,
+        "WFWorkflowActions": actions,
+        "WFWorkflowIcon": {
+            "WFWorkflowIconGlyphNumber": glyph,
+            "WFWorkflowIconStartColor": color,
+        },
+        "WFWorkflowClientVersion": "1200",
+        "WFWorkflowMinimumClientVersion": 900,
+        "WFWorkflowMinimumClientVersionString": "900",
+        "WFWorkflowHasShortcutInputVariables": True,
+        "WFWorkflowHasOutputFallback": False,
+        "WFWorkflowImportQuestions": questions or [],
+        "WFWorkflowTypes": ["ActionExtension"] if share_sheet else [],
+        "WFWorkflowInputContentItemClasses": input_classes,
+        "WFWorkflowOutputContentItemClasses": [],
+    }
 
-JKà›\›€S›]]ò[YOHëö[\»Tìãà—ïTìX›[€ïTìJàú⁄\ôYÿ›[Y[ùŒãÀÀ‹ö]ò]K›ò\ã€[ÿö[K”Xúò\ûK”[ÿö[ILåÿ›[Y[ùÀ»Çàò€€_ò\_ê€›Yÿ‹À‘⁄‹ù›]À⁄T€ôILå]ILå⁄\ö[ôÀ»Çà
-Kà
-KàX›[€äàõ‹[ù\õãàURQ]ZY
 
-Kà—í[ú]X]X⁄Y[ù
-ôYô\ô[òŸJö[\◊›\õ›]ZYëö[\»TìäJKà
-KàBà]Y\›[€ú»H¬à¬àêX›[€í[ô^éààêÿ]Y€‹ûHéàî\ò[Y]\àãàî\ò[Y]\íŸ^Héàï—ï^X›[€ï^ãàï^éàÿÿ[^ôY
-ÿÿ[Kî»8‡kπcÂ˘/ËPTx‡®∏‡‚x‡Î8‡Æx‡§πaiyb¶˚Ô"9ß*˘l/∏‡k»‹€ôK‹⁄‹ù›]⁄[òõﬁ;Ô"Hãë[ù\àHXX»ôXŸZ]ôHTHYô\‹»
-[ô[ô»[à‹€ôK‹⁄‹ù›]⁄[òõﬁ
-HäKàëYò][ò[YHéàöãÀ‘ÀRTåÃ‹€ôK‹⁄‹ù›]⁄[òõﬁãàKà¬àêX›[€í[ô^éàKàêÿ]Y€‹ûHéàî\ò[Y]\àãàî\ò[Y]\íŸ^Héàï—ï^X›[€ï^ãàï^éàÿÿ[^ôY
-ÿÿ[K∏‡Ê∏‡®∏‡Í∏‡Ï¯‡¨9k£9.°πÂ.˙gh∏‡kπcÂ˘/Ëx‡‚8‡Ô8‡´¯‡Ï¯‡§πaiyb¶˚Ô"9ab:h+x‡j»ôX\ô\à8‡j9cb∫)‰∏‡Æx‡Ê∏‡Ô8‡Æ{Ô"Hãë[ù\àHôXŸZ]ôH⁄Ÿ[àúõ€HHZ\ö[ô»ÿ‹ôY[à
-ôYö^⁄]ôX\ô\à[ôH‹XŸJHäKàëYò][ò[YHéàêôX\ô\àRTíSë◊’“—SàãàKàBà]HH⁄‹ù›]
-àÿÿ[^ôY
-ÿÿ[KöT€ôH]H⁄\ö[ô˘cÂ˘/ËHãöT€ôH]H⁄\ö[ô»ôXŸZ]ôHäKàX›[€úÀà»ô\]Y\›YYò][à⁄›»\»⁄‹ù›][àH⁄\ôH⁄Y]\»Ÿ[Çà»HôXŸZ]ôHõ›»]Ÿ[àŸ\»õ›€€ú›[YH⁄‹ù›][ú]»[òXõ[ô»\¬à»⁄[\HŸY\»]»⁄\ôK\⁄Y]Ÿ][ô»[ôXÿŸ\Y\\»ôX€€ôöY›\ôYÇà⁄\ôW‹⁄Y]UùYKà»‹ò[ôŸH
-»›€õÿY⁄[òõﬁ›[H€\Çà€\MNMLLKà€€‹èMéŒMMLNNK»—ëéMLëÇà[ú]ÿ€\‹Ÿ\œT“TëW“SîU–”T‘—TÀà]Y\›[€úœ\]Y\›[€ú»Yà\⁄»[ŸH◊Kà
-Bàò[Y]W‹⁄‹ù›]
-]KúôXŸZ]ôHäBàô]\õà]BÇÇôYà⁄Y€ó‹⁄‹ù›]
-]NàX›\ôŸ]à]
-HOàõ€ôNÇàààî⁄Y€àH⁄‹ù›][ôö[ùHù[⁄‹ù›]»”H\úõ‹àYà⁄Y€ö[ô»òZ[ÀàààÇà⁄][\ö[Kï[\‹ò\ûQ\ôX›‹ûJ
-H\»\ôX›‹ûNÇà[ú⁄Y€ôYH]
-\ôX›‹ûJH»ù[ú⁄Y€ôYú⁄‹ù›]Çà[ú⁄Y€ôYù‹ö]Wÿû]\ \›Xãô[\ ]Kõ]\\›XãëìU–íSêTñJJBÇàô\›[H›XúõÿŸ\‹Àúù[äà¬àã›\‹ãÿö[ã‹⁄‹ù›]»ãàú⁄Y€àãàãK[[ŸHãàò[û[€ôHãàãKZ[ú]ãà›ä[ú⁄Y€ôY
-KàãK[›]]ãà›ä\ôŸ]
-KàKà^UùYKàÿ\\ôW€›]]UùYKà
-BÇàYàô\›[úô]\õò€ŸHOHÇàö[ù
-èOOH⁄‹ù›]»⁄Y€àòZ[YOOHãö[O\ﬁ\Àú›\úäBàö[ù
-àù€‹öŸõ›ŒàŸ]KôŸ]
-	’—ï€‹öŸõ›”ò[YIÀ	œ[ö€õ›€èâ _Hãö[O\ﬁ\Àú›\úäBàö[ù
-àö[ú]à›[ú⁄Y€ôYHãö[O\ﬁ\Àú›\úäBàö[ù
-àõ›]]à›\ôŸ]Hãö[O\ﬁ\Àú›\úäBàö[ù
-àô^]à‹ô\›[úô]\õò€Ÿ_Hãö[O\ﬁ\Àú›\úäBàö[ù
-ãKKH››]KKHãö[O\ﬁ\Àú›\úäBàö[ù
-ô\›[ú››]‹àè[\Oàãö[O\ﬁ\Àú›\úäBàö[ù
-ãKKH›\úàKKHãö[O\ﬁ\Àú›\úäBàö[ù
-ô\›[ú›\úà‹àè[\Oàãö[O\ﬁ\Àú›\úäBàö[ù
-èOOOOOOOOOOOOOOOOOOOOOOOOOOOOHãö[O\ﬁ\Àú›\úäBàòZ\ŸHù[ù[YQ\úõ‹äààú⁄‹ù›]»⁄Y€àòZ[Yõ‹àŸ]KôŸ]
-	’—ï€‹öŸõ›”ò[YIÀ	œ[ö€õ›€èâ _HÇààù⁄]^]€ŸH‹ô\›[úô]\õò€Ÿ_HÇà
-BÇÇôYà€€ôöY›\ôYŸúõ€W‹›[ä⁄[ôà›ã\ôŸ]à]
-HOàõ€ôNÇà€€ôöY»Hú€€ãõÿY
-ﬁ\Àú›[äBàYô\‹»H€€ôöYÀôŸ]
-òYô\‹»äBà]]‹ö^ò][€àH€€ôöYÀôŸ]
-ò]]‹ö^ò][€àäBàÿÿ[HHõ‹õX[^ôY€ÿÿ[J€€ôöYÀôŸ]
-õÿÿ[HãöòHäJBÇàYàõ›\⁄[ú›[òŸJYô\‹À›äH‹àõ›\⁄[ú›[òŸJ]]‹ö^ò][€ã›äNÇàòZ\ŸHò[YQ\úõ‹äê€€ôöY›\ôY⁄‹ù›]ô\]Z\ô\»›ö[ô»Yô\‹»[ô]]‹ö^ò][€àò[Y\»äBàYàõ›Yô\‹Àú›\ù›⁄]
-öãÀ»äNÇàòZ\ŸHò[YQ\úõ‹äê€€ôöY›\ôY⁄‹ù›]Yô\‹»]\›ôH[àãÀ»SàTìäBàYàõ›]]‹ö^ò][€ãú›\ù›⁄]
-êôX\ô\àäH‹à[ä]]‹ö^ò][€äHH[äêôX\ô\àäNÇàòZ\ŸHò[YQ\úõ‹äê€€ôöY›\ôY⁄‹ù›]ô\]Z\ô\»Hõ€ãY[\HôX\ô\à⁄Ÿ[àäBÇà»ô]ô\à⁄Y€àHõŸX›[€ãÿ€€ôöY›\ôY⁄‹ù›]⁄[HXŸZ€\ú»\ôH›[à»ô\Ÿ[ùà\»\õú»H⁄[[ù	€õ›[ô»\»Ÿ[ù	»òZ[\ôH[ù»HùZ[\úõ‹ãÇàõ‹òöY[àH
-îÀRTãîRTíSë◊’“—SàãåLçÀåååHãõÿÿ[‹›äBàYà[ûJX\öŸ\à[àYô\‹»‹àX\öŸ\à[à]]‹ö^ò][€àõ‹àX\öŸ\à[àõ‹òöY[äNÇàòZ\ŸHò[YQ\úõ‹äê€€ôöY›\ôY⁄‹ù›]›[€€ùZ[ú»HXŸZ€\à‹à€‹òX⁄»Yô\‹»äBÇà^X›Y‹›Yôö^Hã‹€ôK‹⁄‹ù›]àYà⁄[ôOHúŸ[ôà[ŸHã‹€ôK‹⁄‹ù›]⁄[òõﬁÇàYàõ›Yô\‹Àúú›ö\
-ã»äKô[ô›⁄]
-^X›Y‹›Yôö^
-NÇàòZ\ŸHò[YQ\úõ‹äàê€€ôöY›\ôY⁄⁄[ôH⁄‹ù›]\»[à[ô^X›Y[ô⁄[ùàÿYô\‹ﬂHäBÇàYà⁄[ôOHúŸ[ôéÇà]HHŸ[ô[ô◊‹⁄‹ù›]
-Yô\‹À]]‹ö^ò][€ã\⁄œQò[ŸKÿÿ[O[ÿÿ[JBà[ŸNÇà]HHôXŸZ]ö[ô◊‹⁄‹ù›]
-Yô\‹À]]‹ö^ò][€ã\⁄œQò[ŸKÿÿ[O[ÿÿ[JBà⁄Y€ó‹⁄‹ù›]
-]K\ôŸ]
-BÇÇôYàXZ[ä
-HOàõ€ôNÇàYà[äﬁ\Àò\ô›äHOH»[ôﬁ\Àò\ô›ñÃWH[à»ãKX€€ôöY›\ôYããKX€€ôöY›\ôY\Ÿ[ôããKX€€ôöY›\ôY\ôXŸZ]ôHüNÇà⁄[ôHúôXŸZ]ôHàYàﬁ\Àò\ô›ñÃWHOHãKX€€ôöY›\ôY\ôXŸZ]ôHà[ŸHúŸ[ôÇà€€ôöY›\ôYŸúõ€W‹›[ä⁄[ô]
-ﬁ\Àò\ô›ñÃóJJBàô]\õÇÇà’UUõZŸ\ä^\›€⁄œUùYJBàö[ù
-àìì’NàõÀX\ô›[Y[ù[ŸH‹ôX]\»STUH⁄‹ù›]»€õKàÇàëõ‹àHZ\ôYT€ôK[ú›[úõ€HHÿÿ[YŸ[ùŸ]\YŸH€»HÇàúôX[SàYô\‹»[ôôX\ô\à⁄Ÿ[à\ôH[XôYYàãàö[O\ﬁ\Àú›\úãà
-Bàõ‹àò\Ÿ[ò[YK]H[à¬à
-ìXX¯‡j˙` x‡¢◊¯‡·∏‡Ï¯‡Â¯‡Î8‡Ô8‡‚ãŸ[ô[ô◊‹⁄‹ù›]
+def validate_shortcut(data: dict, kind: str) -> None:
+    """Fail the build if send/receive actions are accidentally mixed.
 
-JKà
-öT€ôH]H⁄\ö[ô˘cÂ˘/ËW¯‡·∏‡Ï¯‡Â¯‡Î8‡Ô8‡‚ãôXŸZ]ö[ô◊‹⁄‹ù›]
+    This protects the install endpoints from ever shipping a receive workflow under
+    the "Mac„Å´ÈÄÅ„Çã" name (or vice versa), which is especially confusing on iOS
+    because importing a duplicate creates names such as "Mac„Å´ÈÄÅ„Çã (2)".
+    """
+    identifiers = [
+        item.get("WFWorkflowActionIdentifier", "").removeprefix("is.workflow.actions.")
+        for item in data.get("WFWorkflowActions", [])
+    ]
+    if kind == "send":
+        forbidden = {"documentpicker.save", "openurl", "setname"}
+        mixed = forbidden.intersection(identifiers)
+        if mixed:
+            raise ValueError(f"Send shortcut contains receive-only actions: {sorted(mixed)}")
+        upload_actions = [
+            item
+            for item in data.get("WFWorkflowActions", [])
+            if item.get("WFWorkflowActionIdentifier") == "is.workflow.actions.downloadurl"
+            and item.get("WFWorkflowActionParameters", {}).get("WFHTTPMethod") == "POST"
+        ]
+        if not any(
+            item.get("WFWorkflowActionParameters", {}).get("WFHTTPBodyType") == "File"
+            and "WFRequestVariable" in item.get("WFWorkflowActionParameters", {})
+            and "WFFormValues" not in item.get("WFWorkflowActionParameters", {})
+            for item in upload_actions
+        ):
+            raise ValueError("Send shortcut is missing the raw file-body upload action")
+        if any("WFFormValues" in item.get("WFWorkflowActionParameters", {}) for item in upload_actions):
+            raise ValueError("Send shortcut must not use multipart/Form file fields on current iOS")
+    elif kind == "receive":
+        if "documentpicker.save" not in identifiers:
+            raise ValueError("Receive shortcut is missing its save action")
+    else:
+        raise ValueError(f"Unknown shortcut kind: {kind}")
 
-JKàNÇà\ôŸ]H’UU»àûÿò\Ÿ[ò[Y_Kú⁄‹ù›]Çà⁄Y€ó‹⁄‹ù›]
-]K\ôŸ]
-Bàö[ù
-\ôŸ]
-BÇÇöYà◊€ò[YW◊»OHó◊€XZ[ó◊»éÇàXZ[ä
-B
+
+SUPPORTED_LOCALES = {"ja", "en", "zh", "ko", "es", "fr", "de"}
+SHORTCUT_TRANSLATIONS = {'zh': {'Send to Mac': 'ÂèëÈÄÅÂà∞ Mac', 'iPhone Data Sharing Receive': 'iPhone Data Sharing Êé•Êî∂', 'Sent to Mac': 'Â∑≤ÂèëÈÄÅÂà∞ Mac', 'Received files are in ‚ÄúiCloud > Shortcuts > iPhone Data Sharing‚Äù': 'Êé•Êî∂ÁöÑÊñá‰ª∂‰Ωç‰∫é‚ÄúiCloud > Shortcuts > iPhone Data Sharing‚Äù', 'Enter the Mac address (ending in /phone/shortcut)': 'ËæìÂÖ• Mac Âú∞ÂùÄÔºà‰ª• /phone/shortcut ÁªìÂ∞æÔºâ', 'Enter the send token from the pairing screen (prefix with Bearer and a space)': 'ËæìÂÖ•ÈÖçÂØπÈ°µÈù¢ÁöÑÂèëÈÄÅ‰ª§ÁâåÔºàÂâçÂä† Bearer Âíå‰∏Ä‰∏™Á©∫Ê†ºÔºâ', 'Enter the Mac receive API address (ending in /phone/shortcut/inbox)': 'ËæìÂÖ• Mac Êé•Êî∂ API Âú∞ÂùÄÔºà‰ª• /phone/shortcut/inbox ÁªìÂ∞æÔºâ', 'Enter the receive token from the pairing screen (prefix with Bearer and a space)': 'ËæìÂÖ•ÈÖçÂØπÈ°µÈù¢ÁöÑÊé•Êî∂‰ª§ÁâåÔºàÂâçÂä† Bearer Âíå‰∏Ä‰∏™Á©∫Ê†ºÔºâ'}, 'ko': {'Send to Mac': 'MacÏúºÎ°ú Î≥¥ÎÇ¥Í∏∞', 'iPhone Data Sharing Receive': 'iPhone Data Sharing ÏàòÏã†', 'Sent to Mac': 'MacÏúºÎ°ú Î≥¥ÎÉàÏäµÎãàÎã§', 'Received files are in ‚ÄúiCloud > Shortcuts > iPhone Data Sharing‚Äù': 'ÏàòÏã† ÌååÏùºÏùÄ ‚ÄòiCloud > Shortcuts > iPhone Data Sharing‚ÄôÏóê ÏûàÏäµÎãàÎã§', 'Enter the Mac address (ending in /phone/shortcut)': 'Mac Ï£ºÏÜåÎ•º ÏûÖÎ†•ÌïòÏÑ∏Ïöî(/phone/shortcutÏúºÎ°ú ÎÅùÎÇ®)', 'Enter the send token from the pairing screen (prefix with Bearer and a space)': 'ÌéòÏñ¥ÎßÅ ÌôîÎ©¥Ïùò Ï†ÑÏÜ° ÌÜ†ÌÅ∞ÏùÑ ÏûÖÎ†•ÌïòÏÑ∏Ïöî(BearerÏôÄ Í≥µÎ∞±ÏùÑ ÏïûÏóê Ï∂îÍ∞Ä)', 'Enter the Mac receive API address (ending in /phone/shortcut/inbox)': 'Mac ÏàòÏã† API Ï£ºÏÜåÎ•º ÏûÖÎ†•ÌïòÏÑ∏Ïöî(/phone/shortcut/inboxÎ°ú ÎÅùÎÇ®)', 'Enter the receive token from the pairing screen (prefix with Bearer and a space)': 'ÌéòÏñ¥ÎßÅ ÌôîÎ©¥Ïùò ÏàòÏã† ÌÜ†ÌÅ∞ÏùÑ ÏûÖÎ†•ÌïòÏÑ∏Ïöî(BearerÏôÄ Í≥µÎ∞±ÏùÑ ÏïûÏóê Ï∂îÍ∞Ä)'}, 'es': {'Send to Mac': 'Enviar al Mac', 'iPhone Data Sharing Receive': 'Recibir con iPhone Data Sharing', 'Sent to Mac': 'Enviado al Mac', 'Received files are in ‚ÄúiCloud > Shortcuts > iPhone Data Sharing‚Äù': 'Los archivos recibidos est√°n en ¬´iCloud > Shortcuts > iPhone Data Sharing¬ª', 'Enter the Mac address (ending in /phone/shortcut)': 'Introduce la direcci√≥n del Mac (terminada en /phone/shortcut)', 'Enter the send token from the pairing screen (prefix with Bearer and a space)': 'Introduce el token de env√≠o de la pantalla de enlace (con Bearer y un espacio delante)', 'Enter the Mac receive API address (ending in /phone/shortcut/inbox)': 'Introduce la direcci√≥n API de recepci√≥n del Mac (terminada en /phone/shortcut/inbox)', 'Enter the receive token from the pairing screen (prefix with Bearer and a space)': 'Introduce el token de recepci√≥n de la pantalla de enlace (con Bearer y un espacio delante)'}, 'fr': {'Send to Mac': 'Envoyer au Mac', 'iPhone Data Sharing Receive': 'R√©ception iPhone Data Sharing', 'Sent to Mac': 'Envoy√© au Mac', 'Received files are in ‚ÄúiCloud > Shortcuts > iPhone Data Sharing‚Äù': 'Les fichiers re√ßus se trouvent dans ¬´ iCloud > Shortcuts > iPhone Data Sharing ¬ª', 'Enter the Mac address (ending in /phone/shortcut)': 'Saisissez l‚Äôadresse du Mac (se terminant par /phone/shortcut)', 'Enter the send token from the pairing screen (prefix with Bearer and a space)': 'Saisissez le jeton d‚Äôenvoi de l‚Äô√©cran d‚Äôassociation (pr√©c√©d√© de Bearer et d‚Äôun espace)', 'Enter the Mac receive API address (ending in /phone/shortcut/inbox)': 'Saisissez l‚Äôadresse API de r√©ception du Mac (se terminant par /phone/shortcut/inbox)', 'Enter the receive token from the pairing screen (prefix with Bearer and a space)': 'Saisissez le jeton de r√©ception de l‚Äô√©cran d‚Äôassociation (pr√©c√©d√© de Bearer et d‚Äôun espace)'}, 'de': {'Send to Mac': 'An Mac senden', 'iPhone Data Sharing Receive': 'iPhone Data Sharing Empfangen', 'Sent to Mac': 'An Mac gesendet', 'Received files are in ‚ÄúiCloud > Shortcuts > iPhone Data Sharing‚Äù': 'Empfangene Dateien befinden sich in ‚ÄûiCloud > Shortcuts > iPhone Data Sharing‚Äú', 'Enter the Mac address (ending in /phone/shortcut)': 'Mac-Adresse eingeben (endet mit /phone/shortcut)', 'Enter the send token from the pairing screen (prefix with Bearer and a space)': 'Sendetoken vom Kopplungsbildschirm eingeben (mit Bearer und Leerzeichen davor)', 'Enter the Mac receive API address (ending in /phone/shortcut/inbox)': 'Mac-Empfangs-API-Adresse eingeben (endet mit /phone/shortcut/inbox)', 'Enter the receive token from the pairing screen (prefix with Bearer and a space)': 'Empfangstoken vom Kopplungsbildschirm eingeben (mit Bearer und Leerzeichen davor)'}}
+
+
+def normalized_locale(value: object) -> str:
+    if not isinstance(value, str):
+        return "en"
+    code = value.lower().split("-", 1)[0]
+    return code if code in SUPPORTED_LOCALES else "en"
+
+
+def localized(locale: str, ja: str, en: str) -> str:
+    code = normalized_locale(locale)
+    if code == "ja":
+        return ja
+    if code == "en":
+        return en
+    return SHORTCUT_TRANSLATIONS.get(code, {}).get(en, en)
+
+
+def sending_shortcut(
+    address: str = "http://PC-IP:3000/phone/shortcut",
+    authorization: str = "Bearer PAIRING_TOKEN",
+    *,
+    ask: bool = True,
+    locale: str = "ja",
+) -> dict:
+    """Build the iPhone -> Mac share-sheet shortcut.
+
+    Current iOS crashes while importing a shortcut that places ExtensionInput
+    inside a multipart/Form ``file`` field. The send flow therefore uploads each
+    shared item as the raw HTTP request body instead. The PC endpoint already
+    supports this transport.
+    """
+    url_uuid, token_uuid, repeat_uuid, group_uuid = uid(), uid(), uid(), uid()
+    permit_request_uuid, permit_uuid = uid(), uid()
+    permit_address = f"{address.rstrip('/')}/permit"
+    actions = [
+        action("gettext", UUID=url_uuid, CustomOutputName="PC address", WFTextActionText=address),
+        action("gettext", UUID=token_uuid, CustomOutputName="Authorization", WFTextActionText=authorization),
+        # Obtain one permit per Share-sheet execution. The Local Agent counts the
+        # first successful upload under this permit as one transfer, so a batch of
+        # multiple shared files remains one daily use.
+        action(
+            "downloadurl",
+            UUID=permit_request_uuid,
+            CustomOutputName="Transfer Permit Response",
+            WFURL=permit_address,
+            WFHTTPMethod="POST",
+            ShowHeaders=True,
+            WFHTTPHeaders=dictionary(
+                [
+                    field(
+                        "Authorization",
+                        token_string("\ufffc", {0: reference(token_uuid, "Authorization")}),
+                    )
+                ]
+            ),
+        ),
+        action(
+            "getvalueforkey",
+            UUID=permit_uuid,
+            CustomOutputName="Transfer Permit",
+            WFDictionaryKey="permit",
+            WFInput=attachment(reference(permit_request_uuid, "Transfer Permit Response")),
+        ),
+        action(
+            "repeat.each",
+            UUID=repeat_uuid,
+            GroupingIdentifier=group_uuid,
+            WFControlFlowMode=0,
+            WFInput=attachment({"Type": "ExtensionInput"}),
+        ),
+        action(
+            "downloadurl",
+            UUID=uid(),
+            WFURL=token_string("\ufffc", {0: reference(url_uuid, "PC address")}),
+            WFHTTPMethod="POST",
+            WFHTTPBodyType="File",
+            ShowHeaders=True,
+            WFHTTPHeaders=dictionary(
+                [
+                    field(
+                        "Authorization",
+                        token_string("\ufffc", {0: reference(token_uuid, "Authorization")}),
+                    ),
+                    # Keep the raw-body transport (which imports safely on current iOS)
+                    # while passing the original shared item's name in a normal header.
+                    field(
+                        "X-Filename",
+                        token_string(
+                            "\ufffc",
+                            {0: property_reference(repeat_uuid, "Repeat Item", "Name")},
+                        ),
+                    ),
+                    field(
+                        "X-Usage-Permit",
+                        token_string("\ufffc", {0: reference(permit_uuid, "Transfer Permit")}),
+                    ),
+                ]
+            ),
+            WFRequestVariable=attachment(reference(repeat_uuid, "Repeat Item")),
+        ),
+        action("repeat.each", UUID=uid(), GroupingIdentifier=group_uuid, WFControlFlowMode=2),
+        action(
+            "notification",
+            UUID=uid(),
+            WFNotificationActionTitle="iPhone Data Sharing",
+            WFNotificationActionBody=localized(locale, "Mac„Å´ÈÄÅ„Çä„Åæ„Åó„Åü", "Sent to Mac"),
+            WFNotificationActionSound=False,
+        ),
+    ]
+    questions = [
+        {
+            "ActionIndex": 0,
+            "Category": "Parameter",
+            "ParameterKey": "WFTextActionText",
+            "Text": localized(locale, "PC ÁîªÈù¢„ÅÆ„Ç¢„Éâ„É¨„Çπ„ÇíÂÖ•ÂäõÔºàÊú´Â∞æ„ÅØ /phone/shortcutÔºâ", "Enter the Mac address (ending in /phone/shortcut)"),
+            "DefaultValue": "http://PC-IP:3000/phone/shortcut",
+        },
+        {
+            "ActionIndex": 1,
+            "Category": "Parameter",
+            "ParameterKey": "WFTextActionText",
+            "Text": localized(locale, "„Éö„Ç¢„É™„É≥„Ç∞ÂÆå‰∫ÜÁîªÈù¢„ÅÆÈÄÅ‰ø°„Éà„Éº„ÇØ„É≥„ÇíÂÖ•ÂäõÔºàÂÖàÈ†≠„Å´ Bearer „Å®ÂçäËßí„Çπ„Éö„Éº„ÇπÔºâ", "Enter the send token from the pairing screen (prefix with Bearer and a space)"),
+            "DefaultValue": "Bearer PAIRING_TOKEN",
+        },
+    ]
+    data = shortcut(
+        localized(locale, "Mac„Å´ÈÄÅ„Çã", "Send to Mac"),
+        actions,
+        share_sheet=True,
+        glyph=59708,
+        color=795864575,
+        input_classes=[
+            "WFImageContentItem",
+            "WFAVAssetContentItem",
+            "WFGenericFileContentItem",
+            "WFPDFContentItem",
+        ],
+        questions=questions if ask else [],
+    )
+    validate_shortcut(data, "send")
+    return data
+
+def receiving_shortcut(
+    address: str = "http://PC-IP:3000/phone/shortcut/inbox",
+    authorization: str = "Bearer PAIRING_TOKEN",
+    *,
+    ask: bool = True,
+    locale: str = "ja",
+) -> dict:
+    """Receive every queued file and save it to iCloud Drive.
+
+    Files are saved directly by Shortcuts to the Files app. The destination path is
+    configured as ``iPhone Data Sharing/`` which, on iOS, is typically resolved under
+    iCloud Drive / Shortcuts / iPhone Data Sharing. This removes the need for the helper
+    shortcut "„Éï„Ç°„Ç§„É´„ÇíÁßªÂãï".
+    """
+    url_uuid = uid()
+    token_uuid = uid()
+    inbox_uuid = uid()
+    files_uuid = uid()
+    repeat_uuid = uid()
+    group_uuid = uid()
+    item_name_uuid = uid()
+    item_url_uuid = uid()
+    download_uuid = uid()
+
+    auth_value = token_string("Ôøº", {0: reference(token_uuid, "Authorization")})
+    actions = [
+        action("gettext", UUID=url_uuid, CustomOutputName="Inbox address", WFTextActionText=address),
+        action("gettext", UUID=token_uuid, CustomOutputName="Authorization", WFTextActionText=authorization),
+        action(
+            "downloadurl",
+            UUID=inbox_uuid,
+            CustomOutputName="Inbox response",
+            WFURL=token_string("Ôøº", {0: reference(url_uuid, "Inbox address")}),
+            WFHTTPMethod="GET",
+            ShowHeaders=True,
+            WFHTTPHeaders=dictionary([field("Authorization", auth_value)]),
+        ),
+        action(
+            "getvalueforkey",
+            UUID=files_uuid,
+            CustomOutputName="Files",
+            WFDictionaryKey="files",
+            WFInput=attachment(reference(inbox_uuid, "Inbox response")),
+        ),
+        action(
+            "repeat.each",
+            UUID=repeat_uuid,
+            GroupingIdentifier=group_uuid,
+            WFControlFlowMode=0,
+            WFInput=attachment(reference(files_uuid, "Files")),
+        ),
+        action(
+            "getvalueforkey",
+            UUID=item_name_uuid,
+            CustomOutputName="Original Name",
+            WFDictionaryKey="name",
+            WFInput=attachment(reference(repeat_uuid, "Repeat Item")),
+        ),
+        action(
+            "getvalueforkey",
+            UUID=item_url_uuid,
+            CustomOutputName="Download URL",
+            WFDictionaryKey="url",
+            WFInput=attachment(reference(repeat_uuid, "Repeat Item")),
+        ),
+        action(
+            "downloadurl",
+            UUID=download_uuid,
+            CustomOutputName="Received File",
+            WFURL=token_string("Ôøº", {0: reference(item_url_uuid, "Download URL")}),
+            WFHTTPMethod="GET",
+            ShowHeaders=True,
+            WFHTTPHeaders=dictionary([field("Authorization", auth_value)]),
+        ),
+        action(
+            "documentpicker.save",
+            UUID=uid(),
+            # "Save File" treats this as a relative subpath. Supplying the complete
+            # iPhone Data Sharing/<original name> path preserves the filename without using the
+            # unsupported Set Name action.
+            WFInput=attachment(reference(download_uuid, "Received File")),
+            WFAskWhereToSave=False,
+            WFFileDestinationPath=token_string(
+                "iPhone Data Sharing/\ufffc",
+                {10: reference(item_name_uuid, "Original Name")},
+            ),
+            WFSaveFileOverwrite=False,
+        ),
+        action("repeat.each", UUID=uid(), GroupingIdentifier=group_uuid, WFControlFlowMode=2),
+        action(
+            "notification",
+            UUID=uid(),
+            WFNotificationActionTitle="iPhone Data Sharing",
+            WFNotificationActionBody=localized(locale, "Âèó‰ø°„Éï„Ç°„Ç§„É´„ÅØ„ÄåiCloud > Shortcuts > iPhone Data Sharing„Äç„Å´„ÅÇ„Çä„Åæ„Åô", "Received files are in ‚ÄúiCloud > Shortcuts > iPhone Data Sharing‚Äù"),
+            WFNotificationActionSound=True,
+        ),
+        action(
+            "url",
+            UUID=(files_url_uuid := uid()),
+            CustomOutputName="Files URL",
+            WFURLActionURL=(
+                "shareddocuments:///private/var/mobile/Library/Mobile%20Documents/"
+                "com~apple~CloudDocs/Shortcuts/iPhone%20Data%20Sharing/"
+            ),
+        ),
+        action(
+            "openurl",
+            UUID=uid(),
+            WFInput=attachment(reference(files_url_uuid, "Files URL")),
+        ),
+    ]
+    questions = [
+        {
+            "ActionIndex": 0,
+            "Category": "Parameter",
+            "ParameterKey": "WFTextActionText",
+            "Text": localized(locale, "PC „ÅÆÂèó‰ø°API„Ç¢„Éâ„É¨„Çπ„ÇíÂÖ•ÂäõÔºàÊú´Â∞æ„ÅØ /phone/shortcut/inboxÔºâ", "Enter the Mac receive API address (ending in /phone/shortcut/inbox)"),
+            "DefaultValue": "http://PC-IP:3000/phone/shortcut/inbox",
+        },
+        {
+            "ActionIndex": 1,
+            "Category": "Parameter",
+            "ParameterKey": "WFTextActionText",
+            "Text": localized(locale, "„Éö„Ç¢„É™„É≥„Ç∞ÂÆå‰∫ÜÁîªÈù¢„ÅÆÂèó‰ø°„Éà„Éº„ÇØ„É≥„ÇíÂÖ•ÂäõÔºàÂÖàÈ†≠„Å´ Bearer „Å®ÂçäËßí„Çπ„Éö„Éº„ÇπÔºâ", "Enter the receive token from the pairing screen (prefix with Bearer and a space)"),
+            "DefaultValue": "Bearer PAIRING_TOKEN",
+        },
+    ]
+    data = shortcut(
+        localized(locale, "iPhone Data SharingÂèó‰ø°", "iPhone Data Sharing Receive"),
+        actions,
+        # Requested default: show this shortcut in the share sheet as well.
+        # The receive flow itself does not consume Shortcut Input; enabling this
+        # simply keeps its share-sheet setting and accepted types preconfigured.
+        share_sheet=True,
+        # Orange + download/inbox style glyph.
+        glyph=59511,
+        color=4287955199,  # #FF9500FF
+        input_classes=SHARE_INPUT_CLASSES,
+        questions=questions if ask else [],
+    )
+    validate_shortcut(data, "receive")
+    return data
+
+
+def sign_shortcut(data: dict, target: Path) -> None:
+    """Sign a shortcut and print the full Shortcuts CLI error if signing fails."""
+    with tempfile.TemporaryDirectory() as directory:
+        unsigned = Path(directory) / "unsigned.shortcut"
+        unsigned.write_bytes(plistlib.dumps(data, fmt=plistlib.FMT_BINARY))
+
+        result = subprocess.run(
+            [
+                "/usr/bin/shortcuts",
+                "sign",
+                "--mode",
+                "anyone",
+                "--input",
+                str(unsigned),
+                "--output",
+                str(target),
+            ],
+            text=True,
+            capture_output=True,
+        )
+
+        if result.returncode != 0:
+            print("=== shortcuts sign failed ===", file=sys.stderr)
+            print(f"workflow: {data.get('WFWorkflowName', '<unknown>')}", file=sys.stderr)
+            print(f"input:    {unsigned}", file=sys.stderr)
+            print(f"output:   {target}", file=sys.stderr)
+            print(f"exit:     {result.returncode}", file=sys.stderr)
+            print("--- stdout ---", file=sys.stderr)
+            print(result.stdout or "<empty>", file=sys.stderr)
+            print("--- stderr ---", file=sys.stderr)
+            print(result.stderr or "<empty>", file=sys.stderr)
+            print("=============================", file=sys.stderr)
+            raise RuntimeError(
+                f"shortcuts sign failed for {data.get('WFWorkflowName', '<unknown>')} "
+                f"with exit code {result.returncode}"
+            )
+
+
+def configured_from_stdin(kind: str, target: Path) -> None:
+    config = json.load(sys.stdin)
+    address = config.get("address")
+    authorization = config.get("authorization")
+    locale = normalized_locale(config.get("locale", "ja"))
+
+    if not isinstance(address, str) or not isinstance(authorization, str):
+        raise ValueError("Configured shortcut requires string address and authorization values")
+    if not address.startswith("http://"):
+        raise ValueError("Configured shortcut address must be an http:// LAN URL")
+    if not authorization.startswith("Bearer ") or len(authorization) <= len("Bearer "):
+        raise ValueError("Configured shortcut requires a non-empty Bearer token")
+
+    # Never sign a production/configured shortcut while placeholders are still
+    # present. This turns a silent 'nothing is sent' failure into a build error.
+    forbidden = ("PC-IP", "PAIRING_TOKEN", "127.0.0.1", "localhost")
+    if any(marker in address or marker in authorization for marker in forbidden):
+        raise ValueError("Configured shortcut still contains a placeholder or loopback address")
+
+    expected_suffix = "/phone/shortcut" if kind == "send" else "/phone/shortcut/inbox"
+    if not address.rstrip("/").endswith(expected_suffix):
+        raise ValueError(f"Configured {kind} shortcut has an unexpected endpoint: {address}")
+
+    if kind == "send":
+        data = sending_shortcut(address, authorization, ask=False, locale=locale)
+    else:
+        data = receiving_shortcut(address, authorization, ask=False, locale=locale)
+    sign_shortcut(data, target)
+
+
+def main() -> None:
+    if len(sys.argv) == 3 and sys.argv[1] in {"--configured", "--configured-send", "--configured-receive"}:
+        kind = "receive" if sys.argv[1] == "--configured-receive" else "send"
+        configured_from_stdin(kind, Path(sys.argv[2]))
+        return
+
+    OUTPUT.mkdir(exist_ok=True)
+    print(
+        "NOTE: no-argument mode creates TEMPLATE shortcuts only. "
+        "For a paired iPhone, install from the Local Agent setup page so the "
+        "real LAN address and Bearer token are embedded.",
+        file=sys.stderr,
+    )
+    for basename, data in [
+        ("Mac„Å´ÈÄÅ„Çã_„ÉÜ„É≥„Éó„É¨„Éº„Éà", sending_shortcut()),
+        ("iPhone Data SharingÂèó‰ø°_„ÉÜ„É≥„Éó„É¨„Éº„Éà", receiving_shortcut()),
+    ]:
+        target = OUTPUT / f"{basename}.shortcut"
+        sign_shortcut(data, target)
+        print(target)
+
+
+if __name__ == "__main__":
+    main()
